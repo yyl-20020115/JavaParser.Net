@@ -1,0 +1,270 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>javaparser</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="com.google.common.annotations\**" />
+    <Compile Remove="com.google.common.base.internal\**" />
+    <Compile Remove="com.google.common.base\**" />
+    <Compile Remove="com.google.common.cache\**" />
+    <Compile Remove="com.google.common.collect\**" />
+    <Compile Remove="com.google.common.escape\**" />
+    <Compile Remove="com.google.common.eventbus\**" />
+    <Compile Remove="com.google.common.graph\**" />
+    <Compile Remove="com.google.common.hash\**" />
+    <Compile Remove="com.google.common.html\**" />
+    <Compile Remove="com.google.common.io\**" />
+    <Compile Remove="com.google.common.math\**" />
+    <Compile Remove="com.google.common.net\**" />
+    <Compile Remove="com.google.common.primitives\**" />
+    <Compile Remove="com.google.common.reflect\**" />
+    <Compile Remove="com.google.common.util.concurrent.internal\**" />
+    <Compile Remove="com.google.common.util.concurrent\**" />
+    <Compile Remove="com.google.common.xml\**" />
+    <Compile Remove="com.google.errorprone.annotations.concurrent\**" />
+    <Compile Remove="com.google.errorprone.annotations\**" />
+    <Compile Remove="com.google.j2objc.annotations\**" />
+    <Compile Remove="com.google.thirdparty.publicsuffix\**" />
+    <Compile Remove="javassist.bytecode.analysis\**" />
+    <Compile Remove="javassist.bytecode.annotation\**" />
+    <Compile Remove="javassist.bytecode.stackmap\**" />
+    <Compile Remove="javassist.bytecode\**" />
+    <Compile Remove="javassist.compiler.ast\**" />
+    <Compile Remove="javassist.compiler\**" />
+    <Compile Remove="javassist.convert\**" />
+    <Compile Remove="javassist.expr\**" />
+    <Compile Remove="javassist.runtime\**" />
+    <Compile Remove="javassist.scopedpool\**" />
+    <Compile Remove="javassist.tools.reflect\**" />
+    <Compile Remove="javassist.tools.rmi\**" />
+    <Compile Remove="javassist.tools.web\**" />
+    <Compile Remove="javassist.tools\**" />
+    <Compile Remove="javassist.util.proxy\**" />
+    <Compile Remove="javassist.util\**" />
+    <Compile Remove="javassist\**" />
+    <Compile Remove="javax.annotation.concurrent\**" />
+    <Compile Remove="javax.annotation.meta\**" />
+    <Compile Remove="javax.annotation\**" />
+    <Compile Remove="javax.json.spi\**" />
+    <Compile Remove="javax.json.stream\**" />
+    <Compile Remove="javax.json\**" />
+    <Compile Remove="org.checkerframework.checker.builder.qual\**" />
+    <Compile Remove="org.checkerframework.checker.calledmethods.qual\**" />
+    <Compile Remove="org.checkerframework.checker.compilermsgs.qual\**" />
+    <Compile Remove="org.checkerframework.checker.fenum.qual\**" />
+    <Compile Remove="org.checkerframework.checker.formatter.qual\**" />
+    <Compile Remove="org.checkerframework.checker.guieffect.qual\**" />
+    <Compile Remove="org.checkerframework.checker.i18n.qual\**" />
+    <Compile Remove="org.checkerframework.checker.i18nformatter.qual\**" />
+    <Compile Remove="org.checkerframework.checker.index.qual\**" />
+    <Compile Remove="org.checkerframework.checker.initialization.qual\**" />
+    <Compile Remove="org.checkerframework.checker.interning.qual\**" />
+    <Compile Remove="org.checkerframework.checker.lock.qual\**" />
+    <Compile Remove="org.checkerframework.checker.nullness.qual\**" />
+    <Compile Remove="org.checkerframework.checker.optional.qual\**" />
+    <Compile Remove="org.checkerframework.checker.propkey.qual\**" />
+    <Compile Remove="org.checkerframework.checker.regex.qual\**" />
+    <Compile Remove="org.checkerframework.checker.signature.qual\**" />
+    <Compile Remove="org.checkerframework.checker.signedness.qual\**" />
+    <Compile Remove="org.checkerframework.checker.tainting.qual\**" />
+    <Compile Remove="org.checkerframework.checker.units.qual\**" />
+    <Compile Remove="org.checkerframework.common.aliasing.qual\**" />
+    <Compile Remove="org.checkerframework.common.initializedfields.qual\**" />
+    <Compile Remove="org.checkerframework.common.reflection.qual\**" />
+    <Compile Remove="org.checkerframework.common.returnsreceiver.qual\**" />
+    <Compile Remove="org.checkerframework.common.subtyping.qual\**" />
+    <Compile Remove="org.checkerframework.common.util.report.qual\**" />
+    <Compile Remove="org.checkerframework.common.value.qual\**" />
+    <Compile Remove="org.checkerframework.dataflow.qual\**" />
+    <Compile Remove="org.checkerframework.framework.qual\**" />
+    <EmbeddedResource Remove="com.google.common.annotations\**" />
+    <EmbeddedResource Remove="com.google.common.base.internal\**" />
+    <EmbeddedResource Remove="com.google.common.base\**" />
+    <EmbeddedResource Remove="com.google.common.cache\**" />
+    <EmbeddedResource Remove="com.google.common.collect\**" />
+    <EmbeddedResource Remove="com.google.common.escape\**" />
+    <EmbeddedResource Remove="com.google.common.eventbus\**" />
+    <EmbeddedResource Remove="com.google.common.graph\**" />
+    <EmbeddedResource Remove="com.google.common.hash\**" />
+    <EmbeddedResource Remove="com.google.common.html\**" />
+    <EmbeddedResource Remove="com.google.common.io\**" />
+    <EmbeddedResource Remove="com.google.common.math\**" />
+    <EmbeddedResource Remove="com.google.common.net\**" />
+    <EmbeddedResource Remove="com.google.common.primitives\**" />
+    <EmbeddedResource Remove="com.google.common.reflect\**" />
+    <EmbeddedResource Remove="com.google.common.util.concurrent.internal\**" />
+    <EmbeddedResource Remove="com.google.common.util.concurrent\**" />
+    <EmbeddedResource Remove="com.google.common.xml\**" />
+    <EmbeddedResource Remove="com.google.errorprone.annotations.concurrent\**" />
+    <EmbeddedResource Remove="com.google.errorprone.annotations\**" />
+    <EmbeddedResource Remove="com.google.j2objc.annotations\**" />
+    <EmbeddedResource Remove="com.google.thirdparty.publicsuffix\**" />
+    <EmbeddedResource Remove="javassist.bytecode.analysis\**" />
+    <EmbeddedResource Remove="javassist.bytecode.annotation\**" />
+    <EmbeddedResource Remove="javassist.bytecode.stackmap\**" />
+    <EmbeddedResource Remove="javassist.bytecode\**" />
+    <EmbeddedResource Remove="javassist.compiler.ast\**" />
+    <EmbeddedResource Remove="javassist.compiler\**" />
+    <EmbeddedResource Remove="javassist.convert\**" />
+    <EmbeddedResource Remove="javassist.expr\**" />
+    <EmbeddedResource Remove="javassist.runtime\**" />
+    <EmbeddedResource Remove="javassist.scopedpool\**" />
+    <EmbeddedResource Remove="javassist.tools.reflect\**" />
+    <EmbeddedResource Remove="javassist.tools.rmi\**" />
+    <EmbeddedResource Remove="javassist.tools.web\**" />
+    <EmbeddedResource Remove="javassist.tools\**" />
+    <EmbeddedResource Remove="javassist.util.proxy\**" />
+    <EmbeddedResource Remove="javassist.util\**" />
+    <EmbeddedResource Remove="javassist\**" />
+    <EmbeddedResource Remove="javax.annotation.concurrent\**" />
+    <EmbeddedResource Remove="javax.annotation.meta\**" />
+    <EmbeddedResource Remove="javax.annotation\**" />
+    <EmbeddedResource Remove="javax.json.spi\**" />
+    <EmbeddedResource Remove="javax.json.stream\**" />
+    <EmbeddedResource Remove="javax.json\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.builder.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.calledmethods.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.compilermsgs.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.fenum.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.formatter.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.guieffect.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.i18n.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.i18nformatter.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.index.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.initialization.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.interning.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.lock.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.nullness.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.optional.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.propkey.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.regex.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.signature.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.signedness.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.tainting.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.checker.units.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.aliasing.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.initializedfields.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.reflection.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.returnsreceiver.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.subtyping.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.util.report.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.common.value.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.dataflow.qual\**" />
+    <EmbeddedResource Remove="org.checkerframework.framework.qual\**" />
+    <None Remove="com.google.common.annotations\**" />
+    <None Remove="com.google.common.base.internal\**" />
+    <None Remove="com.google.common.base\**" />
+    <None Remove="com.google.common.cache\**" />
+    <None Remove="com.google.common.collect\**" />
+    <None Remove="com.google.common.escape\**" />
+    <None Remove="com.google.common.eventbus\**" />
+    <None Remove="com.google.common.graph\**" />
+    <None Remove="com.google.common.hash\**" />
+    <None Remove="com.google.common.html\**" />
+    <None Remove="com.google.common.io\**" />
+    <None Remove="com.google.common.math\**" />
+    <None Remove="com.google.common.net\**" />
+    <None Remove="com.google.common.primitives\**" />
+    <None Remove="com.google.common.reflect\**" />
+    <None Remove="com.google.common.util.concurrent.internal\**" />
+    <None Remove="com.google.common.util.concurrent\**" />
+    <None Remove="com.google.common.xml\**" />
+    <None Remove="com.google.errorprone.annotations.concurrent\**" />
+    <None Remove="com.google.errorprone.annotations\**" />
+    <None Remove="com.google.j2objc.annotations\**" />
+    <None Remove="com.google.thirdparty.publicsuffix\**" />
+    <None Remove="javassist.bytecode.analysis\**" />
+    <None Remove="javassist.bytecode.annotation\**" />
+    <None Remove="javassist.bytecode.stackmap\**" />
+    <None Remove="javassist.bytecode\**" />
+    <None Remove="javassist.compiler.ast\**" />
+    <None Remove="javassist.compiler\**" />
+    <None Remove="javassist.convert\**" />
+    <None Remove="javassist.expr\**" />
+    <None Remove="javassist.runtime\**" />
+    <None Remove="javassist.scopedpool\**" />
+    <None Remove="javassist.tools.reflect\**" />
+    <None Remove="javassist.tools.rmi\**" />
+    <None Remove="javassist.tools.web\**" />
+    <None Remove="javassist.tools\**" />
+    <None Remove="javassist.util.proxy\**" />
+    <None Remove="javassist.util\**" />
+    <None Remove="javassist\**" />
+    <None Remove="javax.annotation.concurrent\**" />
+    <None Remove="javax.annotation.meta\**" />
+    <None Remove="javax.annotation\**" />
+    <None Remove="javax.json.spi\**" />
+    <None Remove="javax.json.stream\**" />
+    <None Remove="javax.json\**" />
+    <None Remove="org.checkerframework.checker.builder.qual\**" />
+    <None Remove="org.checkerframework.checker.calledmethods.qual\**" />
+    <None Remove="org.checkerframework.checker.compilermsgs.qual\**" />
+    <None Remove="org.checkerframework.checker.fenum.qual\**" />
+    <None Remove="org.checkerframework.checker.formatter.qual\**" />
+    <None Remove="org.checkerframework.checker.guieffect.qual\**" />
+    <None Remove="org.checkerframework.checker.i18n.qual\**" />
+    <None Remove="org.checkerframework.checker.i18nformatter.qual\**" />
+    <None Remove="org.checkerframework.checker.index.qual\**" />
+    <None Remove="org.checkerframework.checker.initialization.qual\**" />
+    <None Remove="org.checkerframework.checker.interning.qual\**" />
+    <None Remove="org.checkerframework.checker.lock.qual\**" />
+    <None Remove="org.checkerframework.checker.nullness.qual\**" />
+    <None Remove="org.checkerframework.checker.optional.qual\**" />
+    <None Remove="org.checkerframework.checker.propkey.qual\**" />
+    <None Remove="org.checkerframework.checker.regex.qual\**" />
+    <None Remove="org.checkerframework.checker.signature.qual\**" />
+    <None Remove="org.checkerframework.checker.signedness.qual\**" />
+    <None Remove="org.checkerframework.checker.tainting.qual\**" />
+    <None Remove="org.checkerframework.checker.units.qual\**" />
+    <None Remove="org.checkerframework.common.aliasing.qual\**" />
+    <None Remove="org.checkerframework.common.initializedfields.qual\**" />
+    <None Remove="org.checkerframework.common.reflection.qual\**" />
+    <None Remove="org.checkerframework.common.returnsreceiver.qual\**" />
+    <None Remove="org.checkerframework.common.subtyping.qual\**" />
+    <None Remove="org.checkerframework.common.util.report.qual\**" />
+    <None Remove="org.checkerframework.common.value.qual\**" />
+    <None Remove="org.checkerframework.dataflow.qual\**" />
+    <None Remove="org.checkerframework.framework.qual\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="javaparser.jar" />
+    <None Remove="ikvm.exports" />
+    <EmbeddedResource Include="javaparser.jar" />
+    <EmbeddedResource Include="ikvm.exports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\ikvm8_binary\bin\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\ikvm8_binary\bin\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
