@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -29,11 +29,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult postVisitDirectory(Path dir, IOException e)
 		{
@@ -46,11 +42,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult visitFile(Path file, BasicFileAttributes attrs)
 		{
@@ -71,11 +63,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)
 		{
@@ -87,11 +75,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _1(ParserCollectionStrategy this_00240, ProjectRoot val_0024projectRoot)
 		{
@@ -104,11 +88,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult postVisitDirectory(object dir, IOException e)
 		{
@@ -120,11 +100,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult visitFile(object file, BasicFileAttributes attrs)
 		{
@@ -136,11 +112,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult preVisitDirectory(object dir, BasicFileAttributes attrs)
 		{
@@ -212,18 +184,7 @@ public class ParserCollectionStrategy: CollectionStrategy
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		10,
-		141,
-		byte.MaxValue,
-		1,
-		102,
-		2,
-		97,
-		159,
-		0
-	})]
+	
 	public virtual ProjectRoot collect(Path path)
 	{
 		ProjectRoot projectRoot = new ProjectRoot(path, parserConfiguration);

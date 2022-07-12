@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -12,7 +12,7 @@ using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.printer.configuration;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -811,13 +811,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		167, 37, 110, 137, 114, 100, 113, 102, 98, 107,
-		106, 98, 226, 61, 230, 70, 100, 144, 98, 110,
-		50, 168, 109, 111, 105, 113, 159, 27, 233, 58,
-		235, 72
-	})]
+	
 	private void printOrphanCommentsBeforeThisChildNode(Node node)
 	{
 		if (configuration.isIgnoreComments() || node is Comment)
@@ -877,11 +871,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	protected internal virtual void printComment(Optional comment, java.lang.Void arg)
 	{
@@ -890,11 +880,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		167, 69, 174, 127, 11, 102, 104, 161, 98, 98,
-		108, 118, 106, 99, 132, 98, 104, 61, 168
-	})]
+	
 	private void printOrphanCommentsEnding(Node node)
 	{
 		if (configuration.isIgnoreComments())
@@ -926,11 +912,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	protected internal virtual void printMemberAnnotations(NodeList annotations, java.lang.Void arg)
 	{
@@ -963,16 +945,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 94, 104, 113, 111, 108, 104, 104, 145, 98,
-		145
-	})]
+		
+	
 	protected internal virtual void printTypeParameters(NodeList args, java.lang.Void arg)
 	{
 		if (Utils.isNullOrEmpty(args))
@@ -994,11 +968,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	protected internal virtual void printMembers(NodeList members, java.lang.Void arg)
 	{
@@ -1013,17 +983,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 97, 66, 104, 129, 99, 145, 123, 104, 113,
-		98
-	})]
+		
+	
 	protected internal virtual void printAnnotations(NodeList annotations, bool prefixWithASpace, java.lang.Void arg)
 	{
 		if (!annotations.isEmpty())
@@ -1043,16 +1004,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 79, 114, 107, 113, 111, 108, 104, 104, 145,
-		98, 145
-	})]
+		
+	
 	protected internal virtual void printTypeArgs(NodeWithTypeArguments nodeWithTypeArguments, java.lang.Void arg)
 	{
 		NodeList nodeList = (NodeList)nodeWithTypeArguments.getTypeArguments().orElse(null);
@@ -1075,16 +1028,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 108, 113, 107, 123, 99, 156, 111, 108, 104,
-		104, 113, 99, 142, 177, 98, 99, 172, 113
-	})]
+		
+	
 	protected internal virtual void printArguments(NodeList args, java.lang.Void arg)
 	{
 		___003C_003Eprinter.print("(");
@@ -1122,16 +1067,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 212, 109, 113, 109, 113, 104, 113, 127, 1,
-		104, 98, 145, 113
-	})]
+	
+	
 	private void printSwitchNode(SwitchNode n, java.lang.Void arg)
 	{
 		printComment(n.getComment(), arg);
@@ -1175,19 +1112,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 134, 104, 109, 111, 108, 104, 104, 142, 98,
-		142
-	})]
+		
+	
 	protected internal virtual void printPrePostFixOptionalList(NodeList args, java.lang.Void arg, string prefix, string separator, string postfix)
 	{
 		if (args.isEmpty())
@@ -1209,19 +1135,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 148, 109, 104, 111, 108, 104, 104, 142, 130,
-		110
-	})]
+		
+	
 	protected internal virtual void printPrePostFixRequiredList(NodeList args, java.lang.Void arg, string prefix, string separator, string postfix)
 	{
 		___003C_003Eprinter.print(prefix);
@@ -1242,11 +1157,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(PatternExpr n, java.lang.Void arg)
 	{
@@ -1256,11 +1167,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(YieldStmt n, java.lang.Void arg)
 	{
@@ -1272,11 +1179,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(TextBlockLiteralExpr n, java.lang.Void arg)
 	{
@@ -1290,11 +1193,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(SwitchExpr n, java.lang.Void arg)
 	{
@@ -1303,11 +1202,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(Modifier n, java.lang.Void arg)
 	{
@@ -1316,11 +1211,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(VarType n, java.lang.Void arg)
 	{
@@ -1331,11 +1222,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ReceiverParameter n, java.lang.Void arg)
 	{
@@ -1348,11 +1235,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(UnparsableStmt n, java.lang.Void arg)
 	{
@@ -1360,11 +1243,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleOpensDirective n, java.lang.Void arg)
 	{
@@ -1375,11 +1254,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleUsesDirective n, java.lang.Void arg)
 	{
@@ -1389,11 +1264,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleProvidesDirective n, java.lang.Void arg)
 	{
@@ -1404,11 +1275,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleExportsDirective n, java.lang.Void arg)
 	{
@@ -1419,11 +1286,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleRequiresDirective n, java.lang.Void arg)
 	{
@@ -1434,11 +1297,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(ModuleDeclaration n, java.lang.Void arg)
 	{
@@ -1455,16 +1314,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 227, 103, 109, 110, 113, 109, 113, 151, 109,
-		113, 153
-	})]
+	
+	
 	public virtual void visit(WildcardType n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1484,11 +1335,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(WhileStmt n, java.lang.Void arg)
 	{
@@ -1501,11 +1348,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(VoidType n, java.lang.Void arg)
 	{
@@ -1516,25 +1359,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162,
-		19,
-		103,
-		109,
-		141,
-		byte.MaxValue,
-		7,
-		81,
-		109,
-		113,
-		153
-	})]
+	
+	
 	public virtual void visit(VariableDeclarator n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1549,16 +1375,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 108, 103, 109, 127, 28, 143, 142, 140, 109,
-		151, 145, 116, 108, 104, 104, 145, 98
-	})]
+	
+	
 	public unsafe virtual void visit(VariableDeclarationExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1592,26 +1410,14 @@ public class PrettyPrintVisitor :  VoidVisitor
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	public virtual void visit(UnknownType n, java.lang.Void arg)
 	{
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 211, 103, 109, 110, 98, 127, 1, 99, 132,
-		145, 104, 98
-	})]
+	
+	
 	public virtual void visit(UnionType n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1635,11 +1441,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(UnaryExpr n, java.lang.Void arg)
 	{
@@ -1657,16 +1459,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 142, 103, 109, 110, 109, 109, 113, 116, 108,
-		104, 104, 145, 130
-	})]
+	
+	
 	public virtual void visit(TypeParameter n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1691,11 +1485,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(TypeExpr n, java.lang.Void arg)
 	{
@@ -1708,17 +1498,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 245, 103, 109, 113, 112, 113, 108, 98, 104,
-		114, 104, 113, 108, 99, 172, 132, 110, 140, 145,
-		109, 127, 1, 104, 98, 109, 113, 153
-	})]
+	
+	
 	public virtual void visit(TryStmt n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1765,11 +1546,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ThrowStmt n, java.lang.Void arg)
 	{
@@ -1781,11 +1558,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ThisExpr n, java.lang.Void arg)
 	{
@@ -1800,11 +1573,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(SynchronizedStmt n, java.lang.Void arg)
 	{
@@ -1817,11 +1586,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(SwitchStmt n, java.lang.Void arg)
 	{
@@ -1830,17 +1595,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 228, 103, 141, 122, 109, 159, 12, 113, 116,
-		108, 104, 104, 145, 98, 141, 108, 108, 104, 127,
-		1, 104, 108, 130, 108
-	})]
+	
+	
 	public virtual void visit(SwitchEntry n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -1881,11 +1637,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(SuperExpr n, java.lang.Void arg)
 	{
@@ -1900,11 +1652,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(StringLiteralExpr n, java.lang.Void arg)
 	{
@@ -1916,11 +1664,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(SingleMemberAnnotationExpr n, java.lang.Void arg)
 	{
@@ -1934,11 +1678,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(SimpleName n, java.lang.Void arg)
 	{
@@ -1946,11 +1686,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ReturnStmt n, java.lang.Void arg)
 	{
@@ -1966,16 +1702,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 239, 103, 109, 109, 140, 109, 104, 145, 141,
-		109, 113, 116, 108, 104, 104, 145, 130, 113, 111
-	})]
+	
+	
 	public virtual void visit(CompactConstructorDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2007,18 +1735,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 33, 103, 109, 109, 140, 145, 141, 113, 109,
-		116, 108, 104, 104, 145, 130, 145, 141, 109, 113,
-		116, 108, 104, 104, 145, 162, 113, 108, 109, 173,
-		135, 108, 113
-	})]
+	
+	
 	public virtual void visit(RecordDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2069,11 +1787,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(PrimitiveType n, java.lang.Void arg)
 	{
@@ -2084,16 +1798,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 62, 103, 109, 110, 108, 109, 104, 110, 145,
-		109, 145, 111
-	})]
+	
+	
 	public virtual void visit(Parameter n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2114,11 +1820,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(PackageDeclaration n, java.lang.Void arg)
 	{
@@ -2133,16 +1835,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 155, 103, 109, 104, 119, 177, 145, 104, 120,
-		177, 141, 141, 109, 113, 108, 119, 108, 145
-	})]
+	
+	
 	public virtual void visit(ObjectCreationExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2171,11 +1865,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(NullLiteralExpr n, java.lang.Void arg)
 	{
@@ -2185,16 +1875,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 89, 103, 109, 113, 109, 113, 104, 116, 108,
-		104, 104, 145, 130, 113
-	})]
+	
+	
 	public virtual void visit(NormalAnnotationExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2219,11 +1901,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(Name n, java.lang.Void arg)
 	{
@@ -2239,11 +1917,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(NameExpr n, java.lang.Void arg)
 	{
@@ -2254,16 +1928,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 175, 103, 109, 103, 103, 99, 173, 113, 104,
-		99, 141
-	})]
+	
+	
 	public virtual void visit(MethodReferenceExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2283,18 +1949,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 10, 135, 109, 109, 108, 109, 109, 177, 109,
-		113, 141, 113, 248, 70, 109, 116, 108, 104, 104,
-		145, 130, 145, 109, 113, 116, 108, 104, 104, 145,
-		130, 109, 147, 113, 153
-	})]
+	
+	
 	public virtual void visit(MethodDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2349,82 +2005,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163,
-		51,
-		103,
-		237,
-		70,
-		102,
-		144,
-		191,
-		5,
-		239,
-		61,
-		234,
-		69,
-		98,
-		108,
-		127,
-		36,
-		111,
-		122,
-		102,
-		118,
-		108,
-		204,
-		byte.MaxValue,
-		17,
-		70,
-		103,
-		107,
-		99,
-		127,
-		1,
-		126,
-		111,
-		123,
-		102,
-		239,
-		59,
-		231,
-		70,
-		125,
-		108,
-		103,
-		226,
-		71,
-		103,
-		107,
-		104,
-		127,
-		11,
-		127,
-		11,
-		103,
-		127,
-		17,
-		104,
-		130,
-		100,
-		229,
-		69,
-		251,
-		87,
-		104,
-		109,
-		107,
-		109,
-		108,
-		153,
-		141
-	})]
+	
+	
 	public unsafe virtual void visit(MethodCallExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2525,11 +2107,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(MemberValuePair n, java.lang.Void arg)
 	{
@@ -2541,11 +2119,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(MarkerAnnotationExpr n, java.lang.Void arg)
 	{
@@ -2556,11 +2130,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(LongLiteralExpr n, java.lang.Void arg)
 	{
@@ -2570,11 +2140,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(LocalRecordDeclarationStmt n, java.lang.Void arg)
 	{
@@ -2584,11 +2150,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(LocalClassDeclarationStmt n, java.lang.Void arg)
 	{
@@ -2598,11 +2160,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(LineComment n, java.lang.Void arg)
 	{
@@ -2613,17 +2171,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 143, 103, 141, 103, 135, 99, 145, 111, 108,
-		104, 104, 145, 98, 99, 177, 113, 104, 137, 149,
-		139
-	})]
+	
+	
 	public virtual void visit(LambdaExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2661,11 +2210,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(LabeledStmt n, java.lang.Void arg)
 	{
@@ -2677,18 +2222,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 81, 103, 127, 1, 113, 119, 108, 102, 117,
-		105, 110, 138, 105, 233, 58, 232, 73, 99, 99,
-		119, 127, 3, 105, 100, 165, 99, 100, 113, 131,
-		113, 100, 145, 142, 101, 145
-	})]
+	
+	
 	public virtual void visit(JavadocComment n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2746,16 +2281,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 195, 103, 109, 110, 98, 127, 1, 99, 132,
-		145, 104, 98
-	})]
+	
+	
 	public virtual void visit(IntersectionType n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2779,11 +2306,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(IntegerLiteralExpr n, java.lang.Void arg)
 	{
@@ -2793,11 +2316,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(InstanceOfExpr n, java.lang.Void arg)
 	{
@@ -2814,11 +2333,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(InitializerDeclaration n, java.lang.Void arg)
 	{
@@ -2832,16 +2347,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 219, 103, 109, 113, 104, 145, 109, 104, 145,
-		145, 105
-	})]
+	
+	
 	public virtual void visit(ImportDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2861,17 +2368,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 116, 103, 109, 113, 109, 111, 99, 147, 113,
-		140, 109, 99, 108, 112, 99, 147, 108, 117, 117,
-		102, 147, 113, 140, 109, 119, 102, 140
-	})]
+	
+	
 	public virtual void visit(IfStmt n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2926,11 +2424,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ForEachStmt n, java.lang.Void arg)
 	{
@@ -2945,17 +2439,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 194, 103, 109, 113, 104, 116, 108, 104, 104,
-		145, 130, 113, 109, 151, 113, 104, 116, 108, 104,
-		104, 145, 130, 113, 111
-	})]
+	
+	
 	public virtual void visit(ForStmt n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -2998,16 +2483,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 248, 135, 109, 109, 108, 109, 103, 114, 104,
-		209, 113, 116, 108, 104, 104, 145, 130, 113
-	})]
+	
+	
 	public virtual void visit(FieldDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3038,11 +2515,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(FieldAccessExpr n, java.lang.Void arg)
 	{
@@ -3054,11 +2527,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ExpressionStmt n, java.lang.Void arg)
 	{
@@ -3069,16 +2538,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 89, 103, 109, 104, 104, 147, 109, 119, 145,
-		104, 145, 109, 113
-	})]
+	
+	
 	public virtual void visit(ExplicitConstructorInvocationStmt n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3103,18 +2564,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 32, 103, 109, 109, 140, 113, 141, 109, 113,
-		116, 108, 104, 104, 145, 162, 113, 108, 112, 129,
-		152, 127, 1, 108, 116, 109, 105, 104, 99, 147,
-		177, 130, 109, 113, 143, 109, 172, 108, 113
-	})]
+	
+	
 	public virtual void visit(EnumDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3175,16 +2626,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 86, 103, 109, 109, 141, 109, 173, 109, 113,
-		108, 109, 108, 145
-	})]
+	
+	
 	public virtual void visit(EnumConstantDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3206,11 +2649,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(EnclosedExpr n, java.lang.Void arg)
 	{
@@ -3222,11 +2661,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(EmptyStmt n, java.lang.Void arg)
 	{
@@ -3236,11 +2671,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(DoubleLiteralExpr n, java.lang.Void arg)
 	{
@@ -3250,11 +2681,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(DoStmt n, java.lang.Void arg)
 	{
@@ -3268,11 +2695,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ContinueStmt n, java.lang.Void arg)
 	{
@@ -3284,17 +2707,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 199, 103, 109, 109, 140, 109, 104, 145, 141,
-		113, 109, 116, 108, 104, 104, 145, 130, 145, 109,
-		113, 116, 108, 104, 104, 145, 130, 113, 111
-	})]
+	
+	
 	public virtual void visit(ConstructorDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3341,11 +2755,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ConditionalExpr n, java.lang.Void arg)
 	{
@@ -3359,16 +2769,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 167, 103, 109, 109, 113, 161, 109, 183, 109,
-		109, 172, 116, 114, 108, 104, 206, 151, 105
-	})]
+	
+	
 	public virtual void visit(CompilationUnit n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3402,16 +2804,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 123, 103, 109, 109, 119, 145, 142, 141, 104,
-		147, 138
-	})]
+	
+	
 	public virtual void visit(ClassOrInterfaceType n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3434,18 +2828,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 238, 103, 109, 109, 140, 104, 147, 177, 141,
-		141, 109, 113, 116, 108, 104, 104, 145, 162, 109,
-		113, 116, 108, 104, 104, 145, 162, 113, 108, 109,
-		173, 135, 108, 113
-	})]
+	
+	
 	public virtual void visit(ClassOrInterfaceDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3502,11 +2886,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ClassExpr n, java.lang.Void arg)
 	{
@@ -3517,11 +2897,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(CharLiteralExpr n, java.lang.Void arg)
 	{
@@ -3533,11 +2909,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(CatchClause n, java.lang.Void arg)
 	{
@@ -3550,11 +2922,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(CastExpr n, java.lang.Void arg)
 	{
@@ -3567,11 +2935,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(BreakStmt n, java.lang.Void arg)
 	{
@@ -3583,11 +2947,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(BooleanLiteralExpr n, java.lang.Void arg)
 	{
@@ -3597,16 +2957,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 160, 103, 109, 113, 104, 108, 127, 1, 104,
-		108, 130, 103, 108, 113
-	})]
+	
+	
 	public virtual void visit(BlockStmt n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3629,16 +2981,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 127, 109, 129, 119, 109, 113, 105, 111, 23,
-		198, 114, 113
-	})]
+	
+	
 	public virtual void visit(BlockComment n, java.lang.Void arg)
 	{
 		if (!configuration.isIgnoreComments())
@@ -3657,16 +3001,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 136, 103, 109, 109, 109, 145, 119, 109, 145,
-		111
-	})]
+	
+	
 	public virtual void visit(BinaryExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3685,16 +3021,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 115, 103, 109, 109, 109, 145, 119, 109, 145,
-		111
-	})]
+	
+	
 	public virtual void visit(AssignExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3713,11 +3041,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(AssertStmt n, java.lang.Void arg)
 	{
@@ -3734,16 +3058,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 168, 102, 98, 104, 103, 104, 103, 130, 104,
-		124, 111, 113, 98
-	})]
+	
+	
 	public virtual void visit(ArrayType n, java.lang.Void arg)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -3765,16 +3081,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 48, 103, 109, 113, 112, 113, 116, 108, 104,
-		104, 145, 98, 145, 103, 113
-	})]
+	
+	
 	public virtual void visit(ArrayInitializerExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3800,11 +3108,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ArrayCreationLevel n, java.lang.Void arg)
 	{
@@ -3818,16 +3122,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 100, 103, 109, 113, 109, 127, 1, 104, 98,
-		109, 113, 153
-	})]
+	
+	
 	public virtual void visit(ArrayCreationExpr n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3848,11 +3144,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void visit(ArrayAccessExpr n, java.lang.Void arg)
 	{
@@ -3865,16 +3157,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 52, 103, 109, 109, 140, 109, 113, 109, 113,
-		109, 113, 151, 113
-	})]
+	
+	
 	public virtual void visit(AnnotationMemberDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3894,16 +3178,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 34, 103, 109, 109, 140, 113, 109, 113, 108,
-		104, 141, 108, 113
-	})]
+	
+	
 	public virtual void visit(AnnotationDeclaration n, java.lang.Void arg)
 	{
 		printOrphanCommentsBeforeThisChildNode(n);
@@ -3923,16 +3199,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 201, 159, 11, 103, 107, 111, 5, 165, 118,
-		109, 98, 98, 119, 110, 130
-	})]
+	
+	
 	public virtual void visit(NodeList n, java.lang.Void arg)
 	{
 		if (configuration.isOrderImports() && n.size() > 0 && n.get(0) is ImportDeclaration)
@@ -3959,11 +3227,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024printComment_00240(java.lang.Void arg, Comment c)
 	{
@@ -3972,11 +3236,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00241(java.lang.Void arg, ModuleDeclaration m)
 	{
@@ -3994,11 +3254,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00243(java.lang.Void arg, com.github.javaparser.ast.type.Type t)
 	{
@@ -4007,12 +3263,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00245(VariableDeclarator n, java.lang.Void arg, NodeWithVariables ancestor)
 	{
@@ -4042,19 +3293,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 120, 105, 104, 232, 71, 110, 233, 70, 171,
-		113
-	})]
+	
+	
 	private void lambda_0024visit_00248(java.lang.Void arg, AtomicBoolean columnAlignFirstMethodChain, AtomicBoolean methodCallWithScopeInScope, AtomicBoolean lastMethodInCallChain, Expression scope)
 	{
 		scope.accept(this, arg);
@@ -4074,12 +3314,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00249(java.lang.Void arg, MethodDeclaration n, ReceiverParameter rp)
 	{
@@ -4092,11 +3327,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002410(java.lang.Void arg, com.github.javaparser.ast.type.Type t)
 	{
@@ -4154,17 +3385,8 @@ public class PrettyPrintVisitor :  VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 25, 135, 130, 112, 99, 137, 140, 110, 241,
-		57, 230, 73
-	})]
+	
+	
 	private void lambda_0024null_00244(VariableDeclarator n, java.lang.Void arg, com.github.javaparser.ast.type.Type commonType)
 	{
 		com.github.javaparser.ast.type.Type type = n.getType();
@@ -4210,11 +3432,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(PatternExpr n, object arg)
 	{
@@ -4224,11 +3442,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(YieldStmt n, object arg)
 	{
@@ -4238,11 +3452,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -4252,11 +3462,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SwitchExpr n, object arg)
 	{
@@ -4266,11 +3472,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(Modifier n, object arg)
 	{
@@ -4280,11 +3482,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(VarType n, object arg)
 	{
@@ -4294,11 +3492,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ReceiverParameter n, object arg)
 	{
@@ -4308,11 +3502,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(UnparsableStmt n, object arg)
 	{
@@ -4322,11 +3512,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleOpensDirective n, object arg)
 	{
@@ -4336,11 +3522,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleUsesDirective n, object arg)
 	{
@@ -4350,11 +3532,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleProvidesDirective n, object arg)
 	{
@@ -4364,11 +3542,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleExportsDirective n, object arg)
 	{
@@ -4378,11 +3552,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleRequiresDirective n, object arg)
 	{
@@ -4392,11 +3562,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ModuleDeclaration n, object arg)
 	{
@@ -4406,11 +3572,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(WildcardType n, object arg)
 	{
@@ -4420,11 +3582,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(WhileStmt n, object arg)
 	{
@@ -4434,11 +3592,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(VoidType n, object arg)
 	{
@@ -4448,11 +3602,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(VariableDeclarator n, object arg)
 	{
@@ -4462,11 +3612,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(VariableDeclarationExpr n, object arg)
 	{
@@ -4476,11 +3622,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(UnknownType n, object arg)
 	{
@@ -4490,11 +3632,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(UnionType n, object arg)
 	{
@@ -4504,11 +3642,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(UnaryExpr n, object arg)
 	{
@@ -4518,11 +3652,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(TypeParameter n, object arg)
 	{
@@ -4532,11 +3662,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(TypeExpr n, object arg)
 	{
@@ -4546,11 +3672,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(TryStmt n, object arg)
 	{
@@ -4560,11 +3682,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ThrowStmt n, object arg)
 	{
@@ -4574,11 +3692,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ThisExpr n, object arg)
 	{
@@ -4588,11 +3702,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SynchronizedStmt n, object arg)
 	{
@@ -4602,11 +3712,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SwitchStmt n, object arg)
 	{
@@ -4616,11 +3722,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SwitchEntry n, object arg)
 	{
@@ -4630,11 +3732,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SuperExpr n, object arg)
 	{
@@ -4644,11 +3742,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(StringLiteralExpr n, object arg)
 	{
@@ -4658,11 +3752,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -4672,11 +3762,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(SimpleName n, object arg)
 	{
@@ -4686,11 +3772,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ReturnStmt n, object arg)
 	{
@@ -4700,11 +3782,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(CompactConstructorDeclaration n, object arg)
 	{
@@ -4714,11 +3792,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(RecordDeclaration n, object arg)
 	{
@@ -4728,11 +3802,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(PrimitiveType n, object arg)
 	{
@@ -4742,11 +3812,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(Parameter n, object arg)
 	{
@@ -4756,11 +3822,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(PackageDeclaration n, object arg)
 	{
@@ -4770,11 +3832,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ObjectCreationExpr n, object arg)
 	{
@@ -4784,11 +3842,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(NullLiteralExpr n, object arg)
 	{
@@ -4798,11 +3852,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(NormalAnnotationExpr n, object arg)
 	{
@@ -4812,11 +3862,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(Name n, object arg)
 	{
@@ -4826,11 +3872,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(NameExpr n, object arg)
 	{
@@ -4840,11 +3882,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(MethodReferenceExpr n, object arg)
 	{
@@ -4854,11 +3892,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(MethodDeclaration n, object arg)
 	{
@@ -4868,11 +3902,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(MethodCallExpr n, object arg)
 	{
@@ -4882,11 +3912,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(MemberValuePair n, object arg)
 	{
@@ -4896,11 +3922,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -4910,11 +3932,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LongLiteralExpr n, object arg)
 	{
@@ -4924,11 +3942,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -4938,11 +3952,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -4952,11 +3962,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LineComment n, object arg)
 	{
@@ -4966,11 +3972,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LambdaExpr n, object arg)
 	{
@@ -4980,11 +3982,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(LabeledStmt n, object arg)
 	{
@@ -4994,11 +3992,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(JavadocComment n, object arg)
 	{
@@ -5008,11 +4002,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(IntersectionType n, object arg)
 	{
@@ -5022,11 +4012,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(IntegerLiteralExpr n, object arg)
 	{
@@ -5036,11 +4022,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(InstanceOfExpr n, object arg)
 	{
@@ -5050,11 +4032,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(InitializerDeclaration n, object arg)
 	{
@@ -5064,11 +4042,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ImportDeclaration n, object arg)
 	{
@@ -5078,11 +4052,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(IfStmt n, object arg)
 	{
@@ -5092,11 +4062,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ForEachStmt n, object arg)
 	{
@@ -5106,11 +4072,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ForStmt n, object arg)
 	{
@@ -5120,11 +4082,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(FieldDeclaration n, object arg)
 	{
@@ -5134,11 +4092,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(FieldAccessExpr n, object arg)
 	{
@@ -5148,11 +4102,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ExpressionStmt n, object arg)
 	{
@@ -5162,11 +4112,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -5176,11 +4122,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(EnumDeclaration n, object arg)
 	{
@@ -5190,11 +4132,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(EnumConstantDeclaration n, object arg)
 	{
@@ -5204,11 +4142,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(EnclosedExpr n, object arg)
 	{
@@ -5218,11 +4152,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(EmptyStmt n, object arg)
 	{
@@ -5232,11 +4162,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(DoubleLiteralExpr n, object arg)
 	{
@@ -5246,11 +4172,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(DoStmt n, object arg)
 	{
@@ -5260,11 +4182,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ContinueStmt n, object arg)
 	{
@@ -5274,11 +4192,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ConstructorDeclaration n, object arg)
 	{
@@ -5288,11 +4202,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ConditionalExpr n, object arg)
 	{
@@ -5302,11 +4212,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(CompilationUnit n, object arg)
 	{
@@ -5316,11 +4222,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ClassOrInterfaceType n, object arg)
 	{
@@ -5330,11 +4232,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -5344,11 +4242,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ClassExpr n, object arg)
 	{
@@ -5358,11 +4252,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(CharLiteralExpr n, object arg)
 	{
@@ -5372,11 +4262,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(CatchClause n, object arg)
 	{
@@ -5386,11 +4272,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(CastExpr n, object arg)
 	{
@@ -5400,11 +4282,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(BreakStmt n, object arg)
 	{
@@ -5414,11 +4292,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(BooleanLiteralExpr n, object arg)
 	{
@@ -5428,11 +4302,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(BlockStmt n, object arg)
 	{
@@ -5442,11 +4312,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(BlockComment n, object arg)
 	{
@@ -5456,11 +4322,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(BinaryExpr n, object arg)
 	{
@@ -5470,11 +4332,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(AssignExpr n, object arg)
 	{
@@ -5484,11 +4342,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(AssertStmt n, object arg)
 	{
@@ -5498,11 +4352,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ArrayType n, object arg)
 	{
@@ -5512,11 +4362,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ArrayInitializerExpr n, object arg)
 	{
@@ -5526,11 +4372,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ArrayCreationLevel n, object arg)
 	{
@@ -5540,11 +4382,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ArrayCreationExpr n, object arg)
 	{
@@ -5554,11 +4392,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(ArrayAccessExpr n, object arg)
 	{
@@ -5568,11 +4402,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -5582,11 +4412,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(AnnotationDeclaration n, object arg)
 	{
@@ -5596,11 +4422,7 @@ public class PrettyPrintVisitor :  VoidVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void visit(NodeList n, object arg)
 	{

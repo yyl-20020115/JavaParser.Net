@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.lang;
 using java.lang;
 using java.util;
@@ -129,11 +129,7 @@ public class TokenRange: Iterable, IEnumerable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public TokenRange(JavaToken begin, JavaToken end)
 	{

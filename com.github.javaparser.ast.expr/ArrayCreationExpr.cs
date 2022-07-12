@@ -1,11 +1,11 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -37,13 +37,7 @@ public class ArrayCreationExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ArrayCreationExpr(TokenRange tokenRange, Type elementType, NodeList levels, ArrayInitializerExpr initializer)
 		: base(tokenRange)
@@ -76,11 +70,7 @@ public class ArrayCreationExpr : Expression
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		96, 103, 105, 130, 114, 104, 141, 103, 109, 153,
-		103
-	})]
+	
 	public virtual ArrayCreationExpr setLevels(NodeList levels)
 	{
 		Utils.assertNotNull(levels);
@@ -131,11 +121,7 @@ public class ArrayCreationExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -166,12 +152,7 @@ public class ArrayCreationExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -192,11 +173,7 @@ public class ArrayCreationExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -258,11 +235,7 @@ public class ArrayCreationExpr : Expression
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 77, 99, 130, 104, 105, 103, 162, 112, 111,
-		109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -288,16 +261,8 @@ public class ArrayCreationExpr : Expression
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 115, 99, 130, 105, 109, 130, 104, 105, 109,
-		162, 112, 111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

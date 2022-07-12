@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.printer.lexicalpreservation;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -391,11 +391,7 @@ public abstract class AbstractGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		64, 109, 136, 171, 105, 191, 14, 237, 69, 103,
-		135, 103, 135, 222, 135, 136, 178, 110, 194, 174
-	})]
+		
 	private void addOrReplaceMethod(ClassOrInterfaceDeclaration P_0, CallableDeclaration P_1, Runnable P_2)
 	{
 		List callablesWithSignature = P_0.getCallablesWithSignature(P_1.getSignature());
@@ -429,11 +425,7 @@ public abstract class AbstractGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 67, 102, 112, 101, 144, 136, 99, 144, 205,
-		105
-	})]
+		
 	private void annotate(NodeWithAnnotations P_0, Class P_1, Expression P_2)
 	{
 		NodeList annotations = (NodeList)P_0.getAnnotations().stream().filter(new ___003C_003EAnon1(P_1))
@@ -628,12 +620,7 @@ public abstract class AbstractGenerator
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 172, 103, 135, 118, 102, 127, 6, 110, 110,
-		105, 112, 127, 39, 242, 59, 233, 72, 176, 159,
-		11, 112, 111, 101, 239, 61
-	})]
+		
 	protected internal virtual List getParsedCompilationUnitsFromSourceRoot(SourceRoot sourceRoot)
 	{
 		sourceRoot.getCompilationUnits();

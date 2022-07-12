@@ -1,13 +1,13 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
-using IKVM.Attributes;
+
+
+
+
 using java.lang;
 
 namespace com.github.javaparser.resolution;
 
-[Serializable]
+
 public class MethodAmbiguityException : RuntimeException
 {
 	

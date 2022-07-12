@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -4208,11 +4208,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private NodeList modifyList(NodeList list, object arg)
 	{
@@ -4220,11 +4216,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private NodeList modifyList(Optional list, object arg)
 	{
@@ -4232,16 +4224,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 184, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(PatternExpr n, object arg)
 	{
 		SimpleName simpleName = (SimpleName)n.getName().accept(this, arg);
@@ -4258,11 +4242,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -4272,11 +4252,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(YieldStmt n, object arg)
 	{
@@ -4292,16 +4268,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 153, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(SwitchExpr n, object arg)
 	{
 		NodeList entries = modifyList(n.getEntries(), arg);
@@ -4318,11 +4286,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(Modifier n, object arg)
 	{
@@ -4332,11 +4296,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(VarType n, object arg)
 	{
@@ -4348,16 +4308,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 122, 110, 115, 115, 127, 4, 102, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ReceiverParameter n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -4376,11 +4328,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(UnparsableStmt n, object arg)
 	{
@@ -4390,16 +4338,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 102, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(ModuleOpensDirective n, object arg)
 	{
 		NodeList moduleNames = modifyList(n.getModuleNames(), arg);
@@ -4416,11 +4356,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ModuleUsesDirective n, object arg)
 	{
@@ -4436,16 +4372,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 78, 115, 110, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(ModuleProvidesDirective n, object arg)
 	{
 		Name name = (Name)n.getName().accept(this, arg);
@@ -4462,16 +4390,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 65, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(ModuleExportsDirective n, object arg)
 	{
 		NodeList moduleNames = modifyList(n.getModuleNames(), arg);
@@ -4488,16 +4408,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 52, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(ModuleRequiresDirective n, object arg)
 	{
 		NodeList modifiers = modifyList(n.getModifiers(), arg);
@@ -4514,16 +4426,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 38, 110, 110, 115, 127, 4, 99, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ModuleDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -4542,11 +4446,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Node visit(ImportDeclaration n, object arg)
 	{
@@ -4562,11 +4462,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(SimpleName n, object arg)
 	{
@@ -4576,11 +4472,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(Name n, object arg)
 	{
@@ -4592,16 +4484,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 241, 104, 130, 102, 103, 123, 111, 111, 98,
-		124, 105, 143, 148, 98
-	})]
+		
+	
 	public virtual Visitable visit(NodeList n, object arg)
 	{
 		if (n.isEmpty())
@@ -4634,11 +4518,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(TypeExpr n, object arg)
 	{
@@ -4654,16 +4534,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 217, 115, 110, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(MethodReferenceExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getScope().accept(this, arg);
@@ -4680,16 +4552,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 204, 115, 110, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(LambdaExpr n, object arg)
 	{
 		Statement statement = (Statement)n.getBody().accept(this, arg);
@@ -4706,16 +4570,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 93, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(CatchClause n, object arg)
 	{
 		BlockStmt blockStmt = (BlockStmt)n.getBody().accept(this, arg);
@@ -4732,16 +4588,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 65, 110, 127, 4, 110, 115, 127, 5, 99,
-		98, 104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(TryStmt n, object arg)
 	{
 		NodeList catchClauses = modifyList(n.getCatchClauses(), arg);
@@ -4762,16 +4610,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 32, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(SynchronizedStmt n, object arg)
 	{
 		BlockStmt blockStmt = (BlockStmt)n.getBody().accept(this, arg);
@@ -4788,11 +4628,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ThrowStmt n, object arg)
 	{
@@ -4808,16 +4644,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 163, 115, 127, 4, 110, 110, 127, 5, 99,
-		98, 104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(ForStmt n, object arg)
 	{
 		Statement statement = (Statement)n.getBody().accept(this, arg);
@@ -4838,16 +4666,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 148, 115, 115, 115, 127, 4, 105, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ForEachStmt n, object arg)
 	{
 		Statement statement = (Statement)n.getBody().accept(this, arg);
@@ -4866,16 +4686,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 18, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(DoStmt n, object arg)
 	{
 		Statement statement = (Statement)n.getBody().accept(this, arg);
@@ -4892,11 +4704,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ContinueStmt n, object arg)
 	{
@@ -4908,16 +4716,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 178, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(WhileStmt n, object arg)
 	{
 		Statement statement = (Statement)n.getBody().accept(this, arg);
@@ -4934,16 +4734,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 180, 115, 127, 4, 115, 127, 4, 102, 98,
-		104, 104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(IfStmt n, object arg)
 	{
 		Expression expression = (Expression)n.getCondition().accept(this, arg);
@@ -4962,11 +4754,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ReturnStmt n, object arg)
 	{
@@ -4978,11 +4766,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(BreakStmt n, object arg)
 	{
@@ -4994,11 +4778,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(SwitchEntry n, object arg)
 	{
@@ -5012,16 +4792,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 19, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(SwitchStmt n, object arg)
 	{
 		NodeList entries = modifyList(n.getEntries(), arg);
@@ -5038,11 +4810,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ExpressionStmt n, object arg)
 	{
@@ -5058,11 +4826,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(EmptyStmt n, object arg)
 	{
@@ -5072,16 +4836,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 237, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(LabeledStmt n, object arg)
 	{
 		SimpleName simpleName = (SimpleName)n.getLabel().accept(this, arg);
@@ -5098,11 +4854,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(BlockStmt n, object arg)
 	{
@@ -5114,16 +4866,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		78, 115, 127, 4, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(AssertStmt n, object arg)
 	{
 		Expression expression = (Expression)n.getCheck().accept(this, arg);
@@ -5140,11 +4884,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -5160,11 +4900,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -5180,16 +4916,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 94, 110, 127, 4, 110, 127, 4, 104, 104,
-		104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
 		NodeList arguments = modifyList(n.getArguments(), arg);
@@ -5204,16 +4932,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 12, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(MemberValuePair n, object arg)
 	{
 		SimpleName simpleName = (SimpleName)n.getName().accept(this, arg);
@@ -5230,16 +4950,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 80, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(NormalAnnotationExpr n, object arg)
 	{
 		NodeList pairs = modifyList(n.getPairs(), arg);
@@ -5256,16 +4968,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 235, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(SingleMemberAnnotationExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getMemberValue().accept(this, arg);
@@ -5282,11 +4986,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -5302,16 +5002,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 139, 110, 110, 110, 127, 4, 104, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(VariableDeclarationExpr n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -5330,11 +5022,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(UnaryExpr n, object arg)
 	{
@@ -5350,22 +5038,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162,
-		byte.MaxValue,
-		127,
-		4,
-		127,
-		4,
-		104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(SuperExpr n, object arg)
 	{
 		Name typeName = (Name)n.getTypeName().map(new ___003C_003EAnon83(this, arg)).orElse(null);
@@ -5376,11 +5050,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ThisExpr n, object arg)
 	{
@@ -5392,16 +5062,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 100, 110, 110, 127, 4, 115, 111, 127, 5,
-		99, 98, 104, 104, 104, 104, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(ObjectCreationExpr n, object arg)
 	{
 		NodeList anonymousClassBody = modifyList(n.getAnonymousClassBody(), arg);
@@ -5424,11 +5086,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(NameExpr n, object arg)
 	{
@@ -5444,16 +5102,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 25, 110, 115, 127, 4, 110, 127, 5, 99,
-		98, 104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(MethodCallExpr n, object arg)
 	{
 		NodeList arguments = modifyList(n.getArguments(), arg);
@@ -5474,11 +5124,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(NullLiteralExpr n, object arg)
 	{
@@ -5488,11 +5134,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(BooleanLiteralExpr n, object arg)
 	{
@@ -5502,11 +5144,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(DoubleLiteralExpr n, object arg)
 	{
@@ -5516,11 +5154,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(CharLiteralExpr n, object arg)
 	{
@@ -5530,11 +5164,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(LongLiteralExpr n, object arg)
 	{
@@ -5544,11 +5174,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(IntegerLiteralExpr n, object arg)
 	{
@@ -5558,11 +5184,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(StringLiteralExpr n, object arg)
 	{
@@ -5572,16 +5194,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 208, 115, 127, 4, 115, 127, 4, 102, 98,
-		104, 104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(InstanceOfExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getExpression().accept(this, arg);
@@ -5600,16 +5214,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 118, 115, 115, 110, 127, 4, 102, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(FieldAccessExpr n, object arg)
 	{
 		SimpleName simpleName = (SimpleName)n.getName().accept(this, arg);
@@ -5628,11 +5234,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(EnclosedExpr n, object arg)
 	{
@@ -5648,16 +5250,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 204, 115, 115, 115, 127, 4, 105, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ConditionalExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getCondition().accept(this, arg);
@@ -5676,11 +5270,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ClassExpr n, object arg)
 	{
@@ -5696,16 +5286,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 80, 115, 115, 127, 4, 102, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(CastExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getExpression().accept(this, arg);
@@ -5722,16 +5304,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		104, 115, 115, 127, 4, 99, 98, 99, 98, 104,
-		104, 104
-	})]
+		
+	
 	public virtual Visitable visit(BinaryExpr n, object arg)
 	{
 		Expression expression = (Expression)n.getLeft().accept(this, arg);
@@ -5752,11 +5326,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(AssignExpr n, object arg)
 	{
@@ -5774,11 +5344,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ArrayInitializerExpr n, object arg)
 	{
@@ -5790,16 +5356,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		54, 115, 127, 4, 110, 127, 4, 107, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(ArrayCreationExpr n, object arg)
 	{
 		Type type = (Type)n.getElementType().accept(this, arg);
@@ -5818,11 +5376,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ArrayAccessExpr n, object arg)
 	{
@@ -5840,11 +5394,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(UnknownType n, object arg)
 	{
@@ -5856,16 +5406,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 191, 110, 127, 4, 127, 4, 127, 4, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(WildcardType n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -5880,11 +5422,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(VoidType n, object arg)
 	{
@@ -5896,16 +5434,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 213, 110, 110, 127, 4, 104, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(UnionType n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -5922,16 +5452,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 200, 110, 110, 127, 4, 104, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(IntersectionType n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -5948,11 +5470,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(ArrayCreationLevel n, object arg)
 	{
@@ -5966,16 +5484,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 176, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(ArrayType n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -5992,11 +5502,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(PrimitiveType n, object arg)
 	{
@@ -6008,16 +5514,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 172, 110, 115, 127, 4, 110, 127, 5, 99,
-		98, 104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(ClassOrInterfaceType n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6038,11 +5536,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(JavadocComment n, object arg)
 	{
@@ -6052,16 +5546,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 195, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(InitializerDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6078,16 +5564,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 132, 110, 110, 115, 115, 111, 127, 5, 102,
-		98, 104, 104, 104, 104, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(Parameter n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6110,17 +5588,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 42, 110, 110, 127, 4, 115, 116, 111, 127,
-		5, 111, 111, 127, 5, 103, 98, 104, 104, 104,
-		104, 105, 105, 105, 105, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(MethodDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6151,17 +5620,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 219, 110, 110, 115, 115, 111, 127, 5, 111,
-		111, 127, 5, 102, 98, 104, 104, 104, 104, 105,
-		105, 105, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(ConstructorDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6190,16 +5650,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 154, 127, 4, 115, 115, 127, 4, 102, 98,
-		104, 104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(VariableDeclarator n, object arg)
 	{
 		Expression initializer = (Expression)n.getInitializer().map(new ___003C_003EAnon99(this, arg)).orElse(null);
@@ -6218,16 +5670,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 133, 110, 110, 110, 127, 4, 104, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(FieldDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6246,16 +5690,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		22, 110, 110, 127, 4, 115, 116, 127, 5, 103,
-		98, 104, 104, 104, 104, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(AnnotationMemberDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6278,16 +5714,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		5, 110, 110, 110, 115, 127, 5, 99, 98, 104,
-		104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(AnnotationDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6308,16 +5736,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 56, 110, 110, 110, 115, 127, 5, 99, 98,
-		104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(EnumConstantDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6338,16 +5758,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 73, 110, 110, 110, 110, 111, 116, 127, 5,
-		100, 98, 104, 104, 104, 104, 105, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(EnumDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6372,16 +5784,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 244, 110, 110, 115, 115, 111, 111, 127, 5,
-		102, 98, 104, 104, 104, 104, 105, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(CompactConstructorDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6406,17 +5810,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 147, 110, 110, 110, 110, 127, 5, 111, 111,
-		116, 127, 5, 100, 98, 104, 104, 104, 104, 105,
-		105, 105, 105, 105
-	})]
+		
+	
 	public virtual Visitable visit(RecordDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6445,17 +5840,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 124, 110, 110, 110, 110, 111, 111, 116, 127,
-		5, 100, 98, 104, 104, 104, 104, 105, 105, 105,
-		105
-	})]
+		
+	
 	public virtual Visitable visit(ClassOrInterfaceDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6482,11 +5868,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(BlockComment n, object arg)
 	{
@@ -6496,11 +5878,7 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual Visitable visit(LineComment n, object arg)
 	{
@@ -6510,16 +5888,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 104, 110, 115, 110, 127, 4, 99, 98, 104,
-		104, 104, 104
-	})]
+		
+	
 	public virtual Visitable visit(TypeParameter n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6538,16 +5908,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 119, 110, 115, 127, 4, 99, 98, 104, 104,
-		104
-	})]
+		
+	
 	public virtual Visitable visit(PackageDeclaration n, object arg)
 	{
 		NodeList annotations = modifyList(n.getAnnotations(), arg);
@@ -6564,16 +5926,8 @@ public class ModifierVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 189, 110, 127, 4, 127, 4, 110, 127, 5,
-		104, 104, 104, 104, 105
-	})]
+		
+	
 	public virtual Visitable visit(CompilationUnit n, object arg)
 	{
 		NodeList imports = modifyList(n.getImports(), arg);
@@ -6591,11 +5945,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00240(object arg, Comment s)
 	{
@@ -6604,11 +5954,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_00241(object arg, Expression s)
 	{
@@ -6617,11 +5963,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00242(object arg, Comment s)
 	{
@@ -6630,11 +5972,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00243(object arg, Comment s)
 	{
@@ -6643,11 +5981,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ArrayInitializerExpr lambda_0024visit_00244(object arg, ArrayInitializerExpr s)
 	{
@@ -6656,11 +5990,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00245(object arg, Comment s)
 	{
@@ -6669,11 +5999,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00246(object arg, Comment s)
 	{
@@ -6682,11 +6008,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_00247(object arg, Expression s)
 	{
@@ -6695,11 +6017,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00248(object arg, Comment s)
 	{
@@ -6708,11 +6026,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_00249(object arg, Comment s)
 	{
@@ -6721,11 +6035,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002410(object arg, Comment s)
 	{
@@ -6734,11 +6044,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002411(object arg, Comment s)
 	{
@@ -6747,11 +6053,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002412(object arg, Comment s)
 	{
@@ -6760,11 +6062,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private SimpleName lambda_0024visit_002413(object arg, SimpleName s)
 	{
@@ -6773,11 +6071,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002414(object arg, Comment s)
 	{
@@ -6786,11 +6080,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002415(object arg, Comment s)
 	{
@@ -6799,11 +6089,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002416(object arg, Comment s)
 	{
@@ -6812,11 +6098,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002417(object arg, Comment s)
 	{
@@ -6825,11 +6107,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002418(object arg, Comment s)
 	{
@@ -6838,11 +6116,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002419(object arg, Comment s)
 	{
@@ -6851,11 +6125,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ReceiverParameter lambda_0024visit_002420(object arg, ReceiverParameter s)
 	{
@@ -6864,11 +6134,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002421(object arg, Comment s)
 	{
@@ -6877,11 +6143,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ClassOrInterfaceType lambda_0024visit_002422(object arg, ClassOrInterfaceType s)
 	{
@@ -6890,11 +6152,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002423(object arg, Comment s)
 	{
@@ -6903,11 +6161,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ModuleDeclaration lambda_0024visit_002424(object arg, ModuleDeclaration s)
 	{
@@ -6916,11 +6170,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private PackageDeclaration lambda_0024visit_002425(object arg, PackageDeclaration s)
 	{
@@ -6929,11 +6179,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002426(object arg, Comment s)
 	{
@@ -6942,11 +6188,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002427(object arg, Comment s)
 	{
@@ -6955,11 +6197,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ReceiverParameter lambda_0024visit_002428(object arg, ReceiverParameter s)
 	{
@@ -6968,11 +6206,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002429(object arg, Comment s)
 	{
@@ -6981,11 +6215,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002430(object arg, Comment s)
 	{
@@ -6994,11 +6224,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private SimpleName lambda_0024visit_002431(object arg, SimpleName s)
 	{
@@ -7007,11 +6233,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002432(object arg, Comment s)
 	{
@@ -7020,11 +6242,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002433(object arg, Comment s)
 	{
@@ -7033,11 +6251,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002434(object arg, Comment s)
 	{
@@ -7046,11 +6260,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002435(object arg, Comment s)
 	{
@@ -7059,11 +6269,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002436(object arg, Comment s)
 	{
@@ -7072,11 +6278,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002437(object arg, Comment s)
 	{
@@ -7085,11 +6287,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002438(object arg, Comment s)
 	{
@@ -7098,11 +6296,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002439(object arg, Expression s)
 	{
@@ -7111,11 +6305,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002440(object arg, Comment s)
 	{
@@ -7124,11 +6314,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002441(object arg, Comment s)
 	{
@@ -7137,11 +6323,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002442(object arg, Comment s)
 	{
@@ -7150,11 +6332,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002443(object arg, Comment s)
 	{
@@ -7163,11 +6341,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002444(object arg, Comment s)
 	{
@@ -7176,11 +6350,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002445(object arg, Expression s)
 	{
@@ -7189,11 +6359,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002446(object arg, Comment s)
 	{
@@ -7202,11 +6368,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Statement lambda_0024visit_002447(object arg, Statement s)
 	{
@@ -7215,11 +6377,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002448(object arg, Comment s)
 	{
@@ -7228,11 +6386,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002449(object arg, Comment s)
 	{
@@ -7241,11 +6395,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private PatternExpr lambda_0024visit_002450(object arg, PatternExpr s)
 	{
@@ -7254,11 +6404,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002451(object arg, Comment s)
 	{
@@ -7267,11 +6413,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002452(object arg, Comment s)
 	{
@@ -7280,11 +6422,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002453(object arg, Comment s)
 	{
@@ -7293,11 +6431,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002454(object arg, Comment s)
 	{
@@ -7306,11 +6440,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002455(object arg, Comment s)
 	{
@@ -7319,11 +6449,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002456(object arg, Comment s)
 	{
@@ -7332,11 +6458,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002457(object arg, Comment s)
 	{
@@ -7345,11 +6467,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002458(object arg, Expression s)
 	{
@@ -7358,11 +6476,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002459(object arg, Comment s)
 	{
@@ -7371,11 +6485,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private BlockStmt lambda_0024visit_002460(object arg, BlockStmt s)
 	{
@@ -7384,11 +6494,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ReceiverParameter lambda_0024visit_002461(object arg, ReceiverParameter s)
 	{
@@ -7397,11 +6503,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002462(object arg, Comment s)
 	{
@@ -7410,11 +6512,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002463(object arg, Comment s)
 	{
@@ -7423,11 +6521,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002464(object arg, Comment s)
 	{
@@ -7436,11 +6530,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002465(object arg, Comment s)
 	{
@@ -7449,11 +6539,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002466(object arg, Expression s)
 	{
@@ -7462,11 +6548,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002467(object arg, Comment s)
 	{
@@ -7475,11 +6557,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002468(object arg, Comment s)
 	{
@@ -7488,11 +6566,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002469(object arg, Comment s)
 	{
@@ -7501,11 +6575,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Name lambda_0024visit_002470(object arg, Name s)
 	{
@@ -7514,11 +6584,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002471(object arg, Comment s)
 	{
@@ -7527,11 +6593,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002472(object arg, Comment s)
 	{
@@ -7540,11 +6602,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002473(object arg, Comment s)
 	{
@@ -7553,11 +6611,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002474(object arg, Comment s)
 	{
@@ -7566,11 +6620,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002475(object arg, Expression s)
 	{
@@ -7579,11 +6629,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002476(object arg, Comment s)
 	{
@@ -7592,11 +6638,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002477(object arg, Comment s)
 	{
@@ -7605,11 +6647,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002478(object arg, Comment s)
 	{
@@ -7618,11 +6656,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002479(object arg, Expression s)
 	{
@@ -7631,11 +6665,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002480(object arg, Comment s)
 	{
@@ -7644,11 +6674,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002481(object arg, Comment s)
 	{
@@ -7657,11 +6683,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002482(object arg, Comment s)
 	{
@@ -7670,11 +6692,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Name lambda_0024visit_002483(object arg, Name s)
 	{
@@ -7683,11 +6701,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002484(object arg, Comment s)
 	{
@@ -7696,11 +6710,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002485(object arg, Comment s)
 	{
@@ -7709,11 +6719,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002486(object arg, Comment s)
 	{
@@ -7722,11 +6728,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002487(object arg, Comment s)
 	{
@@ -7735,11 +6737,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Name lambda_0024visit_002488(object arg, Name s)
 	{
@@ -7748,11 +6746,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002489(object arg, Comment s)
 	{
@@ -7761,11 +6755,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002490(object arg, Comment s)
 	{
@@ -7774,11 +6764,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private BlockStmt lambda_0024visit_002491(object arg, BlockStmt s)
 	{
@@ -7787,11 +6773,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002492(object arg, Comment s)
 	{
@@ -7800,11 +6782,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002493(object arg, Comment s)
 	{
@@ -7813,11 +6791,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002494(object arg, Comment s)
 	{
@@ -7826,11 +6800,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002495(object arg, Comment s)
 	{
@@ -7839,11 +6809,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002496(object arg, Comment s)
 	{
@@ -7852,11 +6818,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002497(object arg, Comment s)
 	{
@@ -7865,11 +6827,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_002498(object arg, Comment s)
 	{
@@ -7878,11 +6836,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Expression lambda_0024visit_002499(object arg, Expression s)
 	{
@@ -7891,11 +6845,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024100(object arg, Comment s)
 	{
@@ -7904,11 +6854,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024101(object arg, Comment s)
 	{
@@ -7917,11 +6863,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024102(object arg, Comment s)
 	{
@@ -7930,11 +6872,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ReferenceType lambda_0024visit_0024103(object arg, ReferenceType s)
 	{
@@ -7943,11 +6881,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private ReferenceType lambda_0024visit_0024104(object arg, ReferenceType s)
 	{
@@ -7956,11 +6890,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024105(object arg, Comment s)
 	{
@@ -7969,11 +6899,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024106(object arg, Comment s)
 	{
@@ -7982,11 +6908,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024107(object arg, Comment s)
 	{
@@ -7995,11 +6917,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024108(object arg, Comment s)
 	{
@@ -8008,11 +6926,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024109(object arg, Comment s)
 	{
@@ -8021,11 +6935,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024110(object arg, Comment s)
 	{
@@ -8034,11 +6944,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024111(object arg, Comment s)
 	{
@@ -8047,11 +6953,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private NodeList lambda_0024modifyList_0024112(object arg, NodeList ns)
 	{
@@ -8062,11 +6964,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024113(object arg, Comment s)
 	{
@@ -8075,11 +6973,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024114(object arg, Comment s)
 	{
@@ -8088,11 +6982,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024115(object arg, Comment s)
 	{
@@ -8101,11 +6991,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024116(object arg, Comment s)
 	{
@@ -8114,11 +7000,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024117(object arg, Comment s)
 	{
@@ -8127,11 +7009,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024118(object arg, Comment s)
 	{
@@ -8140,11 +7018,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024119(object arg, Comment s)
 	{
@@ -8153,11 +7027,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024120(object arg, Comment s)
 	{
@@ -8166,11 +7036,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024121(object arg, Comment s)
 	{
@@ -8179,11 +7045,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024122(object arg, Comment s)
 	{
@@ -8192,11 +7054,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024123(object arg, Comment s)
 	{
@@ -8205,11 +7063,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024124(object arg, Comment s)
 	{
@@ -8218,11 +7072,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024125(object arg, Comment s)
 	{
@@ -8231,11 +7081,7 @@ public class ModifierVisitor: GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Comment lambda_0024visit_0024126(object arg, Comment s)
 	{
@@ -8251,11 +7097,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PatternExpr n, object arg)
 	{
@@ -8267,11 +7109,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TextBlockLiteralExpr n, object arg)
 	{
@@ -8283,11 +7121,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(YieldStmt n, object arg)
 	{
@@ -8299,11 +7133,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchExpr n, object arg)
 	{
@@ -8315,11 +7145,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Modifier n, object arg)
 	{
@@ -8331,11 +7157,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VarType n, object arg)
 	{
@@ -8347,11 +7169,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReceiverParameter n, object arg)
 	{
@@ -8363,11 +7181,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnparsableStmt n, object arg)
 	{
@@ -8379,11 +7193,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleOpensDirective n, object arg)
 	{
@@ -8395,11 +7205,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleUsesDirective n, object arg)
 	{
@@ -8411,11 +7217,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleProvidesDirective n, object arg)
 	{
@@ -8427,11 +7229,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleExportsDirective n, object arg)
 	{
@@ -8443,11 +7241,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleRequiresDirective n, object arg)
 	{
@@ -8459,11 +7253,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleDeclaration n, object arg)
 	{
@@ -8475,11 +7265,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ImportDeclaration n, object arg)
 	{
@@ -8491,11 +7277,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SimpleName n, object arg)
 	{
@@ -8507,11 +7289,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Name n, object arg)
 	{
@@ -8523,11 +7301,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NodeList n, object arg)
 	{
@@ -8539,11 +7313,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeExpr n, object arg)
 	{
@@ -8555,11 +7325,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodReferenceExpr n, object arg)
 	{
@@ -8571,11 +7337,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LambdaExpr n, object arg)
 	{
@@ -8587,11 +7349,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CatchClause n, object arg)
 	{
@@ -8603,11 +7361,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TryStmt n, object arg)
 	{
@@ -8619,11 +7373,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SynchronizedStmt n, object arg)
 	{
@@ -8635,11 +7385,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThrowStmt n, object arg)
 	{
@@ -8651,11 +7397,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForStmt n, object arg)
 	{
@@ -8667,11 +7409,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForEachStmt n, object arg)
 	{
@@ -8683,11 +7421,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoStmt n, object arg)
 	{
@@ -8699,11 +7433,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ContinueStmt n, object arg)
 	{
@@ -8715,11 +7445,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WhileStmt n, object arg)
 	{
@@ -8731,11 +7457,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IfStmt n, object arg)
 	{
@@ -8747,11 +7469,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReturnStmt n, object arg)
 	{
@@ -8763,11 +7481,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BreakStmt n, object arg)
 	{
@@ -8779,11 +7493,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchEntry n, object arg)
 	{
@@ -8795,11 +7505,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchStmt n, object arg)
 	{
@@ -8811,11 +7517,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExpressionStmt n, object arg)
 	{
@@ -8827,11 +7529,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EmptyStmt n, object arg)
 	{
@@ -8843,11 +7541,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LabeledStmt n, object arg)
 	{
@@ -8859,11 +7553,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockStmt n, object arg)
 	{
@@ -8875,11 +7565,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssertStmt n, object arg)
 	{
@@ -8891,11 +7577,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -8907,11 +7589,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -8923,11 +7601,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -8939,11 +7613,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MemberValuePair n, object arg)
 	{
@@ -8955,11 +7625,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NormalAnnotationExpr n, object arg)
 	{
@@ -8971,11 +7637,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -8987,11 +7649,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MarkerAnnotationExpr n, object arg)
 	{
@@ -9003,11 +7661,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarationExpr n, object arg)
 	{
@@ -9019,11 +7673,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnaryExpr n, object arg)
 	{
@@ -9035,11 +7685,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SuperExpr n, object arg)
 	{
@@ -9051,11 +7697,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThisExpr n, object arg)
 	{
@@ -9067,11 +7709,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ObjectCreationExpr n, object arg)
 	{
@@ -9083,11 +7721,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NameExpr n, object arg)
 	{
@@ -9099,11 +7733,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodCallExpr n, object arg)
 	{
@@ -9115,11 +7745,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NullLiteralExpr n, object arg)
 	{
@@ -9131,11 +7757,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BooleanLiteralExpr n, object arg)
 	{
@@ -9147,11 +7769,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoubleLiteralExpr n, object arg)
 	{
@@ -9163,11 +7781,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CharLiteralExpr n, object arg)
 	{
@@ -9179,11 +7793,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LongLiteralExpr n, object arg)
 	{
@@ -9195,11 +7805,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntegerLiteralExpr n, object arg)
 	{
@@ -9211,11 +7817,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(StringLiteralExpr n, object arg)
 	{
@@ -9227,11 +7829,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InstanceOfExpr n, object arg)
 	{
@@ -9243,11 +7841,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldAccessExpr n, object arg)
 	{
@@ -9259,11 +7853,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnclosedExpr n, object arg)
 	{
@@ -9275,11 +7865,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConditionalExpr n, object arg)
 	{
@@ -9291,11 +7877,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassExpr n, object arg)
 	{
@@ -9307,11 +7889,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CastExpr n, object arg)
 	{
@@ -9323,11 +7901,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BinaryExpr n, object arg)
 	{
@@ -9339,11 +7913,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssignExpr n, object arg)
 	{
@@ -9355,11 +7925,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayInitializerExpr n, object arg)
 	{
@@ -9371,11 +7937,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationExpr n, object arg)
 	{
@@ -9387,11 +7949,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayAccessExpr n, object arg)
 	{
@@ -9403,11 +7961,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnknownType n, object arg)
 	{
@@ -9419,11 +7973,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WildcardType n, object arg)
 	{
@@ -9435,11 +7985,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VoidType n, object arg)
 	{
@@ -9451,11 +7997,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnionType n, object arg)
 	{
@@ -9467,11 +8009,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntersectionType n, object arg)
 	{
@@ -9483,11 +8021,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationLevel n, object arg)
 	{
@@ -9499,11 +8033,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayType n, object arg)
 	{
@@ -9515,11 +8045,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PrimitiveType n, object arg)
 	{
@@ -9531,11 +8057,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceType n, object arg)
 	{
@@ -9547,11 +8069,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(JavadocComment n, object arg)
 	{
@@ -9563,11 +8081,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InitializerDeclaration n, object arg)
 	{
@@ -9579,11 +8093,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Parameter n, object arg)
 	{
@@ -9595,11 +8105,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodDeclaration n, object arg)
 	{
@@ -9611,11 +8117,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConstructorDeclaration n, object arg)
 	{
@@ -9627,11 +8129,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarator n, object arg)
 	{
@@ -9643,11 +8141,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldDeclaration n, object arg)
 	{
@@ -9659,11 +8153,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -9675,11 +8165,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationDeclaration n, object arg)
 	{
@@ -9691,11 +8177,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumConstantDeclaration n, object arg)
 	{
@@ -9707,11 +8189,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumDeclaration n, object arg)
 	{
@@ -9723,11 +8201,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompactConstructorDeclaration n, object arg)
 	{
@@ -9739,11 +8213,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(RecordDeclaration n, object arg)
 	{
@@ -9755,11 +8225,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -9771,11 +8237,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockComment n, object arg)
 	{
@@ -9787,11 +8249,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LineComment n, object arg)
 	{
@@ -9803,11 +8261,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeParameter n, object arg)
 	{
@@ -9819,11 +8273,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PackageDeclaration n, object arg)
 	{
@@ -9835,11 +8285,7 @@ public class ModifierVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompilationUnit n, object arg)
 	{

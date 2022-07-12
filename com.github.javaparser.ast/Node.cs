@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -10,7 +10,7 @@ using com.github.javaparser.printer;
 using com.github.javaparser.printer.configuration;
 using com.github.javaparser.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -85,16 +85,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		{
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			162,
-			188,
-			byte.MaxValue,
-			160,
-			126,
-			159,
-			82
-		})]
+		
 		static _5()
 		{
 			_0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024Node_0024TreeTraversal = new int[(nint)TreeTraversal.values().LongLength];
@@ -356,12 +347,12 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class ObserverRegistrationMode : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -426,11 +417,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private ObserverRegistrationMode(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -514,12 +501,12 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Parsedness : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -563,11 +550,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Parsedness(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -653,11 +636,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 
 		
-		[LineNumberTable(new byte[]
-		{
-			163, 223, 113, 118, 106, 99, 109, 103, 137, 108,
-			108, 119, 104, 137
-		})]
+		
 		public virtual Node next()
 		{
 			List list = (List)nodesStack.peek();
@@ -779,12 +758,12 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class TreeTraversal : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -877,11 +856,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private TreeTraversal(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -1642,11 +1617,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual Optional findFirst(Class nodeType, Predicate predicate)
 	{
@@ -1667,13 +1638,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		162,
-		byte.MaxValue,
-		102,
-		124
-	})]
+	
 	public unsafe virtual List findAll(Class nodeType)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1782,12 +1747,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void notifyPropertyChange(ObservableProperty property, object oldValue, object newValue)
 	{
@@ -1861,11 +1821,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 48, 105, 130, 151, 104, 108, 107, 106, 8,
-		230, 69, 134, 135, 104, 146
-	})]
+	
 	public virtual Node setParentNode(Node newParentNode)
 	{
 		if (newParentNode == parentNode)
@@ -1965,11 +1921,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual bool replace(Node node, Node replacementNode)
 	{
@@ -2007,11 +1959,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 33, 103, 118, 127, 6, 104, 109, 99, 135,
-		98
-	})]
+	
 	public virtual void registerForSubtree(AstObserver observer)
 	{
 		register(observer);
@@ -2149,11 +2097,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void walk(TreeTraversal traversal, Consumer consumer)
 	{
@@ -2166,11 +2110,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void walk(Class nodeType, Consumer consumer)
 	{
@@ -2178,11 +2118,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual Optional findFirst(TreeTraversal traversal, Function consumer)
 	{
@@ -2217,11 +2153,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool inPhantomNode(Node node, int levels)
 	{
@@ -2229,11 +2161,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void setData(DataKey key, object @object)
 	{
@@ -2278,11 +2206,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static Printer lambda_0024getPrinter_00242(PrinterConfiguration configuration, CompilationUnit c)
 	{
@@ -2293,11 +2217,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024setParentNode_00243(Node newParentNode, AstObserver o)
 	{
@@ -2306,11 +2226,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024tryAddImportToParentCompilationUnit_00244(Class clazz, CompilationUnit p)
 	{
@@ -2319,13 +2235,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024notifyPropertyChange_00245(ObservableProperty property, object oldValue, object newValue, AstObserver o)
 	{
@@ -2334,11 +2244,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024registerForSubtree_00246(AstObserver observer, Node c)
 	{
@@ -2382,12 +2288,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024walk_002410(Class nodeType, Consumer consumer, Node node)
 	{
@@ -2399,12 +2300,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024findAll_002411(Class nodeType, List found, Node node)
 	{
@@ -2416,12 +2312,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024findAll_002412(Predicate predicate, List found, Node n)
 	{
@@ -2433,11 +2324,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static Optional lambda_0024findFirst_002413(Class nodeType, Node node)
 	{
@@ -2454,12 +2341,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static Optional lambda_0024findFirst_002414(Class nodeType, Predicate predicate, Node node)
 	{
@@ -2479,11 +2361,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	private static bool lambda_0024isAncestorOf_002415(Node descendant, Node n)
 	{
 		return n == descendant;
@@ -2491,11 +2369,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static int lambda_0024static_00240(NodeWithRange a, NodeWithRange b)
 	{
@@ -2518,11 +2392,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 68, 232, 46, 172, 172, 231, 70, 172, 203,
-		104
-	})]
+	
 	protected internal Node(TokenRange tokenRange)
 	{
 		childNodes = new ArrayList(0);
@@ -2724,16 +2594,8 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 11, 99, 144, 159, 2, 103, 130, 103, 130,
-		108, 130, 159, 6
-	})]
+	
+	
 	public virtual void register(AstObserver observer, ObserverRegistrationMode mode)
 	{
 		if (mode == null)
@@ -2784,16 +2646,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162,
-		160,
-		byte.MaxValue,
-		0,
-		70,
-		234,
-		58
-	})]
+	
 	protected internal virtual SymbolResolver getSymbolResolver()
 	{
 		return (SymbolResolver)findCompilationUnit().map(new ___003C_003EAnon8()).orElseThrow(new ___003C_003EAnon9());
@@ -2827,11 +2680,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual List findAll(Class nodeType, TreeTraversal traversal)
 	{
@@ -2841,11 +2690,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual List findAll(Class nodeType, Predicate predicate)
 	{

@@ -1,7 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.io;
 using java.lang;
 using java.util;
@@ -29,11 +28,7 @@ public class LineEndingProcessingProvider :  Provider, Closeable, AutoCloseable
 		private Map eolCounts;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public LineEndingProcessingProvider(int bufferSize, Provider input)
 	{
@@ -109,43 +104,8 @@ public class LineEndingProcessingProvider :  Provider, Closeable, AutoCloseable
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		63,
-		98,
-		100,
-		98,
-		103,
-		103,
-		100,
-		135,
-		226,
-		69,
-		105,
-		137,
-		108,
-		174,
-		116,
-		223,
-		13,
-		105,
-		104,
-		119,
-		byte.MaxValue,
-		19,
-		69,
-		99,
-		130,
-		194,
-		137,
-		101
-	})]
+	
+	
 	public virtual int read(char[] buffer, int offset, int len)
 	{
 		int num = offset;
@@ -187,8 +147,13 @@ public class LineEndingProcessingProvider :  Provider, Closeable, AutoCloseable
 		return num - offset;
 	}
 
-	void IDisposable.AutoCloseable_003A_003Aclose()
+	void IDisposable.Dispose()
 	{
 		close();
 	}
+
+    public void Dispose()
+    {
+        throw new NotImplementedException();
+    }
 }

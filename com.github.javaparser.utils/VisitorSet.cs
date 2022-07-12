@@ -1,9 +1,9 @@
 using System.Collections;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.visitor;
-using IKVM.Attributes;
+
 using ikvm.lang;
 using java.lang;
 using java.util;
@@ -94,11 +94,7 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		internal EqualsHashcodeOverridingFacade(VisitorSet this_00240, Node overridden)
 		{
@@ -108,11 +104,7 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual object accept(GenericVisitor v, object arg)
 		{
@@ -121,11 +113,7 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual void accept(VoidVisitor v, object arg)
 		{
@@ -314,11 +302,7 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public VisitorSet(GenericVisitor hashcodeVisitor, GenericVisitor equalsVisitor)
 	{

@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.observer;
@@ -6,7 +6,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.generator.core.utils;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -118,11 +118,7 @@ public class PropertyGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		76, 127, 16, 104, 113, 107, 136, 123, 159, 3,
-		159, 1, 106
-	})]
+	
 	private void generateGetter(BaseNodeMetaModel P_0, ClassOrInterfaceDeclaration P_1, PropertyMetaModel P_2)
 	{
 		MethodDeclaration.___003Cclinit_003E();
@@ -143,14 +139,7 @@ public class PropertyGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		18, 155, 135, 125, 142, 141, 161, 127, 21, 104,
-		109, 145, 127, 1, 134, 113, 139, 107, 104, 112,
-		125, 125, 114, 125, 251, 69, 120, 159, 5, 127,
-		4, 104, 159, 0, 127, 0, 104, 155, 109, 153,
-		151, 104, 109, 137
-	})]
+	
 	private void generateSetter(BaseNodeMetaModel P_0, ClassOrInterfaceDeclaration P_1, PropertyMetaModel P_2)
 	{
 		((CompilationUnit)P_1.findCompilationUnit().get()).addImport(ClassLiteral<ObservableProperty>.Value);
@@ -213,11 +202,7 @@ public class PropertyGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 107, 98, 119, 103, 125, 105, 99, 143, 104,
-		143, 173, 99, 141
-	})]
+	
 	private void generateObservableProperty(EnumDeclaration P_0, PropertyMetaModel P_1, bool P_2)
 	{
 		int num = ((!ClassLiteral<Node>.Value.isAssignableFrom(P_1.getType())) ? 1 : 0);
@@ -266,11 +251,7 @@ public class PropertyGenerator : NodeGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		111, 127, 6, 118, 107, 113, 112, 124, 122, 98,
-		114, 113, 127, 1, 122, 98, 108, 108
-	})]
+	
 	protected internal override void after()
 	{
 		CompilationUnit compilationUnit = (CompilationUnit)___003C_003EsourceRoot.tryToParse("com.github.javaparser.ast.observer", "ObservableProperty.java").getResult().get();

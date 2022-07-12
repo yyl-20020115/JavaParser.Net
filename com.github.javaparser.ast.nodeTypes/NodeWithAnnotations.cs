@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -13,11 +13,7 @@ public class NodeWithAnnotations
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024isAnnotationPresent_00240(string annotationName, AnnotationExpr a)
 		{
@@ -28,11 +24,7 @@ public class NodeWithAnnotations
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getAnnotationByName_00241(string annotationName, AnnotationExpr a)
 		{
@@ -226,11 +218,7 @@ public class NodeWithAnnotations
 	virtual Node setAnnotations(NodeList annotations);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addSingleMemberAnnotation(string name, Expression expression);
 
 	
@@ -307,11 +295,7 @@ public class NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addSingleMemberAnnotation(string name, string value);
 
 	
@@ -366,11 +350,7 @@ public class NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setAnnotation(int i, AnnotationExpr element);
 
 	
@@ -428,11 +408,7 @@ public class NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addSingleMemberAnnotation(Class clazz, Expression expression);
 
 	
@@ -447,11 +423,7 @@ public class NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addSingleMemberAnnotation(Class clazz, string value);
 
 	

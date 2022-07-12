@@ -1,12 +1,12 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.printer;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -227,13 +227,13 @@ public class BinaryExpr : Expression
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	
 	public class Operator : java.lang.Enum, Stringable
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -525,12 +525,7 @@ public class BinaryExpr : Expression
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		private Operator(string _0024enum_0024name, int _0024enum_0024ordinal, string codeRepresentation)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -553,11 +548,7 @@ public class BinaryExpr : Expression
 		}
 
 		
-				[LineNumberTable(new byte[]
-		{
-			31, 159, 37, 141, 141, 141, 141, 141, 141, 141,
-			141, 141, 141, 141
-		})]
+				
 		public virtual Optional toAssignOperator()
 		{
 			switch (_1._0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024expr_0024BinaryExpr_0024Operator[ordinal()])
@@ -637,12 +628,7 @@ public class BinaryExpr : Expression
 			}
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			0, 117, 117, 117, 117, 117, 117, 117, 117, 117,
-			118, 118, 118, 118, 118, 118, 118, 118, 118, 246,
-			44
-		})]
+		
 		static Operator()
 		{
 			___003C_003EOR = new Operator("OR", 0, "||");
@@ -685,13 +671,7 @@ public class BinaryExpr : Expression
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public BinaryExpr(TokenRange tokenRange, Expression left, Expression right, Operator @operator)
 		: base(tokenRange)
@@ -758,11 +738,7 @@ public class BinaryExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -793,12 +769,7 @@ public class BinaryExpr : Expression
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -811,11 +782,7 @@ public class BinaryExpr : Expression
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -838,11 +805,7 @@ public class BinaryExpr : Expression
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

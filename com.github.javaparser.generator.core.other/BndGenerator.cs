@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -131,63 +131,7 @@ public class BndGenerator : Generator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159,
-		187,
-		126,
-		108,
-		113,
-		107,
-		112,
-		107,
-		112,
-		101,
-		101,
-		114,
-		140,
-		109,
-		114,
-		109,
-		115,
-		127,
-		62,
-		159,
-		27,
-		95,
-		91,
-		95,
-		57,
-		byte.MaxValue,
-		48,
-		58,
-		byte.MaxValue,
-		3,
-		70,
-		31,
-		43,
-		159,
-		21,
-		95,
-		78,
-		95,
-		57,
-		95,
-		51,
-		63,
-		31,
-		127,
-		21,
-		95,
-		30,
-		byte.MaxValue,
-		39,
-		49,
-		238,
-		79,
-		127,
-		24
-	})]
+	
 	public override void generate()
 	{
 		Log.info("Running %s", new ___003C_003EAnon0(this));
@@ -304,7 +248,7 @@ public class BndGenerator : Generator
 				{
 					System.Exception ex9 = ex8;
 					ex2 = ex9;
-					throw Throwable.___003Cunmap_003E(ex9);
+					throw (ex9);
 				}
 				catch (System.Exception x6)
 				{
@@ -582,7 +526,7 @@ public class BndGenerator : Generator
 		{
 			System.Exception exception2 = ex25;
 			ex = exception2;
-			throw Throwable.___003Cunmap_003E(exception2);
+			throw (exception2);
 		}
 		catch
 		{
@@ -620,7 +564,7 @@ public class BndGenerator : Generator
 		{
 			try
 			{
-				throw Throwable.___003Cunmap_003E(ex26);
+				throw (ex26);
 			}
 			catch (System.Exception x19)
 			{

@@ -1,13 +1,13 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
-using IKVM.Attributes;
+
+
+
+
 using java.lang;
 
 namespace com.github.javaparser;
 
-[Serializable]
+
 public class TokenMgrException : RuntimeException
 {
 	private const long serialVersionUID = 1L;
@@ -23,16 +23,7 @@ public class TokenMgrException : RuntimeException
 	internal int errorCode;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public TokenMgrException(bool EOFSeen, int lexState, int errorLine, int errorColumn, string errorAfter, int curChar, int reason)
 		: this(LexicalErr(EOFSeen, lexState, errorLine, errorColumn, errorAfter, curChar), reason)
@@ -40,11 +31,7 @@ public class TokenMgrException : RuntimeException
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public TokenMgrException(string message, int reason)
 		: base(message)
@@ -55,13 +42,7 @@ public class TokenMgrException : RuntimeException
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		21, 102, 110, 104, 191, 51, 108, 133, 108, 133,
-		108, 133, 108, 133, 108, 133, 108, 133, 108, 133,
-		108, 133, 106, 127, 3, 127, 6, 98, 136, 226,
-		29, 233, 102
-	})]
+	
 	protected internal static string addEscapes(string str)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -111,15 +92,7 @@ public class TokenMgrException : RuntimeException
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	protected internal static string LexicalErr(bool EOFSeen, int lexState, int errorLine, int errorColumn, string errorAfter, int curChar)
 	{

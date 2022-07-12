@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.javassistmodel;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -104,11 +104,7 @@ public class JarTypeSolver :  TypeSolver
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 78, 109, 249, 71, 226, 58, 161, 108, 104,
-		135
-	})]
+	
 	private void addPathToJar(string P_0)
 	{
 		NotFoundException ex;
@@ -125,18 +121,12 @@ public class JarTypeSolver :  TypeSolver
 		NotFoundException ex2 = ex;
 		FileNotFoundException ex3 = new FileNotFoundException(Throwable.instancehelper_getMessage(ex2));
 		Throwable.instancehelper_initCause(ex3, ex2);
-		throw Throwable.___003Cunmap_003E(ex3);
+		throw (ex3);
 	}
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		117, 112, 134, 139, 137, 109, 159, 5, 127, 3,
-		102, 63, 10, 102, 48, 102, 238, 57, 247, 70,
-		102, 9, 127, 5, 102, 59, 102, 45, 102, 43,
-		102, 33, 102, 98
-	})]
+	
 	private File dumpToTempFile(InputStream P_0)
 	{
 		File file = File.createTempFile("jar_file_from_input_stream", ".jar");
@@ -205,7 +195,7 @@ public class JarTypeSolver :  TypeSolver
 			{
 				System.Exception ex6 = ex5;
 				ex = ex6;
-				throw Throwable.___003Cunmap_003E(ex6);
+				throw (ex6);
 			}
 			catch (System.Exception x4)
 			{
@@ -271,7 +261,7 @@ public class JarTypeSolver :  TypeSolver
 		System.Exception ex10;
 		try
 		{
-			throw Throwable.___003Cunmap_003E(ex10);
+			throw (ex10);
 		}
 		catch
 		{
@@ -324,31 +314,7 @@ public class JarTypeSolver :  TypeSolver
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160,
-		100,
-		137,
-		103,
-		139,
-		140,
-		122,
-		109,
-		205,
-		107,
-		146,
-		176,
-		145,
-		95,
-		28,
-		byte.MaxValue,
-		39,
-		43,
-		237,
-		85,
-		127,
-		22
-	})]
+	
 	private void registerKnownClassesFor(string P_0)
 	{
 		JarFile jarFile = new JarFile(P_0);
@@ -443,7 +409,7 @@ public class JarTypeSolver :  TypeSolver
 		{
 			System.Exception exception2 = ex5;
 			ex = exception2;
-			throw Throwable.___003Cunmap_003E(exception2);
+			throw (exception2);
 		}
 		catch
 		{

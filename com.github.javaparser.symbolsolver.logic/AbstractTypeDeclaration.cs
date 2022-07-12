@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -59,12 +59,7 @@ public abstract class AbstractTypeDeclaration : ResolvedReferenceTypeDeclaration
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 187, 134, 134, 127, 1, 104, 105, 110, 130,
-		127, 5, 105, 159, 9, 100, 127, 1, 127, 2,
-		98, 105, 106, 105, 137, 101, 133
-	})]
+		
 	public Set getAllMethods()
 	{
 		HashSet hashSet = new HashSet();

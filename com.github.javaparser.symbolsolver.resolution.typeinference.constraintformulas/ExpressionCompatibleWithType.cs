@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
@@ -8,7 +8,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -300,102 +300,7 @@ public class ExpressionCompatibleWithType : ConstraintFormula
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		32,
-		109,
-		121,
-		136,
-		232,
-		71,
-		109,
-		120,
-		byte.MaxValue,
-		0,
-		69,
-		240,
-		69,
-		109,
-		108,
-		byte.MaxValue,
-		0,
-		75,
-		109,
-		113,
-		169,
-		109,
-		235,
-		70,
-		109,
-		108,
-		111,
-		122,
-		17,
-		232,
-		74,
-		112,
-		205,
-		109,
-		232,
-		73,
-		117,
-		110,
-		105,
-		106,
-		115,
-		235,
-		77,
-		122,
-		232,
-		76,
-		110,
-		235,
-		70,
-		127,
-		0,
-		108,
-		200,
-		231,
-		69,
-		125,
-		100,
-		235,
-		70,
-		145,
-		137,
-		236,
-		69,
-		110,
-		115,
-		127,
-		1,
-		113,
-		136,
-		98,
-		101,
-		115,
-		113,
-		136,
-		229,
-		70,
-		110,
-		191,
-		12,
-		115,
-		117,
-		29,
-		232,
-		69,
-		115,
-		247,
-		69,
-		234,
-		69,
-		237,
-		92,
-		171,
-		176
-	})]
+	
 	public override ReductionResult reduce(BoundSet currentBoundSet)
 	{
 		if (TypeHelper.isProperType(T))

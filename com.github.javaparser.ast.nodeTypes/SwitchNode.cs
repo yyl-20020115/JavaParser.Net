@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.ast.nodeTypes;
@@ -36,11 +36,7 @@ public interface SwitchNode
 
 	virtual SwitchNode clone();
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual bool replace(Node node, Node replacementNode);
 
 		virtual Optional getComment();

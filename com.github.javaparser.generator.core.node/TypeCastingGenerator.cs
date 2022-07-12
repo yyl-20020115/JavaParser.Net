@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -16,15 +16,7 @@ public class TypeCastingGenerator : NodeGenerator
 		private Set baseNodes;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		2,
-		233,
-		54,
-		byte.MaxValue,
-		34,
-		75
-	})]
+	
 	public TypeCastingGenerator(SourceRoot sourceRoot)
 		: base(sourceRoot)
 	{
@@ -82,11 +74,7 @@ public class TypeCastingGenerator : NodeGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		7, 98, 127, 1, 164, 129, 105, 136, 130, 131,
-		161, 103, 109, 141, 109, 109, 110, 112
-	})]
+	
 	protected internal override void generateNode(BaseNodeMetaModel nodeMetaModel, CompilationUnit nodeCu, ClassOrInterfaceDeclaration nodeCoid)
 	{
 		Pair pair = null;

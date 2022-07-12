@@ -1,16 +1,16 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.resolution.naming;
 
-[Serializable]
+
 
 public class NameCategory : java.lang.Enum
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{
@@ -179,11 +179,7 @@ public class NameCategory : java.lang.Enum
 		return this != ___003C_003ECOMPILATION_ERROR;
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		159, 175, 113, 113, 113, 113, 113, 113, 113, 241,
-		56
-	})]
+	
 	static NameCategory()
 	{
 		___003C_003EMODULE_NAME = new NameCategory("MODULE_NAME", 0, false);

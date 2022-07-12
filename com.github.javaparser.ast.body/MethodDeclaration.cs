@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -13,7 +13,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -50,12 +50,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodDeclaration(NodeList modifiers, Type type, string name)
 		: this(null, modifiers, new NodeList(), new NodeList(), type, new SimpleName(name), new NodeList(), new NodeList(), new BlockStmt(), null)
@@ -179,19 +174,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public MethodDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList typeParameters, Type type, SimpleName name, NodeList parameters, NodeList thrownExceptions, BlockStmt body, ReceiverParameter receiverParameter)
 		: base(tokenRange, modifiers, annotations, typeParameters, name, parameters, thrownExceptions, receiverParameter)
@@ -265,11 +248,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -332,13 +311,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodDeclaration(NodeList modifiers, string name, Type type, NodeList parameters)
 		: this(null, modifiers, new NodeList(), new NodeList(), type, new SimpleName(name), parameters, new NodeList(), new BlockStmt(), null)
@@ -346,17 +319,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodDeclaration(NodeList modifiers, NodeList annotations, NodeList typeParameters, Type type, SimpleName name, NodeList parameters, NodeList thrownExceptions, BlockStmt body)
 		: this(null, modifiers, annotations, typeParameters, type, name, parameters, thrownExceptions, body, null)
@@ -364,18 +327,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -388,11 +340,7 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -400,19 +348,8 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 96, 134, 102, 102, 104, 120, 104, 140, 104,
-		140, 104, 140, 104, 140, 104, 172, 119, 108, 109,
-		108, 99, 127, 8, 100, 133, 140, 99, 149, 120,
-		105, 172, 101, 108, 110
-	})]
+	
+	
 	public override string getDeclarationAsString(bool includingModifiers, bool includingThrows, bool includingParameterName)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -546,16 +483,8 @@ public class MethodDeclaration : CallableDeclaration, NodeWithType, NodeWithOpti
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 193, 99, 130, 104, 105, 109, 162, 105, 109,
-		130
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

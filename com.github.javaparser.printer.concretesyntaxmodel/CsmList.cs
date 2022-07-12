@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -33,14 +33,7 @@ public class CsmList: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmList(ObservableProperty property, CsmElement separatorPre, CsmElement separatorPost, CsmElement preceeding, CsmElement following)
 	{
@@ -77,11 +70,7 @@ public class CsmList: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmList(ObservableProperty property, CsmElement separator)
 		: this(property, new CsmNone(), separator, new CsmNone(), new CsmNone())
@@ -89,18 +78,8 @@ public class CsmList: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		28, 112, 109, 99, 129, 112, 141, 107, 107, 141,
-		109, 115, 237, 58, 230, 73, 112, 141, 101, 109,
-		99, 129, 112, 141, 111, 112, 141, 114, 112, 175,
-		112, 175
-	})]
+	
+	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{
 		if (property.isAboutNodes())

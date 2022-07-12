@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -7,7 +7,7 @@ using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -130,11 +130,7 @@ public class ReflectionEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	private static CallerID ___003CcallerID_003E;
 
 	
-		[LineNumberTable(new byte[]
-	{
-		11, 104, 99, 144, 104, 144, 104, 144, 104, 144,
-		104, 144, 103, 103, 110
-	})]
+		
 	public ReflectionEnumDeclaration(Class clazz, TypeSolver typeSolver)
 	{
 		if (clazz == null)
@@ -342,12 +338,7 @@ public class ReflectionEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 64, 152, 139, 107, 108, 98, 103, 127, 0,
-		169, 114, 100, 130, 110, 110, 61, 168, 111, 120,
-		97, 166
-	})]
+		
 	public virtual Optional solveMethodAsUsage(string name, List parameterTypes, Context invokationContext, List typeParameterValues)
 	{
 		//Discarded unreachable code: IL_00db

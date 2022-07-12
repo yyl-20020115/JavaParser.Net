@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.visitor;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -401,11 +401,7 @@ public class ControlFlowLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		27, 105, 130, 104, 127, 2, 111, 127, 6, 162,
-		98
-	})]
+	
 	public virtual bool exitTheStatement(BreakStmt breakStmt)
 	{
 		if (!isReachable(breakStmt))

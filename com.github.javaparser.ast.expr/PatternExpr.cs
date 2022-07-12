@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -32,12 +32,7 @@ public class PatternExpr : Expression, NodeWithSimpleName, NodeWithType
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public PatternExpr(TokenRange tokenRange, ReferenceType type, SimpleName name)
 		: base(tokenRange)
@@ -88,11 +83,7 @@ public class PatternExpr : Expression, NodeWithSimpleName, NodeWithType
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -128,11 +119,7 @@ public class PatternExpr : Expression, NodeWithSimpleName, NodeWithType
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -145,11 +132,7 @@ public class PatternExpr : Expression, NodeWithSimpleName, NodeWithType
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -184,11 +167,7 @@ public class PatternExpr : Expression, NodeWithSimpleName, NodeWithType
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

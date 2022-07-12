@@ -1,16 +1,16 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 
 namespace com.github.javaparser.ast;
 
-[Serializable]
+
 
 public class AccessSpecifier : java.lang.Enum
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{
@@ -84,12 +84,7 @@ public class AccessSpecifier : java.lang.Enum
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		(Modifiers)0
-	})]
+		
 	
 	private AccessSpecifier(string _0024enum_0024name, int _0024enum_0024ordinal, string codeRepresentation)
 		: base(_0024enum_0024name, _0024enum_0024ordinal)

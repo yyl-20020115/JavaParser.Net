@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.symbolsolver.resolution.typesolvers;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -143,11 +143,7 @@ public class SymbolSolverCollectionStrategy: CollectionStrategy
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			34, 113, 236, 72, 110, 126, 103, 157, 127, 4,
-			108, 159, 7, 112, 126, 155
-		})]
+		
 		public virtual FileVisitResult visitFile(Path P_0, BasicFileAttributes P_1)
 		{
 			if (javaMatcher.matches(P_0))
@@ -365,18 +361,7 @@ public class SymbolSolverCollectionStrategy: CollectionStrategy
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		23,
-		141,
-		byte.MaxValue,
-		1,
-		120,
-		2,
-		97,
-		159,
-		0
-	})]
+	
 	public virtual ProjectRoot collect(Path path)
 	{
 		ProjectRoot projectRoot = new ProjectRoot(path, parserConfiguration);

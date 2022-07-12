@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -9,7 +9,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -83,11 +83,7 @@ public class ReflectionInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 65, 104, 137, 115, 130, 115, 120, 130, 121,
-		116, 2, 230, 70, 136, 162
-	})]
+	
 	public override bool canBeAssignedTo(ResolvedReferenceTypeDeclaration other)
 	{
 		if (other is LambdaArgumentTypePlaceholder)
@@ -122,11 +118,7 @@ public class ReflectionInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 91, 104, 130, 104, 137, 104, 130, 104, 130,
-		115, 130, 104, 103, 109, 217
-	})]
+	
 	public override bool isAssignableBy(ResolvedType type)
 	{
 		if (type is NullType)
@@ -298,12 +290,7 @@ public class ReflectionInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		97, 152, 139, 107, 108, 98, 103, 127, 0, 169,
-		114, 100, 130, 110, 110, 61, 168, 111, 120, 97,
-		166
-	})]
+		
 	public virtual Optional solveMethodAsUsage(string name, List parameterTypes, Context invokationContext, List typeParameterValues)
 	{
 		//Discarded unreachable code: IL_00db

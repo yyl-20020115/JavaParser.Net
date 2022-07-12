@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -7,7 +7,7 @@ using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.google.common.collect;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -95,12 +95,7 @@ internal class AstResolutionUtils
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		19, 104, 120, 113, 104, 130, 159, 4, 104, 120,
-		113, 104, 130, 159, 4, 104, 120, 113, 104, 130,
-		159, 4, 99, 154
-	})]
+	
 	internal static string getClassName(string P_0, Node P_1)
 	{
 		if (P_1 is ClassOrInterfaceDeclaration)

@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.metamodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -34,11 +34,7 @@ public interface NodeWithVariables
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private Optional toArrayLevel(Type type, int level)
 		{
@@ -79,12 +75,7 @@ public interface NodeWithVariables
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static string lambda_0024calculateMaximumCommonType_00241(_1Helper helper, int currentLevel, Type v)
 		{
@@ -251,11 +242,7 @@ public interface NodeWithVariables
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		101, 102, 98, 162, 99, 194, 183, 108, 108, 134,
-		130, 98
-	})]
+	
 	static Optional calculateMaximumCommonType(List types)
 	{
 		_1Helper _1Helper = new _1Helper();
@@ -286,11 +273,7 @@ public interface NodeWithVariables
 	virtual Node setVariables(NodeList variables);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setVariable(int i, VariableDeclarator variableDeclarator);
 
 	

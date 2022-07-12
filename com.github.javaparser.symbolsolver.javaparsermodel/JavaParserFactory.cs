@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarators;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.javaparsermodel;
@@ -20,17 +20,7 @@ namespace com.github.javaparser.symbolsolver.javaparsermodel;
 public class JavaParserFactory
 {
 	
-	[LineNumberTable(new byte[]
-	{
-		5, 99, 208, 104, 111, 104, 111, 104, 111, 104,
-		111, 104, 111, 104, 111, 104, 111, 104, 111, 104,
-		111, 104, 111, 104, 111, 104, 111, 104, 111, 104,
-		111, 104, 111, 104, 111, 104, 111, 104, 111, 104,
-		111, 104, 111, 104, 111, 104, 111, 104, 111, 104,
-		111, 104, 111, 110, 108, 111, 104, 143, 171, 127,
-		0, 113, 109, 113, 104, 162, 138, 127, 28, 191,
-		9, 103, 112, 103, 111, 173, 170
-	})]
+	
 	public static Context getContext(Node node, TypeSolver typeSolver)
 	{
 		if (node == null)
@@ -242,11 +232,7 @@ public class JavaParserFactory
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		98, 104, 143, 104, 143, 104, 143, 104, 103, 109,
-		185, 138, 104, 103, 143
-	})]
+	
 	public static SymbolDeclarator getSymbolDeclarator(Node node, TypeSolver typeSolver)
 	{
 		if (node is FieldDeclaration)
@@ -293,11 +279,7 @@ public class JavaParserFactory
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		123, 104, 109, 143, 143, 104, 143, 104, 148, 104,
-		143, 104, 158
-	})]
+	
 	public static ResolvedReferenceTypeDeclaration toTypeDeclaration(Node node, TypeSolver typeSolver)
 	{
 		if (node is ClassOrInterfaceDeclaration)

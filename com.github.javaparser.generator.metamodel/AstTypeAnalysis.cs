@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -22,12 +22,7 @@ internal class AstTypeAnalysis
 		internal Class innerType;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 186, 232, 59, 103, 103, 199, 104, 108, 101,
-		135, 101, 107, 103, 103, 104, 135, 104, 167, 111,
-		104, 103, 130, 106, 133, 108, 118
-	})]
+	
 	internal AstTypeAnalysis(Type P_0)
 	{
 		isOptional = false;

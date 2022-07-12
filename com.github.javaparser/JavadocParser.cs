@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.javadoc;
 using com.github.javaparser.javadoc.description;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -226,35 +226,7 @@ internal class JavadocParser
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		0,
-		113,
-		112,
-		122,
-		101,
-		102,
-		181,
-		100,
-		127,
-		5,
-		140,
-		223,
-		12,
-		109,
-		106,
-		byte.MaxValue,
-		2,
-		69,
-		103,
-		127,
-		0,
-		111,
-		101,
-		145,
-		110,
-		115
-	})]
+	
 	public unsafe static Javadoc parse(string commentContent)
 	{
 		List list = cleanLines(Utils.normalizeEolInTextBlock(commentContent, Utils.___003C_003ESYSTEM_EOL));
@@ -293,11 +265,7 @@ internal class JavadocParser
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		53, 108, 100, 168, 245, 80, 144, 159, 6, 127,
-		32, 186, 127, 2, 144, 127, 9, 146
-	})]
+	
 	private static List cleanLines(string content)
 	{
 		string[] array = String.instancehelper_split(content, Utils.___003C_003ESYSTEM_EOL);
@@ -402,11 +370,7 @@ internal class JavadocParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024parse_00242(Javadoc document, string l)
 	{

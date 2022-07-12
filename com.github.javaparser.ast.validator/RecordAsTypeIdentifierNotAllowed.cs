@@ -1,8 +1,8 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.ast.validator;
@@ -33,11 +33,7 @@ public class RecordAsTypeIdentifierNotAllowed : VisitorValidator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(SimpleName n, ProblemReporter arg)
 	{
@@ -49,11 +45,7 @@ public class RecordAsTypeIdentifierNotAllowed : VisitorValidator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(Name n, ProblemReporter arg)
 	{
@@ -67,11 +59,7 @@ public class RecordAsTypeIdentifierNotAllowed : VisitorValidator
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public override void visit(SimpleName n, object arg)
 	{
@@ -81,11 +69,7 @@ public class RecordAsTypeIdentifierNotAllowed : VisitorValidator
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public override void visit(Name n, object arg)
 	{

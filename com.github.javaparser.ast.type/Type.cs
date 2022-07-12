@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
@@ -7,7 +7,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -61,11 +61,7 @@ public abstract class Type : Node, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public Type(TokenRange tokenRange, NodeList annotations)
 		: base(tokenRange)
@@ -158,11 +154,7 @@ public abstract class Type : Node, Resolvable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

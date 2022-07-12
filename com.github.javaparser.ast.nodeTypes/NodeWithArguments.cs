@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
-using IKVM.Attributes;
+
 
 namespace com.github.javaparser.ast.nodeTypes;
 
@@ -79,11 +79,7 @@ public class NodeWithArguments
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setArgument(int i, Expression arg);
 
 	

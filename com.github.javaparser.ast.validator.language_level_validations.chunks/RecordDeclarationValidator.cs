@@ -1,7 +1,7 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util.function;
 
@@ -132,11 +132,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void forbidAbstractModifier(RecordDeclaration n, ProblemReporter reporter)
 	{
@@ -147,11 +143,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void forbidNonStaticFieldsInRecords(RecordDeclaration n, ProblemReporter reporter)
 	{
@@ -164,11 +156,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void validateRecordComponentAccessorMethods(RecordDeclaration n, ProblemReporter reporter)
 	{
@@ -176,11 +164,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void accept(RecordDeclaration node, ProblemReporter reporter)
 	{
@@ -200,12 +184,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024validateRecordComponentAccessorMethods_00243(RecordDeclaration n, ProblemReporter reporter, Parameter parameter)
 	{
@@ -226,13 +205,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00242(Parameter parameter, ProblemReporter reporter, RecordDeclaration n, MethodDeclaration methodDeclaration)
 	{
@@ -251,11 +224,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(Node node, ProblemReporter reporter)
 	{
@@ -265,11 +234,7 @@ public class RecordDeclarationValidator: TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(object node, object reporter)
 	{

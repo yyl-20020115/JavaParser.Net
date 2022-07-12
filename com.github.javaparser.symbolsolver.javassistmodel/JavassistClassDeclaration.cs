@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -10,7 +10,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -119,11 +119,7 @@ public class JavassistClassDeclaration : AbstractClassDeclaration, MethodUsageRe
 	private JavassistTypeDeclarationAdapter javassistTypeDeclarationAdapter;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 77, 104, 162, 104, 201, 115, 162, 103, 104,
-		108, 105, 194, 127, 1, 105, 130, 130
-	})]
+	
 	public override bool isAssignableBy(ResolvedType type)
 	{
 		if (type.isNull())
@@ -271,11 +267,7 @@ public class JavassistClassDeclaration : AbstractClassDeclaration, MethodUsageRe
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		10, 104, 99, 139, 127, 1, 159, 11, 103, 103,
-		110
-	})]
+	
 	public JavassistClassDeclaration(CtClass ctClass, TypeSolver typeSolver)
 	{
 		if (ctClass == null)
@@ -390,11 +382,7 @@ public class JavassistClassDeclaration : AbstractClassDeclaration, MethodUsageRe
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		84, 121, 110, 15, 230, 70, 104, 107, 105, 163,
-		104, 121, 107, 105, 227, 61, 232, 71
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,

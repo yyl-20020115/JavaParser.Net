@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -22,17 +22,7 @@ namespace com.github.javaparser.symbolsolver.javaparsermodel.contexts;
 public class MethodReferenceExprContext : AbstractJavaParserContext
 {
 	
-		[LineNumberTable(new byte[]
-	{
-		56, 117, 113, 114, 115, 178, 104, 108, 142, 135,
-		127, 9, 204, 191, 1, 178, 105, 149, 169, 106,
-		133, 131, 139, 117, 114, 116, 105, 108, 103, 159,
-		19, 103, 108, 127, 14, 127, 12, 127, 0, 153,
-		103, 119, 154, 106, 133, 131, 139, 117, 114, 119,
-		108, 127, 9, 105, 108, 103, 159, 19, 103, 108,
-		127, 14, 127, 12, 127, 0, 153, 103, 119, 154,
-		106, 133, 131, 171, 139
-	})]
+		
 	private List inferArgumentTypes()
 	{
 		if (Navigator.demandParentNode(wrappedNode) is MethodCallExpr)
@@ -173,11 +163,7 @@ public class MethodReferenceExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		18, 109, 176, 141, 156, 237, 69, 177, 127, 15,
-		106, 104, 194, 111, 105, 163, 130
-	})]
+		
 	public override SymbolReference solveMethod(string name, List argumentsTypes, bool staticOnly)
 	{
 		if (String.instancehelper_equals("new", name))

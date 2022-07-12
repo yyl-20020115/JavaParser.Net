@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -152,11 +152,7 @@ public class ResolvedUnionType: ResolvedType
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static List lambda_0024getCommonAncestor_00240(List a, List b)
 	{
@@ -167,11 +163,7 @@ public class ResolvedUnionType: ResolvedType
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024isAssignableBy_00241(ResolvedType other, ResolvedType e)
 	{

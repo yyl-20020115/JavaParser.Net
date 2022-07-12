@@ -1,14 +1,14 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
+
+
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.logic;
 
-[Serializable]
+
 public class ConfilictingGenericTypesException : RuntimeException
 {
 	

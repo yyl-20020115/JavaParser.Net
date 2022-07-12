@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel.comparators;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -499,11 +499,7 @@ public class ReflectionClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	private static CallerID ___003CcallerID_003E;
 
 	
-		[LineNumberTable(new byte[]
-	{
-		24, 104, 99, 144, 104, 144, 104, 144, 104, 144,
-		104, 144, 103, 103, 110
-	})]
+		
 	public ReflectionClassDeclaration(Class clazz, TypeSolver typeSolver)
 	{
 		if (clazz == null)
@@ -592,11 +588,7 @@ public class ReflectionClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 153, 104, 137, 115, 130, 115, 120, 130, 121,
-		116, 2, 230, 70
-	})]
+	
 	public override bool canBeAssignedTo(ResolvedReferenceTypeDeclaration other)
 	{
 		if (other is LambdaArgumentTypePlaceholder)
@@ -814,13 +806,7 @@ public class ReflectionClassDeclaration : AbstractClassDeclaration, MethodUsageR
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 104, 130, 140, 166, 127, 1, 102, 111, 111,
-		106, 101, 176, 127, 0, 111, 169, 113, 138, 162,
-		112, 115, 229, 72, 127, 5, 117, 229, 70, 226,
-		70, 104, 141
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,
@@ -887,13 +873,7 @@ public class ReflectionClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 108, 134, 127, 1, 106, 101, 144, 126, 112,
-		130, 110, 105, 125, 116, 112, 237, 61, 232, 69,
-		169, 113, 138, 133, 251, 71, 127, 2, 115, 116,
-		122, 101, 98, 112
-	})]
+		
 	public unsafe virtual Optional solveMethodAsUsage(string name, List argumentsTypes, Context invokationContext, List typeParameterValues)
 	{
 		ArrayList arrayList = new ArrayList();

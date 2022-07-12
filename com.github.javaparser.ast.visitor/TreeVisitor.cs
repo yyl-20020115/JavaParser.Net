@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -122,11 +122,7 @@ public abstract class TreeVisitor : Object
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		24, 102, 104, 105, 108, 127, 1, 104, 98, 113,
-		98
-	})]
+	
 	public virtual void visitBreadthFirst(Node node)
 	{
 		LinkedList linkedList = new LinkedList();

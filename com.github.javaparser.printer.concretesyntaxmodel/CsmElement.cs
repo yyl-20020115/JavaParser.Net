@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.printer.concretesyntaxmodel;
@@ -215,11 +215,7 @@ public class CsmElement
 		return result;
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual void prettyPrint(Node node, SourcePrinter printer);
 
 	
@@ -243,11 +239,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement @string(int tokenType, string content)
 	{
@@ -297,11 +289,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement token(int tokenType, CsmToken.TokenContentCalculator tokenContentCalculator)
 	{
@@ -311,12 +299,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement conditional(ObservableProperty property, CsmConditional.Condition condition, CsmElement thenElement)
 	{
@@ -326,13 +309,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement conditional(ObservableProperty property, CsmConditional.Condition condition, CsmElement thenElement, CsmElement elseElement)
 	{
@@ -342,13 +319,7 @@ public class CsmElement
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	static CsmElement conditional(List properties, CsmConditional.Condition condition, CsmElement thenElement, CsmElement elseElement)
 	{
@@ -413,11 +384,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement list(ObservableProperty property, CsmElement separator)
 	{
@@ -427,13 +394,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement list(ObservableProperty property, CsmElement separator, CsmElement preceeding, CsmElement following)
 	{
@@ -443,14 +404,7 @@ public class CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	static CsmElement list(ObservableProperty property, CsmElement separatorPre, CsmElement separatorPost, CsmElement preceeding, CsmElement following)
 	{

@@ -1,11 +1,11 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -15,7 +15,7 @@ namespace com.github.javaparser.printer.lexicalpreservation;
 
 public class Difference
 {
-	[Serializable]
+	
 	[InnerClass(null, Modifiers.Private | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
 		
 	internal sealed class MatchClassification : java.lang.Enum
@@ -48,12 +48,7 @@ public class Difference
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		private MatchClassification(string _0024enum_0024name, int _0024enum_0024ordinal, int priority)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -254,11 +249,7 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool isAfterLBrace(NodeText nodeText, int nodeTextIndex)
 	{
@@ -277,79 +268,7 @@ public class Difference
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		160,
-		129,
-		110,
-		109,
-		107,
-		167,
-		103,
-		168,
-		171,
-		159,
-		1,
-		103,
-		110,
-		117,
-		101,
-		246,
-		61,
-		232,
-		70,
-		191,
-		14,
-		103,
-		137,
-		103,
-		145,
-		179,
-		99,
-		124,
-		112,
-		122,
-		112,
-		148,
-		byte.MaxValue,
-		3,
-		58,
-		235,
-		74,
-		101,
-		241,
-		47,
-		235,
-		95,
-		136,
-		99,
-		104,
-		145,
-		115,
-		122,
-		112,
-		127,
-		18,
-		117,
-		162,
-		116,
-		112,
-		100,
-		151,
-		245,
-		49,
-		235,
-		88,
-		127,
-		1,
-		117,
-		226,
-		159,
-		166,
-		233,
-		160,
-		93
-	})]
+	
 	private void extractReshuffledDiffElements(List diffElements)
 	{
 		for (int i = 0; i < diffElements.size(); i++)
@@ -456,11 +375,7 @@ public class Difference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 238, 135, 102, 127, 1, 127, 3, 130, 103,
-		127, 0, 127, 1, 108, 98, 130
-	})]
+		
 	private Map combineRemovedElementsToRemovedGroups()
 	{
 		Map map = groupConsecutiveRemovedElements();
@@ -487,11 +402,7 @@ public class Difference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 106, 98, 127, 13, 119, 104, 112, 104, 135,
-		119, 110, 110, 130, 174, 162
-	})]
+	
 	private bool applyLeftOverDiffElements()
 	{
 		int result = 0;
@@ -519,11 +430,7 @@ public class Difference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 89, 98, 127, 13, 151, 104, 144, 223, 43,
-		130
-	})]
+	
 	private bool applyLeftOverOriginalElements()
 	{
 		int result = 0;
@@ -548,19 +455,7 @@ public class Difference
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 152, 104, 102, 50, 166, 103, 110, 129, 104,
-		115, 57, 166, 103, 110, 161, 103, 98, 127, 14,
-		102, 127, 3, 110, 127, 4, 153, 125, 144, 159,
-		6, 101, 127, 14, 104, 130, 159, 14, 127, 9,
-		116, 144, 127, 31, 127, 6, 226, 70, 104, 127,
-		5, 127, 6, 194, 134, 119, 120, 127, 10, 120,
-		110, 159, 10, 136, 110, 178, 127, 0, 115, 232,
-		70, 174, 127, 0, 114, 115, 236, 72, 107, 142,
-		114, 144, 114, 206, 107, 116, 110, 120, 108, 223,
-		1, 110
-	})]
+	
 	private void applyAddedDiffElement(Added added)
 	{
 		if (added.isIndent())
@@ -704,24 +599,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 20, 101, 104, 115, 127, 0, 115, 107, 110,
-		115, 113, 104, 115, 113, 238, 72, 110, 110, 110,
-		118, 238, 69, 110, 110, 110, 126, 116, 110, 110,
-		110, 109, 110, 147, 104, 110, 147, 191, 27, 113,
-		135, 110, 110, 115, 112, 110, 115, 112, 110, 115,
-		104, 115, 104, 112, 208, 144, 159, 27, 112, 115,
-		104, 115, 104, 115, 235, 69, 110, 107, 127, 10,
-		63, 4, 232, 69, 159, 27
-	})]
+	
+	
 	private void applyKeptDiffElement(Kept kept, TextElement originalElement, bool originalElementIsChild, bool originalElementIsToken)
 	{
 		if (originalElement.isComment())
@@ -878,70 +757,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159,
-		45,
-		134,
-		113,
-		103,
-		171,
-		108,
-		127,
-		19,
-		147,
-		142,
-		101,
-		145,
-		127,
-		17,
-		103,
-		184,
-		127,
-		3,
-		127,
-		15,
-		145,
-		127,
-		16,
-		byte.MaxValue,
-		5,
-		69,
-		142,
-		113,
-		184,
-		114,
-		103,
-		113,
-		115,
-		107,
-		115,
-		104,
-		113,
-		115,
-		104,
-		104,
-		113,
-		147,
-		159,
-		27,
-		127,
-		3,
-		112,
-		104,
-		144,
-		191,
-		27,
-		106
-	})]
+	
+	
 	private void applyRemovedDiffElement(RemovedGroup removedGroup, Removed removed, TextElement originalElement, bool originalElementIsChild, bool originalElementIsToken)
 	{
 		if (removed.isChild() && originalElementIsChild)
@@ -1023,17 +840,8 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 18, 134, 103, 103, 140, 112, 99, 143, 116,
-		104, 116, 115, 103, 99, 240, 58, 235, 60, 235,
-		79
-	})]
+		
+	
 	private Map getCorrespondanceBetweenNextOrderAndPreviousOrder(CsmMix elementsFromPreviousOrder, CsmMix elementsFromNextOrder)
 	{
 		HashMap hashMap = new HashMap();
@@ -1063,20 +871,8 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 53, 102, 146, 103, 108, 136, 113, 117, 114,
-		138, 141, 103, 99, 105, 140, 184, 99, 123, 140,
-		185, 104, 118, 100, 118, 100, 150, 148, 111, 244,
-		33, 235, 101, 118, 140, 105, 151, 141, 133
-	})]
+		
+	
 	private List findIndexOfCorrespondingNodeTextElement(List elements, NodeText nodeText, int startIndex, Node node)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1145,11 +941,7 @@ public class Difference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 0, 134, 98, 115, 114, 104, 99, 167, 124,
-		136, 226, 54, 233, 77
-	})]
+		
 	private Map groupConsecutiveRemovedElements()
 	{
 		HashMap hashMap = new HashMap();
@@ -1174,17 +966,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		92, 98, 119, 120, 130, 120, 226, 59, 230, 72,
-		98, 99, 116, 120, 130, 103, 226, 59, 230, 72,
-		100, 139
-	})]
+	
+	
 	private int considerEnforcingIndentation(NodeText nodeText, int nodeTextIndex)
 	{
 		int num = 1;
@@ -1226,17 +1009,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 86, 147, 161, 108, 108, 106, 103, 135, 124,
-		120, 157, 115, 159, 9, 115, 238, 57, 233, 77,
-		136
-	})]
+	
+	
 	private void cleanTheLineOfLeftOverSpace(RemovedGroup removedGroup, Removed removed)
 	{
 		if (originalIndex >= originalElements.size() || removedGroup.isProcessed() || removedGroup.getLastElement() != removed || !removedGroup.isACompleteLine())
@@ -1290,16 +1064,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 46, 98, 108, 138, 132, 108, 108, 105, 111,
-		135, 229, 69, 112, 130
-	})]
+	
+	
 	private int getIndexToNextTokenElement(TokenTextElement element, int nestedDiamondOperator)
 	{
 		int num = 0;
@@ -1342,16 +1108,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 9, 98, 107, 140, 123, 103, 123, 111, 113,
-		116, 113, 100, 162, 98, 226, 54, 235, 76
-	})]
+	
+	
 	private int getIndexToNextTokenElement(TokenTextElement element, DifferenceElement kept)
 	{
 		int num = 0;
@@ -1410,16 +1168,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 73, 98, 108, 138, 132, 108, 108, 105, 111,
-		229, 69, 112, 130
-	})]
+	
+	
 	private int getIndexToNextTokenElementInArrayType(TokenTextElement element, int arrayLevel)
 	{
 		int num = 0;
@@ -1502,16 +1252,8 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		36, 103, 104, 102, 134, 109, 109, 104, 104, 226,
-		60, 230, 72
-	})]
+		
+	
 	private List processIndentation(List indentation, List prevElements)
 	{
 		LinkedList linkedList = new LinkedList(indentation);
@@ -1574,18 +1316,8 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		158, 140, 163, 119, 127, 9, 125, 99, 150, 123,
-		127, 7, 135, 146, 98, 100, 139
-	})]
+		
+	
 	private int adjustIndentation(List indentation, NodeText nodeText, int nodeTextIndex, bool followedByUnindent)
 	{
 		List list = processIndentation(indentation, nodeText.getElements().subList(0, nodeTextIndex - 1));
@@ -1620,11 +1352,7 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private bool isFollowedByUnindent(List diffElements, int diffIndex)
 	{
@@ -1633,17 +1361,8 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 126, 104, 103, 104, 103, 159, 8, 106, 103,
-		104, 103, 143, 98, 171
-	})]
+	
+	
 	private bool isCorrespondingElement(TextElement textElement, CsmElement csmElement, Node node)
 	{
 		if (csmElement is CsmToken)
@@ -1673,12 +1392,7 @@ public class Difference
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool isAlmostCorrespondingElement(TextElement textElement, CsmElement csmElement, Node node)
 	{
@@ -1701,17 +1415,8 @@ public class Difference
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		19, 232, 58, 103, 167, 167, 99, 176, 103, 103,
-		103, 140, 108
-	})]
+		
+	
 	internal Difference(List diffElements, NodeText nodeText, Node node)
 	{
 		originalIndex = 0;
@@ -1730,12 +1435,7 @@ public class Difference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		122, 108, 167, 103, 135, 108, 151, 104, 145, 120,
-		108, 140, 104, 119, 104, 104, 123, 98, 223, 23,
-		127, 13
-	})]
+	
 	internal virtual void apply()
 	{
 		extractReshuffledDiffElements(diffElements);

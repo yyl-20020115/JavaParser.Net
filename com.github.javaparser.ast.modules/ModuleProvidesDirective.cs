@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.util;
 using java.util.function;
 
@@ -26,12 +26,7 @@ public class ModuleProvidesDirective : ModuleDirective, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ModuleProvidesDirective(TokenRange tokenRange, Name name, NodeList with)
 		: base(tokenRange)
@@ -82,11 +77,7 @@ public class ModuleProvidesDirective : ModuleDirective, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -117,11 +108,7 @@ public class ModuleProvidesDirective : ModuleDirective, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -134,11 +121,7 @@ public class ModuleProvidesDirective : ModuleDirective, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -205,16 +188,8 @@ public class ModuleProvidesDirective : ModuleDirective, NodeWithName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		116, 99, 130, 105, 109, 130, 112, 111, 115, 226,
-		61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

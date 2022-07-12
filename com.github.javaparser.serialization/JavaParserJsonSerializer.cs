@@ -1,9 +1,9 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -14,12 +14,12 @@ namespace com.github.javaparser.serialization;
 
 public class JavaParserJsonSerializer
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class JsonNode : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -132,12 +132,12 @@ public class JavaParserJsonSerializer
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class JsonRange : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -250,12 +250,12 @@ public class JavaParserJsonSerializer
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class JsonToken : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -338,12 +338,12 @@ public class JavaParserJsonSerializer
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class JsonTokenRange : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -445,12 +445,7 @@ public class JavaParserJsonSerializer
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		19, 103, 159, 2, 99, 137, 136, 124, 104, 127,
-		4, 103, 105, 103, 104, 105, 104, 127, 1, 106,
-		98, 103, 106, 145, 175, 101, 103
-	})]
+	
 	private void serialize(string P_0, Node P_1, JsonGenerator P_2)
 	{
 		Objects.requireNonNull(P_1);

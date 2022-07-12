@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
@@ -11,7 +11,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -399,11 +399,7 @@ public class JavaParserInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 161, 120, 137, 109, 104, 162, 127, 6, 119,
-		191, 6, 117, 107, 7
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,
@@ -473,11 +469,7 @@ public class JavaParserInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 17, 98, 108, 109, 191, 22, 107, 141, 107,
-		136, 104, 150, 109, 159, 4, 112, 117, 112
-	})]
+	
 	private ResolvedReferenceType toReferenceType(ClassOrInterfaceType P_0)
 	{
 		SymbolReference symbolReference = null;
@@ -715,11 +707,7 @@ public class JavaParserInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		124, 115, 130, 109, 127, 6, 119, 105, 130, 194,
-		109, 127, 6, 119, 105, 130, 162
-	})]
+	
 	public override bool canBeAssignedTo(ResolvedReferenceTypeDeclaration other)
 	{
 		if (java.lang.String.instancehelper_equals(getQualifiedName(), other.getQualifiedName()))
@@ -798,37 +786,7 @@ public class JavaParserInterfaceDeclaration : AbstractTypeDeclaration, ResolvedI
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		66,
-		162,
-		102,
-		112,
-		159,
-		6,
-		byte.MaxValue,
-		3,
-		70,
-		226,
-		59,
-		98,
-		131,
-		168,
-		194,
-		112,
-		159,
-		6,
-		byte.MaxValue,
-		3,
-		70,
-		226,
-		59,
-		98,
-		131,
-		168,
-		130
-	})]
+		
 	public override List getAncestors(bool acceptIncompleteList)
 	{
 		ArrayList arrayList = new ArrayList();

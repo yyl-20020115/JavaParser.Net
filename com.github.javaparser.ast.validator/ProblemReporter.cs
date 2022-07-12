@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util.function;
 
@@ -13,12 +13,7 @@ public class ProblemReporter
 		private Consumer problemConsumer;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void report(NodeWithTokenRange node, string message, params object[] args)
 	{
@@ -26,12 +21,7 @@ public class ProblemReporter
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void report(TokenRange range, string message, params object[] args)
 	{

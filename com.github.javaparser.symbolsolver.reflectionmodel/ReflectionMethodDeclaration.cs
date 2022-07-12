@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -6,7 +6,7 @@ using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.declarations.common;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.lang.reflect;
 using java.util;

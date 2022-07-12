@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 

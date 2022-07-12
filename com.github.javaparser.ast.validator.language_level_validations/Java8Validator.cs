@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.validator.language_level_validations.chunks;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util.function;
 
@@ -72,11 +72,7 @@ public class Java8Validator : Java7Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00241(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -88,11 +84,7 @@ public class Java8Validator : Java7Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00240(ProblemReporter reporter, MethodDeclaration m)
 	{

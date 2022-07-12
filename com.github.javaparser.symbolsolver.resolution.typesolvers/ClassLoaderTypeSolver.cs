@@ -1,9 +1,9 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.reflectionmodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -114,12 +114,7 @@ public class ClassLoaderTypeSolver : java.lang.TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		21, 204, 104, 208, 109, 127, 16, 225, 71, 107,
-		129, 105, 100, 139, 105, 107, 105, 105, 108, 101,
-		125, 123, 42, 161, 235, 69
-	})]
+		
 	public virtual SymbolReference tryToSolveType(string name)
 	{
 		//Discarded unreachable code: IL_0044

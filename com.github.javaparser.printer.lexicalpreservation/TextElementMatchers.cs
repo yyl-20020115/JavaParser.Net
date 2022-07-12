@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.printer.lexicalpreservation;
@@ -85,11 +85,7 @@ internal class TextElementMatchers
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024byTokenType_00240(int tokenType, TextElement textElement)
 	{

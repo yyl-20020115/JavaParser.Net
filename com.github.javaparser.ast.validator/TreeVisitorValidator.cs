@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -22,11 +22,7 @@ public class TreeVisitorValidator: Validator, TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public void accept(Node node, ProblemReporter reporter)
 	{
@@ -42,11 +38,7 @@ public class TreeVisitorValidator: Validator, TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(object node, object reporter)
 	{

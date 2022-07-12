@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util.function;
 
@@ -62,16 +62,10 @@ public class GrammarLetterGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 178, 102, 127, 15, 111, 98, 98, 107, 127,
-		1, 134, 103, 127, 1, 134, 105, 104, 133, 105,
-		100, 159, 7, 100, 159, 21, 101, 98, 106, 143,
-		133, 111, 111, 113
-	})]
+		
 	private static void generate(string P_0, Function P_1)
 	{
-		java.lang.System.@out.println(new StringBuilder().append("  < #").append(P_0).append(": [")
+		System.Console.WriteLine(new StringBuilder().append("  < #").append(P_0).append(": [")
 			.ToString());
 		java.lang.System.@out.print("         ");
 		int num = 0;
@@ -105,13 +99,13 @@ public class GrammarLetterGenerator
 			if (num >= 10)
 			{
 				num = 0;
-				java.lang.System.@out.println();
+				System.Console.WriteLine();
 				java.lang.System.@out.print("         ");
 			}
 		}
-		java.lang.System.@out.println("]");
-		java.lang.System.@out.println("        | <UNICODE_ESCAPE>");
-		java.lang.System.@out.println("  >");
+		System.Console.WriteLine("]");
+		System.Console.WriteLine("        | <UNICODE_ESCAPE>");
+		System.Console.WriteLine("  >");
 	}
 
 	

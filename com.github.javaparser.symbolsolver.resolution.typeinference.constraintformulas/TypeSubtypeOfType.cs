@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution.typeinference.bounds;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.resolution.typeinference.constraintformulas;
@@ -26,37 +26,7 @@ public class TypeSubtypeOfType : ConstraintFormula
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		6,
-		122,
-		115,
-		136,
-		232,
-		70,
-		109,
-		232,
-		69,
-		109,
-		232,
-		69,
-		109,
-		249,
-		69,
-		109,
-		249,
-		87,
-		205,
-		109,
-		235,
-		69,
-		119,
-		byte.MaxValue,
-		15,
-		69,
-		232,
-		71
-	})]
+	
 	public override ReductionResult reduce(BoundSet currentBoundSet)
 	{
 		if (TypeHelper.isProperType(S) && TypeHelper.isProperType(T))

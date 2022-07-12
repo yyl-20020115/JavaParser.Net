@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -148,20 +148,8 @@ public class XmlPrinter
 	private bool outputNodeType;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		1, 103, 103, 103, 127, 21, 127, 21, 159, 7,
-		115, 104, 184, 127, 0, 127, 2, 98, 141, 127,
-		0, 111, 100, 148, 130, 127, 4, 111, 115, 105,
-		126, 115, 127, 1, 111, 98, 143, 101, 110
-	})]
+	
+	
 	public virtual void output(Node node, string name, int level, StringBuilder builder)
 	{
 		Utils.assertNotNull(node);
@@ -217,11 +205,7 @@ public class XmlPrinter
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private static string attribute(string name, string value)
 	{
@@ -269,6 +253,6 @@ public class XmlPrinter
 	
 	public static void print(Node node)
 	{
-		java.lang.System.@out.println(new XmlPrinter(outputNodeType: true).output(node));
+		System.Console.WriteLine(new XmlPrinter(outputNodeType: true).output(node));
 	}
 }

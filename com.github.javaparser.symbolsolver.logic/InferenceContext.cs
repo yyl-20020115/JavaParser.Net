@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -157,11 +157,7 @@ public class InferenceContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 98, 104, 103, 105, 104, 121, 120, 98, 104,
-		121, 104, 109, 121, 109, 153, 162
-	})]
+	
 	public virtual ResolvedType resolve(ResolvedType type)
 	{
 		if (type is InferenceVariableType)
@@ -209,11 +205,7 @@ public class InferenceContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 72, 104, 109, 121, 109, 153, 130, 104, 111,
-		104, 121, 104, 121, 120, 98, 104, 121, 104, 130
-	})]
+	
 	private ResolvedType placeInferenceVariables(ResolvedType P_0)
 	{
 		if (P_0.isWildcard())
@@ -270,89 +262,7 @@ public class InferenceContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		26,
-		118,
-		103,
-		135,
-		118,
-		103,
-		103,
-		127,
-		8,
-		105,
-		103,
-		104,
-		127,
-		9,
-		105,
-		141,
-		164,
-		179,
-		118,
-		109,
-		170,
-		99,
-		127,
-		5,
-		122,
-		102,
-		194,
-		117,
-		108,
-		107,
-		145,
-		141,
-		142,
-		112,
-		127,
-		2,
-		139,
-		117,
-		118,
-		114,
-		182,
-		107,
-		104,
-		104,
-		122,
-		114,
-		126,
-		114,
-		252,
-		69,
-		107,
-		112,
-		183,
-		104,
-		104,
-		113,
-		107,
-		145,
-		104,
-		104,
-		110,
-		146,
-		109,
-		173,
-		159,
-		3,
-		104,
-		107,
-		123,
-		byte.MaxValue,
-		3,
-		71,
-		104,
-		103,
-		170,
-		159,
-		22,
-		98,
-		159,
-		22
-	})]
+	
 	private void registerCorrespondance(ResolvedType P_0, ResolvedType P_1)
 	{
 		if (P_0.isReferenceType() && P_1.isReferenceType())

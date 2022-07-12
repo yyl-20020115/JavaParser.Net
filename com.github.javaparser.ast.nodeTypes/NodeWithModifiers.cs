@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -86,11 +86,7 @@ public interface NodeWithModifiers
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024addModifier_00240(Modifier.Keyword newModifier, Modifier m)
 		{
@@ -99,11 +95,7 @@ public interface NodeWithModifiers
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024removeModifier_00241(List modifiersToRemoveAsList, Modifier existingModifier)
 		{

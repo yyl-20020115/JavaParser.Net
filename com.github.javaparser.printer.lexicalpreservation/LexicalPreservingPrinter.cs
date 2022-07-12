@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -9,7 +9,7 @@ using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.printer.concretesyntaxmodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -764,16 +764,8 @@ public class LexicalPreservingPrinter
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			160, 182, 100, 161, 130, 107, 104, 136, 136, 107,
-			113, 106, 131, 190, 246, 58, 232, 56, 233, 85
-		})]
+		
+		
 		private void fixIndentOfMovedNode(NodeText nodeText, int index)
 		{
 			if (index <= 0)
@@ -813,11 +805,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			160, 83, 104, 159, 19, 104, 159, 9, 104, 159,
-			20
-		})]
+		
 		private TokenTextElement makeCommentToken(Comment newComment)
 		{
 			if (newComment.isJavadocComment())
@@ -846,11 +834,7 @@ public class LexicalPreservingPrinter
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		private int getIndexOfComment(Comment oldValue, NodeText nodeText)
 		{
@@ -870,17 +854,8 @@ public class LexicalPreservingPrinter
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			160, 136, 104, 117, 111, 112, 101, 117, 104, 117,
-			111, 112, 101, 146, 117, 111, 112, 101, 176, 137,
-			114, 101, 176
-		})]
+				
+		
 		private List findTokenTextElementForComment(Comment oldValue, NodeText nodeText)
 		{
 			List list = ((oldValue is JavadocComment) ? ((List)nodeText.getElements().stream().filter(new ___003C_003EAnon6())
@@ -901,16 +876,8 @@ public class LexicalPreservingPrinter
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			160, 112, 117, 111, 111, 112, 101, 144, 137, 114,
-			101, 176, 105, 176
-		})]
+				
+		
 		private List findChildTextElementForComment(Comment oldValue, NodeText nodeText)
 		{
 			List list = (List)nodeText.getElements().stream().filter(new ___003C_003EAnon1())
@@ -931,11 +898,7 @@ public class LexicalPreservingPrinter
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private bool isEqualRange(Optional range1, Optional range2)
 		{
@@ -950,11 +913,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static NodeText lambda_0024concretePropertyChange_00240(Optional parentNode, Node parent)
 		{
@@ -995,11 +954,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static bool lambda_0024findChildTextElementForComment_00244(Comment oldValue, ChildTextElement c)
 		{
@@ -1010,11 +965,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private bool lambda_0024findChildTextElementForComment_00245(Comment oldValue, ChildTextElement t)
 		{
@@ -1044,11 +995,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static bool lambda_0024findTokenTextElementForComment_00248(Comment oldValue, TokenTextElement t)
 		{
@@ -1079,11 +1026,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static bool lambda_0024findTokenTextElementForComment_002411(Comment oldValue, TokenTextElement t)
 		{
@@ -1114,11 +1057,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static bool lambda_0024findTokenTextElementForComment_002414(Comment oldValue, TokenTextElement t)
 		{
@@ -1129,11 +1068,7 @@ public class LexicalPreservingPrinter
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private bool lambda_0024findTokenTextElementForComment_002415(Comment oldValue, TokenTextElement t)
 		{
@@ -1143,20 +1078,8 @@ public class LexicalPreservingPrinter
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			86, 133, 129, 112, 129, 107, 103, 108, 134, 144,
-			102, 138, 201, 136, 108, 116, 117, 108, 104, 109,
-			135, 110, 103, 120, 135, 101, 171, 143, 106, 176,
-			105, 111, 188, 136, 100, 182, 115
-		})]
+		
+		
 		public override void concretePropertyChange(Node observedNode, ObservableProperty property, object oldValue, object newValue)
 		{
 			if (oldValue == newValue || property == ObservableProperty.___003C_003ERANGE || property == ObservableProperty.___003C_003ECOMMENTED_NODE)
@@ -1217,13 +1140,7 @@ public class LexicalPreservingPrinter
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public override void concreteListChange(NodeList changedList, AstObserver.ListChangeType type, int index, Node nodeAddedOrRemoved)
 		{
@@ -1247,13 +1164,7 @@ public class LexicalPreservingPrinter
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public override void concreteListReplacement(NodeList changedList, int index, Node oldValue, Node newValue)
 		{
@@ -1612,11 +1523,7 @@ public class LexicalPreservingPrinter
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		161, 240, 102, 103, 104, 108, 106, 103, 130, 136,
-		98, 102, 107, 115, 11, 230, 69
-	})]
+	
 	internal static List findIndentation(Node node)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -1644,16 +1551,8 @@ public class LexicalPreservingPrinter
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 30, 99, 135, 102, 127, 4, 104, 104, 159,
-		6, 157, 101, 123, 125, 98, 117, 127, 23
-	})]
+		
+	
 	private static void storeInitialTextForOneNode(Node node, List nodeTokens)
 	{
 		if (nodeTokens == null)
@@ -1688,13 +1587,7 @@ public class LexicalPreservingPrinter
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		162, 21, 103, 127, 3, 159, 8, 117, 105, 159,
-		17, 105, 101, 105, 110, 147, 223, 26, 5, 98,
-		141, 152, 122, 115, 105, 110, 147, 223, 26, 2,
-		98, 237, 35, 233, 97
-	})]
+	
 	private static ObservableProperty findNodeListName(NodeList nodeList)
 	{
 		//Discarded unreachable code: IL_00e6, IL_01a2
@@ -1817,16 +1710,8 @@ public class LexicalPreservingPrinter
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 10, 104, 136, 104, 136, 120, 168, 127, 1,
-		104, 104, 130, 98
-	})]
+		
+	
 	private static Optional findNodeForToken(Node node, Range tokenRange)
 	{
 		if (node.isPhantom())
@@ -1864,11 +1749,7 @@ public class LexicalPreservingPrinter
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		161, 54, 109, 232, 69, 118, 104, 100, 114, 152,
-		146, 47, 240, 69, 100, 55
-	})]
+	
 	private static Iterator tokensPreceeding(Node node)
 	{
 		if (!node.getParentNode().isPresent())
@@ -1898,11 +1779,7 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static void print(Node node, Writer writer)
 	{
@@ -1917,19 +1794,8 @@ public class LexicalPreservingPrinter
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 167, 141, 135, 98, 127, 5, 108, 111, 121,
-		108, 104, 50, 200, 107, 113, 47, 232, 69, 122,
-		187, 98, 105, 119, 105, 105, 117, 105, 130, 107,
-		105, 120, 162, 114, 183, 165, 104, 104, 249, 74
-	})]
+	
+	
 	private unsafe static NodeText interpret(Node node, CsmElement csm, NodeText nodeText)
 	{
 		LexicalDifferenceCalculator.CalculatedSyntaxModel calculatedSyntaxModel = new LexicalDifferenceCalculator().calculatedSyntaxModelForNode(csm, node);
@@ -2001,19 +1867,8 @@ public class LexicalPreservingPrinter
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 110, 107, 103, 159, 30, 110, 133, 110, 133,
-		110, 130, 110, 130, 110, 130, 110, 130, 110, 130,
-		110, 130, 139, 129, 104, 127, 24, 129, 104, 127,
-		25, 129, 104, 127, 14, 129, 104, 103, 121, 161,
-		115
-	})]
+	
+	
 	private static void prettyPrintingTextNode(Node node, NodeText nodeText)
 	{
 		if (node is PrimitiveType)
@@ -2106,11 +1961,7 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024setup_00240(Node node, TokenRange r)
 	{
@@ -2123,17 +1974,8 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 244, 126, 124, 125, 105, 141, 115, 165, 231,
-		71, 103
-	})]
+	
+	
 	private static void lambda_0024storeInitialText_00243(Node root, Map tokensByNode, TokenRange rootTokenRange)
 	{
 		Iterator iterator = rootTokenRange.iterator();
@@ -2180,12 +2022,7 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024interpret_00247(Node node, NodeText nodeText, CsmElement e)
 	{
@@ -2194,12 +2031,7 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024interpret_00249(VariableDeclarator variableDeclarator, NodeText nodeText, Node parent)
 	{
@@ -2208,12 +2040,7 @@ public class LexicalPreservingPrinter
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00248(VariableDeclarator variableDeclarator, NodeText nodeText, com.github.javaparser.ast.type.Type mct)
 	{

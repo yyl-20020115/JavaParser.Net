@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -166,33 +166,7 @@ public class GenericListVisitorAdapterGenerator : VisitorGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159,
-		190,
-		149,
-		113,
-		107,
-		108,
-		140,
-		134,
-		127,
-		4,
-		127,
-		1,
-		109,
-		104,
-		byte.MaxValue,
-		10,
-		69,
-		191,
-		4,
-		101,
-		108,
-		223,
-		33,
-		103
-	})]
+	
 	protected internal unsafe override void generateVisitMethodBody(BaseNodeMetaModel node, MethodDeclaration visitMethod, CompilationUnit compilationUnit)
 	{
 		visitMethod.getParameters().forEach(new ___003C_003EAnon0());

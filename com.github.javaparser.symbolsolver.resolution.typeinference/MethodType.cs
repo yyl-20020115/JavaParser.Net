@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 

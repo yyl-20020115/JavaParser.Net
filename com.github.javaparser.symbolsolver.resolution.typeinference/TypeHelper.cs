@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -8,7 +8,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -135,11 +135,7 @@ public class TypeHelper
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 81, 104, 159, 2, 104, 102, 127, 6, 109,
-		98, 130
-	})]
+		
 	public static Set usedInferenceVariables(ResolvedType type)
 	{
 		if (type.isInferenceVariable())
@@ -166,11 +162,7 @@ public class TypeHelper
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		13, 104, 130, 104, 103, 157, 104, 103, 104, 142,
-		162, 104, 130, 136, 130, 104, 147
-	})]
+	
 	public static bool isProperType(ResolvedType type)
 	{
 		if (type is InferenceVariable)
@@ -259,11 +251,7 @@ public class TypeHelper
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 204, 130, 122, 102, 195, 104, 98, 235, 71,
-		250, 69
-	})]
+		
 	public static Pair groundTargetTypeOfLambda(LambdaExpr lambdaExpr, ResolvedType T, TypeSolver typeSolver)
 	{
 		int b = 0;
@@ -301,12 +289,7 @@ public class TypeHelper
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		75, 105, 226, 69, 121, 226, 69, 121, 226, 69,
-		113, 114, 226, 69, 126, 124, 226, 71, 112, 226,
-		69
-	})]
+	
 	public static bool isCompatibleInALooseInvocationContext(ResolvedType s, ResolvedType t)
 	{
 		if (Object.instancehelper_equals(s, t))
@@ -376,13 +359,7 @@ public class TypeHelper
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 233, 155, 102, 103, 231, 69, 147, 112, 111,
-		195, 105, 228, 70, 127, 7, 235, 69, 140, 223,
-		13, 119, 233, 69, 119, 110, 127, 7, 194, 119,
-		208, 208, 233, 17, 235, 114
-	})]
+	
 	private static ResolvedReferenceType nonWildcardParameterizationOf(ResolvedReferenceType P_0, TypeSolver P_1)
 	{
 		ResolvedReferenceTypeDeclaration resolvedReferenceTypeDeclaration = (ResolvedReferenceTypeDeclaration)P_0.getTypeDeclaration().orElseThrow(new ___003C_003EAnon3());

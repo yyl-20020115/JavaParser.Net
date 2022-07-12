@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -24,11 +24,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public static bool equals(Node n, Node n2)
 	{
@@ -38,11 +34,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	private bool nodeEquals(Node n, Node n2)
 	{
@@ -68,11 +60,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	private bool nodeEquals(Optional n, Optional n2)
 	{
@@ -82,16 +70,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		14, 99, 104, 99, 130, 110, 130, 107, 127, 1,
-		2, 230, 69
-	})]
+		
+	
 	private bool nodesEquals(List nodes1, List nodes2)
 	{
 		if (nodes1 == null)
@@ -117,11 +97,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool commonNodeEquality(Node n, Node n2)
 	{
@@ -135,16 +111,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		31, 100, 130, 102, 130, 110, 130, 107, 118, 2,
-		230, 69
-	})]
+		
+	
 	private bool nodesEquals(NodeList n, NodeList n2)
 	{
 		if (n == n2)
@@ -170,11 +138,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	private bool objEquals(object n, object n2)
 	{
@@ -192,11 +156,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	private bool nodesEquals(Optional n, Optional n2)
 	{
@@ -206,11 +166,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(PatternExpr n, Visitable arg)
 	{
@@ -239,11 +195,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(TextBlockLiteralExpr n, Visitable arg)
 	{
@@ -266,11 +218,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(YieldStmt n, Visitable arg)
 	{
@@ -293,11 +241,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SwitchExpr n, Visitable arg)
 	{
@@ -326,11 +270,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(Modifier n, Visitable arg)
 	{
@@ -353,11 +293,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(VarType n, Visitable arg)
 	{
@@ -380,16 +316,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 151, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ReceiverParameter n, Visitable arg)
 	{
 		ReceiverParameter receiverParameter = (ReceiverParameter)arg;
@@ -423,11 +351,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(UnparsableStmt n, Visitable arg)
 	{
@@ -444,11 +368,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ModuleOpensDirective n, Visitable arg)
 	{
@@ -477,11 +397,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ModuleUsesDirective n, Visitable arg)
 	{
@@ -504,11 +420,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ModuleProvidesDirective n, Visitable arg)
 	{
@@ -537,11 +449,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ModuleExportsDirective n, Visitable arg)
 	{
@@ -570,11 +478,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ModuleRequiresDirective n, Visitable arg)
 	{
@@ -603,16 +507,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 69, 103, 116, 105, 116, 105, 126, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(ModuleDeclaration n, Visitable arg)
 	{
 		ModuleDeclaration moduleDeclaration = (ModuleDeclaration)arg;
@@ -652,16 +548,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 50, 103, 126, 105, 126, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ImportDeclaration n, Visitable arg)
 	{
 		ImportDeclaration importDeclaration = (ImportDeclaration)arg;
@@ -695,11 +583,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SimpleName n, Visitable arg)
 	{
@@ -722,11 +606,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(Name n, Visitable arg)
 	{
@@ -755,11 +635,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual Boolean visit(NodeList n, Visitable arg)
 	{
@@ -769,11 +645,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(TypeExpr n, Visitable arg)
 	{
@@ -796,16 +668,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 26, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(MethodReferenceExpr n, Visitable arg)
 	{
 		MethodReferenceExpr methodReferenceExpr = (MethodReferenceExpr)arg;
@@ -839,16 +703,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 12, 103, 116, 105, 126, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(LambdaExpr n, Visitable arg)
 	{
 		LambdaExpr lambdaExpr = (LambdaExpr)arg;
@@ -882,11 +738,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(CatchClause n, Visitable arg)
 	{
@@ -915,16 +767,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 240, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(TryStmt n, Visitable arg)
 	{
 		TryStmt tryStmt = (TryStmt)arg;
@@ -964,11 +808,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SynchronizedStmt n, Visitable arg)
 	{
@@ -997,11 +837,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ThrowStmt n, Visitable arg)
 	{
@@ -1024,16 +860,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 202, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(ForStmt n, Visitable arg)
 	{
 		ForStmt forStmt = (ForStmt)arg;
@@ -1073,16 +901,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 188, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ForEachStmt n, Visitable arg)
 	{
 		ForEachStmt forEachStmt = (ForEachStmt)arg;
@@ -1116,11 +936,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(DoStmt n, Visitable arg)
 	{
@@ -1149,11 +965,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ContinueStmt n, Visitable arg)
 	{
@@ -1176,11 +988,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(WhileStmt n, Visitable arg)
 	{
@@ -1209,16 +1017,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 140, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(IfStmt n, Visitable arg)
 	{
 		IfStmt ifStmt = (IfStmt)arg;
@@ -1252,11 +1052,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ReturnStmt n, Visitable arg)
 	{
@@ -1279,11 +1075,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(BreakStmt n, Visitable arg)
 	{
@@ -1306,16 +1098,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 106, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(SwitchEntry n, Visitable arg)
 	{
 		SwitchEntry switchEntry = (SwitchEntry)arg;
@@ -1349,11 +1133,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SwitchStmt n, Visitable arg)
 	{
@@ -1382,11 +1162,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ExpressionStmt n, Visitable arg)
 	{
@@ -1409,11 +1185,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(EmptyStmt n, Visitable arg)
 	{
@@ -1430,11 +1202,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(LabeledStmt n, Visitable arg)
 	{
@@ -1463,11 +1231,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(BlockStmt n, Visitable arg)
 	{
@@ -1490,11 +1254,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(AssertStmt n, Visitable arg)
 	{
@@ -1523,11 +1283,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(LocalRecordDeclarationStmt n, Visitable arg)
 	{
@@ -1550,11 +1306,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(LocalClassDeclarationStmt n, Visitable arg)
 	{
@@ -1577,16 +1329,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 6, 103, 116, 105, 116, 105, 126, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(ExplicitConstructorInvocationStmt n, Visitable arg)
 	{
 		ExplicitConstructorInvocationStmt explicitConstructorInvocationStmt = (ExplicitConstructorInvocationStmt)arg;
@@ -1626,11 +1370,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(MemberValuePair n, Visitable arg)
 	{
@@ -1659,11 +1399,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(NormalAnnotationExpr n, Visitable arg)
 	{
@@ -1692,11 +1428,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SingleMemberAnnotationExpr n, Visitable arg)
 	{
@@ -1725,11 +1457,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(MarkerAnnotationExpr n, Visitable arg)
 	{
@@ -1752,16 +1480,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 202, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(VariableDeclarationExpr n, Visitable arg)
 	{
 		VariableDeclarationExpr variableDeclarationExpr = (VariableDeclarationExpr)arg;
@@ -1795,11 +1515,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(UnaryExpr n, Visitable arg)
 	{
@@ -1828,11 +1544,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(SuperExpr n, Visitable arg)
 	{
@@ -1855,11 +1567,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ThisExpr n, Visitable arg)
 	{
@@ -1882,16 +1590,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 130, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(ObjectCreationExpr n, Visitable arg)
 	{
 		ObjectCreationExpr objectCreationExpr = (ObjectCreationExpr)arg;
@@ -1937,11 +1637,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(NameExpr n, Visitable arg)
 	{
@@ -1964,16 +1660,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 104, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(MethodCallExpr n, Visitable arg)
 	{
 		MethodCallExpr methodCallExpr = (MethodCallExpr)arg;
@@ -2013,11 +1701,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(NullLiteralExpr n, Visitable arg)
 	{
@@ -2034,11 +1718,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(BooleanLiteralExpr n, Visitable arg)
 	{
@@ -2061,11 +1741,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(DoubleLiteralExpr n, Visitable arg)
 	{
@@ -2088,11 +1764,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(CharLiteralExpr n, Visitable arg)
 	{
@@ -2115,11 +1787,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(LongLiteralExpr n, Visitable arg)
 	{
@@ -2142,11 +1810,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(IntegerLiteralExpr n, Visitable arg)
 	{
@@ -2169,11 +1833,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(StringLiteralExpr n, Visitable arg)
 	{
@@ -2196,16 +1856,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 22, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(InstanceOfExpr n, Visitable arg)
 	{
 		InstanceOfExpr instanceOfExpr = (InstanceOfExpr)arg;
@@ -2239,16 +1891,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 8, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(FieldAccessExpr n, Visitable arg)
 	{
 		FieldAccessExpr fieldAccessExpr = (FieldAccessExpr)arg;
@@ -2282,11 +1926,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(EnclosedExpr n, Visitable arg)
 	{
@@ -2309,16 +1949,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 240, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ConditionalExpr n, Visitable arg)
 	{
 		ConditionalExpr conditionalExpr = (ConditionalExpr)arg;
@@ -2352,11 +1984,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ClassExpr n, Visitable arg)
 	{
@@ -2379,11 +2007,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(CastExpr n, Visitable arg)
 	{
@@ -2412,16 +2036,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 204, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(BinaryExpr n, Visitable arg)
 	{
 		BinaryExpr binaryExpr = (BinaryExpr)arg;
@@ -2455,16 +2071,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 190, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(AssignExpr n, Visitable arg)
 	{
 		AssignExpr assignExpr = (AssignExpr)arg;
@@ -2498,11 +2106,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ArrayInitializerExpr n, Visitable arg)
 	{
@@ -2525,16 +2129,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 166, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ArrayCreationExpr n, Visitable arg)
 	{
 		ArrayCreationExpr arrayCreationExpr = (ArrayCreationExpr)arg;
@@ -2568,11 +2164,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ArrayAccessExpr n, Visitable arg)
 	{
@@ -2601,11 +2193,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(UnknownType n, Visitable arg)
 	{
@@ -2628,16 +2216,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 130, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(WildcardType n, Visitable arg)
 	{
 		WildcardType wildcardType = (WildcardType)arg;
@@ -2671,11 +2251,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(VoidType n, Visitable arg)
 	{
@@ -2698,11 +2274,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(UnionType n, Visitable arg)
 	{
@@ -2731,11 +2303,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(IntersectionType n, Visitable arg)
 	{
@@ -2764,11 +2332,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(ArrayCreationLevel n, Visitable arg)
 	{
@@ -2797,16 +2361,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 70, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ArrayType n, Visitable arg)
 	{
 		ArrayType arrayType = (ArrayType)arg;
@@ -2840,11 +2396,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(PrimitiveType n, Visitable arg)
 	{
@@ -2873,16 +2425,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 42, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(ClassOrInterfaceType n, Visitable arg)
 	{
 		ClassOrInterfaceType classOrInterfaceType = (ClassOrInterfaceType)arg;
@@ -2922,11 +2466,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(JavadocComment n, Visitable arg)
 	{
@@ -2949,16 +2489,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 18, 103, 116, 105, 126, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(InitializerDeclaration n, Visitable arg)
 	{
 		InitializerDeclaration initializerDeclaration = (InitializerDeclaration)arg;
@@ -2992,16 +2524,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 254, 103, 116, 105, 126, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(Parameter n, Visitable arg)
 	{
 		Parameter parameter = (Parameter)arg;
@@ -3053,17 +2577,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 228, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(MethodDeclaration n, Visitable arg)
 	{
 		MethodDeclaration methodDeclaration = (MethodDeclaration)arg;
@@ -3133,17 +2648,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 204, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ConstructorDeclaration n, Visitable arg)
 	{
 		ConstructorDeclaration constructorDeclaration = (ConstructorDeclaration)arg;
@@ -3207,16 +2713,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 190, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(VariableDeclarator n, Visitable arg)
 	{
 		VariableDeclarator variableDeclarator = (VariableDeclarator)arg;
@@ -3250,16 +2748,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 176, 103, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(FieldDeclaration n, Visitable arg)
 	{
 		FieldDeclaration fieldDeclaration = (FieldDeclaration)arg;
@@ -3293,16 +2783,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 158, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(AnnotationMemberDeclaration n, Visitable arg)
 	{
 		AnnotationMemberDeclaration annotationMemberDeclaration = (AnnotationMemberDeclaration)arg;
@@ -3348,16 +2830,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 142, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(AnnotationDeclaration n, Visitable arg)
 	{
 		AnnotationDeclaration annotationDeclaration = (AnnotationDeclaration)arg;
@@ -3397,16 +2871,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 126, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(EnumConstantDeclaration n, Visitable arg)
 	{
 		EnumConstantDeclaration enumConstantDeclaration = (EnumConstantDeclaration)arg;
@@ -3446,16 +2912,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 106, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(EnumDeclaration n, Visitable arg)
 	{
 		EnumDeclaration enumDeclaration = (EnumDeclaration)arg;
@@ -3507,16 +2965,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 253, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105
-	})]
+	
+	
 	public virtual Boolean visit(CompactConstructorDeclaration n, Visitable arg)
 	{
 		CompactConstructorDeclaration compactConstructorDeclaration = (CompactConstructorDeclaration)arg;
@@ -3568,17 +3018,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 229, 103, 116, 105, 116, 105, 116, 105, 116,
-		105, 116, 105, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(RecordDeclaration n, Visitable arg)
 	{
 		RecordDeclaration recordDeclaration = (RecordDeclaration)arg;
@@ -3642,17 +3083,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 82, 103, 116, 105, 116, 105, 126, 105, 116,
-		105, 116, 105, 116, 105, 116, 105, 116, 105, 116,
-		105
-	})]
+	
+	
 	public virtual Boolean visit(ClassOrInterfaceDeclaration n, Visitable arg)
 	{
 		ClassOrInterfaceDeclaration classOrInterfaceDeclaration = (ClassOrInterfaceDeclaration)arg;
@@ -3716,11 +3148,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(BlockComment n, Visitable arg)
 	{
@@ -3743,11 +3171,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(LineComment n, Visitable arg)
 	{
@@ -3770,11 +3194,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(TypeParameter n, Visitable arg)
 	{
@@ -3809,11 +3229,7 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Boolean visit(PackageDeclaration n, Visitable arg)
 	{
@@ -3842,16 +3258,8 @@ public class EqualsVisitor: GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		84, 103, 116, 105, 116, 105, 116, 105, 116, 105,
-		116, 105
-	})]
+	
+	
 	public virtual Boolean visit(CompilationUnit n, Visitable arg)
 	{
 		CompilationUnit compilationUnit = (CompilationUnit)arg;
@@ -3899,11 +3307,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PatternExpr n, object arg)
 	{
@@ -3915,11 +3319,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -3931,11 +3331,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(YieldStmt n, object arg)
 	{
@@ -3947,11 +3343,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SwitchExpr n, object arg)
 	{
@@ -3963,11 +3355,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Modifier n, object arg)
 	{
@@ -3979,11 +3367,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VarType n, object arg)
 	{
@@ -3995,11 +3379,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ReceiverParameter n, object arg)
 	{
@@ -4011,11 +3391,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnparsableStmt n, object arg)
 	{
@@ -4027,11 +3403,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleOpensDirective n, object arg)
 	{
@@ -4043,11 +3415,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleUsesDirective n, object arg)
 	{
@@ -4059,11 +3427,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleProvidesDirective n, object arg)
 	{
@@ -4075,11 +3439,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleExportsDirective n, object arg)
 	{
@@ -4091,11 +3451,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleRequiresDirective n, object arg)
 	{
@@ -4107,11 +3463,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleDeclaration n, object arg)
 	{
@@ -4123,11 +3475,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ImportDeclaration n, object arg)
 	{
@@ -4139,11 +3487,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SimpleName n, object arg)
 	{
@@ -4155,11 +3499,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Name n, object arg)
 	{
@@ -4171,11 +3511,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NodeList n, object arg)
 	{
@@ -4187,11 +3523,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TypeExpr n, object arg)
 	{
@@ -4203,11 +3535,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodReferenceExpr n, object arg)
 	{
@@ -4219,11 +3547,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LambdaExpr n, object arg)
 	{
@@ -4235,11 +3559,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CatchClause n, object arg)
 	{
@@ -4251,11 +3571,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TryStmt n, object arg)
 	{
@@ -4267,11 +3583,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SynchronizedStmt n, object arg)
 	{
@@ -4283,11 +3595,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ThrowStmt n, object arg)
 	{
@@ -4299,11 +3607,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ForStmt n, object arg)
 	{
@@ -4315,11 +3619,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ForEachStmt n, object arg)
 	{
@@ -4331,11 +3631,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(DoStmt n, object arg)
 	{
@@ -4347,11 +3643,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ContinueStmt n, object arg)
 	{
@@ -4363,11 +3655,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(WhileStmt n, object arg)
 	{
@@ -4379,11 +3667,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(IfStmt n, object arg)
 	{
@@ -4395,11 +3679,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ReturnStmt n, object arg)
 	{
@@ -4411,11 +3691,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BreakStmt n, object arg)
 	{
@@ -4427,11 +3703,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SwitchEntry n, object arg)
 	{
@@ -4443,11 +3715,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SwitchStmt n, object arg)
 	{
@@ -4459,11 +3727,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ExpressionStmt n, object arg)
 	{
@@ -4475,11 +3739,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EmptyStmt n, object arg)
 	{
@@ -4491,11 +3751,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LabeledStmt n, object arg)
 	{
@@ -4507,11 +3763,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BlockStmt n, object arg)
 	{
@@ -4523,11 +3775,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AssertStmt n, object arg)
 	{
@@ -4539,11 +3787,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -4555,11 +3799,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -4571,11 +3811,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -4587,11 +3823,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MemberValuePair n, object arg)
 	{
@@ -4603,11 +3835,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NormalAnnotationExpr n, object arg)
 	{
@@ -4619,11 +3847,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -4635,11 +3859,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -4651,11 +3871,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VariableDeclarationExpr n, object arg)
 	{
@@ -4667,11 +3883,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnaryExpr n, object arg)
 	{
@@ -4683,11 +3895,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SuperExpr n, object arg)
 	{
@@ -4699,11 +3907,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ThisExpr n, object arg)
 	{
@@ -4715,11 +3919,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ObjectCreationExpr n, object arg)
 	{
@@ -4731,11 +3931,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NameExpr n, object arg)
 	{
@@ -4747,11 +3943,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodCallExpr n, object arg)
 	{
@@ -4763,11 +3955,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NullLiteralExpr n, object arg)
 	{
@@ -4779,11 +3967,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BooleanLiteralExpr n, object arg)
 	{
@@ -4795,11 +3979,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(DoubleLiteralExpr n, object arg)
 	{
@@ -4811,11 +3991,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CharLiteralExpr n, object arg)
 	{
@@ -4827,11 +4003,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LongLiteralExpr n, object arg)
 	{
@@ -4843,11 +4015,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(IntegerLiteralExpr n, object arg)
 	{
@@ -4859,11 +4027,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(StringLiteralExpr n, object arg)
 	{
@@ -4875,11 +4039,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(InstanceOfExpr n, object arg)
 	{
@@ -4891,11 +4051,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(FieldAccessExpr n, object arg)
 	{
@@ -4907,11 +4063,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnclosedExpr n, object arg)
 	{
@@ -4923,11 +4075,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ConditionalExpr n, object arg)
 	{
@@ -4939,11 +4087,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassExpr n, object arg)
 	{
@@ -4955,11 +4099,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CastExpr n, object arg)
 	{
@@ -4971,11 +4111,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BinaryExpr n, object arg)
 	{
@@ -4987,11 +4123,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AssignExpr n, object arg)
 	{
@@ -5003,11 +4135,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayInitializerExpr n, object arg)
 	{
@@ -5019,11 +4147,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayCreationExpr n, object arg)
 	{
@@ -5035,11 +4159,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayAccessExpr n, object arg)
 	{
@@ -5051,11 +4171,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnknownType n, object arg)
 	{
@@ -5067,11 +4183,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(WildcardType n, object arg)
 	{
@@ -5083,11 +4195,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VoidType n, object arg)
 	{
@@ -5099,11 +4207,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnionType n, object arg)
 	{
@@ -5115,11 +4219,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(IntersectionType n, object arg)
 	{
@@ -5131,11 +4231,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayCreationLevel n, object arg)
 	{
@@ -5147,11 +4243,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayType n, object arg)
 	{
@@ -5163,11 +4255,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PrimitiveType n, object arg)
 	{
@@ -5179,11 +4267,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassOrInterfaceType n, object arg)
 	{
@@ -5195,11 +4279,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(JavadocComment n, object arg)
 	{
@@ -5211,11 +4291,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(InitializerDeclaration n, object arg)
 	{
@@ -5227,11 +4303,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Parameter n, object arg)
 	{
@@ -5243,11 +4315,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodDeclaration n, object arg)
 	{
@@ -5259,11 +4327,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ConstructorDeclaration n, object arg)
 	{
@@ -5275,11 +4339,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VariableDeclarator n, object arg)
 	{
@@ -5291,11 +4351,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(FieldDeclaration n, object arg)
 	{
@@ -5307,11 +4363,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -5323,11 +4375,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AnnotationDeclaration n, object arg)
 	{
@@ -5339,11 +4387,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnumConstantDeclaration n, object arg)
 	{
@@ -5355,11 +4399,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnumDeclaration n, object arg)
 	{
@@ -5371,11 +4411,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CompactConstructorDeclaration n, object arg)
 	{
@@ -5387,11 +4423,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(RecordDeclaration n, object arg)
 	{
@@ -5403,11 +4435,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -5419,11 +4447,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BlockComment n, object arg)
 	{
@@ -5435,11 +4459,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LineComment n, object arg)
 	{
@@ -5451,11 +4471,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TypeParameter n, object arg)
 	{
@@ -5467,11 +4483,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PackageDeclaration n, object arg)
 	{
@@ -5483,11 +4495,7 @@ public class EqualsVisitor: GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CompilationUnit n, object arg)
 	{

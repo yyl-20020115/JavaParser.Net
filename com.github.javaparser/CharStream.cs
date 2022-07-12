@@ -1,5 +1,3 @@
-using IKVM.Attributes;
-
 namespace com.github.javaparser;
 
 public interface CharStream

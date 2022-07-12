@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -80,13 +80,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public TypeParameter(TokenRange tokenRange, SimpleName name, NodeList typeBound, NodeList annotations)
 		: base(tokenRange, annotations)
@@ -155,11 +149,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -193,11 +183,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024asString_00240(StringBuilder str, NodeList l)
 	{
@@ -229,11 +215,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public TypeParameter(string name, NodeList typeBound)
 		: this(null, new SimpleName(name), typeBound, new NodeList())
@@ -241,12 +223,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -259,11 +236,7 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -318,16 +291,8 @@ public class TypeParameter : ReferenceType, NodeWithSimpleName, NodeWithAnnotati
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 85, 99, 130, 105, 109, 130, 112, 111, 115,
-		226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -46,12 +46,7 @@ internal class InitializePropertyMetaModelsStatementsGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 184, 140, 103, 112, 127, 1, 123, 146, 141,
-		122, 111, 115, 110, 230, 56, 231, 73, 127, 0,
-		158, 111, 111
-	})]
+		
 	internal virtual void generate(Field P_0, ClassOrInterfaceDeclaration P_1, string P_2, NodeList P_3)
 	{
 		AstTypeAnalysis astTypeAnalysis = new AstTypeAnalysis(P_0.getGenericType());
@@ -67,12 +62,7 @@ internal class InitializePropertyMetaModelsStatementsGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		15, 140, 103, 112, 127, 6, 123, 146, 146, 126,
-		106, 115, 110, 230, 56, 231, 73, 127, 0, 158,
-		111, 111
-	})]
+		
 	internal virtual void generateDerivedProperty(Method P_0, ClassOrInterfaceDeclaration P_1, string P_2, NodeList P_3)
 	{
 		AstTypeAnalysis astTypeAnalysis = new AstTypeAnalysis(P_0.getGenericReturnType());

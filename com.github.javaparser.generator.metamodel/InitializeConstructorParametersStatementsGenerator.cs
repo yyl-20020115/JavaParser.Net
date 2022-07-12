@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.annotation;
@@ -78,11 +78,7 @@ internal class InitializeConstructorParametersStatementsGenerator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 182, 104, 129, 104, 117, 144, 110, 106, 111,
-		230, 61, 231, 69, 238, 56, 233, 74
-	})]
+		
 	internal virtual void generate(Class P_0, NodeList P_1)
 	{
 		if (P_0 != ClassLiteral<Node>.Value)

@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -11,11 +11,7 @@ namespace com.github.javaparser.utils;
 public class CodeGenerationUtils
 {
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static string f(string format, params object[] @params)
 	{
@@ -25,11 +21,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path subtractPaths(Path full, Path difference)
 	{
@@ -75,11 +67,7 @@ public class CodeGenerationUtils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static string getterName(Class type, string name)
 	{
@@ -99,12 +87,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path fileInPackageAbsolutePath(string root, string pkg, string file)
 	{
@@ -115,11 +98,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path packageAbsolutePath(string root, string pkg)
 	{
@@ -186,11 +165,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static string optionalOf(string text, bool isOptional)
 	{
@@ -204,12 +179,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path fileInPackageAbsolutePath(Path root, string pkg, string file)
 	{
@@ -219,11 +189,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path fileInPackageRelativePath(string pkg, string file)
 	{
@@ -234,11 +200,7 @@ public class CodeGenerationUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Path packageAbsolutePath(Path root, string pkg)
 	{

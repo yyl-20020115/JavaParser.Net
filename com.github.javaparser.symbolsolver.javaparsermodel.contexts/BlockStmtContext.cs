@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -6,7 +6,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -96,11 +96,7 @@ public class BlockStmtContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		25, 103, 104, 173, 251, 73, 230, 69, 127, 7,
-		136, 123, 110, 148, 226, 69
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		Optional parent = getParent();

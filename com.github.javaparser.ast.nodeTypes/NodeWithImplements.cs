@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.ast.nodeTypes;
@@ -103,11 +103,7 @@ public abstract class NodeWithImplements
 	virtual Node setImplementedTypes(NodeList implementsList);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setImplementedType(int i, ClassOrInterfaceType implement);
 
 	

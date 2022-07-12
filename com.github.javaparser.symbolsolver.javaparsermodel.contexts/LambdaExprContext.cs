@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -13,7 +13,7 @@ using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -88,117 +88,7 @@ public class LambdaExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		20,
-		98,
-		127,
-		14,
-		100,
-		109,
-		127,
-		8,
-		114,
-		109,
-		108,
-		105,
-		116,
-		117,
-		181,
-		105,
-		108,
-		110,
-		204,
-		byte.MaxValue,
-		1,
-		72,
-		131,
-		124,
-		127,
-		5,
-		99,
-		226,
-		61,
-		232,
-		70,
-		172,
-		185,
-		105,
-		149,
-		137,
-		106,
-		138,
-		136,
-		108,
-		105,
-		116,
-		105,
-		108,
-		180,
-		103,
-		108,
-		127,
-		14,
-		127,
-		12,
-		127,
-		0,
-		153,
-		103,
-		119,
-		186,
-		106,
-		138,
-		139,
-		108,
-		105,
-		119,
-		108,
-		127,
-		9,
-		137,
-		108,
-		180,
-		103,
-		108,
-		127,
-		14,
-		127,
-		12,
-		127,
-		0,
-		153,
-		103,
-		119,
-		186,
-		106,
-		138,
-		171,
-		113,
-		105,
-		121,
-		137,
-		108,
-		180,
-		103,
-		108,
-		127,
-		14,
-		127,
-		12,
-		127,
-		0,
-		153,
-		103,
-		119,
-		186,
-		106,
-		138,
-		171,
-		171,
-		101,
-		165
-	})]
+		
 	public override Optional solveSymbolAsValue(string name)
 	{
 		int num = -1;

@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -11,11 +11,11 @@ using java.util.function;
 
 namespace com.github.javaparser.ast.observer;
 
-[Serializable]
+
 
 public class ObservableProperty : java.lang.Enum
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{
@@ -119,7 +119,7 @@ public class ObservableProperty : java.lang.Enum
 		COMMENTED_NODE
 	}
 
-	[Serializable]
+	
 	[InnerClass(null, Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
 		
 	internal sealed class Type : java.lang.Enum
@@ -150,13 +150,7 @@ public class ObservableProperty : java.lang.Enum
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private Type(string _0024enum_0024name, int _0024enum_0024ordinal, bool multiple, bool node)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -1547,13 +1541,7 @@ public class ObservableProperty : java.lang.Enum
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private ObservableProperty(string _0024enum_0024name, int _0024enum_0024ordinal, Type type, bool derived)
 		: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -1583,11 +1571,7 @@ public class ObservableProperty : java.lang.Enum
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 156, 127, 6, 106, 127, 6, 106, 223, 6,
-		127, 57, 98
-	})]
+	
 	public virtual object getRawValue(Node node)
 	{
 		//Discarded unreachable code: IL_00ad
@@ -1657,11 +1641,7 @@ public class ObservableProperty : java.lang.Enum
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool hasMethod(Node node, string name)
 	{
@@ -1679,12 +1659,7 @@ public class ObservableProperty : java.lang.Enum
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		(Modifiers)0
-	})]
+		
 	
 	private ObservableProperty(string _0024enum_0024name, int _0024enum_0024ordinal, Type type)
 		: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -1695,11 +1670,7 @@ public class ObservableProperty : java.lang.Enum
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+		
 	
 	private ObservableProperty(string _0024enum_0024name, int _0024enum_0024ordinal)
 		: this(_0024enum_0024name, _0024enum_0024ordinal, Type.SINGLE_REFERENCE, derived: false)
@@ -1709,11 +1680,7 @@ public class ObservableProperty : java.lang.Enum
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024fromCamelCaseName_00240(string camelCaseName, ObservableProperty v)
 	{
@@ -1766,11 +1733,7 @@ public class ObservableProperty : java.lang.Enum
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 89, 136, 104, 108, 104, 103, 104, 142, 164,
-		159, 51, 98
-	})]
+	
 	public virtual Node getValueAsSingleReference(Node node)
 	{
 		object rawValue = getRawValue(node);
@@ -1810,11 +1773,7 @@ public class ObservableProperty : java.lang.Enum
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		160, 118, 136, 99, 132, 104, 137, 103, 104, 142,
-		191, 3, 98
-	})]
+	
 	public virtual NodeList getValueAsMultipleReference(Node node)
 	{
 		//Discarded unreachable code: IL_0040
@@ -1943,20 +1902,7 @@ public class ObservableProperty : java.lang.Enum
 		return result;
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		159, 180, 117, 117, 117, 117, 117, 117, 117, 117,
-		117, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 118,
-		118, 118, 118, 118, 118, 118, 118, 118, 118, 119,
-		119, 119, 119, 119, 119, 119, 119, 119, 113, 241,
-		159, 156
-	})]
+	
 	static ObservableProperty()
 	{
 		___003C_003EANNOTATIONS = new ObservableProperty("ANNOTATIONS", 0, Type.MULTIPLE_REFERENCE);

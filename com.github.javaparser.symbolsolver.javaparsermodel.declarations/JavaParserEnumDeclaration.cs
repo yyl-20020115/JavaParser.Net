@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -970,11 +970,7 @@ public class JavaParserEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 172, 108, 141, 159, 22, 104, 104, 150, 109,
-		159, 4, 112, 117, 112
-	})]
+	
 	private ResolvedReferenceType toReferenceType(ClassOrInterfaceType P_0)
 	{
 		string text = P_0.getName().getId();
@@ -1163,11 +1159,7 @@ public class JavaParserEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		89, 135, 110, 130, 109, 162, 109, 130, 109, 130,
-		104, 130
-	})]
+	
 	public override bool canBeAssignedTo(ResolvedReferenceTypeDeclaration other)
 	{
 		string qualifiedName = other.getQualifiedName();
@@ -1309,16 +1301,7 @@ public class JavaParserEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160,
-		126,
-		140,
-		150,
-		byte.MaxValue,
-		17,
-		69
-	})]
+		
 	public override List getAllFields()
 	{
 		List fieldsForDeclaredVariables = javaParserTypeAdapter.getFieldsForDeclaredVariables();
@@ -1329,36 +1312,7 @@ public class JavaParserEnumDeclaration : AbstractTypeDeclaration, ResolvedEnumDe
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		79,
-		130,
-		134,
-		118,
-		109,
-		112,
-		102,
-		107,
-		120,
-		101,
-		5,
-		166,
-		232,
-		70,
-		112,
-		159,
-		10,
-		byte.MaxValue,
-		4,
-		69,
-		226,
-		60,
-		98,
-		99,
-		168,
-		162
-	})]
+		
 	public override List getAncestors(bool acceptIncompleteList)
 	{
 		ArrayList arrayList = new ArrayList();

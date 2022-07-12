@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.printer.lexicalpreservation;
@@ -14,11 +14,7 @@ public class DifferenceElementCalculator_0024ChildPositionInfo
 	internal Integer position;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal DifferenceElementCalculator_0024ChildPositionInfo(Node node, Integer position)
 	{

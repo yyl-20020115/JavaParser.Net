@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -79,11 +79,7 @@ public interface ResolvedMethodLikeDeclaration : ResolvedDeclaration, ResolvedTy
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		14, 102, 109, 108, 107, 99, 140, 243, 60, 230,
-		70, 108
-	})]
+	
 	static string _003Cdefault_003EgetSignature(ResolvedMethodLikeDeclaration P_0)
 	{
 		StringBuilder stringBuilder = new StringBuilder();

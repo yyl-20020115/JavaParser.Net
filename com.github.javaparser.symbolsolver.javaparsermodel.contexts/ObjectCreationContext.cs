@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -21,11 +21,7 @@ public class ObjectCreationContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		2, 117, 123, 146, 125, 118, 127, 2, 111, 138,
-		194, 109, 105, 139
-	})]
+		
 	public override SymbolReference solveType(string name)
 	{
 		if (((ObjectCreationExpr)wrappedNode).hasScope())

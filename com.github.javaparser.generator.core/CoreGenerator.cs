@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.generator.core.node;
 using com.github.javaparser.generator.core.other;
 using com.github.javaparser.generator.core.visitor;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.nio.file;
 
@@ -28,12 +28,7 @@ public class CoreGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		23, 107, 107, 107, 107, 107, 107, 107, 107, 107,
-		107, 107, 107, 107, 107, 107, 139, 107, 107, 107,
-		107, 107, 107, 107, 107, 108, 109
-	})]
+	
 	private void run(SourceRoot P_0, SourceRoot P_1)
 	{
 		new TypeCastingGenerator(P_0).generate();
@@ -66,11 +61,7 @@ public class CoreGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		2, 101, 144, 106, 127, 24, 177, 138, 127, 24,
-		209, 140, 103
-	})]
+	
 	public static void main(string[] args)
 	{
 		if ((nint)args.LongLength != 1)

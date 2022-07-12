@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.printer.concretesyntaxmodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util.function;
@@ -110,11 +110,7 @@ public interface Change
 		
 		[NameSig("lambda$evaluate$0", "(Lcom.github.javaparser.ast.Node;Lcom.github.javaparser.ast.observer.ObservableProperty;)Z")]
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal unsafe static bool _003Cpiim_003Elambda_0024evaluate_00240(Change node, Node p, ObservableProperty P_2)
 		{
@@ -174,19 +170,11 @@ public interface Change
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual object getValue(ObservableProperty property, Node node);
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual bool evaluate(CsmConditional csmConditional, Node node);
 
 	

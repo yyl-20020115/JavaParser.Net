@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -12,11 +12,7 @@ internal class TokenTextElement : TextElement
 	private JavaToken token;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal TokenTextElement(int tokenKind, string text)
 		: this(new JavaToken(tokenKind, text))

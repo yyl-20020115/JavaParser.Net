@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -150,21 +150,8 @@ public class YamlPrinter
 	private bool outputNodeType;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		5, 103, 103, 103, 127, 0, 117, 127, 0, 117,
-		117, 145, 104, 159, 48, 159, 25, 101, 127, 0,
-		127, 55, 130, 127, 0, 111, 100, 114, 130, 127,
-		4, 111, 115, 127, 31, 105, 127, 11, 127, 1,
-		159, 11, 101
-	})]
+	
+	
 	public virtual void output(Node node, string name, int level, StringBuilder builder)
 	{
 		Utils.assertNotNull(node);
@@ -251,25 +238,7 @@ public class YamlPrinter
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		52,
-		122,
-		127,
-		18,
-		111,
-		127,
-		18,
-		127,
-		18,
-		127,
-		18,
-		127,
-		18,
-		byte.MaxValue,
-		30,
-		57
-	})]
+	
 	private string escapeValue(string value)
 	{
 		StringBuilder stringBuilder = new StringBuilder().append("\"");
@@ -335,6 +304,6 @@ public class YamlPrinter
 	
 	public static void print(Node node)
 	{
-		java.lang.System.@out.println(new YamlPrinter(outputNodeType: true).output(node));
+		System.Console.WriteLine(new YamlPrinter(outputNodeType: true).output(node));
 	}
 }

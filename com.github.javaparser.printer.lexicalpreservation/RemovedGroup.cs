@@ -1,8 +1,8 @@
 using System.Collections;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using ikvm.lang;
 using java.lang;
 using java.util;
@@ -268,11 +268,7 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 		private Function hasOnlyWhitespaceBehindFunction;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static RemovedGroup of(Integer firstElementIndex, List removedList)
 	{
@@ -318,12 +314,7 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 81, 135, 98, 107, 108, 135, 104, 108, 147,
-		124, 137, 127, 2, 132, 181, 105, 120, 142, 168,
-		238, 70
-	})]
+		
 	internal Optional getIndentation()
 	{
 		Removed firstElement = getFirstElement();
@@ -380,16 +371,8 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		5, 8, 231, 160, 95, 113, 113, 113, 241, 159,
-		161, 99, 176, 107, 176, 103, 103
-	})]
+		
+	
 	private RemovedGroup(Integer firstElementIndex, List removedList)
 	{
 		this.m_isProcessed = false;
@@ -426,16 +409,8 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		104, 98, 104, 108, 135, 103, 104, 151, 106, 109,
-		110, 162
-	})]
+		
+	
 	private bool hasOnlyWhitespace(Removed startElement, Function hasOnlyWhitespaceFunction)
 	{
 		int result = 0;
@@ -461,11 +436,7 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private bool hasOnlyWhiteSpaceForTokenFunction(JavaToken token, Function tokenFunction)
 	{

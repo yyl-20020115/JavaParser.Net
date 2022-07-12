@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -49,12 +49,7 @@ public class NoCommentEqualsVisitorGenerator : VisitorGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 186, 149, 113, 139, 118, 112, 138, 159, 10,
-		127, 4, 127, 1, 114, 98, 109, 104, 159, 2,
-		191, 2, 159, 0, 101, 142, 171, 108
-	})]
+	
 	protected internal override void generateVisitMethodBody(BaseNodeMetaModel node, MethodDeclaration visitMethod, CompilationUnit compilationUnit)
 	{
 		visitMethod.getParameters().forEach(new ___003C_003EAnon0());

@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -51,11 +51,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void addElement(int index, TextElement nodeTextElement)
 	{
@@ -109,11 +105,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void addToken(int tokenKind, string text)
 	{
@@ -154,12 +146,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void addToken(int index, int tokenKind, string text)
 	{
@@ -167,11 +154,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void replace(TextElementMatcher position, TextElement newElement)
 	{
@@ -191,11 +174,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual int findElement(TextElementMatcher matcher, int from)
 	{
@@ -210,11 +189,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual int tryToFindElement(TextElementMatcher matcher, int from)
 	{
@@ -230,11 +205,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual int findChild(Node child, int from)
 	{
@@ -244,11 +215,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual int tryToFindChild(Node child, int from)
 	{
@@ -259,11 +226,7 @@ internal class NodeText
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024expand_00240(StringBuffer sb, TextElement e)
 	{
@@ -271,11 +234,7 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void addChild(int index, Node child)
 	{
@@ -283,16 +242,8 @@ internal class NodeText
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 109, 162, 98, 127, 4, 105, 109, 99, 110,
-		120, 175, 171, 129, 101
-	})]
+	
+	
 	public virtual void remove(TextElementMatcher matcher, bool potentiallyFollowingWhitespace)
 	{
 		int num = 0;

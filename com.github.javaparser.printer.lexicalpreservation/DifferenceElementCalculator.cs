@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -228,18 +228,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		17, 107, 104, 103, 103, 116, 104, 98, 104, 98,
-		104, 130, 159, 32, 107, 232, 69, 103, 103, 106,
-		104, 98, 104, 98, 104, 130, 159, 32, 104, 106,
-		104, 138
-	})]
+	
+	
 	internal static bool matching(CsmElement a, CsmElement b)
 	{
 		if (a is LexicalDifferenceCalculator.CsmChild)
@@ -328,18 +318,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 117, 134, 98, 226, 70, 124, 114, 105, 127,
-		2, 125, 137, 114, 147, 119, 158, 158, 153, 100,
-		105, 106, 109, 100, 105, 106, 105, 110, 169, 119,
-		99, 107, 183, 116, 110, 134, 109, 196, 159, 3
-	})]
+		
+	
 	private static List calculateImpl(LexicalDifferenceCalculator.CalculatedSyntaxModel original, LexicalDifferenceCalculator.CalculatedSyntaxModel after)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -412,16 +392,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 83, 127, 4, 104, 103, 113, 106, 103, 125,
-		98, 145, 101
-	})]
+		
+	
 	private static void considerRemoval(NodeText nodeTextForChild, List elements)
 	{
 		Iterator iterator = nodeTextForChild.getElements().iterator();
@@ -447,17 +419,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 97, 98, 104, 103, 127, 1, 118, 108, 103,
-		101, 162, 99, 109, 133
-	})]
+		
+	
 	private static int considerRemoval(CsmElement removedElement, int originalIndex, List elements)
 	{
 		int num = 0;
@@ -481,16 +444,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		58, 127, 1, 130, 107, 104, 103, 103, 126, 104,
-		130, 159, 32, 104, 104, 103, 103, 111, 104, 162
-	})]
+	
+	
 	private static bool replacement(CsmElement a, CsmElement b)
 	{
 		if (a is CsmIndent || b is CsmIndent || a is CsmUnindent || b is CsmUnindent)
@@ -536,17 +491,8 @@ internal class DifferenceElementCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		114, 103, 135, 103, 136, 134, 99, 99, 99, 109,
-		149, 159, 29, 159, 29, 108, 159, 1, 120, 102,
-		102, 133, 126, 159, 19
-	})]
+		
+	
 	internal static List calculate(LexicalDifferenceCalculator.CalculatedSyntaxModel original, LexicalDifferenceCalculator.CalculatedSyntaxModel after)
 	{
 		List list = findChildrenPositions(original);
@@ -595,11 +541,7 @@ internal class DifferenceElementCalculator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024calculate_00240(DifferenceElementCalculator_0024ChildPositionInfo child, DifferenceElementCalculator_0024ChildPositionInfo i)
 	{
@@ -618,11 +560,7 @@ internal class DifferenceElementCalculator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024calculate_00242(DifferenceElementCalculator_0024ChildPositionInfo child, DifferenceElementCalculator_0024ChildPositionInfo i)
 	{
@@ -641,11 +579,7 @@ internal class DifferenceElementCalculator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024calculateImpl_00244(List elements, CsmElement el)
 	{

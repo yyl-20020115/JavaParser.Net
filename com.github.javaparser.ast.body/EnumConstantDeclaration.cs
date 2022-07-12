@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -10,7 +10,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -52,14 +52,7 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public EnumConstantDeclaration(TokenRange tokenRange, NodeList annotations, SimpleName name, NodeList arguments, NodeList classBody)
 		: base(tokenRange, annotations)
@@ -131,11 +124,7 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -173,13 +162,7 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -192,11 +175,7 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -215,11 +194,7 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		106, 99, 130, 112, 111, 109, 226, 61, 230, 70,
-		112, 111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -248,17 +223,8 @@ public class EnumConstantDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWit
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 75, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 105, 109,
-		130
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

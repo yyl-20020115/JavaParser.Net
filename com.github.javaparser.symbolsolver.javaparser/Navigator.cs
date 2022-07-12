@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -374,11 +374,7 @@ public class Navigator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 120, 135, 102, 127, 1, 127, 1, 108, 130,
-		98, 104, 113, 149
-	})]
+		
 	public static Optional findType(TypeDeclaration td, string qualifiedName)
 	{
 		string outerTypeName = getOuterTypeName(qualifiedName);
@@ -519,11 +515,7 @@ public class Navigator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		22, 98, 98, 127, 1, 104, 104, 100, 99, 130,
-		132, 98, 99, 159, 6
-	})]
+		
 	public static ConstructorDeclaration demandConstructor(TypeDeclaration td, int index)
 	{
 		ConstructorDeclaration constructorDeclaration = null;
@@ -571,11 +563,7 @@ public class Navigator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		52, 127, 4, 104, 103, 127, 2, 116, 131, 130,
-		101
-	})]
+	
 	public static VariableDeclarator demandField(ClassOrInterfaceDeclaration cd, string name)
 	{
 		Iterator iterator = cd.getMembers().iterator();
@@ -615,11 +603,7 @@ public class Navigator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		74, 98, 127, 1, 104, 103, 110, 99, 144, 162,
-		98, 99, 159, 6
-	})]
+		
 	public static MethodDeclaration demandMethod(TypeDeclaration cd, string name)
 	{
 		MethodDeclaration methodDeclaration = null;

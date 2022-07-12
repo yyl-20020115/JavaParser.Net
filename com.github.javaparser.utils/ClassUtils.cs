@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -48,11 +48,7 @@ public class ClassUtils
 	{
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		159, 173, 170, 117, 117, 117, 117, 117, 117, 117,
-		117, 245, 70, 170, 127, 5, 113, 105, 141, 98
-	})]
+	
 	static ClassUtils()
 	{
 		primitiveWrapperMap = new HashMap();

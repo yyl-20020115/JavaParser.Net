@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -15,11 +15,7 @@ public interface NodeWithParameters
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getParameterByName_00240(string name, Parameter p)
 		{
@@ -30,11 +26,7 @@ public interface NodeWithParameters
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getParameterByType_00241(string type, Parameter p)
 		{
@@ -45,11 +37,7 @@ public interface NodeWithParameters
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getParameterByType_00242(Class type, Parameter p)
 		{
@@ -391,11 +379,7 @@ public interface NodeWithParameters
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addParameter(Class paramClass, string name);
 
 	
@@ -410,11 +394,7 @@ public interface NodeWithParameters
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addParameter(string className, string name);
 
 	
@@ -428,11 +408,7 @@ public interface NodeWithParameters
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual Parameter addAndGetParameter(string className, string name);
 
 	
@@ -463,16 +439,7 @@ public interface NodeWithParameters
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		121,
-		181,
-		165,
-		112,
-		byte.MaxValue,
-		6,
-		57
-	})]
+	
 	static bool _003Cdefault_003EhasParametersOfType(NodeWithParameters P_0, Class[] P_1)
 	{
 		bool result = ((List)P_0.getParameters().stream().map(new ___003C_003EAnon5())
@@ -515,11 +482,7 @@ public interface NodeWithParameters
 	virtual void tryAddImportToParentCompilationUnit(Class clazz);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node addParameter(Type type, string name);
 
 	
@@ -546,11 +509,7 @@ public interface NodeWithParameters
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual Parameter addAndGetParameter(Type type, string name);
 
 	
@@ -564,11 +523,7 @@ public interface NodeWithParameters
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setParameter(int i, Parameter parameter);
 
 	
@@ -584,11 +539,7 @@ public interface NodeWithParameters
 	virtual Node setParameters(NodeList parameters);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Parameter addAndGetParameter(Class paramClass, string name);
 
 	

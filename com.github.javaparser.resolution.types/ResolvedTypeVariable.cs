@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -105,12 +105,7 @@ public class ResolvedTypeVariable : ResolvedType
     }
 
 
-    [MethodParameters(new Modifiers[]
-{
-        (Modifiers)0,
-        (Modifiers)0,
-        (Modifiers)0
-})]
+    
     
     public virtual ResolvedType replaceTypeVariables(ResolvedTypeParameterDeclaration tpToBeReplaced, ResolvedType replaced, Map inferredTypes)
     {

@@ -1,8 +1,8 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -125,16 +125,8 @@ public class Position :  Comparable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		13, 104, 133, 159, 6, 228, 69, 159, 6, 103,
-		103
-	})]
+	
+	
 	public Position(int line, int column)
 	{
 		if (line < -2)
@@ -209,11 +201,7 @@ public class Position :  Comparable
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	[Deprecated(new object[]
 	{

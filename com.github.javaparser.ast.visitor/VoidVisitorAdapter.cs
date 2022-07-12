@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -5970,11 +5970,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00240(object arg, BodyDeclaration p)
 	{
@@ -5983,11 +5979,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00241(object arg, Modifier p)
 	{
@@ -5996,11 +5988,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00242(object arg, AnnotationExpr p)
 	{
@@ -6009,11 +5997,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00243(object arg, Comment l)
 	{
@@ -6022,11 +6006,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00244(object arg, Expression l)
 	{
@@ -6035,11 +6015,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00245(object arg, Modifier p)
 	{
@@ -6048,11 +6024,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00246(object arg, AnnotationExpr p)
 	{
@@ -6061,11 +6033,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00247(object arg, Comment l)
 	{
@@ -6074,11 +6042,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00248(object arg, Comment l)
 	{
@@ -6087,11 +6051,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_00249(object arg, ArrayInitializerExpr l)
 	{
@@ -6100,11 +6060,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002410(object arg, ArrayCreationLevel p)
 	{
@@ -6113,11 +6069,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002411(object arg, Comment l)
 	{
@@ -6126,11 +6078,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002412(object arg, Expression p)
 	{
@@ -6139,11 +6087,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002413(object arg, Comment l)
 	{
@@ -6152,11 +6096,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002414(object arg, Expression l)
 	{
@@ -6165,11 +6105,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002415(object arg, Comment l)
 	{
@@ -6178,11 +6114,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002416(object arg, Comment l)
 	{
@@ -6191,11 +6123,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002417(object arg, Comment l)
 	{
@@ -6204,11 +6132,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002418(object arg, Comment l)
 	{
@@ -6217,11 +6141,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002419(object arg, Statement p)
 	{
@@ -6230,11 +6150,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002420(object arg, Comment l)
 	{
@@ -6243,11 +6159,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002421(object arg, Comment l)
 	{
@@ -6256,11 +6168,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002422(object arg, SimpleName l)
 	{
@@ -6269,11 +6177,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002423(object arg, Comment l)
 	{
@@ -6282,11 +6186,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002424(object arg, Comment l)
 	{
@@ -6295,11 +6195,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002425(object arg, Comment l)
 	{
@@ -6308,11 +6204,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002426(object arg, Comment l)
 	{
@@ -6321,11 +6213,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002427(object arg, Comment l)
 	{
@@ -6334,11 +6222,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002428(object arg, ClassOrInterfaceType p)
 	{
@@ -6347,11 +6231,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002429(object arg, ClassOrInterfaceType p)
 	{
@@ -6360,11 +6240,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002430(object arg, TypeParameter p)
 	{
@@ -6373,11 +6249,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002431(object arg, BodyDeclaration p)
 	{
@@ -6386,11 +6258,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002432(object arg, Modifier p)
 	{
@@ -6399,11 +6267,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002433(object arg, AnnotationExpr p)
 	{
@@ -6412,11 +6276,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002434(object arg, Comment l)
 	{
@@ -6425,11 +6285,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002435(object arg, ClassOrInterfaceType l)
 	{
@@ -6438,11 +6294,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002437(object arg, NodeList l)
 	{
@@ -6451,11 +6303,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002438(object arg, AnnotationExpr p)
 	{
@@ -6464,11 +6312,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002439(object arg, Comment l)
 	{
@@ -6477,11 +6321,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002440(object arg, ImportDeclaration p)
 	{
@@ -6490,11 +6330,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002441(object arg, ModuleDeclaration l)
 	{
@@ -6503,11 +6339,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002442(object arg, PackageDeclaration l)
 	{
@@ -6516,11 +6348,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002443(object arg, TypeDeclaration p)
 	{
@@ -6529,11 +6357,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002444(object arg, Comment l)
 	{
@@ -6542,11 +6366,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002445(object arg, Comment l)
 	{
@@ -6555,11 +6375,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002446(object arg, Modifier p)
 	{
@@ -6568,11 +6384,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002447(object arg, Parameter p)
 	{
@@ -6581,11 +6393,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002448(object arg, ReceiverParameter l)
 	{
@@ -6594,11 +6402,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002449(object arg, ReferenceType p)
 	{
@@ -6607,11 +6411,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002450(object arg, TypeParameter p)
 	{
@@ -6620,11 +6420,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002451(object arg, AnnotationExpr p)
 	{
@@ -6633,11 +6429,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002452(object arg, Comment l)
 	{
@@ -6646,11 +6438,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002453(object arg, SimpleName l)
 	{
@@ -6659,11 +6447,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002454(object arg, Comment l)
 	{
@@ -6672,11 +6456,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002455(object arg, Comment l)
 	{
@@ -6685,11 +6465,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002456(object arg, Comment l)
 	{
@@ -6698,11 +6474,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002457(object arg, Comment l)
 	{
@@ -6711,11 +6483,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002458(object arg, Comment l)
 	{
@@ -6724,11 +6492,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002459(object arg, Expression p)
 	{
@@ -6737,11 +6501,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002460(object arg, BodyDeclaration p)
 	{
@@ -6750,11 +6510,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002461(object arg, AnnotationExpr p)
 	{
@@ -6763,11 +6519,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002462(object arg, Comment l)
 	{
@@ -6776,11 +6528,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002463(object arg, EnumConstantDeclaration p)
 	{
@@ -6789,11 +6537,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002464(object arg, ClassOrInterfaceType p)
 	{
@@ -6802,11 +6546,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002465(object arg, BodyDeclaration p)
 	{
@@ -6815,11 +6555,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002466(object arg, Modifier p)
 	{
@@ -6828,11 +6564,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002467(object arg, AnnotationExpr p)
 	{
@@ -6841,11 +6573,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002468(object arg, Comment l)
 	{
@@ -6854,11 +6582,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002469(object arg, Expression p)
 	{
@@ -6867,11 +6591,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002470(object arg, Expression l)
 	{
@@ -6880,11 +6600,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002472(object arg, NodeList l)
 	{
@@ -6893,11 +6609,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002473(object arg, Comment l)
 	{
@@ -6906,11 +6618,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002474(object arg, Comment l)
 	{
@@ -6919,11 +6627,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002476(object arg, NodeList l)
 	{
@@ -6932,11 +6636,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002477(object arg, Comment l)
 	{
@@ -6945,11 +6645,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002478(object arg, Modifier p)
 	{
@@ -6958,11 +6654,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002479(object arg, VariableDeclarator p)
 	{
@@ -6971,11 +6663,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002480(object arg, AnnotationExpr p)
 	{
@@ -6984,11 +6672,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002481(object arg, Comment l)
 	{
@@ -6997,11 +6681,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002482(object arg, Comment l)
 	{
@@ -7010,11 +6690,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002483(object arg, Expression l)
 	{
@@ -7023,11 +6699,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002484(object arg, Expression p)
 	{
@@ -7036,11 +6708,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002485(object arg, Expression p)
 	{
@@ -7049,11 +6717,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002486(object arg, Comment l)
 	{
@@ -7062,11 +6726,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002487(object arg, Statement l)
 	{
@@ -7075,11 +6735,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002488(object arg, Comment l)
 	{
@@ -7088,11 +6744,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002489(object arg, AnnotationExpr p)
 	{
@@ -7101,11 +6753,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002490(object arg, Comment l)
 	{
@@ -7114,11 +6762,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002491(object arg, PatternExpr l)
 	{
@@ -7127,11 +6771,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002492(object arg, Comment l)
 	{
@@ -7140,11 +6780,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002493(object arg, Comment l)
 	{
@@ -7153,11 +6789,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002494(object arg, Comment l)
 	{
@@ -7166,11 +6798,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002495(object arg, Comment l)
 	{
@@ -7179,11 +6807,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002496(object arg, Comment l)
 	{
@@ -7192,11 +6816,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002497(object arg, Comment l)
 	{
@@ -7205,11 +6825,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002498(object arg, Comment l)
 	{
@@ -7218,11 +6834,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_002499(object arg, Comment l)
 	{
@@ -7231,11 +6843,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024100(object arg, Expression p)
 	{
@@ -7244,11 +6852,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024101(object arg, Expression l)
 	{
@@ -7257,11 +6861,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024103(object arg, NodeList l)
 	{
@@ -7270,11 +6870,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024104(object arg, Comment l)
 	{
@@ -7283,11 +6879,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024105(object arg, BlockStmt l)
 	{
@@ -7296,11 +6888,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024106(object arg, Modifier p)
 	{
@@ -7309,11 +6897,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024107(object arg, Parameter p)
 	{
@@ -7322,11 +6906,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024108(object arg, ReceiverParameter l)
 	{
@@ -7335,11 +6915,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024109(object arg, ReferenceType p)
 	{
@@ -7348,11 +6924,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024110(object arg, TypeParameter p)
 	{
@@ -7361,11 +6933,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024111(object arg, AnnotationExpr p)
 	{
@@ -7374,11 +6942,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024112(object arg, Comment l)
 	{
@@ -7387,11 +6951,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024113(object arg, Comment l)
 	{
@@ -7400,11 +6960,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024114(object arg, MemberValuePair p)
 	{
@@ -7413,11 +6969,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024115(object arg, Comment l)
 	{
@@ -7426,11 +6978,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024116(object arg, Comment l)
 	{
@@ -7439,11 +6987,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024118(object arg, NodeList l)
 	{
@@ -7452,11 +6996,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024119(object arg, Expression p)
 	{
@@ -7465,11 +7005,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024120(object arg, Expression l)
 	{
@@ -7478,11 +7014,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024122(object arg, NodeList l)
 	{
@@ -7491,11 +7023,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024123(object arg, Comment l)
 	{
@@ -7504,11 +7032,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024124(object arg, AnnotationExpr p)
 	{
@@ -7517,11 +7041,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024125(object arg, Comment l)
 	{
@@ -7530,11 +7050,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024126(object arg, AnnotationExpr p)
 	{
@@ -7543,11 +7059,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024127(object arg, Modifier p)
 	{
@@ -7556,11 +7068,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024128(object arg, AnnotationExpr p)
 	{
@@ -7569,11 +7077,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024129(object arg, Comment l)
 	{
@@ -7582,11 +7086,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024130(object arg, AnnotationExpr p)
 	{
@@ -7595,11 +7095,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024131(object arg, Comment l)
 	{
@@ -7608,11 +7104,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024132(object arg, Name l)
 	{
@@ -7621,11 +7113,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024133(object arg, Comment l)
 	{
@@ -7634,11 +7122,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024134(object arg, Comment l)
 	{
@@ -7647,11 +7131,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024135(object arg, AnnotationExpr p)
 	{
@@ -7660,11 +7140,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024136(object arg, Comment l)
 	{
@@ -7673,11 +7149,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024137(object arg, AnnotationExpr p)
 	{
@@ -7686,11 +7158,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024138(object arg, Expression l)
 	{
@@ -7699,11 +7167,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024139(object arg, Comment l)
 	{
@@ -7712,11 +7176,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024140(object arg, ReferenceType p)
 	{
@@ -7725,11 +7185,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024141(object arg, AnnotationExpr p)
 	{
@@ -7738,11 +7194,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024142(object arg, Comment l)
 	{
@@ -7751,11 +7203,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024143(object arg, ReferenceType p)
 	{
@@ -7764,11 +7212,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024144(object arg, AnnotationExpr p)
 	{
@@ -7777,11 +7221,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024145(object arg, Comment l)
 	{
@@ -7790,11 +7230,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024146(object arg, Expression l)
 	{
@@ -7803,11 +7239,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024147(object arg, Comment l)
 	{
@@ -7816,11 +7248,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024148(object arg, Comment l)
 	{
@@ -7829,11 +7257,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024149(object arg, Comment l)
 	{
@@ -7842,11 +7266,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024150(object arg, Name l)
 	{
@@ -7855,11 +7275,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024151(object arg, Comment l)
 	{
@@ -7868,11 +7284,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024152(object arg, Expression p)
 	{
@@ -7881,11 +7293,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024153(object arg, Statement p)
 	{
@@ -7894,11 +7302,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024154(object arg, Comment l)
 	{
@@ -7907,11 +7311,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024155(object arg, SwitchEntry p)
 	{
@@ -7920,11 +7320,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024156(object arg, Comment l)
 	{
@@ -7933,11 +7329,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024157(object arg, Comment l)
 	{
@@ -7946,11 +7338,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024158(object arg, Name l)
 	{
@@ -7959,11 +7347,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024159(object arg, Comment l)
 	{
@@ -7972,11 +7356,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024160(object arg, Comment l)
 	{
@@ -7985,11 +7365,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024161(object arg, CatchClause p)
 	{
@@ -7998,11 +7374,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024162(object arg, BlockStmt l)
 	{
@@ -8011,11 +7383,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024163(object arg, Expression p)
 	{
@@ -8024,11 +7392,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024164(object arg, Comment l)
 	{
@@ -8037,11 +7401,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024165(object arg, Comment l)
 	{
@@ -8050,11 +7410,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024166(object arg, Comment l)
 	{
@@ -8063,11 +7419,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024167(object arg, ClassOrInterfaceType p)
 	{
@@ -8076,11 +7428,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024168(object arg, AnnotationExpr p)
 	{
@@ -8089,11 +7437,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024169(object arg, Comment l)
 	{
@@ -8102,11 +7446,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024170(object arg, Comment l)
 	{
@@ -8115,11 +7455,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024171(object arg, AnnotationExpr p)
 	{
@@ -8128,11 +7464,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024172(object arg, Comment l)
 	{
@@ -8141,11 +7473,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024173(object arg, AnnotationExpr p)
 	{
@@ -8154,11 +7482,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024174(object arg, Modifier p)
 	{
@@ -8167,11 +7491,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024175(object arg, VariableDeclarator p)
 	{
@@ -8180,11 +7500,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024176(object arg, Comment l)
 	{
@@ -8193,11 +7509,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024177(object arg, Expression l)
 	{
@@ -8206,11 +7518,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024178(object arg, Comment l)
 	{
@@ -8219,11 +7527,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024179(object arg, AnnotationExpr p)
 	{
@@ -8232,11 +7536,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024180(object arg, Comment l)
 	{
@@ -8245,11 +7545,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024181(object arg, Comment l)
 	{
@@ -8258,11 +7554,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024182(object arg, ReferenceType l)
 	{
@@ -8271,11 +7563,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024183(object arg, ReferenceType l)
 	{
@@ -8284,11 +7572,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024184(object arg, AnnotationExpr p)
 	{
@@ -8297,11 +7581,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024185(object arg, Comment l)
 	{
@@ -8310,11 +7590,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024186(object arg, Parameter p)
 	{
@@ -8323,11 +7599,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024187(object arg, Comment l)
 	{
@@ -8336,11 +7608,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024189(object arg, NodeList l)
 	{
@@ -8349,11 +7617,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024190(object arg, Comment l)
 	{
@@ -8362,11 +7626,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024191(object arg, Comment l)
 	{
@@ -8375,11 +7635,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024192(object arg, Comment l)
 	{
@@ -8388,11 +7644,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024193(object arg, AnnotationExpr p)
 	{
@@ -8401,11 +7653,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024194(object arg, ModuleDirective p)
 	{
@@ -8414,11 +7662,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024195(object arg, Comment l)
 	{
@@ -8427,11 +7671,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024196(object arg, Modifier p)
 	{
@@ -8440,11 +7680,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024197(object arg, Comment l)
 	{
@@ -8453,11 +7689,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024198(object arg, Name p)
 	{
@@ -8466,11 +7698,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024199(object arg, Comment l)
 	{
@@ -8479,11 +7707,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024200(object arg, Name p)
 	{
@@ -8492,11 +7716,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024201(object arg, Comment l)
 	{
@@ -8505,11 +7725,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024202(object arg, Comment l)
 	{
@@ -8518,11 +7734,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024203(object arg, Name p)
 	{
@@ -8531,11 +7743,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024204(object arg, Comment l)
 	{
@@ -8544,11 +7752,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024205(object arg, Comment l)
 	{
@@ -8557,11 +7761,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024206(object arg, AnnotationExpr p)
 	{
@@ -8570,11 +7770,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024207(object arg, Comment l)
 	{
@@ -8583,11 +7779,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024208(object arg, AnnotationExpr p)
 	{
@@ -8596,11 +7788,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024209(object arg, Comment l)
 	{
@@ -8609,11 +7797,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024210(object arg, Comment l)
 	{
@@ -8622,11 +7806,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024211(object arg, SwitchEntry p)
 	{
@@ -8635,11 +7815,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024212(object arg, Comment l)
 	{
@@ -8648,11 +7824,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024213(object arg, Comment l)
 	{
@@ -8661,11 +7833,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024214(object arg, Comment l)
 	{
@@ -8674,11 +7842,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024215(object arg, Comment l)
 	{
@@ -8687,11 +7851,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024216(object arg, ClassOrInterfaceType p)
 	{
@@ -8700,11 +7860,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024217(object arg, Parameter p)
 	{
@@ -8713,11 +7869,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024218(object arg, ReceiverParameter l)
 	{
@@ -8726,11 +7878,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024219(object arg, TypeParameter p)
 	{
@@ -8739,11 +7887,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024220(object arg, BodyDeclaration p)
 	{
@@ -8752,11 +7896,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024221(object arg, Modifier p)
 	{
@@ -8765,11 +7905,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024222(object arg, AnnotationExpr p)
 	{
@@ -8778,11 +7914,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024223(object arg, Comment l)
 	{
@@ -8791,11 +7923,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024224(object arg, Modifier p)
 	{
@@ -8804,11 +7932,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024225(object arg, ReferenceType p)
 	{
@@ -8817,11 +7941,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024226(object arg, TypeParameter p)
 	{
@@ -8830,11 +7950,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024227(object arg, AnnotationExpr p)
 	{
@@ -8843,11 +7959,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024visit_0024228(object arg, Comment l)
 	{
@@ -8856,11 +7968,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_0024188(object arg, Type v)
 	{
@@ -8869,11 +7977,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_0024121(object arg, Type v)
 	{
@@ -8882,11 +7986,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_0024117(object arg, BodyDeclaration v)
 	{
@@ -8895,11 +7995,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_0024102(object arg, Type v)
 	{
@@ -8908,11 +8004,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_002475(object arg, Type v)
 	{
@@ -8921,11 +8013,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_002471(object arg, Type v)
 	{
@@ -8934,11 +8022,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_002436(object arg, Type v)
 	{
@@ -8952,11 +8036,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(AnnotationDeclaration n, object arg)
 	{
@@ -8968,11 +8048,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -8985,11 +8061,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ArrayAccessExpr n, object arg)
 	{
@@ -8999,11 +8071,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ArrayCreationExpr n, object arg)
 	{
@@ -9014,11 +8082,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ArrayInitializerExpr n, object arg)
 	{
@@ -9027,11 +8091,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(AssertStmt n, object arg)
 	{
@@ -9041,11 +8101,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(AssignExpr n, object arg)
 	{
@@ -9055,11 +8111,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(BinaryExpr n, object arg)
 	{
@@ -9069,11 +8121,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(BlockComment n, object arg)
 	{
@@ -9081,11 +8129,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(BlockStmt n, object arg)
 	{
@@ -9094,11 +8138,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(BooleanLiteralExpr n, object arg)
 	{
@@ -9106,11 +8146,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(BreakStmt n, object arg)
 	{
@@ -9119,11 +8155,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(CastExpr n, object arg)
 	{
@@ -9133,11 +8165,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(CatchClause n, object arg)
 	{
@@ -9147,11 +8175,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(CharLiteralExpr n, object arg)
 	{
@@ -9159,11 +8183,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ClassExpr n, object arg)
 	{
@@ -9172,11 +8192,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -9191,11 +8207,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ClassOrInterfaceType n, object arg)
 	{
@@ -9207,11 +8219,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(CompilationUnit n, object arg)
 	{
@@ -9223,11 +8231,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ConditionalExpr n, object arg)
 	{
@@ -9238,16 +8242,8 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 75, 109, 119, 109, 119, 119, 119, 119, 119,
-		121
-	})]
+		
+	
 	public virtual void visit(ConstructorDeclaration n, object arg)
 	{
 		n.getBody().accept(this, arg);
@@ -9262,11 +8258,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ContinueStmt n, object arg)
 	{
@@ -9275,11 +8267,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(DoStmt n, object arg)
 	{
@@ -9289,11 +8277,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(DoubleLiteralExpr n, object arg)
 	{
@@ -9301,11 +8285,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(EmptyStmt n, object arg)
 	{
@@ -9313,11 +8293,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(EnclosedExpr n, object arg)
 	{
@@ -9326,11 +8302,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(EnumConstantDeclaration n, object arg)
 	{
@@ -9342,11 +8314,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(EnumDeclaration n, object arg)
 	{
@@ -9360,11 +8328,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -9375,11 +8339,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ExpressionStmt n, object arg)
 	{
@@ -9388,11 +8348,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(FieldAccessExpr n, object arg)
 	{
@@ -9403,11 +8359,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(FieldDeclaration n, object arg)
 	{
@@ -9418,11 +8370,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ForEachStmt n, object arg)
 	{
@@ -9433,11 +8381,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ForStmt n, object arg)
 	{
@@ -9449,11 +8393,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(IfStmt n, object arg)
 	{
@@ -9464,11 +8404,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(InitializerDeclaration n, object arg)
 	{
@@ -9478,11 +8414,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(InstanceOfExpr n, object arg)
 	{
@@ -9493,11 +8425,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(IntegerLiteralExpr n, object arg)
 	{
@@ -9505,11 +8433,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(JavadocComment n, object arg)
 	{
@@ -9517,11 +8441,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LabeledStmt n, object arg)
 	{
@@ -9531,11 +8451,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LineComment n, object arg)
 	{
@@ -9543,11 +8459,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LongLiteralExpr n, object arg)
 	{
@@ -9555,11 +8467,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -9568,11 +8476,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(MemberValuePair n, object arg)
 	{
@@ -9582,11 +8486,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(MethodCallExpr n, object arg)
 	{
@@ -9598,16 +8498,8 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 0, 119, 109, 119, 109, 119, 119, 119, 119,
-		119, 121
-	})]
+		
+	
 	public virtual void visit(MethodDeclaration n, object arg)
 	{
 		n.getBody().ifPresent(new ___003C_003EAnon101(this, arg));
@@ -9623,11 +8515,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(NameExpr n, object arg)
 	{
@@ -9636,11 +8524,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(NormalAnnotationExpr n, object arg)
 	{
@@ -9650,11 +8534,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(NullLiteralExpr n, object arg)
 	{
@@ -9662,11 +8542,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ObjectCreationExpr n, object arg)
 	{
@@ -9679,11 +8555,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(PackageDeclaration n, object arg)
 	{
@@ -9693,11 +8565,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(Parameter n, object arg)
 	{
@@ -9710,11 +8578,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(PrimitiveType n, object arg)
 	{
@@ -9723,11 +8587,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(Name n, object arg)
 	{
@@ -9736,11 +8596,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SimpleName n, object arg)
 	{
@@ -9748,11 +8604,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ArrayType n, object arg)
 	{
@@ -9762,11 +8614,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ArrayCreationLevel n, object arg)
 	{
@@ -9776,11 +8624,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(IntersectionType n, object arg)
 	{
@@ -9790,11 +8634,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(UnionType n, object arg)
 	{
@@ -9804,11 +8644,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ReturnStmt n, object arg)
 	{
@@ -9817,11 +8653,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -9831,11 +8663,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(StringLiteralExpr n, object arg)
 	{
@@ -9843,11 +8671,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SuperExpr n, object arg)
 	{
@@ -9856,11 +8680,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SwitchEntry n, object arg)
 	{
@@ -9870,11 +8690,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SwitchStmt n, object arg)
 	{
@@ -9884,11 +8700,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SynchronizedStmt n, object arg)
 	{
@@ -9898,11 +8710,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ThisExpr n, object arg)
 	{
@@ -9911,11 +8719,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ThrowStmt n, object arg)
 	{
@@ -9924,11 +8728,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(TryStmt n, object arg)
 	{
@@ -9940,11 +8740,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -9953,11 +8749,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -9966,11 +8758,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(TypeParameter n, object arg)
 	{
@@ -9981,11 +8769,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(UnaryExpr n, object arg)
 	{
@@ -9994,11 +8778,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(UnknownType n, object arg)
 	{
@@ -10007,11 +8787,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(VariableDeclarationExpr n, object arg)
 	{
@@ -10022,11 +8798,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(VariableDeclarator n, object arg)
 	{
@@ -10037,11 +8809,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(VoidType n, object arg)
 	{
@@ -10050,11 +8818,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(WhileStmt n, object arg)
 	{
@@ -10064,11 +8828,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(WildcardType n, object arg)
 	{
@@ -10079,11 +8839,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(LambdaExpr n, object arg)
 	{
@@ -10093,11 +8849,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(MethodReferenceExpr n, object arg)
 	{
@@ -10107,11 +8859,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(TypeExpr n, object arg)
 	{
@@ -10120,11 +8868,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void visit(NodeList n, object arg)
 	{
@@ -10137,11 +8881,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ImportDeclaration n, object arg)
 	{
@@ -10150,11 +8890,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleDeclaration n, object arg)
 	{
@@ -10165,11 +8901,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleRequiresDirective n, object arg)
 	{
@@ -10179,11 +8911,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleExportsDirective n, object arg)
 	{
@@ -10193,11 +8921,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleProvidesDirective n, object arg)
 	{
@@ -10207,11 +8931,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleUsesDirective n, object arg)
 	{
@@ -10220,11 +8940,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ModuleOpensDirective n, object arg)
 	{
@@ -10234,11 +8950,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(UnparsableStmt n, object arg)
 	{
@@ -10246,11 +8958,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(ReceiverParameter n, object arg)
 	{
@@ -10261,11 +8969,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(VarType n, object arg)
 	{
@@ -10274,11 +8978,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(Modifier n, object arg)
 	{
@@ -10286,11 +8986,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(SwitchExpr n, object arg)
 	{
@@ -10300,11 +8996,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -10312,11 +9004,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(YieldStmt n, object arg)
 	{
@@ -10325,11 +9013,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(PatternExpr n, object arg)
 	{
@@ -10339,16 +9023,8 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 105, 119, 119, 119, 119, 119, 119, 109, 119,
-		121
-	})]
+		
+	
 	public virtual void visit(RecordDeclaration n, object arg)
 	{
 		n.getImplementedTypes().forEach(new ___003C_003EAnon209(this, arg));
@@ -10363,11 +9039,7 @@ public abstract class VoidVisitorAdapter: VoidVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void visit(CompactConstructorDeclaration n, object arg)
 	{

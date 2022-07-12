@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -6,7 +6,7 @@ using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -70,11 +70,7 @@ internal abstract class GeneratedJavaParserBase
 	internal abstract JavaToken token();
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual JavaToken orIfInvalid(JavaToken firstChoice, JavaToken secondChoice)
 	{
@@ -94,11 +90,7 @@ internal abstract class GeneratedJavaParserBase
 	internal abstract Token getNextToken();
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual TokenRange range(JavaToken begin, JavaToken end)
 	{
@@ -113,14 +105,7 @@ internal abstract class GeneratedJavaParserBase
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 249, 107, 134, 98, 102, 113, 109, 139, 113,
-		58, 232, 60, 235, 73, 127, 0, 115, 130, 109,
-		107, 105, 105, 100, 140, 105, 111, 133, 127, 8,
-		112, 107, 139, 109, 106, 103, 134, 233, 44, 235,
-		87, 105, 105, 124, 102, 139
-	})]
+	
 	private string makeMessageForParseException(ParseException exception)
 	{
 		StringBuilder stringBuilder = new StringBuilder("Parse error. Found ");
@@ -186,11 +171,7 @@ internal abstract class GeneratedJavaParserBase
 	internal abstract Token getToken(int index);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual NodeList add(NodeList list, Node obj)
 	{
@@ -203,11 +184,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual TokenRange range(Node begin, Node end)
 	{
@@ -222,11 +199,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void propagateRangeGrowthOnRight(Node node, Node endNode)
 	{
@@ -238,17 +211,8 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 201, 107, 108, 108, 127, 30, 119, 109, 108,
-		127, 31, 120, 106, 109, 106, 104, 104, 112, 106,
-		98, 139
-	})]
+	
+	
 	internal virtual Expression generateLambda(Expression ret, Statement lambdaBody)
 	{
 		if (ret is EnclosedExpr)
@@ -326,12 +290,7 @@ internal abstract class GeneratedJavaParserBase
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024propagateRangeGrowthOnRight_00240(Node node, Node endNode, Node nodeParent)
 	{
@@ -377,11 +336,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual TokenRange range(Node begin, JavaToken end)
 	{
@@ -396,11 +351,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual TokenRange range(JavaToken begin, Node end)
 	{
@@ -415,11 +366,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual JavaToken orIfInvalid(JavaToken firstChoice, Node secondChoice)
 	{
@@ -464,16 +411,8 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 76, 98, 104, 199, 103, 145, 135, 98, 102,
-		169, 127, 0
-	})]
+	
+	
 	internal virtual TokenRange recover(int recoveryTokenType, ParseException p)
 	{
 		JavaToken javaToken = null;
@@ -500,19 +439,8 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 98, 98, 105, 135, 162, 104, 111, 110, 127,
-		2, 130, 104, 106, 102, 106, 132, 153, 136, 98,
-		103, 170, 127, 2
-	})]
+	
+	
 	internal virtual TokenRange recoverStatement(int recoveryTokenType, int lBraceType, int rBraceType, ParseException p)
 	{
 		JavaToken javaToken = null;
@@ -567,11 +495,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual NodeList addWhenNotNull(NodeList list, Node obj)
 	{
@@ -585,11 +509,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual NodeList prepend(NodeList list, Node obj)
 	{
@@ -602,11 +522,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual List add(List list, object obj)
 	{
@@ -622,15 +538,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual ArrayCreationExpr juggleArrayCreation(TokenRange range, List levelRanges, Type type, NodeList dimensions, List arrayAnnotations, ArrayInitializerExpr arrayInitializerExpr)
 	{
@@ -646,11 +554,7 @@ internal abstract class GeneratedJavaParserBase
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual Type juggleArrayType(Type partialType, List additionalBrackets)
 	{

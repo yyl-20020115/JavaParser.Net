@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.resolution.declarations;

@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.comments;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util.function;
 
@@ -39,16 +39,8 @@ public class CsmComment: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 176, 109, 104, 108, 104, 110, 104, 108, 104,
-		110, 104, 108, 104, 137, 150
-	})]
+	
+	
 	internal static void process(Comment comment, SourcePrinter printer)
 	{
 		string arg = printer.normalizeEolInTextBlock(comment.getContent());
@@ -80,11 +72,7 @@ public class CsmComment: CsmElement
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024prettyPrint_00240(SourcePrinter printer, Comment c)
 	{
@@ -92,11 +80,7 @@ public class CsmComment: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{

@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -83,16 +83,7 @@ public class ConstructorResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 124, 66, 107, 105, 145, 108, 109, 108, 127,
-		5, 106, 98, 105, 106, 113, 149, 99, 42, 231,
-		69, 98, 105, 130, 99, 209, 110, 130, 103, 99,
-		112, 111, 111, 116, 108, 118, 133, 100, 127, 0,
-		109, 111, 103, 98, 46, 167, 103, 127, 5, 108,
-		98, 127, 10, 108, 130, 107, 117, 99, 130, 116,
-		112, 162, 226, 30, 235, 102
-	})]
+		
 	private static bool isApplicable(ResolvedConstructorDeclaration P_0, List P_1, TypeSolver P_2, bool P_3)
 	{
 		if (P_0.hasVariadicParameter())
@@ -203,41 +194,7 @@ public class ConstructorResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		101,
-		98,
-		127,
-		9,
-		104,
-		141,
-		105,
-		148,
-		109,
-		98,
-		98,
-		112,
-		111,
-		107,
-		100,
-		107,
-		98,
-		133,
-		109,
-		113,
-		226,
-		69,
-		131,
-		105,
-		106,
-		133,
-		byte.MaxValue,
-		23,
-		43,
-		235,
-		91
-	})]
+		
 	public static SymbolReference findMostApplicable(List constructors, List argumentsTypes, TypeSolver typeSolver, bool wildcardTolerance)
 	{
 		List list = (List)constructors.stream().filter(new ___003C_003EAnon0(argumentsTypes, typeSolver, wildcardTolerance)).collect(Collectors.toList());
@@ -291,12 +248,7 @@ public class ConstructorResolutionLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 94, 98, 110, 130, 110, 130, 110, 109, 141,
-		114, 162, 114, 162, 112, 162, 121, 226, 47, 233,
-		84
-	})]
+	
 	private static bool isMoreSpecific(ResolvedConstructorDeclaration P_0, ResolvedConstructorDeclaration P_1, TypeSolver P_2)
 	{
 		int result = 0;

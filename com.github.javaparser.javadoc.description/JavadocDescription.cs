@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -42,11 +42,7 @@ public class JavadocDescription
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private static Pair indexOfNextInlineTag(string text, int start)
 	{
@@ -88,11 +84,7 @@ public class JavadocDescription
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024toText_00240(StringBuilder sb, JavadocDescriptionElement e)
 	{
@@ -101,11 +93,7 @@ public class JavadocDescription
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 181, 102, 130, 110, 115, 159, 4, 127, 21,
-		152, 105, 147
-	})]
+	
 	public static JavadocDescription parseText(string text)
 	{
 		JavadocDescription javadocDescription = new JavadocDescription();

@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -298,11 +298,7 @@ public class CommentsCollection
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		22, 104, 130, 113, 127, 4, 104, 130, 177, 159,
-		35, 104, 130, 101
-	})]
+	
 	public virtual bool contains(Comment comment)
 	{
 		if (!comment.hasRange())
@@ -410,11 +406,7 @@ public class CommentsCollection
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024minus_00249(CommentsCollection other, Comment comment)
 	{

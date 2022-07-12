@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -256,12 +256,7 @@ public class Problem
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public Problem(string message, TokenRange location, System.Exception cause)
 	{
@@ -272,11 +267,7 @@ public class Problem
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 190, 108, 107, 127, 1, 113, 110, 119, 113,
-		236, 60, 230, 71
-	})]
+	
 	public override string ToString()
 	{
 		StringBuilder stringBuilder = new StringBuilder(getVerboseMessage());
@@ -378,11 +369,7 @@ public class Problem
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static int lambda_0024static_00246(Problem a, Problem b)
 	{

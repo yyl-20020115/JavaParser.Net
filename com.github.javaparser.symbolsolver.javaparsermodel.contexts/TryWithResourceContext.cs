@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -6,7 +6,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -89,11 +89,7 @@ public class TryWithResourceContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		5, 127, 14, 104, 127, 6, 115, 110, 143, 130,
-		133, 114, 154
-	})]
+		
 	public override Optional solveSymbolAsValue(string name)
 	{
 		Iterator iterator = ((TryStmt)wrappedNode).getResources().iterator();
@@ -129,11 +125,7 @@ public class TryWithResourceContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		25, 127, 14, 104, 127, 6, 115, 148, 130, 133,
-		114, 154
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		Iterator iterator = ((TryStmt)wrappedNode).getResources().iterator();
@@ -177,11 +169,7 @@ public class TryWithResourceContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		50, 113, 107, 106, 119, 143, 101, 239, 60, 1,
-		230, 73, 115, 102, 124, 105, 147, 98, 130
-	})]
+		
 	public override List localVariablesExposedToChild(Node child)
 	{
 		NodeList resources = ((TryStmt)wrappedNode).getResources();

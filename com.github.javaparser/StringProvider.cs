@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.io;
 using java.lang;
 
@@ -28,17 +28,8 @@ public class StringProvider :  Provider, Closeable, AutoCloseable
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 184, 110, 100, 130, 101, 100, 98, 100, 130,
-		123, 142
-	})]
+	
+	
 	public virtual int read(char[] aDest, int nOfs, int nLen)
 	{
 		int num = m_nLen - m_nPos;

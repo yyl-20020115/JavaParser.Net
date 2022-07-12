@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -10,7 +10,7 @@ using com.github.javaparser.ast.visitor;
 using com.github.javaparser.javadoc;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -74,11 +74,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			160, 172, 100, 98, 113, 98, 103, 115, 98, 115,
-			98
-		})]
+		
 		public override bool Equals(object o)
 		{
 			if (this == o)
@@ -110,11 +106,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private Signature(string name, List parameterTypes)
 		{
@@ -375,17 +367,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CallableDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList typeParameters, SimpleName name, NodeList parameters, NodeList thrownExceptions, ReceiverParameter receiverParameter)
 		: base(tokenRange, annotations)
@@ -597,16 +579,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -630,11 +603,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 91, 98, 102, 102, 98, 127, 2, 99, 98,
-		142, 140, 115, 130
-	})]
+	
 	protected internal virtual string appendThrowsIfRequested(bool includingThrows)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -664,13 +633,7 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 110, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70, 104, 105,
-		103, 162, 112, 111, 109, 226, 61, 230, 70, 112,
-		111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -720,18 +683,8 @@ public abstract class CallableDeclaration : BodyDeclaration, NodeWithAccessModif
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 245, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 105, 109, 130, 112, 111, 115, 226, 61, 230,
-		70, 104, 105, 109, 162, 112, 111, 115, 226, 61,
-		230, 70, 112, 111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

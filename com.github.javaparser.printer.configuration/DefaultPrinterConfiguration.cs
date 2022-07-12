@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -11,12 +11,12 @@ namespace com.github.javaparser.printer.configuration;
 
 public class DefaultPrinterConfiguration :  PrinterConfiguration
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class ConfigOption : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -176,12 +176,7 @@ public class DefaultPrinterConfiguration :  PrinterConfiguration
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		private ConfigOption(string _0024enum_0024name, int _0024enum_0024ordinal, Class clazz)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -191,13 +186,7 @@ public class DefaultPrinterConfiguration :  PrinterConfiguration
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private ConfigOption(string _0024enum_0024name, int _0024enum_0024ordinal, Class clazz, object value)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -230,25 +219,7 @@ public class DefaultPrinterConfiguration :  PrinterConfiguration
 			return (ConfigOption)java.lang.Enum.valueOf(ClassLiteral<ConfigOption>.Value, name);
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			159,
-			183,
-			213,
-			213,
-			117,
-			117,
-			117,
-			245,
-			76,
-			245,
-			88,
-			123,
-			218,
-			byte.MaxValue,
-			2,
-			8
-		})]
+		
 		static ConfigOption()
 		{
 			___003C_003EORDER_IMPORTS = new ConfigOption("ORDER_IMPORTS", 0, ClassLiteral<java.lang.Boolean>.Value);
@@ -304,16 +275,7 @@ public class DefaultPrinterConfiguration :  PrinterConfiguration
 		private Set defaultOptions;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		78,
-		232,
-		54,
-		byte.MaxValue,
-		160,
-		93,
-		75
-	})]
+	
 	public DefaultPrinterConfiguration()
 	{
 		HashSet.___003Cclinit_003E();
@@ -331,11 +293,7 @@ public class DefaultPrinterConfiguration :  PrinterConfiguration
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024get_00240(ConfigurationOption option, ConfigurationOption o)
 	{

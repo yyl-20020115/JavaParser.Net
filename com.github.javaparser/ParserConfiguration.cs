@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.validator;
@@ -20,7 +20,7 @@ namespace com.github.javaparser;
 public class ParserConfiguration
 {
 	
-	[EnclosingMethod(null, "lambda$new$2", "()Lcom.github.javaparser.Processor;")]
+	
 	internal class _1 : Processor
 	{
 		
@@ -132,7 +132,7 @@ public class ParserConfiguration
 	}
 
 	
-	[EnclosingMethod(null, "lambda$new$3", "()Lcom.github.javaparser.Processor;")]
+	
 	internal class _2 : Processor
 	{
 		
@@ -208,7 +208,7 @@ public class ParserConfiguration
 	}
 
 	
-	[EnclosingMethod(null, "lambda$new$4", "()Lcom.github.javaparser.Processor;")]
+	
 	internal class _3 : Processor
 	{
 		
@@ -363,12 +363,12 @@ public class ParserConfiguration
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class LanguageLevel : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{

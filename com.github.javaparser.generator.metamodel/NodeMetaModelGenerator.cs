@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -119,82 +119,7 @@ public class NodeMetaModelGenerator : AbstractGenerator
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		24,
-		140,
-		135,
-		103,
-		103,
-		150,
-		127,
-		1,
-		142,
-		103,
-		104,
-		142,
-		127,
-		9,
-		104,
-		219,
-		19,
-		37,
-		37,
-		230,
-		74,
-		108,
-		109,
-		109,
-		169,
-		120,
-		104,
-		141,
-		100,
-		143,
-		202,
-		104,
-		152,
-		120,
-		5,
-		204,
-		98,
-		219,
-		105,
-		105,
-		115,
-		110,
-		230,
-		58,
-		42,
-		230,
-		74,
-		168,
-		104,
-		109,
-		byte.MaxValue,
-		4,
-		71,
-		104,
-		202,
-		124,
-		118,
-		127,
-		1,
-		106,
-		162,
-		114,
-		162,
-		124,
-		118,
-		127,
-		1,
-		110,
-		146,
-		162,
-		167,
-		127,
-		10
-	})]
+		
 	public virtual void generate(Class nodeClass, ClassOrInterfaceDeclaration metaModelCoid, NodeList initializeNodeMetaModelsStatements, NodeList initializePropertyMetaModelsStatements, NodeList initializeConstructorParametersStatements, SourceRoot sourceRoot)
 	{
 		metaModelCoid.setJavadocComment("Warning: The content of this class is partially or completely generated - manual edits risk being overwritten.");

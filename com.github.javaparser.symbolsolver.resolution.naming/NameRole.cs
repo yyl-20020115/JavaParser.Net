@@ -1,16 +1,16 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.resolution.naming;
 
-[Serializable]
+
 
 public class NameRole : java.lang.Enum
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{

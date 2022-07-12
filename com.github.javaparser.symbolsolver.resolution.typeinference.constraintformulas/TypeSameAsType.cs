@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.resolution.typeinference.bounds;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -22,48 +22,7 @@ public class TypeSameAsType : ConstraintFormula
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		1,
-		byte.MaxValue,
-		1,
-		69,
-		122,
-		115,
-		136,
-		232,
-		70,
-		122,
-		232,
-		70,
-		122,
-		249,
-		70,
-		122,
-		249,
-		71,
-		127,
-		7,
-		127,
-		5,
-		102,
-		113,
-		113,
-		107,
-		63,
-		5,
-		166,
-		226,
-		69,
-		122,
-		102,
-		112,
-		15,
-		232,
-		71,
-		232,
-		87
-	})]
+	
 	public override ReductionResult reduce(BoundSet currentBoundSet)
 	{
 		if (!S.isWildcard() && !T.isWildcard())

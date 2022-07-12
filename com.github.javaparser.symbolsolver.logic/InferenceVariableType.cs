@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -175,11 +175,7 @@ public class InferenceVariableType: ResolvedType
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		70, 109, 104, 104, 142, 174, 105, 145, 118, 101,
-		112, 105, 113, 117, 110, 150, 191, 11
-	})]
+	
 	public virtual ResolvedType equivalentType()
 	{
 		Set set = concreteEquivalentTypesAlsoIndirectly(new HashSet(), this);
@@ -220,17 +216,7 @@ public class InferenceVariableType: ResolvedType
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		57,
-		104,
-		102,
-		127,
-		17,
-		byte.MaxValue,
-		13,
-		70
-	})]
+		
 	private Set concreteEquivalentTypesAlsoIndirectly(Set P_0, InferenceVariableType P_1)
 	{
 		P_0.add(P_1);
@@ -241,11 +227,7 @@ public class InferenceVariableType: ResolvedType
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		98, 104, 162, 104, 103, 127, 1, 105, 130, 98,
-		162, 104, 103, 175
-	})]
+	
 	private bool hasInferenceVariables(ResolvedType P_0)
 	{
 		if (P_0 is InferenceVariableType)

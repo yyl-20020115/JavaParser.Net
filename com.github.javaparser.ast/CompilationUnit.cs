@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
@@ -12,7 +12,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.printer;
 using com.github.javaparser.printer.configuration;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -190,12 +190,7 @@ public class CompilationUnit : Node
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		private Storage(CompilationUnit compilationUnit, Path path, Charset encoding)
 		{
@@ -205,11 +200,7 @@ public class CompilationUnit : Node
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		private Storage(CompilationUnit compilationUnit, Path path)
 			: this(compilationUnit, path, Providers.___003C_003EUTF8)
@@ -234,11 +225,7 @@ public class CompilationUnit : Node
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual void save(Function makeOutput, Charset encoding)
 		{
@@ -927,17 +914,8 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 38, 132, 99, 130, 107, 99, 140, 104, 99,
-		140, 108
-	})]
+	
+	
 	public virtual CompilationUnit addImport(string name, bool isStatic, bool isAsterisk)
 	{
 		if (name == null)
@@ -1019,14 +997,7 @@ public class CompilationUnit : Node
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CompilationUnit(TokenRange tokenRange, PackageDeclaration packageDeclaration, NodeList imports, NodeList types, ModuleDeclaration module)
 		: base(tokenRange)
@@ -1191,11 +1162,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual ClassOrInterfaceDeclaration addClass(string name, params Modifier.Keyword[] modifiers)
 	{
@@ -1206,11 +1173,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual ClassOrInterfaceDeclaration addInterface(string name, params Modifier.Keyword[] modifiers)
 	{
@@ -1221,11 +1184,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual EnumDeclaration addEnum(string name, params Modifier.Keyword[] modifiers)
 	{
@@ -1236,11 +1195,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual AnnotationDeclaration addAnnotationDeclaration(string name, params Modifier.Keyword[] modifiers)
 	{
@@ -1287,11 +1242,7 @@ public class CompilationUnit : Node
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -1316,11 +1267,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024addImport_00240(ImportDeclaration importDeclaration, ImportDeclaration im)
 	{
@@ -1331,11 +1278,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024addImport_00241(ImportDeclaration importDeclaration, ImportDeclaration im)
 	{
@@ -1344,11 +1287,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getClassByName_00242(string className, TypeDeclaration type)
 	{
@@ -1365,11 +1304,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getLocalDeclarationFromClassname_00244(string className, ClassOrInterfaceDeclaration cid)
 	{
@@ -1380,11 +1315,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getInterfaceByName_00245(string interfaceName, TypeDeclaration type)
 	{
@@ -1401,11 +1332,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getEnumByName_00247(string enumName, TypeDeclaration type)
 	{
@@ -1433,11 +1360,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getAnnotationDeclarationByName_002411(string annotationName, TypeDeclaration type)
 	{
@@ -1454,11 +1377,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024null_00249(string name, TypeDeclaration t)
 	{
@@ -1484,13 +1403,7 @@ public class CompilationUnit : Node
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -1503,11 +1416,7 @@ public class CompilationUnit : Node
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -1559,11 +1468,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual CompilationUnit setImport(int i, ImportDeclaration imports)
 	{
@@ -1572,11 +1477,7 @@ public class CompilationUnit : Node
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual CompilationUnit setType(int i, TypeDeclaration type)
 	{
@@ -1679,12 +1580,7 @@ public class CompilationUnit : Node
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 220, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 104, 105, 103, 162, 104, 105, 103, 162, 112,
-		111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -1741,11 +1637,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual CompilationUnit setStorage(Path path, Charset charset)
 	{
@@ -1765,11 +1657,7 @@ public class CompilationUnit : Node
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 58, 109, 144, 102, 127, 14, 127, 4, 115,
-		109, 137, 138, 101
-	})]
+	
 	public virtual void recalculatePositions()
 	{
 		if (!getTokenRange().isPresent())
@@ -1789,17 +1677,8 @@ public class CompilationUnit : Node
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 193, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 104, 105, 109, 162, 104, 105, 109, 162, 112,
-		111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

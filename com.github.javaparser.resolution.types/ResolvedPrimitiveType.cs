@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -9,12 +9,12 @@ using java.util.function;
 
 namespace com.github.javaparser.resolution.types;
 
-[Serializable]
+
 
 
 public class ResolvedPrimitiveType : java.lang.Enum, ResolvedType
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{
@@ -191,11 +191,7 @@ public class ResolvedPrimitiveType : java.lang.Enum, ResolvedType
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		62, 104, 119, 104, 120, 130, 127, 1, 120, 130,
-		98, 130
-	})]
+	
 	public virtual bool isAssignableBy(ResolvedType other)
 	{
 		if (other.isPrimitive())
@@ -245,14 +241,7 @@ public class ResolvedPrimitiveType : java.lang.Enum, ResolvedType
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private ResolvedPrimitiveType(string _0024enum_0024name, int _0024enum_0024ordinal, string name, string boxTypeQName, List promotionTypes)
 		: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -370,11 +359,7 @@ public class ResolvedPrimitiveType : java.lang.Enum, ResolvedType
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		117, 186, 127, 38, 166, 127, 30, 182, 127, 20,
-		166
-	})]
+	
 	public static ResolvedType unp(ResolvedType type)
 	{
 		int num = ((type.isReferenceType() && type.asReferenceType().isUnboxable()) ? 1 : 0);
@@ -393,28 +378,7 @@ public class ResolvedPrimitiveType : java.lang.Enum, ResolvedType
 		return type;
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		159,
-		176,
-		127,
-		5,
-		127,
-		10,
-		127,
-		5,
-		127,
-		35,
-		127,
-		43,
-		127,
-		5,
-		127,
-		51,
-		byte.MaxValue,
-		59,
-		54
-	})]
+	
 	static ResolvedPrimitiveType()
 	{
 		___003C_003EBYTE = new ResolvedPrimitiveType("BYTE", 0, "byte", ClassLiteral<java.lang.Byte>.Value.getCanonicalName(), Collections.emptyList());

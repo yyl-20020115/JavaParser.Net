@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 
 namespace com.github.javaparser;
@@ -51,16 +51,8 @@ public class Range
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 182, 104, 99, 144, 99, 208, 105, 103, 137,
-		103, 135
-	})]
+	
+	
 	public Range(Position begin, Position end)
 	{
 		if (begin == null)
@@ -86,11 +78,7 @@ public class Range
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Range range(Position begin, Position end)
 	{
@@ -100,13 +88,7 @@ public class Range
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Range range(int beginLine, int beginColumn, int endLine, int endColumn)
 	{

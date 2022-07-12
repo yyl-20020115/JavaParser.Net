@@ -1,17 +1,17 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
 
 namespace com.github.javaparser.utils;
 
-[Serializable]
+
 
 public class LineSeparator : java.lang.Enum
 {
-	[Serializable]
+	
 	
 	public enum __Enum
 	{
@@ -156,12 +156,7 @@ public class LineSeparator : java.lang.Enum
 		return (equalsString(___003C_003ECR) || equalsString(___003C_003ELF) || equalsString(___003C_003ECRLF)) ? true : false;
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	public static LineSeparator getLineEnding(int countCr, int countLf, int countCrLf)
 	{
 		if ((countCr == 0 && countLf == 0 && countCrLf == 0) ? true : false)
@@ -250,11 +245,7 @@ public class LineSeparator : java.lang.Enum
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private static int count(string haystack, string needle)
 	{
@@ -282,13 +273,7 @@ public class LineSeparator : java.lang.Enum
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private LineSeparator(string _0024enum_0024name, int _0024enum_0024ordinal, string text, string description)
 		: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -367,29 +352,7 @@ public class LineSeparator : java.lang.Enum
 		return result;
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		159,
-		161,
-		218,
-		218,
-		218,
-		107,
-		121,
-		111,
-		127,
-		18,
-		byte.MaxValue,
-		38,
-		71,
-		250,
-		69,
-		250,
-		69,
-		218,
-		250,
-		23
-	})]
+	
 	static LineSeparator()
 	{
 		___003C_003ECR = new LineSeparator("CR", 0, "\r", "CR (\\r)");

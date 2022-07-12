@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
+
+
+
 using com.github.javaparser.ast;
 using com.github.javaparser.printer;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -31,11 +31,7 @@ public class SourceRoot
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult visitFile(Path file, BasicFileAttributes attrs)
 		{
@@ -49,11 +45,7 @@ public class SourceRoot
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)
 		{
@@ -72,11 +64,7 @@ public class SourceRoot
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult visitFile(object file, BasicFileAttributes attrs)
 		{
@@ -88,11 +76,7 @@ public class SourceRoot
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult preVisitDirectory(object dir, BasicFileAttributes attrs)
 		{
@@ -116,12 +100,7 @@ public class SourceRoot
 		internal SourceRoot this_00240;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _2(SourceRoot this_00240, ParserConfiguration val_0024callback, Callback val_0024configuration)
 		{
@@ -133,11 +112,7 @@ public class SourceRoot
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult visitFile(Path absolutePath, BasicFileAttributes attrs)
 		{
@@ -152,11 +127,7 @@ public class SourceRoot
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)
 		{
@@ -166,11 +137,7 @@ public class SourceRoot
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult visitFile(object absolutePath, BasicFileAttributes attrs)
 		{
@@ -182,11 +149,7 @@ public class SourceRoot
 		
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override FileVisitResult preVisitDirectory(object dir, BasicFileAttributes attrs)
 		{
@@ -277,12 +240,12 @@ public class SourceRoot
 	})]
 	public interface Callback
 	{
-		[Serializable]
-		[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+		
+		
 				
 		public class Result : java.lang.Enum
 		{
-			[Serializable]
+			
 			
 			public enum __Enum
 			{
@@ -347,11 +310,7 @@ public class SourceRoot
 			}
 
 			
-						[MethodParameters(new Modifiers[]
-			{
-				Modifiers.Synthetic,
-				Modifiers.Synthetic
-			})]
+						
 			
 			private Result(string _0024enum_0024name, int _0024enum_0024ordinal)
 				: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -377,16 +336,11 @@ public class SourceRoot
 			}
 		}
 
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		virtual Result process(Path localPath, Path absolutePath, ParseResult result);
 	}
 
-	[Serializable]
+	
 	[InnerClass(null, Modifiers.Private | Modifiers.Static)]
 	internal class ParallelParse : RecursiveAction
 	{
@@ -404,11 +358,7 @@ public class SourceRoot
 			internal ParallelParse this_00240;
 
 			
-			[MethodParameters(new Modifiers[]
-			{
-				(Modifiers)0,
-				(Modifiers)0
-			})]
+			
 			
 			public virtual FileVisitResult visitFile(Path file, BasicFileAttributes attrs)
 			{
@@ -419,11 +369,7 @@ public class SourceRoot
 
 			
 			
-			[MethodParameters(new Modifiers[]
-			{
-				(Modifiers)0,
-				(Modifiers)0
-			})]
+			
 			
 			public virtual FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)
 			{
@@ -443,12 +389,7 @@ public class SourceRoot
 			}
 
 			
-			[MethodParameters(new Modifiers[]
-			{
-				~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-				Modifiers.Final | Modifiers.Synthetic,
-				Modifiers.Final | Modifiers.Synthetic
-			})]
+			
 			
 			internal _1(ParallelParse this_00240, Path val_0024walks, List val_0024path)
 			{
@@ -461,11 +402,7 @@ public class SourceRoot
 			
 			
 			
-			[MethodParameters(new Modifiers[]
-			{
-				Modifiers.Synthetic,
-				Modifiers.Synthetic
-			})]
+			
 			
 			public override FileVisitResult visitFile(object file, BasicFileAttributes attrs)
 			{
@@ -477,11 +414,7 @@ public class SourceRoot
 			
 			
 			
-			[MethodParameters(new Modifiers[]
-			{
-				Modifiers.Synthetic,
-				Modifiers.Synthetic
-			})]
+			
 			
 			public override FileVisitResult preVisitDirectory(object dir, BasicFileAttributes attrs)
 			{
@@ -493,11 +426,7 @@ public class SourceRoot
 
 		internal interface VisitFileCallback
 		{
-			[MethodParameters(new Modifiers[]
-			{
-				(Modifiers)0,
-				(Modifiers)0
-			})]
+			
 			virtual FileVisitResult process(Path file, BasicFileAttributes attrs);
 		}
 
@@ -516,11 +445,7 @@ public class SourceRoot
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		internal ParallelParse(Path path, VisitFileCallback callback)
 		{
@@ -543,23 +468,7 @@ public class SourceRoot
 		}
 
 		
-		[LineNumberTable(new byte[]
-		{
-			161,
-			221,
-			102,
-			140,
-			byte.MaxValue,
-			2,
-			87,
-			2,
-			97,
-			166,
-			127,
-			0,
-			104,
-			98
-		})]
+		
 		protected internal override void compute()
 		{
 			ArrayList arrayList = new ArrayList();
@@ -1049,11 +958,7 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public SourceRoot(Path root, ParserConfiguration parserConfiguration)
 		: this(root)
@@ -1071,11 +976,7 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual CompilationUnit parse(string startPackage, string filename)
 	{
@@ -1104,11 +1005,7 @@ public class SourceRoot
 
 	
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual ParseResult tryToParse(string startPackage, string filename)
 	{
@@ -1124,24 +1021,7 @@ public class SourceRoot
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		43,
-		232,
-		55,
-		107,
-		107,
-		byte.MaxValue,
-		0,
-		72,
-		103,
-		110,
-		159,
-		6,
-		108,
-		127,
-		1
-	})]
+	
 	public unsafe SourceRoot(Path root)
 	{
 		cache = new ConcurrentHashMap();
@@ -1198,17 +1078,8 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 159, 109, 126, 125, 119, 159, 10, 151, 134,
-		134
-	})]
+	
+	
 	private FileVisitResult callback(Path absolutePath, ParserConfiguration configuration, Callback callback)
 	{
 		Path path = root.relativize(absolutePath);
@@ -1232,17 +1103,8 @@ public class SourceRoot
 
 	
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		70, 103, 103, 104, 110, 126, 146, 109, 126, 109,
-		112, 119, 110
-	})]
+		
+	
 	public virtual ParseResult tryToParse(string startPackage, string filename, ParserConfiguration configuration)
 	{
 		Utils.assertNotNull(startPackage);
@@ -1316,13 +1178,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot parse(string startPackage, string filename, ParserConfiguration configuration, Callback callback)
 	{
@@ -1336,12 +1192,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot parse(string startPackage, ParserConfiguration configuration, Callback callback)
 	{
@@ -1358,27 +1209,8 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160,
-		byte.MaxValue,
-		103,
-		103,
-		103,
-		103,
-		109,
-		110,
-		249,
-		74,
-		102,
-		136
-	})]
+	
+	
 	public virtual SourceRoot parseParallelized(string startPackage, ParserConfiguration configuration, Callback callback)
 	{
 		Utils.assertNotNull(startPackage);
@@ -1397,12 +1229,7 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private SourceRoot save(CompilationUnit cu, Path path, Charset encoding)
 	{
@@ -1414,16 +1241,8 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 113, 103, 127, 28, 127, 9, 114, 119, 126,
-		159, 4, 101
-	})]
+	
+	
 	public unsafe virtual SourceRoot saveAll(Path root, Charset encoding)
 	{
 		Utils.assertNotNull(root);
@@ -1458,11 +1277,7 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private SourceRoot save(CompilationUnit cu, Path path)
 	{
@@ -1493,12 +1308,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024tryToParse_00243(Path path, ParserConfiguration configuration, CompilationUnit cu)
 	{
@@ -1514,16 +1324,8 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 104, 125, 146, 98, 102, 16, 248, 70, 2,
-		97, 166
-	})]
+	
+	
 	private FileVisitResult lambda_0024tryToParseParallelized_00245(Path file, BasicFileAttributes attrs)
 	{
 		IOException ex;
@@ -1558,12 +1360,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024callback_00247(Path absolutePath, ParserConfiguration configuration, CompilationUnit cu)
 	{
@@ -1572,11 +1369,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024callback_00248(Path absolutePath, CompilationUnit cu)
 	{
@@ -1592,13 +1385,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private FileVisitResult lambda_0024parseParallelized_002410(ParserConfiguration configuration, Callback callback, Path absolutePath, BasicFileAttributes attrs)
 	{
@@ -1685,12 +1472,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot parse(string startPackage, string filename, Callback callback)
 	{
@@ -1700,11 +1482,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot parse(string startPackage, Callback callback)
 	{
@@ -1714,11 +1492,7 @@ public class SourceRoot
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot parseParallelized(string startPackage, Callback callback)
 	{
@@ -1739,12 +1513,7 @@ public class SourceRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SourceRoot add(string startPackage, string filename, CompilationUnit compilationUnit)
 	{

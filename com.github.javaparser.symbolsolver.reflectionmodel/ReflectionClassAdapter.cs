@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -6,7 +6,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.annotation;
@@ -271,11 +271,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		105, 166, 127, 0, 52, 230, 69, 127, 10, 183,
-		130
-	})]
+		
 	public virtual List getAllFields()
 	{
 		ArrayList arrayList = new ArrayList();
@@ -296,11 +292,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		48, 102, 109, 113, 104, 130, 127, 2, 136, 109,
-		107, 109, 112, 104, 228, 60, 230, 71
-	})]
+		
 	public virtual List getAncestors()
 	{
 		LinkedList linkedList = new LinkedList();
@@ -329,11 +321,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		16, 141, 136, 108, 104, 103, 118, 101, 112, 159,
-		16
-	})]
+		
 	public virtual Optional getSuperClass()
 	{
 		if (clazz.getGenericSuperclass() == null)
@@ -359,25 +347,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		32,
-		102,
-		125,
-		108,
-		105,
-		119,
-		101,
-		113,
-		127,
-		22,
-		98,
-		byte.MaxValue,
-		10,
-		56,
-		233,
-		75
-	})]
+		
 	public virtual List getInterfaces()
 	{
 		ArrayList arrayList = new ArrayList();
@@ -477,11 +447,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		69, 126, 110, 15, 230, 69, 127, 13, 110, 115,
-		106, 111, 188, 101
-	})]
+	
 	public virtual ResolvedFieldDeclaration getField(string P_0)
 	{
 		Field[] declaredFields = clazz.getDeclaredFields(ReflectionClassAdapter.___003CGetCallerID_003E());
@@ -518,11 +484,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		88, 126, 110, 2, 230, 71, 127, 10, 127, 8,
-		130, 130
-	})]
+	
 	public virtual bool hasField(string P_0)
 	{
 		Field[] declaredFields = clazz.getDeclaredFields(ReflectionClassAdapter.___003CGetCallerID_003E());
@@ -571,11 +533,7 @@ internal class ReflectionClassAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 74, 104, 130, 104, 137, 104, 130, 104, 130,
-		120, 130, 104, 103, 109, 222
-	})]
+	
 	public virtual bool isAssignableBy(ResolvedType P_0)
 	{
 		if (P_0 is NullType)

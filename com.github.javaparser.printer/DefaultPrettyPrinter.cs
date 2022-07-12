@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.printer.configuration;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util.function;
 
@@ -77,11 +77,7 @@ public class DefaultPrettyPrinter: Printer
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public DefaultPrettyPrinter(Function visitorFactory, PrinterConfiguration configuration)
 	{

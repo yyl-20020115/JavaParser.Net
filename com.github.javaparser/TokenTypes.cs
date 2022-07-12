@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser;
@@ -38,11 +38,7 @@ public class TokenTypes
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		48, 223, 161, 249, 198, 198, 230, 127, 230, 82,
-		134, 230, 77, 230, 103, 230, 76
-	})]
+	
 	public static JavaToken.Category getCategory(int kind)
 	{
 		switch (kind)

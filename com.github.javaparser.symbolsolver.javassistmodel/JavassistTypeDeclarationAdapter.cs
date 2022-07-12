@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -289,22 +289,7 @@ public class JavassistTypeDeclarationAdapter
 
 	
 	[IKVM.Attributes.Signature("(Z)Ljava/util/List<Lcom/github/javaparser/resolution/types/ResolvedReferenceType;>;")]
-	[LineNumberTable(new byte[]
-	{
-		159,
-		109,
-		98,
-		166,
-		byte.MaxValue,
-		9,
-		69,
-		226,
-		60,
-		97,
-		99,
-		167,
-		110
-	})]
+	
 	public virtual List getAncestors(bool acceptIncompleteList)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -362,28 +347,7 @@ public class JavassistTypeDeclarationAdapter
 
 	
 	[IKVM.Attributes.Signature("()Ljava/util/Optional<Lcom/github/javaparser/resolution/types/ResolvedReferenceType;>;")]
-	[LineNumberTable(new byte[]
-	{
-		18,
-		156,
-		139,
-		173,
-		113,
-		63,
-		0,
-		232,
-		70,
-		113,
-		129,
-		49,
-		197,
-		229,
-		59,
-		byte.MaxValue,
-		0,
-		72,
-		97
-	})]
+	
 	public virtual Optional getSuperClass()
 	{
 		//Discarded unreachable code: IL_00a0
@@ -423,11 +387,7 @@ public class JavassistTypeDeclarationAdapter
 
 	
 	[IKVM.Attributes.Signature("()Ljava/util/List<Lcom/github/javaparser/resolution/declarations/ResolvedTypeParameterDeclaration;>;")]
-	[LineNumberTable(new byte[]
-	{
-		160, 64, 110, 166, 102, 107, 118, 101, 31, 5,
-		161, 97
-	})]
+	
 	public virtual List getTypeParameters()
 	{
 		//Discarded unreachable code: IL_0051
@@ -511,47 +471,7 @@ public class JavassistTypeDeclarationAdapter
 
 	
 	[IKVM.Attributes.Signature("(Z)Ljava/util/List<Lcom/github/javaparser/resolution/types/ResolvedReferenceType;>;")]
-	[LineNumberTable(new byte[]
-	{
-		159,
-		117,
-		66,
-		134,
-		109,
-		159,
-		33,
-		116,
-		byte.MaxValue,
-		10,
-		69,
-		byte.MaxValue,
-		4,
-		60,
-		98,
-		99,
-		253,
-		58,
-		240,
-		75,
-		114,
-		159,
-		22,
-		byte.MaxValue,
-		16,
-		69,
-		byte.MaxValue,
-		1,
-		60,
-		98,
-		99,
-		250,
-		59,
-		235,
-		76,
-		2,
-		98,
-		173
-	})]
+	
 	private List getInterfaces(bool P_0)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -628,7 +548,7 @@ public class JavassistTypeDeclarationAdapter
 				UnsolvedSymbolException ex3 = ex2;
 				if (!P_0)
 				{
-					throw Throwable.___003Cunmap_003E(ex3);
+					throw (ex3);
 				}
 			}
 			catch (BadBytecode x5)
@@ -696,7 +616,7 @@ public class JavassistTypeDeclarationAdapter
 				UnsolvedSymbolException ex5 = ex;
 				if (!P_0)
 				{
-					throw Throwable.___003Cunmap_003E(ex5);
+					throw (ex5);
 				}
 			}
 			catch (BadBytecode x8)

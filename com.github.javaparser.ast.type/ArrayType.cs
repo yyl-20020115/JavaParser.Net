@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -8,7 +8,7 @@ using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -53,12 +53,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public ArrayBracketPair(TokenRange tokenRange, Origin origin, NodeList annotations)
 		{
@@ -88,12 +83,12 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Origin : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -137,11 +132,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Origin(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -184,11 +175,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ArrayType(Type type, params AnnotationExpr[] annotations)
 		: this(type, Origin.___003C_003ETYPE, NodeList.nodeList(annotations))
@@ -196,12 +183,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -219,13 +201,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ArrayType(TokenRange tokenRange, Type componentType, Origin origin, NodeList annotations)
 		: base(tokenRange, annotations)
@@ -276,11 +252,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -319,11 +291,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -331,16 +299,8 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		85, 108, 100, 102, 112, 109, 99, 122, 159, 23,
-		118, 100, 253, 56, 233, 61, 233, 80
-	})]
+		
+	
 	[SafeVarargs(new object[]
 	{
 		(byte)64,
@@ -413,11 +373,7 @@ public class ArrayType : ReferenceType, NodeWithAnnotations
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

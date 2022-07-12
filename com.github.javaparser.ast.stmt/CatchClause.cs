@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -8,7 +8,7 @@ using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 
 namespace com.github.javaparser.ast.stmt;
 
@@ -26,12 +26,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CatchClause(TokenRange tokenRange, Parameter parameter, BlockStmt body)
 		: base(tokenRange)
@@ -82,11 +77,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -117,14 +108,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public CatchClause(NodeList exceptModifier, NodeList exceptAnnotations, ClassOrInterfaceType exceptType, SimpleName exceptName, BlockStmt body)
 	{
@@ -133,11 +117,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -150,11 +130,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -172,11 +148,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

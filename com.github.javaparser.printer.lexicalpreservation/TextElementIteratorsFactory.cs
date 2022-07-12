@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -19,12 +19,7 @@ internal class TextElementIteratorsFactory
 		internal int val_0024index;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _1(TokenTextElement element, NodeText val_0024index, int val_0024nodeText)
 		{
@@ -60,11 +55,7 @@ internal class TextElementIteratorsFactory
 		private bool lastReturnedFromNext;
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public CascadingIterator(Iterator current, Provider nextProvider)
 		{
@@ -274,11 +265,7 @@ internal class TextElementIteratorsFactory
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static Iterator partialReverseIterator(NodeText nodeText, int fromIndex)
 	{
@@ -303,11 +290,7 @@ internal class TextElementIteratorsFactory
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private static Iterator reverseIterator(NodeText nodeText, int index)
 	{

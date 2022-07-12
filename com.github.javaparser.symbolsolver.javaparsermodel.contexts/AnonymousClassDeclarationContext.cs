@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
 using com.google.common.@base;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -449,12 +449,7 @@ public class AnonymousClassDeclarationContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 126, 162, 102, 101, 113, 101, 144, 109, 127,
-		6, 249, 79, 226, 69, 104, 97, 111, 109, 103,
-		105, 238, 69, 122, 115, 231, 69, 105, 206
-	})]
+		
 	public override SymbolReference solveMethod(string name, List argumentsTypes, bool staticOnly)
 	{
 		List list = (List)myDeclaration.getDeclaredMethods().stream().filter(new ___003C_003EAnon0(name, staticOnly))
@@ -490,14 +485,7 @@ public class AnonymousClassDeclarationContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		76, 145, 129, 112, 101, 112, 198, 104, 172, 129,
-		112, 101, 113, 230, 69, 104, 172, 139, 111, 170,
-		106, 112, 101, 112, 230, 69, 104, 204, 159, 13,
-		105, 108, 110, 111, 200, 127, 6, 111, 139, 174,
-		2, 193, 133
-	})]
+		
 	public override SymbolReference solveType(string name)
 	{
 		List list = myDeclaration.findMembersOfKind(ClassLiteral<TypeDeclaration>.Value);

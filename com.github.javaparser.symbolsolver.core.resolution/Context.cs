@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -6,7 +6,7 @@ using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.javaparsermodel.contexts;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -458,11 +458,7 @@ public interface Context
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 110, 109, 200, 108, 113, 98, 101, 112, 101,
-		134, 104, 226, 69
-	})]
+	
 	static Optional _003Cdefault_003ElocalVariableDeclarationInScope(Context P_0, string P_1)
 	{
 		if (!P_0.getParent().isPresent())
@@ -502,11 +498,7 @@ public interface Context
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 133, 109, 200, 108, 113, 98, 101, 112, 101,
-		134, 104, 194
-	})]
+	
 	static Optional _003Cdefault_003EparameterDeclarationInScope(Context P_0, string P_1)
 	{
 		if (!P_0.getParent().isPresent())
@@ -546,11 +538,7 @@ public interface Context
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 175, 109, 136, 241, 70, 108, 98, 101, 112,
-		101, 134, 104, 194
-	})]
+	
 	static Optional _003Cdefault_003EpatternExprInScope(Context P_0, string P_1)
 	{
 		if (!P_0.getParent().isPresent())
@@ -590,11 +578,7 @@ public interface Context
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 200, 109, 136, 145, 108, 98, 101, 112, 101,
-		134, 104, 194
-	})]
+	
 	static Optional _003Cdefault_003EfieldDeclarationInScope(Context P_0, string P_1)
 	{
 		if (!P_0.getParent().isPresent())
@@ -732,21 +716,7 @@ public interface Context
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160,
-		byte.MaxValue,
-		106,
-		104,
-		108,
-		104,
-		146,
-		6,
-		240,
-		70,
-		110,
-		137
-	})]
+	
 	static Optional _003Cdefault_003EsolveMethodAsUsage(Context P_0, string P_1, List P_2)
 	{
 		SymbolReference symbolReference = P_0.solveMethod(P_1, P_2, staticOnly: false);

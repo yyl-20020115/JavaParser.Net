@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
-using IKVM.Attributes;
+
 using java.io;
 using java.lang;
 using java.util;
@@ -197,11 +197,7 @@ public class Utils
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		100, 104, 134, 115, 123, 105, 140, 238, 60, 230,
-		70
-	})]
+	
 	public static string camelCaseToScreaming(string input)
 	{
 		if (java.lang.String.instancehelper_isEmpty(input))
@@ -294,11 +290,7 @@ public class Utils
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		44, 102, 117, 149, 108, 130, 108, 130, 233, 55,
-		233, 76
-	})]
+	
 	public static string escapeEndOfLines(string @string)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -355,11 +347,7 @@ public class Utils
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 96, 99, 130, 104, 109, 143, 162, 104, 109,
-		162
-	})]
+	
 	public static bool valueIsNullOrEmpty(object value)
 	{
 		if (value == null)
@@ -382,11 +370,7 @@ public class Utils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static void removeElementByObjectIdentity(List list, object o)
 	{
@@ -398,12 +382,7 @@ public class Utils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static void replaceElementByObjectIdentity(List list, object oldObject, object newObject)
 	{
@@ -429,11 +408,7 @@ public class Utils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static string normalizeEolInTextBlock(string content, string desiredEndOfLineCharacter)
 	{
@@ -519,12 +494,7 @@ public class Utils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private static string stringTransformer(string s, string operationDescription, Function transformation)
 	{
@@ -540,11 +510,7 @@ public class Utils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public static int indexOfElementByObjectIdentity(List list, object o)
 	{
@@ -627,11 +593,7 @@ public class Utils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static StringBuilder indent(StringBuilder builder, int indentLevel)
 	{
@@ -643,11 +605,7 @@ public class Utils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static string normalizeEolInTextBlock(string content, LineSeparator desiredEndOfLineCharacter)
 	{

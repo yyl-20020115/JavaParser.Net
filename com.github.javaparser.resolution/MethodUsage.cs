@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.resolution.types.parametrization;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -21,19 +21,8 @@ public class MethodUsage: ResolvedTypeParametrized
 	private ResolvedTypeParametersMap m_typeParametersMap;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		21, 232, 35, 107, 235, 93, 103, 103, 103, 104,
-		104
-	})]
+		
+	
 	private MethodUsage(ResolvedMethodDeclaration declaration, List paramTypes, ResolvedType returnType, List exceptionTypes, ResolvedTypeParametersMap typeParametersMap)
 	{
 		this.paramTypes = new ArrayList();
@@ -55,11 +44,7 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual MethodUsage replaceParamType(int i, ResolvedType replaced)
 	{
@@ -80,11 +65,7 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual MethodUsage replaceExceptionType(int i, ResolvedType replaced)
 	{
@@ -124,11 +105,7 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 82, 102, 109, 108, 110, 99, 140, 104, 123,
-		159, 4, 237, 56, 233, 75, 108
-	})]
+	
 	public virtual string getSignature()
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -175,11 +152,7 @@ public class MethodUsage: ResolvedTypeParametrized
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 189, 232, 59, 107, 235, 69, 107, 103, 107,
-		56, 166, 107, 51, 166, 108
-	})]
+	
 	public MethodUsage(ResolvedMethodDeclaration declaration)
 	{
 		paramTypes = new ArrayList();
@@ -198,12 +171,7 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public MethodUsage(ResolvedMethodDeclaration declaration, List paramTypes, ResolvedType returnType)
 		: this(declaration, paramTypes, returnType, declaration.getSpecifiedExceptions(), ResolvedTypeParametersMap.empty())
@@ -211,13 +179,7 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public MethodUsage(ResolvedMethodDeclaration declaration, List paramTypes, ResolvedType returnType, List exceptionTypes)
 		: this(declaration, paramTypes, returnType, exceptionTypes, ResolvedTypeParametersMap.empty())
@@ -256,17 +218,8 @@ public class MethodUsage: ResolvedTypeParametrized
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		104, 99, 203, 126, 151, 102, 112, 114, 107, 234,
-		61, 230, 69, 112, 114, 107, 234, 61, 230, 69,
-		104, 107, 104
-	})]
+	
+	
 	public virtual MethodUsage replaceTypeParameter(ResolvedTypeParameterDeclaration typeParameter, ResolvedType type)
 	{
 		if (type == null)

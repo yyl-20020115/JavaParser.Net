@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -83,16 +83,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 196, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(PatternExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -118,11 +110,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -139,11 +127,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(YieldStmt n, object arg)
 	{
@@ -165,16 +149,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 145, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(SwitchExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -200,11 +176,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(Modifier n, object arg)
 	{
@@ -221,11 +193,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(VarType n, object arg)
 	{
@@ -247,16 +215,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 89, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ReceiverParameter n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -287,11 +247,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(UnparsableStmt n, object arg)
 	{
@@ -308,16 +264,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 250, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ModuleOpensDirective n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -343,11 +291,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ModuleUsesDirective n, object arg)
 	{
@@ -369,16 +313,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 16, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ModuleProvidesDirective n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -404,16 +340,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 228, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ModuleExportsDirective n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -439,16 +367,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 38, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ModuleRequiresDirective n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -474,16 +394,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 201, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ModuleDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -514,11 +426,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ImportDeclaration n, object arg)
 	{
@@ -540,11 +448,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(SimpleName n, object arg)
 	{
@@ -561,16 +465,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 139, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(Name n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -594,11 +490,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual List visit(NodeList n, object arg)
 	{
@@ -607,11 +499,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(TypeExpr n, object arg)
 	{
@@ -633,16 +521,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 102, 166, 115, 99, 136, 109, 125, 99, 136,
-		109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(MethodReferenceExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -671,16 +551,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 159, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(LambdaExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -706,16 +578,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 243, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(CatchClause n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -741,16 +605,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 210, 166, 115, 99, 136, 109, 125, 99, 168,
-		115, 99, 168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(TryStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -789,16 +645,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 157, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(SynchronizedStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -824,11 +672,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ThrowStmt n, object arg)
 	{
@@ -850,16 +694,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 205, 166, 115, 99, 136, 109, 125, 99, 168,
-		115, 99, 168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ForStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -898,16 +734,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 236, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ForEachStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -938,16 +766,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 236, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(DoStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -973,16 +793,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 220, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(ContinueStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1006,16 +818,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 148, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(WhileStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1041,16 +845,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 6, 166, 115, 99, 136, 109, 125, 99, 168,
-		115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(IfStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1084,16 +880,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 40, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(ReturnStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1117,16 +905,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 206, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(BreakStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1150,16 +930,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 115, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(SwitchEntry n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1185,16 +957,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 136, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(SwitchStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1220,11 +984,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ExpressionStmt n, object arg)
 	{
@@ -1246,11 +1006,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(EmptyStmt n, object arg)
 	{
@@ -1267,16 +1023,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 138, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(LabeledStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1302,11 +1050,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(BlockStmt n, object arg)
 	{
@@ -1328,16 +1072,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 105, 166, 115, 99, 136, 109, 125, 99, 136,
-		109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(AssertStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1366,11 +1102,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -1392,11 +1124,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -1418,16 +1146,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 111, 166, 115, 99, 136, 109, 125, 99, 136,
-		109, 125, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1464,16 +1184,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 250, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(MemberValuePair n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1499,16 +1211,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 155, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(NormalAnnotationExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1534,16 +1238,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 67, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(SingleMemberAnnotationExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1569,11 +1265,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -1595,16 +1287,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 80, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(VariableDeclarationExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1635,11 +1319,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(UnaryExpr n, object arg)
 	{
@@ -1661,16 +1341,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 99, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(SuperExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1694,16 +1366,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		165, 178, 134, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(ThisExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1727,17 +1391,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 187, 134, 109, 125, 99, 168, 115, 99, 136,
-		109, 125, 99, 168, 115, 99, 136, 109, 125, 99,
-		136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ObjectCreationExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1788,11 +1443,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(NameExpr n, object arg)
 	{
@@ -1814,17 +1465,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 15, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136, 109, 125, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(MethodCallExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1866,11 +1508,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(NullLiteralExpr n, object arg)
 	{
@@ -1887,11 +1525,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(BooleanLiteralExpr n, object arg)
 	{
@@ -1908,11 +1542,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(DoubleLiteralExpr n, object arg)
 	{
@@ -1929,11 +1559,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(CharLiteralExpr n, object arg)
 	{
@@ -1950,11 +1576,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(LongLiteralExpr n, object arg)
 	{
@@ -1971,11 +1593,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(IntegerLiteralExpr n, object arg)
 	{
@@ -1992,11 +1610,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(StringLiteralExpr n, object arg)
 	{
@@ -2013,16 +1627,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 69, 166, 115, 99, 136, 109, 125, 99, 168,
-		115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(InstanceOfExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2056,16 +1662,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 153, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(FieldAccessExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2099,11 +1697,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(EnclosedExpr n, object arg)
 	{
@@ -2125,16 +1719,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 143, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ConditionalExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2165,11 +1751,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ClassExpr n, object arg)
 	{
@@ -2191,16 +1773,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 222, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(CastExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2226,16 +1800,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 147, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(BinaryExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2261,16 +1827,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 126, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(AssignExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2296,11 +1854,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(ArrayInitializerExpr n, object arg)
 	{
@@ -2322,16 +1876,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		85, 166, 115, 99, 136, 109, 125, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ArrayCreationExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2365,16 +1911,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		64, 166, 115, 99, 168, 115, 99, 136, 109, 125,
-		99, 136
-	})]
+		
+	
 	public virtual List visit(ArrayAccessExpr n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2400,11 +1938,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(UnknownType n, object arg)
 	{
@@ -2426,16 +1960,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 169, 134, 109, 125, 99, 136, 109, 125, 99,
-		168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(WildcardType n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2473,11 +1999,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(VoidType n, object arg)
 	{
@@ -2499,16 +2021,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 43, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(UnionType n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2534,16 +2048,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 106, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(IntersectionType n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2569,16 +2075,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		111, 166, 115, 99, 136, 109, 125, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ArrayCreationLevel n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2607,16 +2105,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 84, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ArrayType n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2642,11 +2132,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(PrimitiveType n, object arg)
 	{
@@ -2668,17 +2154,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 81, 166, 115, 99, 136, 109, 125, 99, 136,
-		109, 125, 99, 168, 115, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(ClassOrInterfaceType n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2720,11 +2197,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(JavadocComment n, object arg)
 	{
@@ -2741,16 +2214,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 48, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(InitializerDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2776,17 +2241,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 244, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 136, 109, 125,
-		99, 136
-	})]
+		
+	
 	public virtual List visit(Parameter n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2827,18 +2283,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 46, 134, 109, 125, 99, 168, 115, 99, 168,
-		115, 99, 168, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 168, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(MethodDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2906,18 +2352,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 169, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 136, 109, 125, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 136, 109, 125,
-		99, 136
-	})]
+		
+	
 	public virtual List visit(ConstructorDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -2976,16 +2412,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 106, 134, 109, 125, 99, 168, 115, 99, 168,
-		115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(VariableDeclarator n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3020,16 +2448,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 179, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(FieldDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3060,17 +2480,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		28, 134, 109, 125, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 136, 109, 125,
-		99, 136
-	})]
+		
+	
 	public virtual List visit(AnnotationMemberDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3115,16 +2526,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 189, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(AnnotationDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3160,16 +2563,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 39, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(EnumConstantDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3205,17 +2600,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 70, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 168, 115, 99,
-		136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(EnumDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3261,17 +2647,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		168, 13, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 168, 115, 99,
-		136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(CompactConstructorDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3317,18 +2694,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		167, 218, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 168, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 136, 109, 125,
-		99, 136
-	})]
+		
+	
 	public virtual List visit(RecordDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3387,17 +2754,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 35, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 168, 115, 99, 168, 115, 99, 168, 115, 99,
-		168, 115, 99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(ClassOrInterfaceDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3448,11 +2806,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(BlockComment n, object arg)
 	{
@@ -3469,11 +2823,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual List visit(LineComment n, object arg)
 	{
@@ -3490,16 +2840,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		166, 1, 166, 115, 99, 168, 115, 99, 168, 115,
-		99, 136, 109, 125, 99, 136
-	})]
+		
+	
 	public virtual List visit(TypeParameter n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3530,16 +2872,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 223, 166, 115, 99, 168, 115, 99, 136, 109,
-		125, 99, 136
-	})]
+		
+	
 	public virtual List visit(PackageDeclaration n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3565,17 +2899,8 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 112, 166, 115, 99, 136, 109, 125, 99, 136,
-		109, 125, 99, 168, 115, 99, 136, 109, 125, 99,
-		136
-	})]
+		
+	
 	public virtual List visit(CompilationUnit n, object arg)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -3618,11 +2943,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private Stream lambda_0024visit_00240(object arg, Node v)
 	{
@@ -3640,11 +2961,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PatternExpr n, object arg)
 	{
@@ -3656,11 +2973,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TextBlockLiteralExpr n, object arg)
 	{
@@ -3672,11 +2985,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(YieldStmt n, object arg)
 	{
@@ -3688,11 +2997,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchExpr n, object arg)
 	{
@@ -3704,11 +3009,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Modifier n, object arg)
 	{
@@ -3720,11 +3021,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VarType n, object arg)
 	{
@@ -3736,11 +3033,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReceiverParameter n, object arg)
 	{
@@ -3752,11 +3045,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnparsableStmt n, object arg)
 	{
@@ -3768,11 +3057,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleOpensDirective n, object arg)
 	{
@@ -3784,11 +3069,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleUsesDirective n, object arg)
 	{
@@ -3800,11 +3081,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleProvidesDirective n, object arg)
 	{
@@ -3816,11 +3093,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleExportsDirective n, object arg)
 	{
@@ -3832,11 +3105,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleRequiresDirective n, object arg)
 	{
@@ -3848,11 +3117,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleDeclaration n, object arg)
 	{
@@ -3864,11 +3129,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ImportDeclaration n, object arg)
 	{
@@ -3880,11 +3141,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SimpleName n, object arg)
 	{
@@ -3896,11 +3153,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Name n, object arg)
 	{
@@ -3912,11 +3165,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NodeList n, object arg)
 	{
@@ -3928,11 +3177,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeExpr n, object arg)
 	{
@@ -3944,11 +3189,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodReferenceExpr n, object arg)
 	{
@@ -3960,11 +3201,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LambdaExpr n, object arg)
 	{
@@ -3976,11 +3213,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CatchClause n, object arg)
 	{
@@ -3992,11 +3225,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TryStmt n, object arg)
 	{
@@ -4008,11 +3237,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SynchronizedStmt n, object arg)
 	{
@@ -4024,11 +3249,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThrowStmt n, object arg)
 	{
@@ -4040,11 +3261,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForStmt n, object arg)
 	{
@@ -4056,11 +3273,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForEachStmt n, object arg)
 	{
@@ -4072,11 +3285,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoStmt n, object arg)
 	{
@@ -4088,11 +3297,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ContinueStmt n, object arg)
 	{
@@ -4104,11 +3309,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WhileStmt n, object arg)
 	{
@@ -4120,11 +3321,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IfStmt n, object arg)
 	{
@@ -4136,11 +3333,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReturnStmt n, object arg)
 	{
@@ -4152,11 +3345,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BreakStmt n, object arg)
 	{
@@ -4168,11 +3357,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchEntry n, object arg)
 	{
@@ -4184,11 +3369,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchStmt n, object arg)
 	{
@@ -4200,11 +3381,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExpressionStmt n, object arg)
 	{
@@ -4216,11 +3393,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EmptyStmt n, object arg)
 	{
@@ -4232,11 +3405,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LabeledStmt n, object arg)
 	{
@@ -4248,11 +3417,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockStmt n, object arg)
 	{
@@ -4264,11 +3429,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssertStmt n, object arg)
 	{
@@ -4280,11 +3441,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -4296,11 +3453,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -4312,11 +3465,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -4328,11 +3477,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MemberValuePair n, object arg)
 	{
@@ -4344,11 +3489,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NormalAnnotationExpr n, object arg)
 	{
@@ -4360,11 +3501,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -4376,11 +3513,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MarkerAnnotationExpr n, object arg)
 	{
@@ -4392,11 +3525,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarationExpr n, object arg)
 	{
@@ -4408,11 +3537,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnaryExpr n, object arg)
 	{
@@ -4424,11 +3549,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SuperExpr n, object arg)
 	{
@@ -4440,11 +3561,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThisExpr n, object arg)
 	{
@@ -4456,11 +3573,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ObjectCreationExpr n, object arg)
 	{
@@ -4472,11 +3585,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NameExpr n, object arg)
 	{
@@ -4488,11 +3597,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodCallExpr n, object arg)
 	{
@@ -4504,11 +3609,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NullLiteralExpr n, object arg)
 	{
@@ -4520,11 +3621,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BooleanLiteralExpr n, object arg)
 	{
@@ -4536,11 +3633,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoubleLiteralExpr n, object arg)
 	{
@@ -4552,11 +3645,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CharLiteralExpr n, object arg)
 	{
@@ -4568,11 +3657,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LongLiteralExpr n, object arg)
 	{
@@ -4584,11 +3669,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntegerLiteralExpr n, object arg)
 	{
@@ -4600,11 +3681,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(StringLiteralExpr n, object arg)
 	{
@@ -4616,11 +3693,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InstanceOfExpr n, object arg)
 	{
@@ -4632,11 +3705,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldAccessExpr n, object arg)
 	{
@@ -4648,11 +3717,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnclosedExpr n, object arg)
 	{
@@ -4664,11 +3729,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConditionalExpr n, object arg)
 	{
@@ -4680,11 +3741,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassExpr n, object arg)
 	{
@@ -4696,11 +3753,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CastExpr n, object arg)
 	{
@@ -4712,11 +3765,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BinaryExpr n, object arg)
 	{
@@ -4728,11 +3777,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssignExpr n, object arg)
 	{
@@ -4744,11 +3789,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayInitializerExpr n, object arg)
 	{
@@ -4760,11 +3801,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationExpr n, object arg)
 	{
@@ -4776,11 +3813,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayAccessExpr n, object arg)
 	{
@@ -4792,11 +3825,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnknownType n, object arg)
 	{
@@ -4808,11 +3837,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WildcardType n, object arg)
 	{
@@ -4824,11 +3849,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VoidType n, object arg)
 	{
@@ -4840,11 +3861,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnionType n, object arg)
 	{
@@ -4856,11 +3873,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntersectionType n, object arg)
 	{
@@ -4872,11 +3885,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationLevel n, object arg)
 	{
@@ -4888,11 +3897,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayType n, object arg)
 	{
@@ -4904,11 +3909,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PrimitiveType n, object arg)
 	{
@@ -4920,11 +3921,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceType n, object arg)
 	{
@@ -4936,11 +3933,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(JavadocComment n, object arg)
 	{
@@ -4952,11 +3945,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InitializerDeclaration n, object arg)
 	{
@@ -4968,11 +3957,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Parameter n, object arg)
 	{
@@ -4984,11 +3969,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodDeclaration n, object arg)
 	{
@@ -5000,11 +3981,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConstructorDeclaration n, object arg)
 	{
@@ -5016,11 +3993,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarator n, object arg)
 	{
@@ -5032,11 +4005,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldDeclaration n, object arg)
 	{
@@ -5048,11 +4017,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -5064,11 +4029,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationDeclaration n, object arg)
 	{
@@ -5080,11 +4041,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumConstantDeclaration n, object arg)
 	{
@@ -5096,11 +4053,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumDeclaration n, object arg)
 	{
@@ -5112,11 +4065,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompactConstructorDeclaration n, object arg)
 	{
@@ -5128,11 +4077,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(RecordDeclaration n, object arg)
 	{
@@ -5144,11 +4089,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -5160,11 +4101,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockComment n, object arg)
 	{
@@ -5176,11 +4113,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LineComment n, object arg)
 	{
@@ -5192,11 +4125,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeParameter n, object arg)
 	{
@@ -5208,11 +4137,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PackageDeclaration n, object arg)
 	{
@@ -5224,11 +4149,7 @@ public abstract class GenericListVisitorAdapter : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompilationUnit n, object arg)
 	{

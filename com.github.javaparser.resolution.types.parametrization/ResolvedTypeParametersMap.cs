@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -27,11 +27,7 @@ public class ResolvedTypeParametersMap
 				private Map nameToDeclaration;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual Builder setValue(ResolvedTypeParameterDeclaration typeParameter, ResolvedType value)
 		{
@@ -67,11 +63,7 @@ public class ResolvedTypeParametersMap
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private Builder(Map nameToValue, Map nameToDeclaration)
 		{
@@ -105,11 +97,7 @@ public class ResolvedTypeParametersMap
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private ResolvedTypeParametersMap(Map nameToValue, Map nameToDeclaration)
 	{

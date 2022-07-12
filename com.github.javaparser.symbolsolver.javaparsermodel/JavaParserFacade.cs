@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -18,7 +18,7 @@ using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -454,11 +454,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 6, 126, 97, 104, 103, 109, 108, 119, 110,
-		174
-	})]
+	
 	public virtual ResolvedType getType(Node node)
 	{
 		//Discarded unreachable code: IL_000a
@@ -486,11 +482,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 216, 104, 159, 0, 104, 119, 148, 122, 114,
-		148
-	})]
+	
 	public virtual ResolvedType getTypeOfThisIn(Node node)
 	{
 		if (node is ClassOrInterfaceDeclaration)
@@ -541,11 +533,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 176, 102, 107, 191, 4, 191, 7, 2, 98,
-		191, 6, 133, 110, 117, 108, 127, 22, 159, 58
-	})]
+	
 	public virtual MethodUsage solveMethodAsUsage(MethodCallExpr call)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -555,14 +543,14 @@ public class JavaParserFacade
 			while (iterator.hasNext())
 			{
 				Expression expression = (Expression)iterator.next();
-				java.lang.Exception ex2;
+				System.Exception ex2;
 				try
 				{
 					((List)arrayList).add((object)getType(expression, solveLambdas: false));
 				}
 				catch (System.Exception x)
 				{
-					java.lang.Exception ex = ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.None);
+					System.Exception ex = ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.None);
 					if (ex == null)
 					{
 						throw;
@@ -572,7 +560,7 @@ public class JavaParserFacade
 				}
 				continue;
 				IL_0057:
-				java.lang.Exception cause = ex2;
+				System.Exception cause = ex2;
 				string message = java.lang.String.format("Error calculating the type of parameter %s of method call %s", expression, call);
 				
 				throw new RuntimeException(message, cause);
@@ -616,11 +604,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 242, 104, 206, 104, 111, 104, 111, 104, 143,
-		141
-	})]
+		
 	public virtual ResolvedType classToResolvedType(Class clazz)
 	{
 		if (clazz.isPrimitive())
@@ -689,11 +673,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 64, 66, 102, 134, 144, 127, 0, 127, 0,
-		104, 98
-	})]
+		
 	public virtual SymbolReference solve(MethodCallExpr methodCallExpr, bool solveLambdas)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -720,11 +700,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 77, 130, 102, 134, 144, 98, 109, 143, 121,
-		124, 183, 99, 141, 127, 8, 127, 0, 105, 98
-	})]
+		
 	public virtual SymbolReference solve(ObjectCreationExpr objectCreationExpr, bool solveLambdas)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -761,12 +737,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 93, 66, 117, 104, 173, 108, 103, 104, 176,
-		99, 136, 170, 109, 127, 2, 189, 100, 205, 103,
-		103, 178, 123, 127, 1, 105, 130
-	})]
+		
 	public virtual SymbolReference solve(ExplicitConstructorInvocationStmt explicitConstructorInvocationStmt, bool solveLambdas)
 	{
 		Optional optional = explicitConstructorInvocationStmt.findAncestor(new Class[1] { ClassLiteral<ClassOrInterfaceDeclaration>.Value });
@@ -816,31 +787,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		70,
-		66,
-		98,
-		126,
-		112,
-		104,
-		106,
-		106,
-		133,
-		byte.MaxValue,
-		34,
-		70,
-		226,
-		59,
-		98,
-		104,
-		98,
-		223,
-		6,
-		100,
-		101
-	})]
+		
 	private void solveArguments(Node P_0, NodeList P_1, bool P_2, List P_3, List P_4)
 	{
 		int num = 0;
@@ -849,7 +796,7 @@ public class JavaParserFacade
 		{
 			Expression expression = (Expression)iterator.next();
 			UnsolvedSymbolException ex;
-			java.lang.Exception ex3;
+			System.Exception ex3;
 			if (expression.isLambdaExpr() || expression.isMethodReferenceExpr())
 			{
 				LambdaArgumentTypePlaceholder e = new LambdaArgumentTypePlaceholder(num);
@@ -872,7 +819,7 @@ public class JavaParserFacade
 				}
 				catch (System.Exception x2)
 				{
-					java.lang.Exception ex2 = ByteCodeHelper.MapException<java.lang.Exception>(x2, ByteCodeHelper.MapFlags.None);
+					System.Exception ex2 = ByteCodeHelper.MapException<System.Exception>(x2, ByteCodeHelper.MapFlags.None);
 					if (ex2 == null)
 					{
 						throw;
@@ -884,22 +831,18 @@ public class JavaParserFacade
 			num++;
 			continue;
 			IL_0090:
-			java.lang.Exception cause = ex3;
+			System.Exception cause = ex3;
 			string message = java.lang.String.format("Unable to calculate the type of a parameter of a method call. Method call: %s, Parameter: %s", P_0, expression);
 			
 			throw new RuntimeException(message, cause);
 			IL_008c:
 			UnsolvedSymbolException ex4 = ex;
-			throw Throwable.___003Cunmap_003E(ex4);
+			throw (ex4);
 		}
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 230, 98, 130, 103, 104, 104, 130, 132, 104,
-		99
-	})]
+	
 	protected internal virtual Node findContainingTypeDeclOrObjectCreationExpr(Node node)
 	{
 		Node node2 = node;
@@ -944,13 +887,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 44, 66, 102, 112, 137, 140, 98, 104, 103,
-		127, 5, 110, 106, 130, 130, 99, 107, 106, 173,
-		159, 13, 145, 110, 105, 141, 110, 105, 106, 109,
-		100, 127, 14, 131
-	})]
+	
 	public virtual ResolvedType getType(Node node, bool solveLambdas)
 	{
 		if (solveLambdas)
@@ -1029,11 +966,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 84, 103, 104, 104, 140, 108, 102, 109, 159,
-		23, 104, 142
-	})]
+	
 	protected internal virtual ResolvedType convertClassOrInterfaceTypeToUsage(ClassOrInterfaceType classOrInterfaceType, Context context)
 	{
 		string nameWithScope = classOrInterfaceType.getNameWithScope();
@@ -1121,11 +1054,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 28, 99, 144, 104, 112, 104, 112, 104, 120,
-		104, 112, 104, 102, 104, 112, 104, 112, 104, 144
-	})]
+	
 	protected internal virtual ResolvedType convertToUsage(com.github.javaparser.ast.type.Type type, Context context)
 	{
 		if (context == null)
@@ -1373,11 +1302,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 124, 144, 150, 109, 104, 174, 117, 104, 114,
-		104, 217
-	})]
+		
 	public virtual SymbolReference solve(ThisExpr node)
 	{
 		if (node.getTypeName().isPresent())
@@ -1435,13 +1360,7 @@ public class JavaParserFacade
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 72, 103, 109, 104, 214, 117, 106, 134, 139,
-		112, 101, 144, 149, 139, 112, 101, 145, 104, 137,
-		99, 45, 135, 114, 191, 11, 105, 164, 98, 154,
-		127, 2, 223, 11, 105, 171
-	})]
+		
 	protected internal virtual MethodUsage toMethodUsage(MethodReferenceExpr methodReferenceExpr, List paramTypes)
 	{
 		Expression scope = methodReferenceExpr.getScope();
@@ -1495,11 +1414,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 18, 66, 105, 233, 74, 108, 110, 118, 110,
-		119, 103, 232, 78, 122, 155, 103, 180, 105, 130
-	})]
+	
 	protected internal virtual ResolvedType getBinaryTypeConcrete(Node left, Node right, bool solveLambdas, BinaryExpr.Operator @operator)
 	{
 		ResolvedType typeConcrete = getTypeConcrete(left, solveLambdas);
@@ -1544,11 +1459,7 @@ public class JavaParserFacade
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 253, 98, 130, 103, 104, 127, 6, 130, 132,
-		127, 9, 102
-	})]
+	
 	protected internal virtual Node findContainingTypeDeclOrObjectCreationExpr(Node node, string className)
 	{
 		Node node2 = node;

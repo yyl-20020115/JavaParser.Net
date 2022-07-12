@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.cache;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -29,7 +29,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 
 			public bool test(object P_0)
 			{
-				bool result = lambda_0024getTypeBasedBlacklist_00242(arg_00241, (java.lang.Exception)P_0);
+				bool result = lambda_0024getTypeBasedBlacklist_00242(arg_00241, (System.Exception)P_0);
 				
 				return result;
 			}
@@ -65,7 +65,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 
 			public bool test(object P_0)
 			{
-				bool result = lambda_0024getTypeBasedWhitelist_00243(arg_00241, (java.lang.Exception)P_0);
+				bool result = lambda_0024getTypeBasedWhitelist_00243(arg_00241, (System.Exception)P_0);
 				
 				return result;
 			}
@@ -98,7 +98,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 
 			public bool test(object P_0)
 			{
-				bool result = lambda_0024static_00240((java.lang.Exception)P_0);
+				bool result = lambda_0024static_00240((System.Exception)P_0);
 				
 				return result;
 			}
@@ -131,7 +131,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 
 			public bool test(object P_0)
 			{
-				bool result = lambda_0024static_00241((java.lang.Exception)P_0);
+				bool result = lambda_0024static_00241((System.Exception)P_0);
 				
 				return result;
 			}
@@ -231,7 +231,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 		
 		
 		
-		private static bool lambda_0024getTypeBasedBlacklist_00242(Class[] P_0, java.lang.Exception P_1)
+		private static bool lambda_0024getTypeBasedBlacklist_00242(Class[] P_0, System.Exception P_1)
 		{
 			int num = P_0.Length;
 			for (int i = 0; i < num; i++)
@@ -248,7 +248,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 		
 		
 		
-		private static bool lambda_0024getTypeBasedWhitelist_00243(Class[] P_0, java.lang.Exception P_1)
+		private static bool lambda_0024getTypeBasedWhitelist_00243(Class[] P_0, System.Exception P_1)
 		{
 			int num = P_0.Length;
 			for (int i = 0; i < num; i++)
@@ -263,13 +263,13 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 		}
 
 		
-		private static bool lambda_0024static_00240(java.lang.Exception P_0)
+		private static bool lambda_0024static_00240(System.Exception P_0)
 		{
 			return false;
 		}
 
 		
-		private static bool lambda_0024static_00241(java.lang.Exception P_0)
+		private static bool lambda_0024static_00241(System.Exception P_0)
 		{
 			return true;
 		}
@@ -322,11 +322,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		43, 232, 20, 235, 109, 140, 103, 135, 123, 104,
-		98
-	})]
+		
 	public CombinedTypeSolver(Predicate exceptionHandler, Iterable elements, Cache typeCache)
 	{
 		this.elements = new ArrayList();
@@ -360,29 +356,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		107,
-		109,
-		104,
-		204,
-		159,
-		4,
-		104,
-		104,
-		109,
-		byte.MaxValue,
-		6,
-		70,
-		226,
-		60,
-		98,
-		111,
-		168,
-		165,
-		108,
-		110
-	})]
+		
 	public virtual SymbolReference tryToSolveType(string name)
 	{
 		//Discarded unreachable code: IL_0066
@@ -395,7 +369,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 		while (iterator.hasNext())
 		{
 			TypeSolver typeSolver = (TypeSolver)iterator.next();
-			java.lang.Exception ex2;
+			System.Exception ex2;
 			try
 			{
 				SymbolReference symbolReference = typeSolver.tryToSolveType(name);
@@ -407,7 +381,7 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 			}
 			catch (System.Exception x)
 			{
-				java.lang.Exception ex = ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.None);
+				System.Exception ex = ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.None);
 				if (ex == null)
 				{
 					throw;
@@ -417,10 +391,10 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 			}
 			continue;
 			IL_0081:
-			java.lang.Exception ex3 = ex2;
+			System.Exception ex3 = ex2;
 			if (!exceptionHandler.test(ex3))
 			{
-				throw Throwable.___003Cunmap_003E(ex3);
+				throw (ex3);
 			}
 		}
 		SymbolReference symbolReference2 = SymbolReference.unsolved(ClassLiteral<ResolvedReferenceTypeDeclaration>.Value);

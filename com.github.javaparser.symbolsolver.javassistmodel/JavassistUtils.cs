@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -7,7 +7,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel.contexts;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.lang.reflect;
 using java.util;
@@ -231,12 +231,7 @@ internal class JavassistUtils
 
 	
 	[IKVM.Attributes.Signature("(Ljava/lang/String;Ljava/util/List<Lcom/github/javaparser/resolution/types/ResolvedType;>;Lcom/github/javaparser/symbolsolver/model/resolution/TypeSolver;Lcom/github/javaparser/symbolsolver/core/resolution/Context;Ljava/util/List<Lcom/github/javaparser/resolution/types/ResolvedType;>;Lcom/github/javaparser/resolution/declarations/ResolvedReferenceTypeDeclaration;Ljavassist/CtClass;)Ljava/util/Optional<Lcom/github/javaparser/resolution/MethodUsage;>;")]
-	[LineNumberTable(new byte[]
-	{
-		21, 136, 102, 124, 116, 116, 117, 111, 120, 111,
-		112, 237, 61, 232, 69, 169, 113, 234, 50, 235,
-		83, 127, 6, 115, 116, 122, 101, 130
-	})]
+	
 	internal unsafe static Optional solveMethodAsUsage(string P_0, List P_1, TypeSolver P_2, Context P_3, List P_4, ResolvedReferenceTypeDeclaration P_5, CtClass P_6)
 	{
 		List typeParameters = P_5.getTypeParameters();
@@ -279,12 +274,7 @@ internal class JavassistUtils
 
 	
 	[IKVM.Attributes.Signature("(Ljava/lang/String;Ljava/util/List<Lcom/github/javaparser/resolution/types/ResolvedType;>;ZLcom/github/javaparser/symbolsolver/model/resolution/TypeSolver;Lcom/github/javaparser/resolution/declarations/ResolvedReferenceTypeDeclaration;Ljavassist/CtClass;)Lcom/github/javaparser/symbolsolver/model/resolution/SymbolReference<Lcom/github/javaparser/resolution/declarations/ResolvedMethodDeclaration;>;")]
-	[LineNumberTable(new byte[]
-	{
-		159, 116, 98, 102, 108, 126, 121, 119, 127, 2,
-		106, 169, 113, 234, 55, 235, 79, 127, 6, 105,
-		105, 98, 45, 231, 70, 105, 238, 69, 130
-	})]
+	
 	internal static SymbolReference solveMethod(string P_0, List P_1, bool P_2, TypeSolver P_3, ResolvedReferenceTypeDeclaration P_4, CtClass P_5)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -328,12 +318,7 @@ internal class JavassistUtils
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		93, 107, 103, 127, 28, 98, 47, 134, 107, 104,
-		103, 110, 105, 159, 6, 110, 106, 104, 104, 112,
-		113, 104, 104, 115, 134, 175
-	})]
+	
 	internal static ResolvedType signatureTypeToType(javassist.bytecode.SignatureAttribute.Type P_0, TypeSolver P_1, ResolvedTypeParametrizable P_2)
 	{
 		if (P_0 is javassist.bytecode.SignatureAttribute.ClassType)

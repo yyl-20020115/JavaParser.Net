@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util.function;
@@ -88,11 +88,7 @@ public class Java10PostProcessor : PostProcessors
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public override void postProcess(ParseResult result, ParserConfiguration configuration)
 		{

@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.printer.configuration;
@@ -12,11 +12,7 @@ public class DefaultConfigurationOption: ConfigurationOption
 	internal object currentValue;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public DefaultConfigurationOption(DefaultPrinterConfiguration.ConfigOption configOption, object value)
 	{

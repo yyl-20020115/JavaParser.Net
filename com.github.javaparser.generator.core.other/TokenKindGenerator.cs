@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -280,12 +280,7 @@ public class TokenKindGenerator : Generator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		2, 158, 118, 127, 1, 159, 11, 107, 135, 127,
-		1, 159, 15, 119, 127, 3, 127, 6, 113, 207,
-		114, 229, 70, 98
-	})]
+	
 	public override void generate()
 	{
 		Log.info("Running %s", new ___003C_003EAnon0(this));

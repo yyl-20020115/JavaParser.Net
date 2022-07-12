@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser;
@@ -18,12 +18,7 @@ internal class ModifierHolder
 	internal JavaToken begin;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal ModifierHolder(JavaToken begin, NodeList modifiers, NodeList annotations)
 	{

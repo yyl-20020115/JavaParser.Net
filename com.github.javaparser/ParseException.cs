@@ -1,15 +1,15 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
-using IKVM.Attributes;
+
+
+
+
 using java.lang;
 using java.util;
 
 namespace com.github.javaparser;
 
-[Serializable]
-public class ParseException : java.lang.Exception
+
+public class ParseException : System.Exception
 {
 	private const string INDENT = "    ";
 
@@ -23,13 +23,7 @@ public class ParseException : java.lang.Exception
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 72, 102, 110, 104, 191, 51, 108, 133, 108,
-		133, 108, 133, 108, 133, 108, 133, 108, 133, 108,
-		133, 108, 133, 106, 127, 3, 127, 21, 98, 136,
-		226, 29, 233, 102
-	})]
+	
 	internal static string add_escapes(string str)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -85,13 +79,7 @@ public class ParseException : java.lang.Exception
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public ParseException(Token currentTokenVal, int[][] expectedTokenSequencesVal, string[] tokenImageVal, string lexicalStateName)
 		: base(_initialise(currentTokenVal, expectedTokenSequencesVal, tokenImageVal, lexicalStateName))
@@ -102,22 +90,8 @@ public class ParseException : java.lang.Exception
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		70, 134, 98, 102, 103, 103, 101, 107, 47, 232,
-		61, 230, 71, 127, 0, 159, 0, 103, 141, 104,
-		107, 105, 105, 100, 106, 105, 107, 130, 109, 106,
-		109, 127, 11, 233, 51, 235, 79, 113, 106, 112,
-		106, 112, 102, 151, 166, 113, 118, 106, 106, 102,
-		248, 71
-	})]
+	
+	
 	private static string _initialise(Token currentToken, int[][] expectedTokenSequences, string[] tokenImage, string lexicalStateName)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -182,12 +156,7 @@ public class ParseException : java.lang.Exception
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public ParseException(Token currentTokenVal, int[][] expectedTokenSequencesVal, string[] tokenImageVal)
 		: this(currentTokenVal, expectedTokenSequencesVal, tokenImageVal, null)
@@ -199,13 +168,6 @@ public class ParseException : java.lang.Exception
 	
 	public ParseException(string message)
 		: base(message)
-	{
-	}
-
-	
-	[PermissionSet(SecurityAction.Demand, XML = "<PermissionSet class=\"System.Security.PermissionSet\"\r\nversion=\"1\">\r\n<IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\"\r\nversion=\"1\"\r\nFlags=\"SerializationFormatter\"/>\r\n</PermissionSet>\r\n")]
-	protected ParseException(SerializationInfo P_0, StreamingContext P_1)
-		: base(P_0, P_1)
 	{
 	}
 }

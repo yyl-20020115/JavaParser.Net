@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.resolution.typeinference.constraintformulas;
@@ -18,28 +18,7 @@ public class TypeContainedByType : ConstraintFormula
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159,
-		187,
-		250,
-		70,
-		235,
-		69,
-		127,
-		0,
-		232,
-		69,
-		byte.MaxValue,
-		0,
-		74,
-		235,
-		69,
-		byte.MaxValue,
-		0,
-		72,
-		171
-	})]
+	
 	public override ReductionResult reduce(BoundSet currentBoundSet)
 	{
 		if (TypeHelper.isProperType(T) && !T.isWildcard())

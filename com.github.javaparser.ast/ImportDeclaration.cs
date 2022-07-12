@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.ast;
@@ -37,13 +37,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ImportDeclaration(TokenRange tokenRange, Name name, bool isStatic, bool isAsterisk)
 		: base(tokenRange)
@@ -103,11 +97,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -138,12 +128,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ImportDeclaration(string name, bool isStatic, bool isAsterisk)
 		: this(null, StaticJavaParser.parseName(name), isStatic, isAsterisk)
@@ -151,12 +136,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -169,11 +149,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -186,11 +162,7 @@ public class ImportDeclaration : Node, NodeWithName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

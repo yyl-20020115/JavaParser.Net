@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.util;
 using java.util.function;
 
@@ -60,20 +60,7 @@ public class IfStatementContext : StatementContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		166,
-		113,
-		141,
-		134,
-		119,
-		99,
-		173,
-		byte.MaxValue,
-		3,
-		71
-	})]
+		
 	public override List patternExprsExposedToChild(Node child)
 	{
 		Expression condition = ((IfStmt)wrappedNode).getCondition();
@@ -95,11 +82,7 @@ public class IfStatementContext : StatementContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		26, 104, 130, 104, 162, 98, 135, 103, 135, 104,
-		104, 110, 113, 100, 226, 69
-	})]
+	
 	public virtual bool nodeContextIsImmediateChildElse(Context parentContext)
 	{
 		if (!(parentContext is AbstractJavaParserContext))
@@ -125,11 +108,7 @@ public class IfStatementContext : StatementContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		64, 104, 130, 104, 162, 98, 135, 103, 135, 104,
-		104, 108, 100, 194
-	})]
+	
 	public virtual bool nodeContextIsThenOfIfStmt(Context parentContext)
 	{
 		if (!(parentContext is AbstractJavaParserContext))
@@ -155,11 +134,7 @@ public class IfStatementContext : StatementContext
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		90, 104, 130, 104, 162, 98, 135, 103, 135, 104,
-		104, 108, 100, 194
-	})]
+	
 	public virtual bool nodeContextIsConditionOfIfStmt(Context parentContext)
 	{
 		if (!(parentContext is AbstractJavaParserContext))

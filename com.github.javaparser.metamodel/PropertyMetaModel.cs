@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -201,11 +201,7 @@ public class PropertyMetaModel
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 129, 109, 108, 115, 116, 104, 241, 61, 8,
-		236, 73, 127, 3, 98
-	})]
+	
 	public virtual object getValue(Node node)
 	{
 		IllegalAccessException ex;
@@ -240,22 +236,8 @@ public class PropertyMetaModel
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 131, 108, 105, 103, 103, 103, 104, 103, 103,
-		103, 103
-	})]
+		
+	
 	public PropertyMetaModel(BaseNodeMetaModel containingNodeMetaModel, string name, Class type, Optional nodeReference, bool isOptional, bool isNonEmpty, bool isNodeList, bool hasWildcard)
 	{
 		this.containingNodeMetaModel = containingNodeMetaModel;
@@ -269,11 +251,7 @@ public class PropertyMetaModel
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual bool @is(Class c, string fieldName)
 	{

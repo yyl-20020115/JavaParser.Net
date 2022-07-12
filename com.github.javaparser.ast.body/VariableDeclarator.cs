@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -9,7 +9,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -36,18 +36,8 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			67, 107, 103, 127, 6, 145, 103, 102, 110, 114,
-			102, 144, 244, 60, 232, 71, 104, 191, 2
-		})]
+		
+		
 		public override void propertyChange(Node observedNode, ObservableProperty property, object oldValue, object newValue)
 		{
 			if (property != ObservableProperty.___003C_003ETYPE)
@@ -117,11 +107,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarator(Type type, string variableName)
 		: this(null, type, new SimpleName(variableName), null)
@@ -173,13 +159,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarator(TokenRange tokenRange, Type type, SimpleName name, Expression initializer)
 		: base(tokenRange)
@@ -227,11 +207,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -269,11 +245,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarator(Type type, SimpleName name)
 		: this(null, type, name, null)
@@ -281,12 +253,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarator(Type type, string variableName, Expression initializer)
 		: this(null, type, new SimpleName(variableName), initializer)
@@ -294,12 +261,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -312,11 +274,7 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -359,16 +317,8 @@ public class VariableDeclarator : Node, NodeWithType, NodeWithSimpleName, Resolv
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 145, 99, 130, 104, 105, 109, 162, 105, 109,
-		130, 105, 109, 130
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

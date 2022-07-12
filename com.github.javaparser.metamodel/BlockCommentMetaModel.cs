@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 

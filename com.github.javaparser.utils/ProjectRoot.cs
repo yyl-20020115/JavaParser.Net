@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.nio.file;
 using java.util;
@@ -27,11 +27,7 @@ public class ProjectRoot
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ProjectRoot(Path root, ParserConfiguration parserConfiguration)
 	{

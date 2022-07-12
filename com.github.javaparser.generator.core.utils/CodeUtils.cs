@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.generator.core.utils;

@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.resolution;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.javassistmodel;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -37,12 +37,7 @@ public class SymbolSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		88, 104, 108, 138, 104, 108, 138, 104, 108, 138,
-		104, 149, 104, 149, 104, 109, 137, 104, 149, 104,
-		149, 104, 149
-	})]
+		
 	public virtual SymbolReference solveSymbolInType(ResolvedTypeDeclaration typeDeclaration, string name)
 	{
 		if (typeDeclaration is JavaParserClassDeclaration)

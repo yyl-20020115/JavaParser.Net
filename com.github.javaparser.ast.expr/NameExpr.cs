@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
@@ -7,7 +7,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -55,11 +55,7 @@ public class NameExpr : Expression, NodeWithSimpleName, Resolvable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public NameExpr(TokenRange tokenRange, SimpleName name)
 		: base(tokenRange)
@@ -89,11 +85,7 @@ public class NameExpr : Expression, NodeWithSimpleName, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -124,11 +116,7 @@ public class NameExpr : Expression, NodeWithSimpleName, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -141,11 +129,7 @@ public class NameExpr : Expression, NodeWithSimpleName, Resolvable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

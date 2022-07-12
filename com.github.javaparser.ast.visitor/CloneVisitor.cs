@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -2350,11 +2350,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private NodeList cloneList(NodeList list, object arg)
 	{
@@ -2366,11 +2362,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	protected internal virtual Node cloneNode(Optional node, object arg)
 	{
@@ -2387,11 +2379,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void copyData(Node source, Node destination)
 	{
@@ -2404,11 +2392,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	protected internal virtual Node cloneNode(Node node, object arg)
 	{
@@ -2425,11 +2409,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(PatternExpr n, object arg)
 	{
@@ -2447,11 +2427,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -2467,11 +2443,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(YieldStmt n, object arg)
 	{
@@ -2488,11 +2460,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SwitchExpr n, object arg)
 	{
@@ -2510,11 +2478,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(Modifier n, object arg)
 	{
@@ -2530,11 +2494,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(VarType n, object arg)
 	{
@@ -2551,16 +2511,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 36, 110, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ReceiverParameter n, object arg)
 	{
 		NodeList annotations = cloneList(n.getAnnotations(), arg);
@@ -2578,11 +2530,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(UnparsableStmt n, object arg)
 	{
@@ -2598,11 +2546,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ModuleOpensDirective n, object arg)
 	{
@@ -2620,11 +2564,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ModuleUsesDirective n, object arg)
 	{
@@ -2641,11 +2581,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ModuleProvidesDirective n, object arg)
 	{
@@ -2663,11 +2599,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ModuleExportsDirective n, object arg)
 	{
@@ -2685,11 +2617,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ModuleRequiresDirective n, object arg)
 	{
@@ -2707,16 +2635,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 179, 110, 110, 115, 115, 127, 7, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ModuleDeclaration n, object arg)
 	{
 		NodeList annotations = cloneList(n.getAnnotations(), arg);
@@ -2734,11 +2654,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Node visit(ImportDeclaration n, object arg)
 	{
@@ -2755,11 +2671,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SimpleName n, object arg)
 	{
@@ -2775,11 +2687,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(Name n, object arg)
 	{
@@ -2796,11 +2704,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual Visitable visit(NodeList n, object arg)
 	{
@@ -2819,11 +2723,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(TypeExpr n, object arg)
 	{
@@ -2840,16 +2740,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 133, 115, 121, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(MethodReferenceExpr n, object arg)
 	{
 		Expression scope = (Expression)cloneNode(n.getScope(), arg);
@@ -2866,16 +2758,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 121, 115, 110, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(LambdaExpr n, object arg)
 	{
 		Statement body = (Statement)cloneNode(n.getBody(), arg);
@@ -2892,11 +2776,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(CatchClause n, object arg)
 	{
@@ -2914,16 +2794,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 95, 110, 115, 110, 115, 116, 127, 2, 106,
-		127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(TryStmt n, object arg)
 	{
 		NodeList catchClauses = cloneList(n.getCatchClauses(), arg);
@@ -2942,11 +2814,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SynchronizedStmt n, object arg)
 	{
@@ -2964,11 +2832,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ThrowStmt n, object arg)
 	{
@@ -2985,16 +2849,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 58, 115, 115, 110, 110, 116, 127, 2, 106,
-		127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ForStmt n, object arg)
 	{
 		Statement body = (Statement)cloneNode(n.getBody(), arg);
@@ -3013,16 +2869,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		163, 45, 115, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ForEachStmt n, object arg)
 	{
 		Statement body = (Statement)cloneNode(n.getBody(), arg);
@@ -3040,11 +2888,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(DoStmt n, object arg)
 	{
@@ -3062,11 +2906,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ContinueStmt n, object arg)
 	{
@@ -3083,11 +2923,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(WhileStmt n, object arg)
 	{
@@ -3105,16 +2941,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 253, 115, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(IfStmt n, object arg)
 	{
 		Expression condition = (Expression)cloneNode(n.getCondition(), arg);
@@ -3132,11 +2960,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ReturnStmt n, object arg)
 	{
@@ -3153,11 +2977,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(BreakStmt n, object arg)
 	{
@@ -3174,16 +2994,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 219, 110, 110, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(SwitchEntry n, object arg)
 	{
 		NodeList labels = cloneList(n.getLabels(), arg);
@@ -3200,11 +3012,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SwitchStmt n, object arg)
 	{
@@ -3222,11 +3030,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ExpressionStmt n, object arg)
 	{
@@ -3243,11 +3047,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(EmptyStmt n, object arg)
 	{
@@ -3263,11 +3063,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(LabeledStmt n, object arg)
 	{
@@ -3285,11 +3081,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(BlockStmt n, object arg)
 	{
@@ -3306,11 +3098,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(AssertStmt n, object arg)
 	{
@@ -3328,11 +3116,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -3349,11 +3133,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -3370,16 +3150,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 116, 110, 115, 121, 115, 127, 7, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
 		NodeList arguments = cloneList(n.getArguments(), arg);
@@ -3397,11 +3169,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(MemberValuePair n, object arg)
 	{
@@ -3419,11 +3187,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(NormalAnnotationExpr n, object arg)
 	{
@@ -3441,11 +3205,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -3463,11 +3223,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -3484,16 +3240,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		162, 56, 110, 110, 110, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(VariableDeclarationExpr n, object arg)
 	{
 		NodeList annotations = cloneList(n.getAnnotations(), arg);
@@ -3511,11 +3259,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(UnaryExpr n, object arg)
 	{
@@ -3532,11 +3276,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(SuperExpr n, object arg)
 	{
@@ -3553,11 +3293,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ThisExpr n, object arg)
 	{
@@ -3574,16 +3310,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 243, 121, 110, 115, 115, 122, 116, 127, 4,
-		106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ObjectCreationExpr n, object arg)
 	{
 		NodeList anonymousClassBody = cloneList((NodeList)n.getAnonymousClassBody().orElse(null), arg);
@@ -3603,11 +3331,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(NameExpr n, object arg)
 	{
@@ -3624,16 +3348,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 218, 110, 115, 115, 121, 116, 127, 2, 106,
-		127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(MethodCallExpr n, object arg)
 	{
 		NodeList arguments = cloneList(n.getArguments(), arg);
@@ -3652,11 +3368,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(NullLiteralExpr n, object arg)
 	{
@@ -3672,11 +3384,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(BooleanLiteralExpr n, object arg)
 	{
@@ -3692,11 +3400,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(DoubleLiteralExpr n, object arg)
 	{
@@ -3712,11 +3416,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(CharLiteralExpr n, object arg)
 	{
@@ -3732,11 +3432,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(LongLiteralExpr n, object arg)
 	{
@@ -3752,11 +3448,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(IntegerLiteralExpr n, object arg)
 	{
@@ -3772,11 +3464,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(StringLiteralExpr n, object arg)
 	{
@@ -3792,16 +3480,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 135, 115, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(InstanceOfExpr n, object arg)
 	{
 		Expression expression = (Expression)cloneNode(n.getExpression(), arg);
@@ -3819,16 +3499,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 122, 115, 115, 121, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(FieldAccessExpr n, object arg)
 	{
 		SimpleName name = (SimpleName)cloneNode(n.getName(), arg);
@@ -3846,11 +3518,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(EnclosedExpr n, object arg)
 	{
@@ -3867,16 +3535,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 98, 115, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ConditionalExpr n, object arg)
 	{
 		Expression condition = (Expression)cloneNode(n.getCondition(), arg);
@@ -3894,11 +3554,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ClassExpr n, object arg)
 	{
@@ -3915,11 +3571,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(CastExpr n, object arg)
 	{
@@ -3937,16 +3589,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 63, 115, 115, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(BinaryExpr n, object arg)
 	{
 		Expression left = (Expression)cloneNode(n.getLeft(), arg);
@@ -3963,16 +3607,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 51, 115, 115, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(AssignExpr n, object arg)
 	{
 		Expression target = (Expression)cloneNode(n.getTarget(), arg);
@@ -3989,11 +3625,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ArrayInitializerExpr n, object arg)
 	{
@@ -4010,16 +3642,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 27, 115, 115, 110, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ArrayCreationExpr n, object arg)
 	{
 		Type elementType = (Type)cloneNode(n.getElementType(), arg);
@@ -4037,11 +3661,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ArrayAccessExpr n, object arg)
 	{
@@ -4059,11 +3679,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(UnknownType n, object arg)
 	{
@@ -4080,16 +3696,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 247, 115, 115, 110, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(WildcardType n, object arg)
 	{
 		ReferenceType extendedType = (ReferenceType)cloneNode(n.getExtendedType(), arg);
@@ -4107,11 +3715,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(VoidType n, object arg)
 	{
@@ -4128,11 +3732,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(UnionType n, object arg)
 	{
@@ -4150,11 +3750,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(IntersectionType n, object arg)
 	{
@@ -4172,11 +3768,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(ArrayCreationLevel n, object arg)
 	{
@@ -4194,16 +3786,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 188, 115, 110, 115, 127, 5, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ArrayType n, object arg)
 	{
 		Type componentType = (Type)cloneNode(n.getComponentType(), arg);
@@ -4220,11 +3804,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(PrimitiveType n, object arg)
 	{
@@ -4241,16 +3821,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 163, 115, 115, 121, 110, 116, 127, 2, 106,
-		127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ClassOrInterfaceType n, object arg)
 	{
 		SimpleName name = (SimpleName)cloneNode(n.getName(), arg);
@@ -4269,11 +3841,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(JavadocComment n, object arg)
 	{
@@ -4289,16 +3857,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 141, 115, 110, 115, 127, 4, 104, 127, 21,
-		104
-	})]
+	
+	
 	public unsafe virtual Visitable visit(InitializerDeclaration n, object arg)
 	{
 		BlockStmt body = (BlockStmt)cloneNode(n.getBody(), arg);
@@ -4315,16 +3875,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 126, 110, 110, 115, 115, 111, 116, 127, 10,
-		106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(Parameter n, object arg)
 	{
 		NodeList annotations = cloneList(n.getAnnotations(), arg);
@@ -4344,16 +3896,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 107, 115, 115, 110, 115, 111, 116, 111, 111,
-		111, 116, 127, 12, 106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(MethodDeclaration n, object arg)
 	{
 		BlockStmt body = (BlockStmt)cloneNode(n.getBody(), arg);
@@ -4377,16 +3921,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 89, 115, 110, 115, 110, 116, 111, 111, 111,
-		116, 127, 10, 106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ConstructorDeclaration n, object arg)
 	{
 		BlockStmt body = (BlockStmt)cloneNode(n.getBody(), arg);
@@ -4409,16 +3945,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 76, 115, 115, 115, 115, 127, 1, 105, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(VariableDeclarator n, object arg)
 	{
 		Expression initializer = (Expression)cloneNode(n.getInitializer(), arg);
@@ -4436,16 +3964,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		127, 110, 110, 110, 115, 127, 1, 105, 127, 22,
-		105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(FieldDeclaration n, object arg)
 	{
 		NodeList modifiers = cloneList(n.getModifiers(), arg);
@@ -4463,16 +3983,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		112, 115, 110, 115, 115, 111, 116, 127, 4, 106,
-		127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(AnnotationMemberDeclaration n, object arg)
 	{
 		Expression defaultValue = (Expression)cloneNode(n.getDefaultValue(), arg);
@@ -4492,16 +4004,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		98, 110, 110, 115, 110, 116, 127, 2, 106, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(AnnotationDeclaration n, object arg)
 	{
 		NodeList members = cloneList(n.getMembers(), arg);
@@ -4520,16 +4024,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		84, 110, 110, 115, 110, 116, 127, 2, 106, 127,
-		22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(EnumConstantDeclaration n, object arg)
 	{
 		NodeList arguments = cloneList(n.getArguments(), arg);
@@ -4548,16 +4044,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		68, 110, 110, 110, 110, 116, 111, 116, 127, 6,
-		106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(EnumDeclaration n, object arg)
 	{
 		NodeList entries = cloneList(n.getEntries(), arg);
@@ -4578,16 +4066,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 139, 115, 110, 115, 110, 111, 111, 116, 127,
-		6, 106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(CompactConstructorDeclaration n, object arg)
 	{
 		BlockStmt body = (BlockStmt)cloneNode(n.getBody(), arg);
@@ -4608,16 +4088,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		164, 121, 110, 110, 115, 110, 111, 111, 116, 111,
-		116, 127, 10, 106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(RecordDeclaration n, object arg)
 	{
 		NodeList implementedTypes = cloneList(n.getImplementedTypes(), arg);
@@ -4640,16 +4112,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		51, 110, 110, 110, 110, 111, 116, 111, 116, 127,
-		14, 106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(ClassOrInterfaceDeclaration n, object arg)
 	{
 		NodeList extendedTypes = cloneList(n.getExtendedTypes(), arg);
@@ -4671,11 +4135,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(BlockComment n, object arg)
 	{
@@ -4691,11 +4151,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(LineComment n, object arg)
 	{
@@ -4711,16 +4167,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		18, 115, 110, 110, 115, 127, 1, 105, 127, 22,
-		105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(TypeParameter n, object arg)
 	{
 		SimpleName name = (SimpleName)cloneNode(n.getName(), arg);
@@ -4738,11 +4186,7 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public unsafe virtual Visitable visit(PackageDeclaration n, object arg)
 	{
@@ -4760,16 +4204,8 @@ public class CloneVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 182, 110, 115, 115, 110, 116, 127, 2, 119,
-		106, 127, 22, 105
-	})]
+	
+	
 	public unsafe virtual Visitable visit(CompilationUnit n, object arg)
 	{
 		NodeList imports = cloneList(n.getImports(), arg);
@@ -4790,11 +4226,7 @@ public class CloneVisitor : GenericVisitor
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024visit_00240(CompilationUnit r, CompilationUnit.Storage s)
 	{
@@ -4804,11 +4236,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PatternExpr n, object arg)
 	{
@@ -4820,11 +4248,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TextBlockLiteralExpr n, object arg)
 	{
@@ -4836,11 +4260,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(YieldStmt n, object arg)
 	{
@@ -4852,11 +4272,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchExpr n, object arg)
 	{
@@ -4868,11 +4284,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Modifier n, object arg)
 	{
@@ -4884,11 +4296,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VarType n, object arg)
 	{
@@ -4900,11 +4308,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReceiverParameter n, object arg)
 	{
@@ -4916,11 +4320,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnparsableStmt n, object arg)
 	{
@@ -4932,11 +4332,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleOpensDirective n, object arg)
 	{
@@ -4948,11 +4344,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleUsesDirective n, object arg)
 	{
@@ -4964,11 +4356,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleProvidesDirective n, object arg)
 	{
@@ -4980,11 +4368,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleExportsDirective n, object arg)
 	{
@@ -4996,11 +4380,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleRequiresDirective n, object arg)
 	{
@@ -5012,11 +4392,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ModuleDeclaration n, object arg)
 	{
@@ -5028,11 +4404,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ImportDeclaration n, object arg)
 	{
@@ -5044,11 +4416,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SimpleName n, object arg)
 	{
@@ -5060,11 +4428,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Name n, object arg)
 	{
@@ -5076,11 +4440,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NodeList n, object arg)
 	{
@@ -5092,11 +4452,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeExpr n, object arg)
 	{
@@ -5108,11 +4464,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodReferenceExpr n, object arg)
 	{
@@ -5124,11 +4476,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LambdaExpr n, object arg)
 	{
@@ -5140,11 +4488,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CatchClause n, object arg)
 	{
@@ -5156,11 +4500,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TryStmt n, object arg)
 	{
@@ -5172,11 +4512,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SynchronizedStmt n, object arg)
 	{
@@ -5188,11 +4524,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThrowStmt n, object arg)
 	{
@@ -5204,11 +4536,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForStmt n, object arg)
 	{
@@ -5220,11 +4548,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ForEachStmt n, object arg)
 	{
@@ -5236,11 +4560,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoStmt n, object arg)
 	{
@@ -5252,11 +4572,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ContinueStmt n, object arg)
 	{
@@ -5268,11 +4584,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WhileStmt n, object arg)
 	{
@@ -5284,11 +4596,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IfStmt n, object arg)
 	{
@@ -5300,11 +4608,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ReturnStmt n, object arg)
 	{
@@ -5316,11 +4620,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BreakStmt n, object arg)
 	{
@@ -5332,11 +4632,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchEntry n, object arg)
 	{
@@ -5348,11 +4644,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SwitchStmt n, object arg)
 	{
@@ -5364,11 +4656,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExpressionStmt n, object arg)
 	{
@@ -5380,11 +4668,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EmptyStmt n, object arg)
 	{
@@ -5396,11 +4680,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LabeledStmt n, object arg)
 	{
@@ -5412,11 +4692,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockStmt n, object arg)
 	{
@@ -5428,11 +4704,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssertStmt n, object arg)
 	{
@@ -5444,11 +4716,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -5460,11 +4728,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -5476,11 +4740,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -5492,11 +4752,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MemberValuePair n, object arg)
 	{
@@ -5508,11 +4764,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NormalAnnotationExpr n, object arg)
 	{
@@ -5524,11 +4776,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -5540,11 +4788,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MarkerAnnotationExpr n, object arg)
 	{
@@ -5556,11 +4800,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarationExpr n, object arg)
 	{
@@ -5572,11 +4812,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnaryExpr n, object arg)
 	{
@@ -5588,11 +4824,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(SuperExpr n, object arg)
 	{
@@ -5604,11 +4836,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ThisExpr n, object arg)
 	{
@@ -5620,11 +4848,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ObjectCreationExpr n, object arg)
 	{
@@ -5636,11 +4860,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NameExpr n, object arg)
 	{
@@ -5652,11 +4872,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodCallExpr n, object arg)
 	{
@@ -5668,11 +4884,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(NullLiteralExpr n, object arg)
 	{
@@ -5684,11 +4896,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BooleanLiteralExpr n, object arg)
 	{
@@ -5700,11 +4908,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(DoubleLiteralExpr n, object arg)
 	{
@@ -5716,11 +4920,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CharLiteralExpr n, object arg)
 	{
@@ -5732,11 +4932,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LongLiteralExpr n, object arg)
 	{
@@ -5748,11 +4944,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntegerLiteralExpr n, object arg)
 	{
@@ -5764,11 +4956,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(StringLiteralExpr n, object arg)
 	{
@@ -5780,11 +4968,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InstanceOfExpr n, object arg)
 	{
@@ -5796,11 +4980,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldAccessExpr n, object arg)
 	{
@@ -5812,11 +4992,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnclosedExpr n, object arg)
 	{
@@ -5828,11 +5004,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConditionalExpr n, object arg)
 	{
@@ -5844,11 +5016,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassExpr n, object arg)
 	{
@@ -5860,11 +5028,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CastExpr n, object arg)
 	{
@@ -5876,11 +5040,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BinaryExpr n, object arg)
 	{
@@ -5892,11 +5052,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AssignExpr n, object arg)
 	{
@@ -5908,11 +5064,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayInitializerExpr n, object arg)
 	{
@@ -5924,11 +5076,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationExpr n, object arg)
 	{
@@ -5940,11 +5088,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayAccessExpr n, object arg)
 	{
@@ -5956,11 +5100,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnknownType n, object arg)
 	{
@@ -5972,11 +5112,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(WildcardType n, object arg)
 	{
@@ -5988,11 +5124,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VoidType n, object arg)
 	{
@@ -6004,11 +5136,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(UnionType n, object arg)
 	{
@@ -6020,11 +5148,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(IntersectionType n, object arg)
 	{
@@ -6036,11 +5160,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayCreationLevel n, object arg)
 	{
@@ -6052,11 +5172,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ArrayType n, object arg)
 	{
@@ -6068,11 +5184,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PrimitiveType n, object arg)
 	{
@@ -6084,11 +5196,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceType n, object arg)
 	{
@@ -6100,11 +5208,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(JavadocComment n, object arg)
 	{
@@ -6116,11 +5220,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(InitializerDeclaration n, object arg)
 	{
@@ -6132,11 +5232,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(Parameter n, object arg)
 	{
@@ -6148,11 +5244,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(MethodDeclaration n, object arg)
 	{
@@ -6164,11 +5256,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ConstructorDeclaration n, object arg)
 	{
@@ -6180,11 +5268,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(VariableDeclarator n, object arg)
 	{
@@ -6196,11 +5280,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(FieldDeclaration n, object arg)
 	{
@@ -6212,11 +5292,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -6228,11 +5304,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(AnnotationDeclaration n, object arg)
 	{
@@ -6244,11 +5316,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumConstantDeclaration n, object arg)
 	{
@@ -6260,11 +5328,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(EnumDeclaration n, object arg)
 	{
@@ -6276,11 +5340,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompactConstructorDeclaration n, object arg)
 	{
@@ -6292,11 +5352,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(RecordDeclaration n, object arg)
 	{
@@ -6308,11 +5364,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -6324,11 +5376,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(BlockComment n, object arg)
 	{
@@ -6340,11 +5388,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(LineComment n, object arg)
 	{
@@ -6356,11 +5400,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(TypeParameter n, object arg)
 	{
@@ -6372,11 +5412,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(PackageDeclaration n, object arg)
 	{
@@ -6388,11 +5424,7 @@ public class CloneVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object _003Cbridge_003Evisit(CompilationUnit n, object arg)
 	{

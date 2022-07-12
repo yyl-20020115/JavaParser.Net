@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -84,13 +84,7 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public WildcardType(TokenRange tokenRange, ReferenceType extendedType, ReferenceType superType, NodeList annotations)
 		: base(tokenRange, annotations)
@@ -175,11 +169,7 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -219,11 +209,7 @@ public class WildcardType : Type, NodeWithAnnotations
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024asString_00240(StringBuilder str, ReferenceType t)
 	{
@@ -232,11 +218,7 @@ public class WildcardType : Type, NodeWithAnnotations
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024asString_00241(StringBuilder str, ReferenceType t)
 	{
@@ -259,12 +241,7 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -277,11 +254,7 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -290,11 +263,7 @@ public class WildcardType : Type, NodeWithAnnotations
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		99, 99, 130, 104, 105, 103, 162, 104, 105, 103,
-		162
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -329,16 +298,8 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 86, 99, 130, 104, 105, 109, 162, 104, 105,
-		109, 162
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)
@@ -361,12 +322,7 @@ public class WildcardType : Type, NodeWithAnnotations
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public WildcardType(TokenRange tokenRange, ReferenceType extendedType, ReferenceType superType)
 		: base(tokenRange)

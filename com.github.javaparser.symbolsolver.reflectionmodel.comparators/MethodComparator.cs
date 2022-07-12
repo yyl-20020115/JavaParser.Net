@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.lang.reflect;
 using java.util;
@@ -11,11 +11,7 @@ namespace com.github.javaparser.symbolsolver.reflectionmodel.comparators;
 public class MethodComparator: Comparator
 {
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 176, 114, 101, 110, 101, 107, 123, 5, 198,
-		119, 101
-	})]
+	
 	public virtual int compare(Method o1, Method o2)
 	{
 		int num = String.instancehelper_compareTo(o1.getName(), o2.getName());

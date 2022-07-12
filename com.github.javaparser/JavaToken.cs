@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -11,12 +11,12 @@ namespace com.github.javaparser;
 
 public class JavaToken
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Category : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -154,11 +154,7 @@ public class JavaToken
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Category(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -223,11 +219,7 @@ public class JavaToken
 			return this == ___003C_003EOPERATOR;
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			160, 93, 112, 112, 112, 112, 112, 112, 112, 240,
-			55
-		})]
+		
 		static Category()
 		{
 			___003C_003EWHITESPACE_NO_EOL = new Category("WHITESPACE_NO_EOL", 0);
@@ -242,12 +234,12 @@ public class JavaToken
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Kind : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -2343,12 +2335,7 @@ public class JavaToken
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		private Kind(string _0024enum_0024name, int _0024enum_0024ordinal, int kind)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -2374,25 +2361,7 @@ public class JavaToken
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			161, 46, 159, 161, 252, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134, 134, 134, 134, 134, 134, 134, 134,
-			134, 134, 134
-		})]
+		
 		public static Kind valueOf(int kind)
 		{
 			switch (kind)
@@ -2707,25 +2676,7 @@ public class JavaToken
 			return (this == ___003C_003EBYTE || this == ___003C_003ECHAR || this == ___003C_003ESHORT || this == ___003C_003EINT || this == ___003C_003ELONG || this == ___003C_003EFLOAT || this == ___003C_003EDOUBLE) ? true : false;
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			160, 146, 113, 113, 113, 113, 113, 113, 113, 113,
-			113, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			115, 115, 115, 115, 115, 115, 115, 115, 115, 115,
-			121, 121, 121, 121, 121, 121, 121, 121, 121, 121,
-			121, 121, 121, 121, 121, 121, 121, 121, 121, 249,
-			159, 106
-		})]
+		
 		static Kind()
 		{
 			___003C_003EEOF = new Kind("EOF", 0, 0);
@@ -3175,17 +3126,8 @@ public class JavaToken
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		9, 232, 52, 135, 231, 103, 126, 103, 109, 126,
-		104, 109, 127, 1, 134, 103, 108, 103, 104, 116,
-		103, 103, 98, 135
-	})]
+		
+	
 	internal JavaToken(Token token, List tokens)
 	{
 		previousToken = null;
@@ -3216,19 +3158,8 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		76, 232, 159, 177, 135, 231, 160, 78, 103, 103,
-		103, 103, 104, 104
-	})]
+	
+	
 	public JavaToken(Range range, int kind, string text, JavaToken previousToken, JavaToken nextToken)
 	{
 		this.previousToken = null;
@@ -3291,11 +3222,7 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024insert_00240(JavaToken newToken, JavaToken p)
 	{
@@ -3304,11 +3231,7 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024insertAfter_00241(JavaToken newToken, JavaToken n)
 	{
@@ -3318,11 +3241,7 @@ public class JavaToken
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024deleteToken_00242(Optional nextToken, JavaToken p)
 	{
@@ -3331,11 +3250,7 @@ public class JavaToken
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024deleteToken_00243(Optional previousToken, JavaToken n)
 	{
@@ -3343,11 +3258,7 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024replaceToken_00244(JavaToken newToken, JavaToken p)
 	{
@@ -3356,11 +3267,7 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024replaceToken_00245(JavaToken newToken, JavaToken n)
 	{
@@ -3369,11 +3276,7 @@ public class JavaToken
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public JavaToken(int kind, string text)
 		: this(null, kind, text, null, null)
@@ -3382,11 +3285,7 @@ public class JavaToken
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		62, 232, 159, 191, 135, 231, 160, 64, 104, 109,
-		144, 104, 104, 104, 134, 103, 103
-	})]
+	
 	public JavaToken(int kind)
 	{
 		previousToken = null;

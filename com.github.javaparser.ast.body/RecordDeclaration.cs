@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.nodeTypes.modifiers;
@@ -11,7 +11,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -130,18 +130,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public RecordDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, SimpleName name, NodeList parameters, NodeList typeParameters, NodeList implementedTypes, NodeList members, ReceiverParameter receiverParameter)
 		: base(tokenRange, modifiers, annotations, name, members)
@@ -251,11 +240,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -320,11 +305,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public RecordDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new SimpleName(name), new NodeList(), new NodeList(), new NodeList(), new NodeList(), null)
@@ -332,17 +313,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -355,11 +326,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -420,12 +387,7 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 118, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70, 104, 105,
-		103, 162, 112, 111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -467,17 +429,8 @@ public class RecordDeclaration : TypeDeclaration, NodeWithParameters, NodeWithIm
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 151, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 104, 105,
-		109, 162, 112, 111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

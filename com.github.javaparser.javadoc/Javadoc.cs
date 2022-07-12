@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.javadoc.description;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -40,12 +40,7 @@ public class Javadoc
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		59, 116, 104, 16, 230, 69, 103, 109, 104, 108,
-		127, 2, 105, 109, 106, 237, 60, 232, 71, 105,
-		109
-	})]
+	
 	public virtual JavadocComment toComment(string indentation)
 	{
 		char[] array = String.instancehelper_toCharArray(indentation);
@@ -102,11 +97,7 @@ public class Javadoc
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual Javadoc addBlockTag(string tagName, string content)
 	{
@@ -137,11 +128,7 @@ public class Javadoc
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024toText_00240(StringBuilder sb, JavadocBlockTag bt)
 	{
@@ -159,12 +146,7 @@ public class Javadoc
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual Javadoc addBlockTag(string tagName, string parameter, string content)
 	{

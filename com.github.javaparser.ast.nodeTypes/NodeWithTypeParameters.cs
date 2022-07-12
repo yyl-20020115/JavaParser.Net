@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 
 namespace com.github.javaparser.ast.nodeTypes;
 
@@ -68,11 +68,7 @@ public interface NodeWithTypeParameters
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setTypeParameter(int i, TypeParameter typeParameter);
 
 	

@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
@@ -8,7 +8,7 @@ using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -404,11 +404,7 @@ public class JavassistInterfaceDeclaration : AbstractTypeDeclaration, ResolvedIn
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		123, 121, 110, 15, 230, 70, 104, 119, 107, 105,
-		227, 61, 232, 71
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,

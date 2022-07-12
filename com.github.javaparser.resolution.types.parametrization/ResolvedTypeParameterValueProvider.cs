@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.resolution.types.parametrization;
@@ -44,11 +44,7 @@ public interface ResolvedTypeParameterValueProvider
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 188, 104, 103, 104, 104, 104, 237, 69, 117,
-		109, 153, 217, 104, 184
-	})]
+	
 	static ResolvedType _003Cdefault_003EuseThisTypeParametersOnTheGivenType(ResolvedTypeParameterValueProvider P_0, ResolvedType P_1)
 	{
 		if (P_1.isTypeVariable())

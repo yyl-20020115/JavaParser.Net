@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.type;
@@ -9,7 +9,7 @@ using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -80,14 +80,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public MethodCallExpr(TokenRange tokenRange, Expression scope, NodeList typeArguments, SimpleName name, NodeList arguments)
 		: base(tokenRange)
@@ -187,11 +180,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -247,11 +236,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024hasParameterwithSameTypeThanResultType_00240(ResolvedType resolvedReturnType, Type argType)
 	{
@@ -268,11 +253,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public MethodCallExpr(string name, params Expression[] arguments)
 		: this(null, null, null, new SimpleName(name), new NodeList(arguments))
@@ -280,11 +261,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public MethodCallExpr(Expression scope, string name)
 		: this(null, scope, null, new SimpleName(name), new NodeList())
@@ -292,11 +269,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public MethodCallExpr(Expression scope, SimpleName name)
 		: this(null, scope, null, name, new NodeList())
@@ -304,12 +277,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodCallExpr(Expression scope, string name, NodeList arguments)
 		: this(null, scope, null, new SimpleName(name), arguments)
@@ -317,13 +285,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodCallExpr(Expression scope, NodeList typeArguments, string name, NodeList arguments)
 		: this(null, scope, typeArguments, new SimpleName(name), arguments)
@@ -331,12 +293,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public MethodCallExpr(Expression scope, SimpleName name, NodeList arguments)
 		: this(null, scope, null, name, arguments)
@@ -344,13 +301,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -363,11 +314,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -395,12 +342,7 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 94, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 104, 105, 103, 162, 104, 112, 111, 109, 226,
-		61, 230, 71
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -437,17 +379,8 @@ public class MethodCallExpr : Expression, NodeWithTypeArguments, NodeWithArgumen
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 140, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 105, 109, 130, 104, 105, 109, 162, 104, 112,
-		111, 115, 226, 61, 230, 71
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

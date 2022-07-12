@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -12,7 +12,7 @@ using com.github.javaparser.javadoc;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -383,11 +383,7 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		112, 99, 130, 112, 111, 109, 226, 61, 230, 70,
-		112, 111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -444,14 +440,7 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public TypeDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, SimpleName name, NodeList members)
 		: base(tokenRange, annotations)
@@ -589,11 +578,7 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024getCallablesWithSignature_00243(CallableDeclaration.Signature signature, CallableDeclaration m)
 	{
@@ -684,11 +669,7 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public TypeDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new SimpleName(name), new NodeList())
@@ -696,13 +677,7 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -734,17 +709,8 @@ public abstract class TypeDeclaration : BodyDeclaration, NodeWithSimpleName, Nod
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 118, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 105, 109,
-		130
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

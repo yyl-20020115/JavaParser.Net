@@ -1,10 +1,10 @@
 using System.Collections;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
-using IKVM.Attributes;
+
 using ikvm.lang;
 using java.lang;
 using java.util;
@@ -39,11 +39,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 		
 				
-		[LineNumberTable(new byte[]
-		{
-			162, 2, 119, 119, 191, 37, 116, 109, 125, 140,
-			142
-		})]
+		
 		public virtual void set(Node n)
 		{
 			int num = access_0024000(this_00240).indexOf(current);
@@ -81,11 +77,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			(Modifiers)0
-		})]
+				
 		
 		public NodeListIterator(NodeList this_00240, List list)
 		{
@@ -96,12 +88,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public NodeListIterator(NodeList this_00240, List list, int index)
 		{
@@ -484,11 +471,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual bool replace(Node old, Node replacement)
 	{
@@ -610,11 +593,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual Node set(int index, Node element)
 	{
@@ -803,11 +782,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void notifyElementAdded(int index, Node nodeAddedOrRemoved)
 	{
@@ -823,11 +798,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void notifyElementReplaced(int index, Node nodeAddedOrRemoved)
 	{
@@ -835,11 +806,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void notifyElementRemoved(int index, Node nodeAddedOrRemoved)
 	{
@@ -856,11 +823,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void add(int index, Node node)
 	{
@@ -922,11 +885,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024retainAll_00240(Collection c, Node it)
 	{
@@ -935,12 +894,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024notifyElementAdded_00241(int index, Node nodeAddedOrRemoved, AstObserver o)
 	{
@@ -949,12 +903,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024notifyElementRemoved_00242(int index, Node nodeAddedOrRemoved, AstObserver o)
 	{
@@ -963,12 +912,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024notifyElementReplaced_00243(int index, Node nodeAddedOrRemoved, AstObserver o)
 	{
@@ -977,11 +921,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static NodeList lambda_0024toNodeList_00244(NodeList left, NodeList right)
 	{
@@ -1055,11 +995,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual NodeList addAfter(Node node, Node afterThisNode)
 	{
@@ -1074,11 +1010,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual NodeList addBefore(Node node, Node beforeThisNode)
 	{
@@ -1117,11 +1049,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual object accept(GenericVisitor v, object arg)
 	{
@@ -1131,11 +1059,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public virtual void accept(VoidVisitor v, object arg)
 	{
@@ -1182,11 +1106,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual bool addAll(int index, Collection c)
 	{
@@ -1304,11 +1224,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual List subList(int fromIndex, int toIndex)
 	{
@@ -1386,11 +1302,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void add(int index, object node)
 	{
@@ -1400,11 +1312,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object set(int index, object element)
 	{

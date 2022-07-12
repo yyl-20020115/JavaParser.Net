@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -45,11 +45,7 @@ public class InstanceOfExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 169, 113, 104, 120, 119, 233, 69, 103, 104,
-		173, 108, 104, 105, 105, 121, 234, 70
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		Optional pattern = ((InstanceOfExpr)wrappedNode).getPattern();

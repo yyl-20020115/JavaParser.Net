@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
 using com.github.javaparser.metamodel;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.ast.nodeTypes;

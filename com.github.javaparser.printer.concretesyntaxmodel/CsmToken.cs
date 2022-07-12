@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.printer.concretesyntaxmodel;
@@ -22,11 +22,7 @@ public class CsmToken: CsmElement
 	private TokenContentCalculator tokenContentCalculator;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmToken(int tokenType, string content)
 	{
@@ -36,22 +32,7 @@ public class CsmToken: CsmElement
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		3,
-		104,
-		103,
-		109,
-		114,
-		byte.MaxValue,
-		0,
-		69,
-		136,
-		127,
-		3,
-		104,
-		139
-	})]
+	
 	public CsmToken(int tokenType)
 	{
 		this.tokenType = tokenType;
@@ -71,11 +52,7 @@ public class CsmToken: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmToken(int tokenType, TokenContentCalculator tokenContentCalculator)
 	{
@@ -103,11 +80,7 @@ public class CsmToken: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{

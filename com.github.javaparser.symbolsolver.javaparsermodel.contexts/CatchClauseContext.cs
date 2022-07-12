@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.symbolsolver.javaparsermodel.contexts;

@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.ast.nodeTypes;
@@ -103,11 +103,7 @@ public abstract class NodeWithExtends
 	virtual Node setExtendedTypes(NodeList extendsList);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	abstract Node setExtendedType(int i, ClassOrInterfaceType extend);
 
 	

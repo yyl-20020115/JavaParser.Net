@@ -1,23 +1,14 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
-using java.lang;
-
 namespace com.github.javaparser;
 
 public class EntryPoint
 {
-	
-	
 	public EntryPoint()
 	{
 	}
-
 	
-	
-	
-	public static int main(string[] args)
+	public static int Main(string[] args)
 	{
-		java.lang.System.@out.println("JavaParser!");
+		System.Console.WriteLine("JavaParser!");
 		return 0;
 	}
 }

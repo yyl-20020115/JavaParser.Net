@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -31,12 +31,7 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ArrayCreationLevel(TokenRange tokenRange, Expression dimension, NodeList annotations)
 		: base(tokenRange)
@@ -96,11 +91,7 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -148,11 +139,7 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -165,11 +152,7 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -192,11 +175,7 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		91, 99, 130, 112, 111, 109, 226, 61, 230, 70,
-		104, 105, 103, 162
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -222,16 +201,8 @@ public class ArrayCreationLevel : Node, NodeWithAnnotations
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		124, 99, 130, 112, 111, 115, 226, 61, 230, 70,
-		104, 105, 109, 162
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

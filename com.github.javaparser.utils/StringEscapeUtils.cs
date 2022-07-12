@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -46,17 +46,8 @@ public class StringEscapeUtils
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final,
-			Modifiers.Final,
-			Modifiers.Final
-		})]
-		[LineNumberTable(new byte[]
-		{
-			159, 64, 106, 120, 127, 7, 100, 227, 61, 232,
-			70
-		})]
+		
+		
 		protected internal override int translate(CharSequence input, int index, Writer @out)
 		{
 			CharSequence charSequence = input;
@@ -135,17 +126,8 @@ public class StringEscapeUtils
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final,
-			Modifiers.Final
-		})]
-		[LineNumberTable(new byte[]
-		{
-			159, 97, 74, 99, 144, 99, 129, 98, 115, 104,
-			127, 4, 167, 120, 104, 100, 116, 120, 105, 104,
-			132, 229, 69, 105, 63, 4, 168, 101
-		})]
+		
+		
 		private void translate(CharSequence input, Writer @out)
 		{
 			CharSequence charSequence = input;
@@ -201,12 +183,7 @@ public class StringEscapeUtils
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		protected internal abstract int translate(CharSequence input, int index, Writer @out);
 
 		
@@ -243,12 +220,7 @@ public class StringEscapeUtils
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			160, 123, 105, 107, 107, 102, 98, 102, 120, 127,
-			25, 127, 13, 120, 101, 131, 101, 227, 56, 235,
-			76, 103, 103
-		})]
+		
 		private LookupTranslator(params object[][] lookup)
 			: base(null)
 		{
@@ -291,17 +263,8 @@ public class StringEscapeUtils
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final,
-			Modifiers.Final,
-			Modifiers.Final
-		})]
-		[LineNumberTable(new byte[]
-		{
-			159, 76, 106, 127, 10, 104, 123, 181, 113, 127,
-			8, 159, 5, 100, 104, 227, 58, 235, 74
-		})]
+		
+		
 		protected internal override int translate(CharSequence input, int index, Writer @out)
 		{
 			CharSequence charSequence = input;
@@ -372,18 +335,8 @@ public class StringEscapeUtils
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final,
-			Modifiers.Final,
-			Modifiers.Final
-		})]
-		[LineNumberTable(new byte[]
-		{
-			159, 57, 170, 119, 103, 127, 41, 101, 101, 165,
-			159, 0, 127, 11, 127, 0, 127, 39, 223, 0,
-			115, 138
-		})]
+		
+		
 		protected internal override int translate(CharSequence input, int index, Writer @out)
 		{
 			CharSequence charSequence = input;
@@ -461,18 +414,8 @@ public class StringEscapeUtils
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final,
-			Modifiers.Final,
-			Modifiers.Final
-		})]
-		[LineNumberTable(new byte[]
-		{
-			159, 41, 74, 159, 50, 99, 127, 19, 168, 127,
-			19, 166, 156, 191, 13, 123, 189, 2, 98, 159,
-			9, 133, 191, 65
-		})]
+		
+		
 		protected internal override int translate(CharSequence input, int index, Writer @out)
 		{
 			CharSequence charSequence = input;
@@ -629,22 +572,7 @@ public class StringEscapeUtils
 	{
 	}
 
-	[LineNumberTable(new byte[]
-	{
-		32,
-		byte.MaxValue,
-		111,
-		71,
-		byte.MaxValue,
-		111,
-		71,
-		byte.MaxValue,
-		59,
-		72,
-		byte.MaxValue,
-		127,
-		74
-	})]
+	
 	static StringEscapeUtils()
 	{
 		JAVA_CTRL_CHARS_UNESCAPE = new LookupTranslator(new string[5][]

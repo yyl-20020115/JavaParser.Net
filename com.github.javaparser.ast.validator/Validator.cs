@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.util.function;
 
 namespace com.github.javaparser.ast.validator;
@@ -18,20 +18,12 @@ public interface Validator : TypedValidator, BiConsumer
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	void accept(Node node, ProblemReporter problemReporter);
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	void accept(object node, object problemReporter);
 
 	

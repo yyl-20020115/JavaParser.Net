@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -24,12 +24,7 @@ public interface HasParentNode : com.github.javaparser.ast.observer.Observable
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024findAncestor_00241(Node parent, Predicate predicate, Class type)
 		{
@@ -37,11 +32,7 @@ public interface HasParentNode : com.github.javaparser.ast.observer.Observable
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		internal static bool lambda_0024isDescendantOf_00242(Node ancestor, Node n)
 		{
 			return n == ancestor;
@@ -193,11 +184,7 @@ public interface HasParentNode : com.github.javaparser.ast.observer.Observable
 		virtual Optional getParentNode();
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Optional findAncestor(Predicate predicate, params Class[] types);
 
 	
@@ -258,11 +245,7 @@ public interface HasParentNode : com.github.javaparser.ast.observer.Observable
 
 	
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,

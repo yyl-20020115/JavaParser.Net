@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.nodeTypes.modifiers;
@@ -8,7 +8,7 @@ using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -26,14 +26,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public AnnotationDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, SimpleName name, NodeList members)
 		: base(tokenRange, modifiers, annotations, name, members)
@@ -42,11 +35,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -84,11 +73,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public AnnotationDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new SimpleName(name), new NodeList())
@@ -96,13 +81,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -115,11 +94,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -154,12 +129,7 @@ public class AnnotationDeclaration : TypeDeclaration, NodeWithAbstractModifier, 
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override FieldDeclaration addField(Type type, string name, params Modifier.Keyword[] modifiers)
 	{

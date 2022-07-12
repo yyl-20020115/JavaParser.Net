@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -179,11 +179,7 @@ public abstract class VisitorGenerator : Generator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		10, 158, 159, 33, 109, 104, 141, 140, 116, 114,
-		101, 104
-	})]
+	
 	public sealed override void generate()
 	{
 		Log.info("Running %s", new ___003C_003EAnon0(this));
@@ -207,11 +203,7 @@ public abstract class VisitorGenerator : Generator
 	protected internal abstract void generateVisitMethodBody(BaseNodeMetaModel bnmm, MethodDeclaration md, CompilationUnit cu);
 
 	
-	[LineNumberTable(new byte[]
-	{
-		31, 117, 112, 101, 134, 104, 120, 107, 114, 127,
-		0, 112, 107, 104, 117, 120, 134, 139
-	})]
+	
 	private void generateVisitMethodForNode(BaseNodeMetaModel P_0, ClassOrInterfaceDeclaration P_1, CompilationUnit P_2)
 	{
 		Optional optional = P_1.getMethods().stream().filter(new ___003C_003EAnon3())

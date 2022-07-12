@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.util.function;
 
 namespace com.github.javaparser.ast.validator;
@@ -75,11 +75,7 @@ public interface TypedValidator : BiConsumer
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private void lambda_0024postProcess_00241(ParseResult result, Node node)
 		{
@@ -88,11 +84,7 @@ public interface TypedValidator : BiConsumer
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		private static void lambda_0024null_00240(ParseResult result, Problem problem)
 		{
@@ -100,11 +92,7 @@ public interface TypedValidator : BiConsumer
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public override void postProcess(ParseResult result, ParserConfiguration configuration)
 		{
@@ -128,11 +116,7 @@ public interface TypedValidator : BiConsumer
 		}
 	}
 
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual void accept(Node node, ProblemReporter problemReporter);
 
 	
@@ -150,11 +134,7 @@ public interface TypedValidator : BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	void accept(object node, object problemReporter);
 
 	

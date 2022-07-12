@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -9,7 +9,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.javaparsermodel;

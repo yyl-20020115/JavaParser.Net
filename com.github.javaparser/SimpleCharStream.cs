@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 
 namespace com.github.javaparser;
 
@@ -8,12 +8,7 @@ public class SimpleCharStream : AbstractCharStream
 	private Provider inputStream;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public SimpleCharStream(Provider dstream, int startline, int startcolumn)
 		: this(dstream, startline, startcolumn, 4096)
@@ -21,12 +16,7 @@ public class SimpleCharStream : AbstractCharStream
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void reInit(Provider dstream, int startline, int startcolumn)
 	{
@@ -34,13 +24,7 @@ public class SimpleCharStream : AbstractCharStream
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public SimpleCharStream(Provider dstream, int startline, int startcolumn, int buffersize)
 		: base(startline, startcolumn, buffersize)
@@ -49,13 +33,7 @@ public class SimpleCharStream : AbstractCharStream
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual void reInit(Provider dstream, int startline, int startcolumn, int buffersize)
 	{
@@ -65,12 +43,7 @@ public class SimpleCharStream : AbstractCharStream
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	protected internal override int streamRead(char[] aBuf, int nOfs, int nLen)
 	{

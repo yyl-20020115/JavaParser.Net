@@ -1,9 +1,9 @@
 using System.Collections;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.visitor;
-using IKVM.Attributes;
+
 using ikvm.lang;
 using java.lang;
 using java.util;
@@ -92,11 +92,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 		internal VisitorList this_00240;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _2(VisitorList this_00240, int val_0024index)
 		{
@@ -242,14 +238,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 		internal VisitorList this_00240;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			~(Modifiers.AccessMask | Modifiers.Static | Modifiers.Super | Modifiers.Volatile | Modifiers.Transient | Modifiers.Native | Modifiers.Interface | Modifiers.Abstract | Modifiers.Strictfp | Modifiers.Synthetic | Modifiers.Annotation | Modifiers.Enum),
-			(Modifiers)0,
-			(Modifiers)0,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _3(VisitorList this_00240, GenericVisitor hashcodeVisitor, GenericVisitor equalsVisitor, int val_0024toIndex, int val_0024fromIndex)
 		{
@@ -273,11 +262,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override void add(int index, object elem)
 		{
@@ -286,11 +271,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		public override object set(int index, object elem)
 		{
@@ -339,11 +320,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		internal EqualsHashcodeOverridingFacade(VisitorList this_00240, Node overridden)
 		{
@@ -353,11 +330,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual object accept(GenericVisitor v, object arg)
 		{
@@ -366,11 +339,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual void accept(VoidVisitor v, object arg)
 		{
@@ -512,11 +481,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void add(int index, Node elem)
 	{
@@ -589,11 +554,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual Node set(int index, Node elem)
 	{
@@ -635,11 +596,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public VisitorList(GenericVisitor hashcodeVisitor, GenericVisitor equalsVisitor)
 	{
@@ -649,11 +606,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual bool addAll(int index, Collection col)
 	{
@@ -772,11 +725,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual List subList(int fromIndex, int toIndex)
 	{
@@ -841,11 +790,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void add(int index, object elem)
 	{
@@ -855,11 +800,7 @@ public class VisitorList: List, Collection, Iterable, IEnumerable
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object set(int index, object elem)
 	{

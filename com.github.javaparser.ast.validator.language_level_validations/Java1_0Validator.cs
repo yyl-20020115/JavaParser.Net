@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
@@ -6,7 +6,7 @@ using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.validator.language_level_validations.chunks;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util.function;
 
@@ -1033,11 +1033,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00241(AssertStmt n, ProblemReporter reporter)
 	{
@@ -1055,11 +1051,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00243(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -1075,11 +1067,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00245(ClassExpr n, ProblemReporter reporter)
 	{
@@ -1088,11 +1076,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00246(Node node, ProblemReporter reporter)
 	{
@@ -1108,11 +1092,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00247(TryStmt n, ProblemReporter reporter)
 	{
@@ -1128,11 +1108,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00248(Node node, ProblemReporter reporter)
 	{
@@ -1151,11 +1127,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002410(EnumDeclaration n, ProblemReporter reporter)
 	{
@@ -1164,11 +1136,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002411(Parameter n, ProblemReporter reporter)
 	{
@@ -1184,11 +1152,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002413(ForEachStmt n, ProblemReporter reporter)
 	{
@@ -1197,11 +1161,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002414(ImportDeclaration n, ProblemReporter reporter)
 	{
@@ -1219,11 +1179,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002416(SwitchEntry n, ProblemReporter reporter)
 	{
@@ -1239,11 +1195,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002418(YieldStmt n, ProblemReporter reporter)
 	{
@@ -1259,11 +1211,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002420(UnionType n, ProblemReporter reporter)
 	{
@@ -1279,11 +1227,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002422(LambdaExpr n, ProblemReporter reporter)
 	{
@@ -1299,11 +1243,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002424(ModuleDeclaration n, ProblemReporter reporter)
 	{
@@ -1319,11 +1259,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002426(SwitchExpr n, ProblemReporter reporter)
 	{
@@ -1343,11 +1279,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002428(InstanceOfExpr n, ProblemReporter reporter)
 	{
@@ -1363,11 +1295,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002430(TextBlockLiteralExpr n, ProblemReporter reporter)
 	{
@@ -1383,11 +1311,7 @@ public class Java1_0Validator : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_002432(RecordDeclaration n, ProblemReporter reporter)
 	{
@@ -1395,80 +1319,7 @@ public class Java1_0Validator : Validators
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		101,
-		246,
-		159,
-		156,
-		142,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		245,
-		76,
-		250,
-		72,
-		245,
-		69,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		107,
-		107,
-		223,
-		5,
-		223,
-		5,
-		223,
-		5,
-		byte.MaxValue,
-		5,
-		70,
-		byte.MaxValue,
-		5,
-		69,
-		byte.MaxValue,
-		5,
-		69,
-		byte.MaxValue,
-		5,
-		72,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109
-	})]
+	
 	public Java1_0Validator()
 		: base(new CommonValidators())
 	{

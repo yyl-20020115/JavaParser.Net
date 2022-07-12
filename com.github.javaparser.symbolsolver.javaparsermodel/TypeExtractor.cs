@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -21,7 +21,7 @@ using com.github.javaparser.symbolsolver.resolution.promotion;
 using com.github.javaparser.symbolsolver.resolution.typesolvers;
 using com.github.javaparser.utils;
 using com.google.common.collect;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -50,16 +50,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 		{
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			161,
-			66,
-			byte.MaxValue,
-			160,
-			249,
-			158,
-			212
-		})]
+		
 		static _1()
 		{
 			_0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024expr_0024UnaryExpr_0024Operator = new int[(nint)UnaryExpr.Operator.values().LongLength];
@@ -866,13 +857,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 159, 109, 233, 69, 103, 107, 130, 107, 236,
-		69, 159, 3, 202, 109, 127, 3, 112, 173, 142,
-		106, 114, 111, 101, 106, 174, 199, 98, 171, 178,
-		140, 210, 105, 106, 175
-	})]
+	
 	private ResolvedType resolveLambda(LambdaExpr P_0, ResolvedType P_1)
 	{
 		Context context = JavaParserFactory.getContext(P_0, typeSolver);
@@ -915,11 +900,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 235, 126, 109, 187, 108, 167, 103, 102, 102,
-		104, 223, 4, 115, 104, 179
-	})]
+	
 	public override ResolvedType visit(TypeExpr node, java.lang.Boolean solveLambdas)
 	{
 		Log.trace("getType on type expr %s", new ___003C_003EAnon6(node));
@@ -953,13 +934,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 224, 112, 108, 103, 110, 104, 159, 2, 126,
-		107, 109, 137, 110, 235, 69, 105, 108, 142, 127,
-		11, 127, 2, 162, 110, 107, 105, 110, 237, 60,
-		232, 72, 122, 137, 108, 108, 178, 131, 153
-	})]
+	
 	public override ResolvedType visit(MethodReferenceExpr node, java.lang.Boolean solveLambdas)
 	{
 		if (Navigator.demandParentNode(node) is MethodCallExpr)
@@ -1018,14 +993,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 94, 112, 108, 103, 109, 104, 159, 2, 190,
-		151, 107, 107, 178, 99, 105, 137, 127, 1, 105,
-		216, 2, 225, 69, 100, 111, 105, 238, 69, 137,
-		98, 141, 109, 142, 104, 139, 99, 109, 109, 137,
-		104, 139, 131
-	})]
+	
 	public override ResolvedType visit(LambdaExpr node, java.lang.Boolean solveLambdas)
 	{
 		ResolvedType resolvedType;
@@ -1064,7 +1032,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 						}
 						catch (System.Exception x)
 						{
-							if (ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.Unused) == null)
+							if (ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.Unused) == null)
 							{
 								throw;
 							}
@@ -1164,11 +1132,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 36, 112, 118, 115, 139, 108, 104, 121, 136,
-		159, 1, 182, 204, 120, 136, 159, 1
-	})]
+	
 	public override ResolvedType visit(SuperExpr node, java.lang.Boolean solveLambdas)
 	{
 		if (node.getTypeName().isPresent())
@@ -1207,11 +1171,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 12, 144, 214, 115, 63, 4, 161, 129, 117,
-		109, 104, 220
-	})]
+	
 	public override ResolvedType visit(ThisExpr node, java.lang.Boolean solveLambdas)
 	{
 		//Discarded unreachable code: IL_0050
@@ -1345,41 +1305,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160,
-		123,
-		110,
-		108,
-		103,
-		120,
-		136,
-		98,
-		48,
-		166,
-		178,
-		151,
-		104,
-		108,
-		104,
-		206,
-		151,
-		119,
-		104,
-		179,
-		135,
-		byte.MaxValue,
-		10,
-		72,
-		226,
-		57,
-		161,
-		115,
-		105,
-		189,
-		105,
-		146
-	})]
+	
 	public override ResolvedType visit(FieldAccessExpr node, java.lang.Boolean solveLambdas)
 	{
 		if (node.getScope() is NameExpr || node.getScope() is FieldAccessExpr)
@@ -1488,19 +1414,7 @@ public class TypeExtractor : DefaultVisitorAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		86,
-		byte.MaxValue,
-		71,
-		73,
-		byte.MaxValue,
-		7,
-		73,
-		198,
-		147,
-		137
-	})]
+	
 	public override ResolvedType visit(BinaryExpr node, java.lang.Boolean solveLambdas)
 	{
 		switch (_1._0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024expr_0024BinaryExpr_0024Operator[node.getOperator().ordinal()])

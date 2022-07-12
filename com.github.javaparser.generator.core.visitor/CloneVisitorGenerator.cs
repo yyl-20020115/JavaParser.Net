@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -49,13 +49,7 @@ public class CloneVisitorGenerator : VisitorGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 188, 149, 113, 139, 127, 4, 127, 1, 112,
-		112, 127, 19, 104, 159, 16, 191, 14, 133, 127,
-		20, 127, 10, 127, 8, 115, 130, 110, 159, 14,
-		159, 31, 133, 110, 104, 140, 108, 108, 108, 108
-	})]
+	
 	protected internal override void generateVisitMethodBody(BaseNodeMetaModel node, MethodDeclaration visitMethod, CompilationUnit compilationUnit)
 	{
 		visitMethod.getParameters().forEach(new ___003C_003EAnon0());

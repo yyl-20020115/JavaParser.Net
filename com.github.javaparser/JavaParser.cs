@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -153,19 +153,8 @@ public class JavaParser
 	private GeneratedJavaParser astParser;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		68, 103, 135, 159, 16, 123, 105, 130, 136, 110,
-		149, 127, 0, 111, 130, 108, 133, 247, 71, 177,
-		2, 161, 231, 60, 177, 2, 225, 56, 103, 98,
-		121, 118, 184, 177, 2, 161, 227, 60, 177, 2,
-		225, 60
-	})]
+		
+	
 	public virtual ParseResult parse(ParseStart start, Provider provider)
 	{
 		Utils.assertNotNull(start);
@@ -179,7 +168,7 @@ public class JavaParser
 			provider = processor.preProcess(provider);
 		}
 		GeneratedJavaParser parserForProvider = getParserForProvider(provider);
-		java.lang.Exception ex2;
+		System.Exception ex2;
 		ParseResult result2;
 		try
 		{
@@ -198,7 +187,7 @@ public class JavaParser
 			}
 			catch (System.Exception x)
 			{
-				java.lang.Exception ex = ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.None);
+				System.Exception ex = ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.None);
 				if (ex == null)
 				{
 					throw;
@@ -235,10 +224,10 @@ public class JavaParser
 		
 		return result2;
 		IL_00fd:
-		java.lang.Exception ex5 = ex2;
+		System.Exception ex5 = ex2;
 		try
 		{
-			java.lang.Exception ex6 = ex5;
+			System.Exception ex6 = ex5;
 			string message = ((Throwable.instancehelper_getMessage(ex6) != null) ? Throwable.instancehelper_getMessage(ex6) : "Unknown error");
 			parserForProvider.problems.add(new Problem(message, null, ex6));
 			result2 = new ParseResult(null, parserForProvider.problems, parserForProvider.getCommentsCollection());
@@ -305,11 +294,7 @@ public class JavaParser
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual ParseResult parse(InputStream @in, Charset encoding)
 	{
@@ -320,12 +305,7 @@ public class JavaParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024parse_00240(File file, Charset encoding, CompilationUnit cu)
 	{
@@ -334,11 +314,7 @@ public class JavaParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024parse_00241(File file, CompilationUnit cu)
 	{
@@ -347,12 +323,7 @@ public class JavaParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024parse_00242(Path path, Charset encoding, CompilationUnit cu)
 	{
@@ -361,11 +332,7 @@ public class JavaParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024parse_00243(Path path, CompilationUnit cu)
 	{
@@ -439,11 +406,7 @@ public class JavaParser
 	
 	
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+		
 	
 	[Deprecated(new object[]
 	{
@@ -460,12 +423,7 @@ public class JavaParser
 	
 	
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+		
 	
 	[Deprecated(new object[]
 	{

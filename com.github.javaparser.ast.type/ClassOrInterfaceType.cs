@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -8,7 +8,7 @@ using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -146,14 +146,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ClassOrInterfaceType(TokenRange tokenRange, ClassOrInterfaceType scope, SimpleName name, NodeList typeArguments, NodeList annotations)
 		: base(tokenRange, annotations)
@@ -266,11 +259,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -328,11 +317,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024getNameWithScope_00240(StringBuilder str, ClassOrInterfaceType s)
 	{
@@ -341,11 +326,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024asString_00241(StringBuilder str, ClassOrInterfaceType s)
 	{
@@ -354,11 +335,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024asString_00242(StringBuilder str, NodeList ta)
 	{
@@ -384,11 +361,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public ClassOrInterfaceType(ClassOrInterfaceType scope, string name)
 		: this(null, scope, new SimpleName(name), null, new NodeList())
@@ -396,12 +369,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public ClassOrInterfaceType(ClassOrInterfaceType scope, SimpleName name, NodeList typeArguments)
 		: this(null, scope, name, typeArguments, new NodeList())
@@ -409,13 +377,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -428,11 +390,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -463,11 +421,7 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 96, 99, 130, 104, 105, 103, 162, 104, 112,
-		111, 109, 226, 61, 230, 71
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -513,16 +467,8 @@ public class ClassOrInterfaceType : ReferenceType, NodeWithSimpleName, NodeWithA
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 154, 99, 130, 105, 109, 130, 104, 105, 109,
-		162, 104, 112, 111, 115, 226, 61, 230, 71
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

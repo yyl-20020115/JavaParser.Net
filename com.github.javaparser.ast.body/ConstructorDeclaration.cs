@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -13,7 +13,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -103,18 +103,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ConstructorDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList typeParameters, SimpleName name, NodeList parameters, NodeList thrownExceptions, BlockStmt body, ReceiverParameter receiverParameter)
 		: base(tokenRange, modifiers, annotations, typeParameters, name, parameters, thrownExceptions, receiverParameter)
@@ -156,11 +145,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -223,11 +208,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ConstructorDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new NodeList(), new SimpleName(name), new NodeList(), new NodeList(), new BlockStmt(), null)
@@ -235,16 +216,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ConstructorDeclaration(NodeList modifiers, NodeList annotations, NodeList typeParameters, SimpleName name, NodeList parameters, NodeList thrownExceptions, BlockStmt body)
 		: this(null, modifiers, annotations, typeParameters, name, parameters, thrownExceptions, body, null)
@@ -252,17 +224,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -275,11 +237,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -287,18 +245,8 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 103, 102, 102, 99, 104, 152, 109, 108, 99,
-		127, 5, 100, 133, 140, 99, 149, 152, 101, 108,
-		110
-	})]
+	
+	
 	public override string getDeclarationAsString(bool includingModifiers, bool includingThrows, bool includingParameterName)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -354,11 +302,7 @@ public class ConstructorDeclaration : CallableDeclaration, NodeWithBlockStmt, No
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public override bool replace(Node node, Node replacementNode)
 	{

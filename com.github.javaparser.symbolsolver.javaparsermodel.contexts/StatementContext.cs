@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -9,7 +9,7 @@ using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -50,12 +50,7 @@ public class StatementContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		7, 103, 104, 173, 108, 104, 171, 103, 98, 114,
-		122, 3, 232, 69, 100, 139, 106, 117, 106, 105,
-		227, 60, 232, 73
-	})]
+		
 	public static SymbolReference solveInBlock(string name, TypeSolver typeSolver, Statement stmt)
 	{
 		Optional parentNode = stmt.getParentNode();
@@ -109,14 +104,7 @@ public class StatementContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 90, 66, 114, 104, 104, 226, 71, 103, 109,
-		111, 111, 245, 61, 232, 71, 114, 105, 173, 174,
-		105, 106, 105, 106, 105, 106, 236, 72, 99, 173,
-		169, 116, 101, 208, 112, 108, 121, 233, 78, 130,
-		233, 80, 145, 137, 104, 130, 197
-	})]
+		
 	private SymbolReference solveSymbol(string P_0, bool P_1)
 	{
 		SymbolDeclarator symbolDeclarator = JavaParserFactory.getSymbolDeclarator(wrappedNode, typeSolver);
@@ -223,12 +211,7 @@ public class StatementContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		40, 103, 104, 168, 108, 104, 171, 103, 98, 114,
-		122, 3, 232, 69, 100, 139, 106, 117, 106, 105,
-		249, 60, 232, 73
-	})]
+		
 	public static Optional solveInBlockAsValue(string name, TypeSolver typeSolver, Statement stmt)
 	{
 		Optional parentNode = stmt.getParentNode();
@@ -275,13 +258,7 @@ public class StatementContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		76, 114, 105, 104, 194, 109, 136, 145, 113, 104,
-		168, 173, 105, 106, 105, 106, 105, 170, 105, 163,
-		115, 127, 1, 4, 232, 69, 101, 203, 107, 117,
-		110, 105, 104, 226, 59, 232, 74
-	})]
+		
 	public override Optional solveSymbolAsValue(string name)
 	{
 		SymbolDeclarator symbolDeclarator = JavaParserFactory.getSymbolDeclarator(wrappedNode, typeSolver);

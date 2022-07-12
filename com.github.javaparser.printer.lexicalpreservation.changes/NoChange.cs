@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.printer.lexicalpreservation.changes;
@@ -16,11 +16,7 @@ public class NoChange: Change
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual object getValue(ObservableProperty property, Node node)
 	{

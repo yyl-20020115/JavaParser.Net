@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.validator.language_level_validations.chunks;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util.function;
 
@@ -52,11 +52,7 @@ public class Java9Validator : Java8Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00240(TryStmt n, ProblemReporter reporter)
 	{
@@ -67,11 +63,7 @@ public class Java9Validator : Java8Validator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 189, 232, 53, 107, 110, 250, 83, 109, 109,
-		115, 115
-	})]
+	
 	public Java9Validator()
 	{
 		underscoreKeywordValidator = new UnderscoreKeywordValidator();

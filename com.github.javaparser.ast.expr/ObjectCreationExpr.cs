@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -9,7 +9,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -52,15 +52,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ObjectCreationExpr(TokenRange tokenRange, Expression scope, ClassOrInterfaceType type, NodeList typeArguments, NodeList arguments, NodeList anonymousClassBody)
 		: base(tokenRange)
@@ -180,11 +172,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -233,12 +221,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public ObjectCreationExpr(Expression scope, ClassOrInterfaceType type, NodeList arguments)
 		: this(null, scope, type, null, arguments, null)
@@ -246,14 +229,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -266,11 +242,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -323,13 +295,7 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 128, 99, 130, 104, 112, 111, 109, 226, 61,
-		230, 71, 112, 111, 109, 226, 61, 230, 70, 104,
-		105, 103, 162, 104, 112, 111, 109, 226, 61, 230,
-		71
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -377,18 +343,8 @@ public class ObjectCreationExpr : Expression, NodeWithTypeArguments, NodeWithTyp
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 182, 99, 130, 104, 112, 111, 115, 226, 61,
-		230, 71, 112, 111, 115, 226, 61, 230, 70, 104,
-		105, 109, 162, 105, 109, 130, 104, 112, 111, 115,
-		226, 61, 230, 71
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

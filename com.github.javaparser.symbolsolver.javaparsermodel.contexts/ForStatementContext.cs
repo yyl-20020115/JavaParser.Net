@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -23,11 +23,7 @@ public class ForStatementContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		3, 127, 14, 104, 103, 127, 2, 116, 149, 98,
-		122, 150, 133, 114, 154
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		Iterator iterator = ((ForStmt)wrappedNode).getInitialization().iterator();

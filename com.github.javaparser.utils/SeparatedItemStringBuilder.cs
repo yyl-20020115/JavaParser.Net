@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 
 namespace com.github.javaparser.utils;
@@ -17,12 +17,7 @@ public class SeparatedItemStringBuilder
 	private StringBuilder builder;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public SeparatedItemStringBuilder(string prefix, string separator, string postfix)
 	{
@@ -33,11 +28,7 @@ public class SeparatedItemStringBuilder
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual SeparatedItemStringBuilder append(CharSequence format, params object[] args)
 	{

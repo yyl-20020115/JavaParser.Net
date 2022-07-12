@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -6,7 +6,7 @@ using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -22,13 +22,7 @@ public class SwitchEntryContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		3, 113, 119, 127, 1, 118, 107, 107, 103, 109,
-		114, 111, 149, 106, 240, 69, 98, 235, 70, 127,
-		8, 127, 6, 111, 106, 105, 131, 130, 106, 130,
-		133
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		SwitchStmt switchStmt = (SwitchStmt)Navigator.demandParentNode(wrappedNode);

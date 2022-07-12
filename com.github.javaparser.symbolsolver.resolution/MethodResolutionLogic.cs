@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -274,11 +274,7 @@ public class MethodResolutionLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 239, 112, 115, 103, 105, 139, 105, 148, 153,
-		130, 104, 130, 104, 154, 104, 103, 120, 130
-	})]
+	
 	public static ResolvedType replaceTypeParam(ResolvedType type, ResolvedTypeParameterDeclaration tp, TypeSolver typeSolver)
 	{
 		if (type.isTypeVariable() || type.isWildcard())
@@ -329,30 +325,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162,
-		174,
-		159,
-		9,
-		104,
-		136,
-		105,
-		143,
-		109,
-		110,
-		109,
-		142,
-		105,
-		135,
-		125,
-		105,
-		byte.MaxValue,
-		48,
-		55,
-		233,
-		81
-	})]
+		
 	public static Optional findMostApplicableUsage(List methods, string name, List argumentsTypes, TypeSolver typeSolver)
 	{
 		List list = (List)methods.stream().filter(new ___003C_003EAnon5(name, argumentsTypes, typeSolver)).collect(Collectors.toList());
@@ -445,17 +418,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 119, 163, 110, 194, 167, 135, 135, 135, 162,
-		134, 198, 226, 71, 109, 127, 5, 108, 130, 164,
-		104, 111, 117, 132, 226, 59, 232, 73, 235, 69,
-		104, 199, 101, 194, 103, 99, 107, 111, 111, 127,
-		1, 118, 165, 110, 159, 3, 118, 98, 103, 7,
-		231, 69, 103, 104, 115, 127, 1, 108, 130, 110,
-		117, 99, 226, 69, 117, 99, 130, 106, 112, 162,
-		226, 23, 235, 109
-	})]
+		
 	private static bool isApplicable(ResolvedMethodDeclaration P_0, string P_1, List P_2, TypeSolver P_3, bool P_4)
 	{
 		if (!String.instancehelper_equals(P_0.getName(), P_1))
@@ -549,11 +512,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 104, 103, 167, 103, 135, 164, 148, 230, 70,
-		118, 100, 110, 127, 4, 230, 70, 244, 69
-	})]
+		
 	private static List groupTrailingArgumentsIntoArray(ResolvedMethodDeclaration P_0, List P_1, ResolvedType P_2)
 	{
 		int numberOfParams = P_0.getNumberOfParams();
@@ -608,12 +567,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 174, 115, 130, 120, 171, 115, 114, 210, 112,
-		103, 168, 172, 104, 109, 124, 144, 109, 104, 144,
-		105, 130, 104, 109, 181, 130, 241, 31, 233, 100
-	})]
+		
 	private static bool isAssignableMatchTypeParametersMatchingQName(ResolvedReferenceType P_0, ResolvedReferenceType P_1, Map P_2)
 	{
 		if (!String.instancehelper_equals(P_0.getQualifiedName(), P_1.getQualifiedName()))
@@ -680,11 +634,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 221, 108, 105, 109, 105, 98, 137, 105, 130,
-		130, 137
-	})]
+		
 	private static bool matchTypeVariable(ResolvedTypeVariable P_0, ResolvedType P_1, Map P_2)
 	{
 		string name = P_0.asTypeParameter().getName();
@@ -733,13 +683,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 239, 105, 129, 118, 103, 103, 115, 112, 112,
-		63, 9, 230, 69, 129, 112, 109, 116, 129, 129,
-		112, 129, 112, 110, 161, 112, 109, 148, 161, 112,
-		110, 129, 112, 110, 129, 112, 129, 104, 129
-	})]
+		
 	private static void inferTypes(ResolvedType P_0, ResolvedType P_1, Map P_2)
 	{
 		if (Object.instancehelper_equals(P_0, P_1))
@@ -797,68 +741,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		5,
-		67,
-		145,
-		143,
-		152,
-		101,
-		176,
-		104,
-		205,
-		108,
-		102,
-		107,
-		115,
-		13,
-		230,
-		71,
-		139,
-		103,
-		127,
-		0,
-		127,
-		0,
-		122,
-		138,
-		98,
-		165,
-		120,
-		233,
-		70,
-		105,
-		212,
-		110,
-		99,
-		99,
-		112,
-		111,
-		108,
-		104,
-		108,
-		99,
-		230,
-		72,
-		114,
-		102,
-		148,
-		127,
-		0,
-		227,
-		45,
-		235,
-		90,
-		132,
-		106,
-		106,
-		134,
-		byte.MaxValue,
-		24,
-		71
-	})]
+		
 	public static SymbolReference findMostApplicable(List methods, string name, List argumentsTypes, TypeSolver typeSolver, bool wildcardTolerance)
 	{
 		List list = (List)methods.stream().filter(new ___003C_003EAnon2(name)).filter(distinctByKey(new ___003C_003EAnon3()))
@@ -959,15 +842,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 39, 103, 103, 103, 103, 104, 121, 115, 99,
-		195, 148, 130, 148, 226, 69, 113, 198, 111, 106,
-		138, 99, 106, 239, 69, 100, 130, 100, 226, 71,
-		102, 112, 114, 135, 130, 102, 112, 114, 135, 226,
-		69, 106, 176, 245, 70, 107, 139, 136, 130, 136,
-		226, 6, 235, 127, 134, 131, 166, 169
-	})]
+		
 	private static bool isMoreSpecific(ResolvedMethodDeclaration P_0, ResolvedMethodDeclaration P_1, List P_2)
 	{
 		int num = (P_0.hasVariadicParameter() ? 1 : 0);
@@ -1071,11 +946,7 @@ public class MethodResolutionLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 148, 98, 110, 104, 136, 105, 169, 104, 162,
-		104, 194, 123, 226, 46, 233, 85
-	})]
+	
 	private static bool isMoreSpecific(MethodUsage P_0, MethodUsage P_1)
 	{
 		int result = 0;
@@ -1102,11 +973,7 @@ public class MethodResolutionLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 205, 115, 130, 110, 130, 107, 127, 5, 2,
-		230, 69
-	})]
+	
 	private static bool areOverride(MethodUsage P_0, MethodUsage P_1)
 	{
 		if (!String.instancehelper_equals(P_0.getName(), P_1.getName()))
@@ -1128,18 +995,7 @@ public class MethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 21, 110, 194, 103, 167, 103, 167, 172, 103,
-		226, 69, 104, 194, 107, 175, 110, 132, 172, 233,
-		69, 117, 132, 238, 69, 109, 147, 100, 100, 167,
-		107, 111, 105, 137, 101, 130, 142, 246, 54, 235,
-		77, 127, 6, 110, 119, 162, 127, 4, 142, 127,
-		12, 111, 116, 137, 185, 151, 98, 139, 165, 100,
-		127, 4, 110, 127, 7, 111, 116, 105, 148, 159,
-		2, 98, 139, 165, 111, 107, 107, 103, 226, 159,
-		166, 235, 160, 95
-	})]
+		
 	public static bool isApplicable(MethodUsage methodUsage, string needleName, List needleParameterTypes, TypeSolver typeSolver)
 	{
 		if (!String.instancehelper_equals(methodUsage.getName(), needleName))

@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 

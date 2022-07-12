@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -52,11 +52,7 @@ public class Providers
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Provider provider(InputStream input, Charset encoding)
 	{
@@ -79,15 +75,10 @@ public class Providers
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Provider provider(File file, Charset encoding)
 	{
-		FileInputStream.___003Cclinit_003E();
 		Provider result = provider(new FileInputStream((File)Utils.assertNotNull(file)), (Charset)Utils.assertNotNull(encoding));
 		
 		return result;
@@ -95,11 +86,7 @@ public class Providers
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Provider provider(Path path, Charset encoding)
 	{
@@ -110,11 +97,7 @@ public class Providers
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Provider resourceProvider(string pathToResource, Charset encoding)
 	{
@@ -126,12 +109,7 @@ public class Providers
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Provider resourceProvider(ClassLoader classLoader, string pathToResource, Charset encoding)
 	{

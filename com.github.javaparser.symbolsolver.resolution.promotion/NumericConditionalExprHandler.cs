@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -244,15 +244,7 @@ public class NumericConditionalExprHandler: ConditionalExprHandler
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 186, 127, 6, 107, 127, 6, 107, 105, 231,
-		70, 127, 1, 102, 113, 135, 127, 1, 102, 113,
-		231, 71, 127, 28, 127, 4, 230, 78, 125, 127,
-		8, 103, 103, 127, 8, 103, 231, 74, 127, 4,
-		114, 127, 17, 103, 123, 127, 4, 114, 127, 17,
-		103, 251, 70, 127, 1, 117, 127, 1, 117
-	})]
+	
 	public virtual ResolvedType resolveType()
 	{
 		string text = ((!thenExpr.isPrimitive()) ? thenExpr.asReferenceType().describe() : thenExpr.asPrimitive().describe());

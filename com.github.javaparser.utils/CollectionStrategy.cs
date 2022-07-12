@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -306,42 +306,7 @@ public interface CollectionStrategy
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159,
-		190,
-		108,
-		168,
-		107,
-		112,
-		118,
-		104,
-		156,
-		139,
-		150,
-		144,
-		98,
-		178,
-		112,
-		byte.MaxValue,
-		80,
-		72,
-		229,
-		58,
-		98,
-		byte.MaxValue,
-		14,
-		69,
-		226,
-		60,
-		98,
-		191,
-		14,
-		2,
-		98,
-		159,
-		14
-	})]
+	
 	static unsafe Optional _003Cdefault_003EgetRoot(CollectionStrategy P_0, Path P_1)
 	{
 		ParseProblemException ex;

@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -76,8 +74,8 @@ public abstract class AbstractCharStream : CharStream
 		int num = bufsize - tokenBegin;
 		if (bWrapAround)
 		{
-			ByteCodeHelper.arraycopy_primitive_2(buffer, tokenBegin, dest, 0, num);
-			ByteCodeHelper.arraycopy_primitive_2(buffer, 0, dest, num, bufpos);
+			System.Array.Copy(buffer, tokenBegin, dest, 0, num);
+			System.Array.Copy(buffer, 0, dest, num, bufpos);
 			buffer = dest;
 			ByteCodeHelper.arraycopy_primitive_4(m_aBufLine, tokenBegin, array, 0, num);
 			ByteCodeHelper.arraycopy_primitive_4(m_aBufLine, 0, array, num, bufpos);
@@ -90,7 +88,7 @@ public abstract class AbstractCharStream : CharStream
 		}
 		else
 		{
-			ByteCodeHelper.arraycopy_primitive_2(buffer, tokenBegin, dest, 0, num);
+			System.Array.Copy(buffer, tokenBegin, dest, 0, num);
 			buffer = dest;
 			ByteCodeHelper.arraycopy_primitive_4(m_aBufLine, tokenBegin, array, 0, num);
 			m_aBufLine = array;
@@ -140,13 +138,6 @@ public abstract class AbstractCharStream : CharStream
 		}
 	}
 
-	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
 	protected internal abstract int streamRead(char[] aBuf, int nOfs, int nLen);
 
 	
@@ -173,12 +164,6 @@ public abstract class AbstractCharStream : CharStream
 			bufpos += bufsize;
 		}
 	}
-
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
 	
 	protected internal void internalSetBufLineColumn(int nLine, int nColumn)
 	{
@@ -188,30 +173,6 @@ public abstract class AbstractCharStream : CharStream
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160,
-		172,
-		110,
-		230,
-		69,
-		127,
-		1,
-		164,
-		166,
-		144,
-		byte.MaxValue,
-		1,
-		77,
-		226,
-		53,
-		129,
-		142,
-		103,
-		169,
-		140,
-		135
-	})]
 	protected internal virtual void fillBuff()
 	{
 		if (maxNextCharInd == available)
@@ -247,12 +208,6 @@ public abstract class AbstractCharStream : CharStream
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 61, 98, 142, 200, 103, 103, 176, 136, 103,
-		165, 233, 69, 103, 206, 191, 0, 103, 130, 103,
-		130, 110, 223, 11, 116
-	})]
 	protected internal void internalUpdateLineColumn(char c)
 	{
 		m_nColumnNo++;
@@ -299,11 +254,6 @@ public abstract class AbstractCharStream : CharStream
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 1, 169, 142, 110, 174, 167, 174, 110, 110,
-		134, 142, 104, 103
-	})]
 	public virtual char readChar()
 	{
 		if (inBuf > 0)
@@ -330,15 +280,6 @@ public abstract class AbstractCharStream : CharStream
 	}
 
 	
-	
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		159, 133, 162, 191, 160, 136, 130, 130, 130, 130,
-		130, 130, 130, 130, 130, 163, 163, 163, 163, 163,
-		163, 131
-	})]
 	internal static int hexval(char c)
 	{
 		switch (c)
@@ -393,13 +334,6 @@ public abstract class AbstractCharStream : CharStream
 		}
 	}
 
-	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
 	
 	public AbstractCharStream(int nStartLine, int nStartColumn, int nBufferSize)
 	{
@@ -465,13 +399,13 @@ public abstract class AbstractCharStream : CharStream
 		char[] array = new char[len];
 		if (bufpos + 1 >= len)
 		{
-			ByteCodeHelper.arraycopy_primitive_2(buffer, bufpos - len + 1, array, 0, len);
+			System.Array.Copy(buffer, bufpos - len + 1, array, 0, len);
 		}
 		else
 		{
 			int num = len - bufpos - 1;
-			ByteCodeHelper.arraycopy_primitive_2(buffer, bufsize - num, array, 0, num);
-			ByteCodeHelper.arraycopy_primitive_2(buffer, 0, array, num, bufpos + 1);
+			System.Array.Copy(buffer, bufsize - num, array, 0, num);
+			System.Array.Copy(buffer, 0, array, num, bufpos + 1);
 		}
 		return array;
 	}
@@ -494,17 +428,6 @@ public abstract class AbstractCharStream : CharStream
 		m_nTabSize = nTabSize;
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 123, 103, 162, 142, 217, 190, 98, 99, 98,
-		98, 163, 159, 36, 106, 120, 109, 100, 169, 135,
-		110, 141, 171, 127, 26, 147, 207, 111, 111
-	})]
 	public void adjustBeginLineColumn(int nNewLine, int newCol)
 	{
 		int num = tokenBegin;

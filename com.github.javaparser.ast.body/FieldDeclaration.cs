@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -13,7 +13,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -186,13 +186,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public FieldDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList variables)
 		: base(tokenRange, annotations)
@@ -223,11 +217,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public FieldDeclaration(NodeList modifiers, VariableDeclarator variable)
 		: this(null, modifiers, new NodeList(), NodeList.nodeList(variable))
@@ -247,11 +237,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -283,11 +269,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static MethodDeclaration lambda_0024createGetter_00240(string fieldNameUpper, ClassOrInterfaceDeclaration clazz)
 	{
@@ -298,11 +280,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	private static MethodDeclaration lambda_0024createGetter_00241(Optional parentEnum, string fieldNameUpper)
 	{
@@ -313,11 +291,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static MethodDeclaration lambda_0024createSetter_00242(string fieldNameUpper, ClassOrInterfaceDeclaration clazz)
 	{
@@ -328,11 +302,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	private static MethodDeclaration lambda_0024createSetter_00243(Optional parentEnum, string fieldNameUpper)
 	{
@@ -342,11 +312,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public FieldDeclaration(NodeList modifiers, NodeList variables)
 		: this(null, modifiers, new NodeList(), variables)
@@ -354,12 +320,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -372,12 +333,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public FieldDeclaration(NodeList modifiers, Type type, string name)
 	{
@@ -387,11 +343,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -404,11 +356,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		122, 110, 112, 117, 117, 127, 11, 112, 104, 103,
-		159, 17, 127, 12, 110, 103, 106, 110
-	})]
+	
 	public virtual MethodDeclaration createGetter()
 	{
 		if (getVariables().size() != 1)
@@ -435,12 +383,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 85, 110, 112, 117, 117, 127, 11, 112, 104,
-		103, 159, 17, 127, 12, 109, 126, 103, 106, 127,
-		34
-	})]
+	
 	public virtual MethodDeclaration createSetter()
 	{
 		if (getVariables().size() != 1)
@@ -507,11 +450,7 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 123, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -540,16 +479,8 @@ public class FieldDeclaration : BodyDeclaration, NodeWithJavadoc, NodeWithVariab
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 156, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -13,7 +13,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -41,16 +41,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CompactConstructorDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList typeParameters, SimpleName name, NodeList thrownExceptions, BlockStmt body)
 		: base(tokenRange, annotations)
@@ -176,11 +167,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 79, 66, 102, 102, 98, 127, 2, 99, 98,
-		142, 140, 115, 130
-	})]
+	
 	protected internal virtual string appendThrowsIfRequested(bool includingThrows)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -214,11 +201,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -264,11 +247,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CompactConstructorDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new NodeList(), new SimpleName(name), new NodeList(), new BlockStmt())
@@ -276,15 +255,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -297,11 +268,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -324,17 +291,8 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 83, 132, 102, 99, 103, 151, 109, 108, 98,
-		108, 110
-	})]
+	
+	
 	public virtual string getDeclarationAsString(bool includingModifiers, bool includingThrows, bool includingParameterName)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -355,12 +313,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 157, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70, 112, 111,
-		109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -397,18 +350,8 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 196, 99, 130, 105, 109, 130, 112, 111, 115,
-		226, 61, 230, 70, 105, 109, 130, 112, 111, 115,
-		226, 61, 230, 70, 112, 111, 115, 226, 61, 230,
-		70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)
@@ -482,12 +425,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CompactConstructorDeclaration(TokenRange tokenRange, NodeList annotations, BlockStmt body)
 		: base(tokenRange, annotations)

@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -44,13 +44,7 @@ public class ReflectionFactory
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		19, 104, 103, 111, 105, 105, 104, 103, 115, 103,
-		147, 123, 99, 107, 104, 105, 120, 134, 143, 105,
-		149, 150, 104, 104, 117, 107, 104, 118, 223, 6,
-		107, 107, 139, 151, 107, 107, 139, 151, 134
-	})]
+	
 	public static ResolvedType typeUsageFor(Type type, TypeSolver typeSolver)
 	{
 		if (type is TypeVariable)
@@ -138,11 +132,7 @@ public class ReflectionFactory
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		3, 104, 112, 104, 107, 104, 106, 104, 106, 104,
-		138
-	})]
+		
 	public static ResolvedReferenceTypeDeclaration typeDeclarationFor(Class clazz, TypeSolver typeSolver)
 	{
 		if (clazz.isArray())

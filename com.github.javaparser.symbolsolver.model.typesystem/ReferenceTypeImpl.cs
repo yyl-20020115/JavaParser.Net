@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -7,7 +7,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -273,14 +273,7 @@ public class ReferenceTypeImpl : ResolvedReferenceType
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		46, 104, 173, 112, 162, 104, 104, 162, 176, 103,
-		112, 153, 104, 137, 104, 103, 105, 130, 127, 1,
-		105, 130, 98, 130, 104, 127, 15, 105, 111, 162,
-		98, 130, 104, 148, 104, 104, 130, 109, 148, 130,
-		104, 118, 60, 161
-	})]
+	
 	public override bool isAssignableBy(ResolvedType other)
 	{
 		if (other is NullType)
@@ -494,11 +487,7 @@ public class ReferenceTypeImpl : ResolvedReferenceType
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 79, 98, 98, 127, 1, 137, 101, 109, 107,
-		143, 100, 98
-	})]
+	
 	public override ResolvedType transformTypeParameters(ResolvedTypeTransformer transformer)
 	{
 		ResolvedReferenceType resolvedReferenceType = this;
@@ -520,11 +509,7 @@ public class ReferenceTypeImpl : ResolvedReferenceType
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 114, 140, 113, 101, 208, 177, 112, 113, 107,
-		108, 127, 0, 109, 103, 152, 194, 216
-	})]
+		
 	public override List getDirectAncestors()
 	{
 		List ancestors = typeDeclaration.getAncestors();

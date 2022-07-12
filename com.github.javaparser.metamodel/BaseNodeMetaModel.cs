@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -194,20 +194,8 @@ public abstract class BaseNodeMetaModel
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 130, 70, 232, 55, 107, 107, 235, 72, 103,
-		103, 103, 104, 103, 103
-	})]
+		
+	
 	public BaseNodeMetaModel(Optional superNodeMetaModel, Class type, string name, string packageName, bool isAbstract, bool hasWildcard)
 	{
 		declaredPropertyMetaModels = new ArrayList();
@@ -247,12 +235,7 @@ public abstract class BaseNodeMetaModel
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		160, 97, 127, 2, 144, 109, 99, 127, 5, 114,
-		112, 105, 202, 102, 98, 127, 42, 98, 237, 47,
-		233, 85
-	})]
+	
 	public virtual Node construct(Map parameters)
 	{
 		//Discarded unreachable code: IL_00b6

@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -61,12 +61,7 @@ public class PostProcessors
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024postProcess_00240(ParseResult result, ParserConfiguration configuration, Processor pp)
 	{
@@ -88,11 +83,7 @@ public class PostProcessors
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual PostProcessors replace(Processor oldProcessor, Processor newProcessor)
 	{
@@ -102,11 +93,7 @@ public class PostProcessors
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void postProcess(ParseResult result, ParserConfiguration configuration)
 	{

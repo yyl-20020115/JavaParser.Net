@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -134,12 +134,7 @@ public class ModifierVisitorGenerator : VisitorGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		53, 107, 104, 111, 105, 105, 230, 61, 208, 104,
-		111, 105, 105, 105, 230, 60, 237, 70, 111, 105,
-		105, 105, 230, 60, 235, 71
-	})]
+	
 	private void extracted(BlockStmt P_0, PropertyMetaModel P_1)
 	{
 		if (P_1.isNode())
@@ -226,12 +221,7 @@ public class ModifierVisitorGenerator : VisitorGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 190, 149, 113, 171, 220, 102, 144, 42, 197,
-		176, 178, 109, 108, 142, 117, 241, 75, 104, 237,
-		69, 241, 71, 108
-	})]
+	
 	protected internal override void generateVisitMethodBody(BaseNodeMetaModel node, MethodDeclaration visitMethod, CompilationUnit compilationUnit)
 	{
 		visitMethod.getParameters().forEach(new ___003C_003EAnon0());

@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.printer.configuration;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -151,11 +151,7 @@ public class SourcePrinter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		25, 113, 191, 12, 127, 12, 162, 127, 12, 162,
-		144
-	})]
+	
 	public virtual SourcePrinter indent()
 	{
 		string str = (string)indents.peek();
@@ -264,16 +260,8 @@ public class SourcePrinter
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		14, 232, 44, 107, 107, 107, 107, 109, 231, 80,
-		103, 103, 114
-	})]
+	
+	
 	internal SourcePrinter(Indentation indentation, string eol)
 	{
 		indents = new LinkedList();
@@ -289,12 +277,7 @@ public class SourcePrinter
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		52, 110, 176, 108, 191, 15, 108, 243, 69, 108,
-		103, 107, 110, 139, 100, 113, 134, 102, 109, 49,
-		168, 104, 112, 122, 106, 125, 194, 176
-	})]
+	
 	private string calculateIndentWithAlignTo(int column)
 	{
 		if (column < java.lang.String.instancehelper_length(lastPrintedIndent))

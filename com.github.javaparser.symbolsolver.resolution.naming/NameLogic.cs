@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -10,7 +10,7 @@ using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util.function;
@@ -2106,11 +2106,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		163, 135, 104, 144, 104, 110, 104, 110, 104, 110,
-		104, 103, 109, 159, 24, 139, 104, 142, 127, 1
-	})]
+	
 	public static string nameAsString(Node name)
 	{
 		if (!isAName(name))
@@ -2176,22 +2172,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		98, 104, 144, 109, 144, 119, 152, 119, 134, 119,
-		134, 119, 134, 119, 134, 151, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 183, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 119, 134, 119, 134, 119, 134, 119, 134, 119,
-		134, 183, 134, 151, 134, 127, 5, 152
-	})]
+	
 	public static NameRole classifyRole(Node name)
 	{
 		if (!isAName(name))
@@ -2458,13 +2439,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 179, 109, 113, 123, 201, 104, 134, 104, 134,
-		104, 134, 104, 134, 104, 134, 104, 134, 104, 166,
-		104, 134, 104, 134, 104, 134, 127, 0, 134, 127,
-		0, 166, 112
-	})]
+	
 	public static NameCategory syntacticClassificationAccordingToContext(Node name)
 	{
 		if (name.getParentNode().isPresent())
@@ -2535,11 +2510,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 6, 104, 159, 6, 112, 138, 112, 138, 104,
-		138
-	})]
+	
 	private static NameCategory reclassificationOfContextuallyAmbiguousNames(Node P_0, NameCategory P_1, TypeSolver P_2)
 	{
 		if (!P_1.isNeedingDisambiguation())
@@ -2578,11 +2549,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 138, 103, 104, 110, 134, 110, 134, 110, 134,
-		110, 230, 83
-	})]
+	
 	private static NameCategory reclassificationOfContextuallyAmbiguousSimpleAmbiguousName(Node P_0, TypeSolver P_1)
 	{
 		string name = nameAsString(P_0);
@@ -2607,40 +2574,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161,
-		63,
-		103,
-		108,
-		232,
-		75,
-		104,
-		110,
-		134,
-		230,
-		78,
-		107,
-		104,
-		107,
-		107,
-		109,
-		108,
-		105,
-		126,
-		134,
-		126,
-		134,
-		106,
-		134,
-		134,
-		176,
-		byte.MaxValue,
-		11,
-		72,
-		104,
-		166
-	})]
+	
 	private static NameCategory reclassificationOfContextuallyAmbiguousQualifiedAmbiguousName(Node P_0, TypeSolver P_1)
 	{
 		Node qualifier = getQualifier(P_0);
@@ -2693,11 +2627,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 30, 104, 121, 134, 230, 77, 104, 121, 134,
-		198
-	})]
+	
 	private static NameCategory reclassificationOfContextuallyAmbiguousPackageOrTypeName(Node P_0, TypeSolver P_1)
 	{
 		if (isSimpleName(P_0))
@@ -2753,11 +2683,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 233, 109, 144, 109, 240, 71, 199, 104, 105,
-		122, 130
-	})]
+	
 	public static NameCategory classifyReference(Node name, TypeSolver typeSolver)
 	{
 		if (!name.getParentNode().isPresent())
@@ -2785,17 +2711,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 79, 119, 130, 119, 226, 69, 152, 226, 69,
-		215, 130, 151, 226, 69, 152, 226, 69, 120, 226,
-		69, 120, 226, 69, 119, 226, 69, 151, 226, 69,
-		151, 226, 79, 151, 226, 69, 151, 130, 151, 226,
-		69, 151, 130, 151, 226, 72, 183, 226, 70, 151,
-		226, 69, 151, 226, 69, 183, 226, 72, 151, 130,
-		151, 226, 70, 151, 226, 69, 151, 226, 69, 151,
-		226, 69, 151, 226, 69, 215, 226, 79
-	})]
+	
 	private static bool isSyntacticallyATypeName(Node P_0)
 	{
 		if (whenParentIs(ClassLiteral<ModuleUsesDirective>.Value, P_0, new ___003C_003EAnon74()))
@@ -2910,13 +2826,7 @@ public class NameLogic
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		163, 34, 215, 130, 151, 226, 69, 215, 130, 151,
-		226, 69, 215, 130, 151, 226, 69, 215, 130, 151,
-		226, 69, 215, 130, 151, 226, 69, 215, 130, 247,
-		72, 130, 151, 130, 247, 70, 162
-	})]
+	
 	private static bool isSyntacticallyAnExpressionName(Node P_0)
 	{
 		if (whenParentIs(ClassLiteral<NameExpr>.Value, P_0, new ___003C_003EAnon101()))

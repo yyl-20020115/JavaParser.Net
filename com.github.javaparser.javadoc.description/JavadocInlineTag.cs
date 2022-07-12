@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 
@@ -9,12 +9,12 @@ namespace com.github.javaparser.javadoc.description;
 
 public class JavadocInlineTag :  JavadocDescriptionElement
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Type : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -165,11 +165,7 @@ public class JavadocInlineTag :  JavadocDescriptionElement
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Type(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -204,11 +200,7 @@ public class JavadocInlineTag :  JavadocDescriptionElement
 			return ___003C_003EUNKNOWN;
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			3, 112, 112, 112, 112, 112, 112, 112, 112, 240,
-			55
-		})]
+		
 		static Type()
 		{
 			___003C_003ECODE = new Type("CODE", 0);
@@ -232,11 +224,7 @@ public class JavadocInlineTag :  JavadocDescriptionElement
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 177, 109, 159, 0, 109, 159, 0, 113, 103,
-		103, 109
-	})]
+	
 	public static JavadocDescriptionElement fromText(string text)
 	{
 		if (!java.lang.String.instancehelper_startsWith(text, "{@"))
@@ -261,12 +249,7 @@ public class JavadocInlineTag :  JavadocDescriptionElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public JavadocInlineTag(string tagName, Type type, string content)
 	{

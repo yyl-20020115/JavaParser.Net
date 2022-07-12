@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -109,12 +109,7 @@ public class BinaryExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 166, 108, 103, 135, 134, 114, 104, 145, 211,
-		107, 145, 243, 69, 117, 104, 211, 147, 107, 208,
-		240, 70, 178, 110, 144, 168
-	})]
+		
 	public override List patternExprsExposedFromChildren()
 	{
 		BinaryExpr binaryExpr = (BinaryExpr)wrappedNode;
@@ -164,12 +159,7 @@ public class BinaryExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		30, 108, 103, 135, 166, 114, 104, 238, 71, 147,
-		107, 238, 71, 179, 114, 104, 172, 243, 69, 104,
-		169, 240, 73, 178, 110, 144, 168
-	})]
+		
 	public override List negatedPatternExprsExposedFromChildren()
 	{
 		BinaryExpr binaryExpr = (BinaryExpr)wrappedNode;
@@ -219,11 +209,7 @@ public class BinaryExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		113, 108, 103, 135, 102, 100, 112, 100, 146, 238,
-		72
-	})]
+		
 	public override List patternExprsExposedToChild(Node child)
 	{
 		BinaryExpr binaryExpr = (BinaryExpr)wrappedNode;
@@ -242,11 +228,7 @@ public class BinaryExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 72, 108, 103, 135, 104, 97, 112, 101, 134,
-		104, 226, 69, 109, 136, 114
-	})]
+		
 	public override Optional patternExprInScope(string name)
 	{
 		BinaryExpr binaryExpr = (BinaryExpr)wrappedNode;

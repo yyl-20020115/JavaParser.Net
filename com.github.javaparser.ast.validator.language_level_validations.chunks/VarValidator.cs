@@ -1,10 +1,10 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -191,11 +191,7 @@ public class VarValidator: TypedValidator, BiConsumer
 	private bool varAllowedInLambdaParameters;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private void reportIllegalPosition(VarType n, ProblemReporter reporter)
 	{
@@ -203,16 +199,8 @@ public class VarValidator: TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		1, 117, 136, 104, 111, 111, 111, 123, 99, 161,
-		106, 129, 245, 112
-	})]
+	
+	
 	public virtual void accept(VarType node, ProblemReporter reporter)
 	{
 		Optional optional = node.findAncestor(new Class[1] { ClassLiteral<VariableDeclarator>.Value });
@@ -243,12 +231,7 @@ public class VarValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024accept_00244(ProblemReporter reporter, VarType node, VariableDeclarator vd)
 	{
@@ -269,18 +252,8 @@ public class VarValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		26, 105, 106, 129, 104, 110, 146, 104, 104, 106,
-		129, 246, 86
-	})]
+	
+	
 	private void lambda_0024null_00243(VarType node, ProblemReporter reporter, VariableDeclarator vd, Node vdeNode)
 	{
 		if (!(vdeNode is VariableDeclarationExpr))
@@ -306,13 +279,7 @@ public class VarValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024null_00242(VarType node, ProblemReporter reporter, VariableDeclarator vd, Node c)
 	{
@@ -332,12 +299,7 @@ public class VarValidator: TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00241(ProblemReporter reporter, VarType node, Expression initializer)
 	{
@@ -362,11 +324,7 @@ public class VarValidator: TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(Node node, ProblemReporter reporter)
 	{
@@ -376,11 +334,7 @@ public class VarValidator: TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(object node, object reporter)
 	{

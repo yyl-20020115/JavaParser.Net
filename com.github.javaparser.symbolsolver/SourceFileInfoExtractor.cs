@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -9,7 +9,7 @@ using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -304,35 +304,7 @@ public class SourceFileInfoExtractor
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		71,
-		104,
-		113,
-		107,
-		103,
-		byte.MaxValue,
-		1,
-		69,
-		129,
-		219,
-		114,
-		127,
-		49,
-		byte.MaxValue,
-		18,
-		73,
-		226,
-		56,
-		98,
-		110,
-		114,
-		104,
-		98,
-		110,
-		114,
-		200
-	})]
+	
 	private void solve(Node P_0)
 	{
 		RuntimeException ex3;
@@ -383,14 +355,14 @@ public class SourceFileInfoExtractor
 			UnsupportedOperationException ex4 = ex;
 			unsupported++;
 			err.println(Throwable.instancehelper_getMessage(ex4));
-			throw Throwable.___003Cunmap_003E(ex4);
+			throw (ex4);
 		}
 		return;
 		IL_00f7:
 		RuntimeException ex5 = ex3;
 		failures++;
 		err.println(Throwable.instancehelper_getMessage(ex5));
-		throw Throwable.___003Cunmap_003E(ex5);
+		throw (ex5);
 	}
 
 	
@@ -405,11 +377,7 @@ public class SourceFileInfoExtractor
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		58, 114, 107, 127, 21, 127, 6, 127, 11, 98,
-		127, 6, 127, 11, 130
-	})]
+	
 	private void solveTypeDecl(ClassOrInterfaceDeclaration P_0)
 	{
 		ResolvedReferenceTypeDeclaration typeDeclaration = JavaParserFacade.get(typeSolver).getTypeDeclaration(P_0);
@@ -446,21 +414,21 @@ public class SourceFileInfoExtractor
 	private string toString(MethodCallExpr P_0)
 	{
 		//Discarded unreachable code: IL_0019
-		java.lang.Exception ex2;
+		System.Exception ex2;
 		try
 		{
 			return toString(JavaParserFacade.get(typeSolver).solve(P_0));
 		}
 		catch (System.Exception x)
 		{
-			java.lang.Exception ex = ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.None);
+			System.Exception ex = ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.None);
 			if (ex == null)
 			{
 				throw;
 			}
 			ex2 = ex;
 		}
-		java.lang.Exception @this = ex2;
+		System.Exception @this = ex2;
 		if (verbose)
 		{
 			java.lang.System.err.println(new StringBuilder().append("Error resolving call at L").append(lineNr(P_0)).append(": ")
@@ -503,11 +471,7 @@ public class SourceFileInfoExtractor
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		25, 232, 56, 103, 103, 103, 103, 107, 107, 167,
-		103
-	})]
+	
 	public SourceFileInfoExtractor(TypeSolver typeSolver)
 	{
 		successes = 0;

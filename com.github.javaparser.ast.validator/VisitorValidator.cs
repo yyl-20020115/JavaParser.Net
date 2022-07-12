@@ -1,7 +1,7 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.visitor;
-using IKVM.Attributes;
+
 using java.util.function;
 
 namespace com.github.javaparser.ast.validator;
@@ -10,11 +10,7 @@ namespace com.github.javaparser.ast.validator;
 public abstract class VisitorValidator : VoidVisitorAdapter, Validator, TypedValidator, BiConsumer
 {
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void accept(Node node, ProblemReporter problemReporter)
 	{
@@ -30,11 +26,7 @@ public abstract class VisitorValidator : VoidVisitorAdapter, Validator, TypedVal
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(object node, object problemReporter)
 	{

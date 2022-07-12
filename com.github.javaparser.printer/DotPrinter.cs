@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -150,22 +150,8 @@ public class DotPrinter
 	private bool outputNodeType;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		7, 103, 103, 103, 127, 0, 117, 127, 0, 117,
-		117, 145, 104, 104, 191, 58, 159, 35, 99, 159,
-		30, 127, 3, 104, 127, 33, 63, 4, 134, 159,
-		31, 133, 127, 0, 111, 100, 115, 130, 127, 4,
-		111, 115, 104, 127, 41, 127, 31, 125, 127, 1,
-		144, 101
-	})]
+	
+	
 	public virtual void output(Node node, string parentNodeName, string name, StringBuilder builder)
 	{
 		Utils.assertNotNull(node);

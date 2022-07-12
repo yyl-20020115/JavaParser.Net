@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -189,11 +189,7 @@ public class Java5Validator : Java1_4Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00240(Node node, ProblemReporter reporter)
 	{
@@ -209,11 +205,7 @@ public class Java5Validator : Java1_4Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00243(Node node, ProblemReporter reporter)
 	{
@@ -226,11 +218,7 @@ public class Java5Validator : Java1_4Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00244(ForEachStmt node, ProblemReporter reporter)
 	{
@@ -244,12 +232,7 @@ public class Java5Validator : Java1_4Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00242(ProblemReporter reporter, Node node, NodeList types)
 	{
@@ -258,12 +241,7 @@ public class Java5Validator : Java1_4Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00241(ProblemReporter reporter, Node node, Type ty)
 	{
@@ -274,11 +252,7 @@ public class Java5Validator : Java1_4Validator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		26, 232, 30, 245, 73, 245, 77, 250, 73, 208,
-		115, 109, 109, 205, 141, 109, 109, 109, 109
-	})]
+	
 	public Java5Validator()
 	{
 		genericsWithoutDiamondOperator = new TreeVisitorValidator(new ___003C_003EAnon0());

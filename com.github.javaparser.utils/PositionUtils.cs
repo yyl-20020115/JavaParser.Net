@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -260,11 +260,7 @@ public class PositionUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static bool areInOrder(Node a, Node b)
 	{
@@ -274,11 +270,7 @@ public class PositionUtils
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final
-	})]
+		
 	
 	public static void sortByBeginPosition(List nodes, bool ignoringAnnotations)
 	{
@@ -294,18 +286,8 @@ public class PositionUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 98, 66, 104, 144, 104, 240, 74, 138, 139,
-		170, 105, 162, 99, 226, 69, 103, 113, 117, 130,
-		22
-	})]
+	
+	
 	public static bool nodeContains(Node container, Node other, bool ignoringAnnotations)
 	{
 		if (!container.hasRange())
@@ -341,12 +323,7 @@ public class PositionUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static bool areInOrder(Node a, Node b, bool ignoringAnnotations)
 	{
@@ -354,17 +331,8 @@ public class PositionUtils
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 126, 162, 112, 130, 112, 130, 112, 130, 99,
-		115, 99, 149, 194, 113, 145, 116, 100, 149
-	})]
+	
+	
 	private static int compare(Node a, Node b, bool ignoringAnnotations)
 	{
 		if (a.hasRange() && !b.hasRange())
@@ -428,13 +396,7 @@ public class PositionUtils
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		70, 136, 103, 102, 111, 111, 107, 107, 99, 137,
-		130, 136, 103, 102, 111, 111, 107, 107, 99, 137,
-		130, 136, 103, 102, 111, 111, 107, 107, 99, 143,
-		162
-	})]
+	
 	private static Node firstNonAnnotationNode(Node node)
 	{
 		if (node is ClassOrInterfaceDeclaration)
@@ -502,12 +464,7 @@ public class PositionUtils
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static int lambda_0024sortByBeginPosition_00240(bool ignoringAnnotations, Node o1, Node o2)
 	{

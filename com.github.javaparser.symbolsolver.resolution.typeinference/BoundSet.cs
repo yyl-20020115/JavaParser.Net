@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
@@ -6,7 +6,7 @@ using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution.typeinference.bounds;
 using com.github.javaparser.symbolsolver.resolution.typeinference.constraintformulas;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -645,12 +645,7 @@ public class BoundSet
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 138, 230, 75, 248, 82, 249, 76, 249, 76,
-		249, 73, 247, 102, 248, 89, 248, 89, 127, 36,
-		135, 235, 104, 104, 130, 104, 104, 130
-	})]
+	
 	public virtual BoundSet deriveImpliedBounds(TypeSolver typeSolver)
 	{
 		ConstraintFormulaSet constraintFormulaSet = ConstraintFormulaSet.empty();
@@ -684,11 +679,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		85, 98, 115, 114, 107, 103, 116, 116, 105, 105,
-		235, 60, 232, 60, 233, 77
-	})]
+		
 	private object forEachPairSameAs(Processor P_0, object P_1)
 	{
 		object obj = P_1;
@@ -714,11 +705,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		103, 98, 115, 114, 107, 103, 116, 116, 105, 105,
-		235, 60, 232, 60, 233, 77
-	})]
+		
 	private object forEachPairSameAndSubtype(Processor P_0, object P_1)
 	{
 		object obj = P_1;
@@ -744,11 +731,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		121, 98, 115, 114, 107, 103, 116, 116, 105, 105,
-		235, 60, 232, 60, 233, 77
-	})]
+		
 	private object forEachPairSubtypeAndSubtype(Processor P_0, object P_1)
 	{
 		object obj = P_1;
@@ -829,11 +812,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 195, 254, 69, 225, 60, 112, 111, 111, 101,
-		127, 10, 115, 130, 98, 101
-	})]
+		
 	private bool hasProperty(Set P_0, List P_1)
 	{
 		Iterator iterator = P_0.iterator();
@@ -872,11 +851,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 139, 126, 127, 4, 104, 104, 126, 130, 126,
-		162, 101, 101
-	})]
+		
 	private bool thereIsSomeJSuchThatβequalAlphaJ(Set P_0, InferenceVariable P_1)
 	{
 		Iterator iterator = P_0.iterator();
@@ -976,109 +951,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161,
-		215,
-		104,
-		168,
-		230,
-		87,
-		127,
-		1,
-		104,
-		139,
-		226,
-		70,
-		127,
-		1,
-		104,
-		139,
-		226,
-		69,
-		110,
-		110,
-		111,
-		111,
-		117,
-		251,
-		61,
-		8,
-		233,
-		76,
-		127,
-		2,
-		113,
-		226,
-		69,
-		103,
-		105,
-		127,
-		0,
-		111,
-		143,
-		194,
-		99,
-		127,
-		1,
-		106,
-		131,
-		98,
-		100,
-		103,
-		127,
-		1,
-		113,
-		98,
-		234,
-		72,
-		103,
-		127,
-		1,
-		106,
-		138,
-		98,
-		byte.MaxValue,
-		11,
-		69,
-		249,
-		71,
-		103,
-		103,
-		127,
-		4,
-		119,
-		113,
-		101,
-		145,
-		195,
-		106,
-		233,
-		70,
-		126,
-		119,
-		248,
-		69,
-		100,
-		119,
-		113,
-		101,
-		113,
-		105,
-		139,
-		169,
-		127,
-		6,
-		197,
-		235,
-		69,
-		105,
-		236,
-		70,
-		235,
-		92,
-		171
-	})]
+		
 	public virtual Optional performResolution(List variablesToResolve, TypeSolver typeSolver)
 	{
 		if (containsFalse())
@@ -1236,11 +1109,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 160, 102, 107, 127, 3, 106, 136, 226, 59,
-		230, 71
-	})]
+		
 	private Set allPossibleSetsWithProperty(Set P_0, List P_1)
 	{
 		HashSet hashSet = new HashSet();
@@ -1296,11 +1165,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 79, 102, 104, 109, 102, 104, 109, 102, 127,
-		0, 127, 3, 105, 105, 114, 122, 176, 101, 101
-	})]
+		
 	private List findPairsOfCommonAncestors(ResolvedReferenceType P_0, ResolvedReferenceType P_1)
 	{
 		LinkedList linkedList = new LinkedList();
@@ -1406,12 +1271,7 @@ public class BoundSet
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 201, 125, 108, 103, 103, 103, 115, 157, 125,
-		108, 103, 103, 103, 115, 157, 125, 108, 103, 103,
-		103, 115, 157, 125, 108, 103, 103, 103, 115, 157
-	})]
+	
 	private static ConstraintFormulaSet lambda_0024deriveImpliedBounds_00244(SameAsBound P_0, SameAsBound P_1, ConstraintFormulaSet P_2)
 	{
 		if (P_0.getS().isInferenceVariable() && TypeHelper.isProperType(P_0.getT()))
@@ -1455,11 +1315,7 @@ public class BoundSet
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 239, 125, 108, 103, 103, 103, 115, 158, 125,
-		108, 103, 103, 103, 115, 158
-	})]
+	
 	private static ConstraintFormulaSet lambda_0024deriveImpliedBounds_00245(TypeSolver P_0, SameAsBound P_1, SubtypeOfBound P_2, ConstraintFormulaSet P_3)
 	{
 		if (P_1.getS().isInferenceVariable() && TypeHelper.isProperType(P_1.getT()))
@@ -1485,12 +1341,7 @@ public class BoundSet
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 8, 127, 1, 127, 1, 108, 108, 105, 127,
-		0, 127, 28, 127, 0, 127, 0, 114, 241, 60,
-		235, 71, 165
-	})]
+	
 	private ConstraintFormulaSet lambda_0024deriveImpliedBounds_00246(SubtypeOfBound P_0, SubtypeOfBound P_1, ConstraintFormulaSet P_2)
 	{
 		if (P_0.getS().isInferenceVariable() && P_1.getS().isInferenceVariable() && P_0.getT().isReferenceType() && P_1.getT().isReferenceType())
@@ -1678,11 +1529,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		57, 115, 114, 107, 103, 114, 115, 105, 105, 106,
-		106, 234, 58, 230, 60, 233, 80
-	})]
+		
 	private Optional findPairSameAs(Predicate P_0)
 	{
 		for (int i = 0; i < bounds.size(); i++)
@@ -1715,11 +1562,7 @@ public class BoundSet
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 179, 107, 127, 3, 106, 137, 226, 59, 230,
-		71
-	})]
+		
 	private Optional smallestSetWithProperty(Set P_0, List P_1)
 	{
 		for (int i = 1; i <= P_0.size(); i++)

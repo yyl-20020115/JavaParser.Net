@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -17,11 +17,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getField_00244(string name, ResolvedFieldDeclaration f)
 		{
@@ -32,11 +28,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getVisibleField_00245(string name, ResolvedFieldDeclaration f)
 		{
@@ -47,11 +39,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024hasField_00246(string name, ResolvedFieldDeclaration f)
 		{
@@ -62,11 +50,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024hasVisibleField_00247(string name, ResolvedFieldDeclaration f)
 		{
@@ -134,11 +118,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024hasAnnotation_002413(string qualifiedName, ResolvedReferenceType it)
 		{
@@ -149,13 +129,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static void lambda_0024null_00242(ResolvedReferenceType queuedAncestor, Deque queuedAncestors, Set ancestors, ResolvedReferenceTypeDeclaration rtd)
 		{
@@ -165,12 +139,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static void lambda_0024null_00241(Deque queuedAncestors, Set ancestors, ResolvedReferenceType ancestor)
 		{
@@ -181,11 +150,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 		
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			73, 134, 107, 127, 1, 104, 127, 2, 106, 137,
-			98, 133
-		})]
+		
 		internal static List lambda_0024static_00240(ResolvedReferenceTypeDeclaration rrtd)
 		{
 			ArrayList arrayList = new ArrayList();
@@ -213,11 +178,7 @@ public interface ResolvedReferenceTypeDeclaration : ResolvedTypeDeclaration, Res
 		
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			93, 134, 136, 108, 104, 104, 108, 115, 229, 71,
-			130
-		})]
+		
 		internal static List lambda_0024static_00243(ResolvedReferenceTypeDeclaration rrtd)
 		{
 			HashSet hashSet = new HashSet();

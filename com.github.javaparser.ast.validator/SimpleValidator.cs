@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util.function;
 
@@ -46,12 +46,7 @@ public class SimpleValidator : SingleNodeTypeValidator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public SimpleValidator(Class type, Predicate condition, BiConsumer problemSupplier)
 		: base(type, new ___003C_003EAnon0(condition, problemSupplier))
@@ -60,13 +55,7 @@ public class SimpleValidator : SingleNodeTypeValidator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00240(Predicate condition, BiConsumer problemSupplier, Node node, ProblemReporter problemReporter)
 	{

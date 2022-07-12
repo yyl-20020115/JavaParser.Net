@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.metamodel;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -247,11 +247,7 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00241(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -269,11 +265,7 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00243(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -282,11 +274,7 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00245(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -298,11 +286,7 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00246(AssignExpr n, ProblemReporter reporter)
 	{
@@ -319,26 +303,8 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		24,
-		103,
-		127,
-		4,
-		104,
-		104,
-		109,
-		104,
-		byte.MaxValue,
-		5,
-		69,
-		101
-	})]
+	
+	
 	private static void lambda_0024new_00247(Node node, ProblemReporter problemReporter)
 	{
 		NodeMetaModel metaModel = node.getMetaModel();
@@ -359,11 +325,7 @@ public class CommonValidators : Validators
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00244(ProblemReporter reporter, BodyDeclaration mem)
 	{
@@ -374,14 +336,7 @@ public class CommonValidators : Validators
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159,
-		182,
-		byte.MaxValue,
-		113,
-		112
-	})]
+	
 	public CommonValidators()
 		: base(new SimpleValidator(ClassLiteral<ClassOrInterfaceDeclaration>.Value, new ___003C_003EAnon0(), new ___003C_003EAnon1()), new SimpleValidator(ClassLiteral<ClassOrInterfaceDeclaration>.Value, new ___003C_003EAnon2(), new ___003C_003EAnon3()), new SingleNodeTypeValidator(ClassLiteral<ClassOrInterfaceDeclaration>.Value, new ___003C_003EAnon4()), new SingleNodeTypeValidator(ClassLiteral<AssignExpr>.Value, new ___003C_003EAnon5()), new TreeVisitorValidator(new ___003C_003EAnon6()))
 	{

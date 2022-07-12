@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 
 namespace com.github.javaparser.ast.nodeTypes;
 
@@ -21,12 +21,7 @@ public interface NodeWithDeclaration
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual string getDeclarationAsString(bool includingModifiers, bool includingThrows, bool includingParameterName);
 
 	
@@ -43,11 +38,7 @@ public interface NodeWithDeclaration
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual string getDeclarationAsString(bool includingModifiers, bool includingThrows);
 
 	

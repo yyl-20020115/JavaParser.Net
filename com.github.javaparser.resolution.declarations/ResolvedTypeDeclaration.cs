@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -13,11 +13,7 @@ public interface ResolvedTypeDeclaration : ResolvedDeclaration
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getInternalType_00240(string name, ResolvedReferenceTypeDeclaration f)
 		{
@@ -39,11 +35,7 @@ public interface ResolvedTypeDeclaration : ResolvedDeclaration
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024hasInternalType_00242(string name, ResolvedReferenceTypeDeclaration f)
 		{

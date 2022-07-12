@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -6,7 +6,7 @@ using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -162,57 +162,7 @@ internal class ReflectionMethodResolutionLogic
 	private static CallerID ___003CcallerID_003E;
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		121,
-		99,
-		153,
-		142,
-		102,
-		113,
-		63,
-		3,
-		230,
-		69,
-		102,
-		127,
-		4,
-		127,
-		2,
-		106,
-		127,
-		8,
-		233,
-		60,
-		235,
-		73,
-		127,
-		9,
-		113,
-		115,
-		107,
-		105,
-		110,
-		127,
-		8,
-		169,
-		133,
-		113,
-		125,
-		108,
-		117,
-		105,
-		127,
-		28,
-		233,
-		69,
-		99,
-		byte.MaxValue,
-		13,
-		71,
-		113
-	})]
+		
 	internal static Optional solveMethodAsUsage(string P_0, List P_1, TypeSolver P_2, Context P_3, List P_4, ResolvedReferenceTypeDeclaration P_5, Class P_6)
 	{
 		object obj = P_4;
@@ -287,12 +237,7 @@ internal class ReflectionMethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 129, 98, 102, 108, 127, 4, 127, 14, 106,
-		233, 61, 235, 70, 127, 6, 250, 70, 130, 110,
-		120, 250, 71
-	})]
+		
 	internal static SymbolReference solveMethod(string P_0, List P_1, bool P_2, TypeSolver P_3, ResolvedReferenceTypeDeclaration P_4, Class P_5)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -326,11 +271,7 @@ internal class ReflectionMethodResolutionLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		91, 103, 162, 115, 127, 1, 116, 100, 162, 127,
-		1, 110, 130
-	})]
+		
 	private static MethodUsage replaceParams(List P_0, ResolvedReferenceTypeDeclaration P_1, ResolvedMethodDeclaration P_2)
 	{
 		MethodUsage methodUsage = new MethodUsage(P_2);

@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -11,7 +11,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.google.common.collect;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -383,11 +383,7 @@ public class JavaParserAnonymousClassDeclaration : AbstractClassDeclaration, Met
 	private string name;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		21, 232, 61, 223, 5, 103, 135, 103, 108, 109,
-		191, 22, 104, 119
-	})]
+	
 	public JavaParserAnonymousClassDeclaration(ObjectCreationExpr wrappedNode, TypeSolver typeSolver)
 	{
 		name = new StringBuilder().append("Anonymous-").append(UUID.randomUUID()).ToString();
@@ -417,11 +413,7 @@ public class JavaParserAnonymousClassDeclaration : AbstractClassDeclaration, Met
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		40, 114, 102, 101, 106, 112, 122, 101, 239, 58,
-		225, 72
-	})]
+		
 	public unsafe virtual List findMembersOfKind(Class memberClass)
 	{
 		if (wrappedNode.getAnonymousClassBody().isPresent())
@@ -651,12 +643,7 @@ public class JavaParserAnonymousClassDeclaration : AbstractClassDeclaration, Met
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		122, 107, 112, 197, 208, 112, 106, 111, 106, 166,
-		97, 116, 229, 69, 176, 102, 102, 102, 101, 231,
-		59
-	})]
+		
 	public override List getAllFields()
 	{
 		List elements = (List)findMembersOfKind(ClassLiteral<FieldDeclaration>.Value).stream().flatMap(new ___003C_003EAnon5(this)).collect(Collectors.toList());

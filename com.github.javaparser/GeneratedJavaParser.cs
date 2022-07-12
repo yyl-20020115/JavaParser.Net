@@ -1,7 +1,6 @@
-using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
+
+
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -9,7 +8,7 @@ using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -44,8 +43,8 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		}
 	}
 
-	[Serializable]
-	[InnerClass(null, IKVM.Attributes.Modifiers.Private | IKVM.Attributes.Modifiers.Static | IKVM.Attributes.Modifiers.Final)]
+	
+
 	internal sealed class LookaheadSuccess : IllegalStateException
 	{
 		
@@ -131,13 +130,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	{
 	}
 
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 33, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
 	private bool jj_2_1(int xla)
 	{
 		jj_la = xla;
@@ -178,12 +170,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 103, 103, 109, 147, 118, 145, 103, 113,
-		110, 119, 103, 108, 106, 100, 111, 104, 235, 59,
-		230, 73, 135, 103, 103
-	})]
 	private Token jj_consume_token(int kind)
 	{
 		Token token = this.token;
@@ -220,16 +206,10 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		}
 		this.token = token;
 		jj_kind = kind;
-		throw Throwable.___003Cunmap_003E(generateParseException());
+		throw (generateParseException());
 	}
 
 	
-	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 43, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
 	private bool jj_2_2(int xla)
 	{
 		jj_la = xla;
@@ -312,13 +292,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	
-	[LineNumberTable(new byte[]
-	{
-		160, 147, 98, 130, 105, 103, 159, 3, 105, 98,
-		162, 174, 103, 159, 3, 105, 105, 98, 162, 174,
-		105, 127, 5
-	})]
 	public ImportDeclaration ImportDeclaration()
 	{
 		int isStatic = 0;
@@ -358,17 +331,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	
-	[LineNumberTable(new byte[]
-	{
-		160, 211, 102, 102, 198, 204, 159, 160, 85, 105,
-		127, 12, 165, 105, 127, 12, 165, 105, 127, 12,
-		165, 105, 127, 12, 165, 105, 127, 12, 165, 105,
-		127, 12, 165, 105, 127, 12, 165, 105, 127, 12,
-		165, 105, 127, 12, 165, 105, 127, 12, 165, 105,
-		127, 12, 165, 105, 127, 12, 165, 105, 127, 12,
-		165, 103, 114, 165, 110, 104, 171, 114
-	})]
 	public ModifierHolder Modifiers()
 	{
 		JavaToken javaToken = JavaToken.___003C_003EINVALID;
@@ -483,13 +445,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 80, 108, 103, 103, 103, 103, 159, 11, 105,
-		99, 162, 105, 99, 162, 110, 104, 139, 110, 104,
-		159, 3, 103, 162, 174, 159, 3, 103, 162, 175,
-		159, 3, 103, 162, 175, 104, 127, 28
-	})]
 	public ClassOrInterfaceDeclaration ClassOrInterfaceDeclaration(ModifierHolder modifier)
 	{
 		RangedList rangedList = new RangedList(base.emptyNodeList());
@@ -555,12 +510,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 169, 108, 103, 103, 103, 105, 110, 103, 159,
-		3, 103, 162, 175, 104, 159, 3, 103, 162, 175,
-		104, 127, 48
-	})]
 	public RecordDeclaration RecordDeclaration(ModifierHolder modifier)
 	{
 		RangedList rangedList = new RangedList(base.emptyNodeList());
@@ -600,70 +549,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		162,
-		57,
-		135,
-		135,
-		103,
-		103,
-		105,
-		110,
-		104,
-		159,
-		3,
-		103,
-		162,
-		175,
-		105,
-		byte.MaxValue,
-		160,
-		80,
-		81,
-		104,
-		169,
-		201,
-		105,
-		104,
-		235,
-		69,
-		175,
-		159,
-		3,
-		105,
-		162,
-		175,
-		159,
-		6,
-		169,
-		byte.MaxValue,
-		161,
-		82,
-		106,
-		162,
-		111,
-		133,
-		byte.MaxValue,
-		161,
-		82,
-		105,
-		104,
-		106,
-		165,
-		105,
-		165,
-		111,
-		104,
-		235,
-		70,
-		175,
-		105,
-		127,
-		19
-	})]
 	public EnumDeclaration EnumDeclaration(ModifierHolder modifier)
 	{
 		NodeList implementedTypes = base.emptyNodeList();
@@ -832,14 +717,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		throw new IllegalStateException("Missing return statement in function");
 	}
 
-	
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		189, 90, 103, 103, 105, 110, 105, 103, 103, 127,
-		16
-	})]
 	public AnnotationDeclaration AnnotationTypeDeclaration(ModifierHolder modifier)
 	{
 		base.emptyNodeList();
@@ -860,38 +737,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		throw new IllegalStateException("Missing return statement in function");
 	}
 
-	
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		191,
-		21,
-		102,
-		162,
-		103,
-		159,
-		3,
-		105,
-		112,
-		162,
-		178,
-		105,
-		110,
-		103,
-		169,
-		byte.MaxValue,
-		38,
-		70,
-		162,
-		114,
-		130,
-		104,
-		143,
-		105,
-		127,
-		11
-	})]
 	public ModuleDeclaration ModuleDeclaration(ModifierHolder modifier)
 	{
 		NodeList nodeList = new NodeList();
@@ -987,13 +832,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		throw new IllegalStateException("Missing return statement in function");
 	}
 
-	
-	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 53, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
 	private bool jj_2_3(int xla)
 	{
 		jj_la = xla;
@@ -1033,33 +871,6 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		188,
-		50,
-		167,
-		105,
-		103,
-		103,
-		112,
-		105,
-		byte.MaxValue,
-		160,
-		69,
-		80,
-		103,
-		162,
-		178,
-		105,
-		124,
-		109,
-		105,
-		104,
-		105,
-		157,
-		153,
-		105
-	})]
 	public AnnotationExpr Annotation()
 	{
 		NodeList pairs = base.emptyNodeList();
@@ -1122,11 +933,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		163, 66, 171, 105, 108, 103, 104, 169, 159, 3,
-		162, 111, 130, 105, 103, 104, 139, 108, 108, 105
-	})]
+		
 	public RangedList TypeParameters()
 	{
 		RangedList rangedList = new RangedList(new NodeList());
@@ -1157,11 +964,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 220, 98, 134, 105, 103, 168, 159, 3, 162,
-		111, 130, 105, 103, 140, 105
-	})]
+		
 	public NodeList ExtendsList()
 	{
 		_ = 0;
@@ -1187,11 +990,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 10, 134, 105, 103, 168, 159, 3, 162, 111,
-		130, 105, 103, 138, 105
-	})]
+		
 	public NodeList ImplementsList()
 	{
 		NodeList nodeList = new NodeList();
@@ -1215,34 +1014,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		163,
-		207,
-		135,
-		169,
-		byte.MaxValue,
-		161,
-		82,
-		106,
-		162,
-		111,
-		133,
-		byte.MaxValue,
-		161,
-		82,
-		105,
-		103,
-		104,
-		165,
-		105,
-		165,
-		111,
-		104,
-		171,
-		105,
-		105
-	})]
+		
 	public NodeList ClassOrInterfaceBody()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -1364,43 +1136,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		167,
-		221,
-		135,
-		98,
-		105,
-		byte.MaxValue,
-		161,
-		73,
-		100,
-		109,
-		140,
-		byte.MaxValue,
-		161,
-		70,
-		100,
-		103,
-		105,
-		162,
-		111,
-		104,
-		235,
-		69,
-		159,
-		3,
-		162,
-		111,
-		130,
-		105,
-		103,
-		235,
-		69,
-		175,
-		105,
-		113
-	})]
+		
 	public Pair Parameters()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -1521,34 +1257,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		164,
-		74,
-		135,
-		169,
-		byte.MaxValue,
-		161,
-		82,
-		106,
-		162,
-		111,
-		133,
-		byte.MaxValue,
-		161,
-		82,
-		105,
-		103,
-		104,
-		165,
-		105,
-		165,
-		111,
-		104,
-		171,
-		105,
-		105
-	})]
+		
 	public NodeList RecordBody()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -1686,12 +1395,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		162, 254, 166, 103, 103, 166, 159, 3, 162, 111,
-		130, 104, 150, 104, 110, 159, 3, 103, 162, 175,
-		159, 3, 103, 162, 175, 127, 7
-	})]
+	
 	public EnumConstantDeclaration EnumConstantDeclaration()
 	{
 		NodeList nodeList = new NodeList();
@@ -1736,11 +1440,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 63, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_4(int xla)
 	{
 		jj_la = xla;
@@ -1780,47 +1480,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		165,
-		183,
-		105,
-		140,
-		byte.MaxValue,
-		161,
-		85,
-		106,
-		103,
-		191,
-		11,
-		104,
-		165,
-		111,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		141,
-		byte.MaxValue,
-		161,
-		74,
-		91,
-		104,
-		162,
-		111,
-		104,
-		235,
-		71,
-		111,
-		104,
-		171,
-		105
-	})]
+		
 	public BodyDeclaration ClassOrInterfaceBodyDeclaration()
 	{
 		BodyDeclaration result;
@@ -1958,22 +1618,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		179,
-		111,
-		103,
-		105,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		175,
-		105,
-		105
-	})]
+		
 	public NodeList Arguments()
 	{
 		NodeList result = base.emptyNodeList();
@@ -2043,11 +1688,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		163, 112, 167, 103, 103, 159, 3, 103, 162, 175,
-		127, 5
-	})]
+	
 	public TypeParameter TypeParameter(NodeList annotations)
 	{
 		NodeList typeBound = base.emptyNodeList();
@@ -2074,11 +1715,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		163, 155, 135, 105, 103, 168, 159, 6, 162, 111,
-		130, 108, 103, 138, 105
-	})]
+		
 	public NodeList TypeBound()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -2102,47 +1739,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		164,
-		219,
-		105,
-		140,
-		byte.MaxValue,
-		161,
-		85,
-		106,
-		103,
-		191,
-		11,
-		104,
-		165,
-		111,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		109,
-		141,
-		byte.MaxValue,
-		161,
-		74,
-		91,
-		104,
-		162,
-		111,
-		104,
-		235,
-		71,
-		111,
-		104,
-		171,
-		105
-	})]
+		
 	public BodyDeclaration RecordBodyDeclaration()
 	{
 		BodyDeclaration result;
@@ -2280,11 +1877,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 123, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_10(int xla)
 	{
 		jj_la = xla;
@@ -2324,11 +1917,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		170, 13, 102, 98, 159, 3, 105, 105, 162, 175,
-		103, 105, 127, 4
-	})]
+	
 	public InitializerDeclaration InitializerDeclaration()
 	{
 		JavaToken firstChoice = JavaToken.___003C_003EINVALID;
@@ -2358,11 +1947,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 73, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_5(int xla)
 	{
 		jj_la = xla;
@@ -2402,11 +1987,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 83, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_6(int xla)
 	{
 		jj_la = xla;
@@ -2446,11 +2027,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 93, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_7(int xla)
 	{
 		jj_la = xla;
@@ -2491,14 +2068,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		165, 85, 140, 109, 103, 98, 103, 103, 134, 159,
-		3, 103, 115, 162, 207, 104, 127, 2, 159, 6,
-		105, 104, 170, 159, 3, 162, 111, 130, 105, 104,
-		236, 69, 175, 105, 104, 109, 199, 104, 105, 99,
-		139, 127, 49
-	})]
+	
 	public CompactConstructorDeclaration CompactConstructorDeclaration(ModifierHolder modifier)
 	{
 		RangedList rangedList = new RangedList(base.emptyNodeList());
@@ -2568,11 +2138,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 103, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_8(int xla)
 	{
 		jj_la = xla;
@@ -2613,14 +2179,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		169, 33, 140, 109, 103, 98, 103, 103, 134, 159,
-		3, 103, 115, 162, 207, 104, 127, 2, 104, 159,
-		6, 105, 104, 170, 159, 3, 162, 111, 130, 105,
-		104, 236, 69, 175, 105, 104, 109, 199, 104, 105,
-		99, 139, 127, 73
-	})]
+	
 	public ConstructorDeclaration ConstructorDeclaration(ModifierHolder modifier)
 	{
 		RangedList rangedList = new RangedList(base.emptyNodeList());
@@ -2692,11 +2251,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 113, 103, 108, 108, 147, 78, 8, 100,
-		103, 75, 34
-	})]
+	
 	private bool jj_2_9(int xla)
 	{
 		jj_la = xla;
@@ -2737,11 +2292,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		166, 58, 166, 109, 104, 168, 159, 3, 162, 111,
-		130, 105, 104, 138, 105, 110, 127, 15
-	})]
+	
 	public FieldDeclaration FieldDeclaration(ModifierHolder modifier)
 	{
 		NodeList nodeList = new NodeList();
@@ -2771,15 +2322,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		167, 94, 172, 141, 103, 103, 130, 136, 159, 3,
-		103, 117, 162, 175, 104, 127, 0, 110, 108, 104,
-		168, 191, 11, 162, 111, 130, 109, 159, 7, 159,
-		6, 105, 104, 170, 159, 3, 162, 111, 130, 105,
-		104, 236, 69, 175, 159, 11, 103, 162, 105, 162,
-		111, 104, 139, 126, 127, 51
-	})]
+	
 	public MethodDeclaration MethodDeclaration(ModifierHolder modifier)
 	{
 		RangedList rangedList = new RangedList(base.emptyNodeList());
@@ -2880,11 +2423,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 133, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_11(int xla)
 	{
 		jj_la = xla;
@@ -2924,50 +2463,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		169,
-		115,
-		130,
-		98,
-		103,
-		102,
-		112,
-		159,
-		3,
-		103,
-		108,
-		162,
-		175,
-		105,
-		112,
-		104,
-		142,
-		byte.MaxValue,
-		161,
-		77,
-		104,
-		109,
-		103,
-		105,
-		201,
-		159,
-		3,
-		103,
-		115,
-		162,
-		175,
-		105,
-		110,
-		104,
-		105,
-		162,
-		111,
-		104,
-		171,
-		127,
-		12
-	})]
+	
 	public ExplicitConstructorInvocationStmt ExplicitConstructorInvocation()
 	{
 		int isThis = 0;
@@ -3094,11 +2590,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 193, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_17(int xla)
 	{
 		jj_la = xla;
@@ -3138,11 +2630,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 143, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_12(int xla)
 	{
 		jj_la = xla;
@@ -3182,11 +2670,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 153, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_13(int xla)
 	{
 		jj_la = xla;
@@ -3226,11 +2710,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 163, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_14(int xla)
 	{
 		jj_la = xla;
@@ -3270,11 +2750,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 173, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_15(int xla)
 	{
 		jj_la = xla;
@@ -3314,11 +2790,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 183, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_16(int xla)
 	{
 		jj_la = xla;
@@ -3359,22 +2831,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		170,
-		45,
-		109,
-		141,
-		byte.MaxValue,
-		59,
-		73,
-		104,
-		162,
-		111,
-		104,
-		171,
-		105
-	})]
+	
 	public com.github.javaparser.ast.type.Type Type(NodeList annotations)
 	{
 		com.github.javaparser.ast.type.Type result;
@@ -3405,11 +2862,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		166, 97, 98, 103, 159, 3, 105, 103, 162, 175,
-		127, 42
-	})]
+	
 	public VariableDeclarator VariableDeclarator(com.github.javaparser.ast.type.Type partialType)
 	{
 		Expression initializer = null;
@@ -3436,11 +2889,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		166, 141, 103, 103, 167, 191, 11, 162, 111, 130,
-		108, 159, 4, 104, 159, 3, 113
-	})]
+		
 	public Pair VariableDeclaratorId()
 	{
 		object obj = new ArrayList(0);
@@ -3474,11 +2923,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		166, 174, 159, 161, 134, 103, 226, 111, 103, 162,
-		111, 104, 139, 105
-	})]
+	
 	public Expression VariableInitializer()
 	{
 		Expression result;
@@ -3571,34 +3016,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		166,
-		252,
-		167,
-		105,
-		103,
-		byte.MaxValue,
-		161,
-		134,
-		111,
-		103,
-		169,
-		201,
-		105,
-		103,
-		235,
-		69,
-		175,
-		159,
-		3,
-		105,
-		162,
-		175,
-		105,
-		127,
-		3
-	})]
+	
 	public ArrayInitializerExpr ArrayInitializer()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -3689,55 +3107,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		172,
-		199,
-		98,
-		103,
-		103,
-		byte.MaxValue,
-		160,
-		85,
-		79,
-		105,
-		103,
-		103,
-		159,
-		1,
-		159,
-		14,
-		105,
-		104,
-		106,
-		165,
-		105,
-		159,
-		3,
-		103,
-		162,
-		175,
-		byte.MaxValue,
-		160,
-		214,
-		80,
-		103,
-		162,
-		105,
-		162,
-		111,
-		104,
-		139,
-		127,
-		11,
-		162,
-		111,
-		104,
-		235,
-		70,
-		175,
-		105
-	})]
+	
 	public Expression Expression()
 	{
 		
@@ -3838,11 +3208,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 203, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_18(int xla)
 	{
 		jj_la = xla;
@@ -3883,11 +3249,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		172, 12, 159, 161, 10, 105, 113, 226, 89, 104,
-		162, 111, 104, 139, 105
-	})]
+	
 	public com.github.javaparser.ast.type.Type ResultType(NodeList annotations)
 	{
 		com.github.javaparser.ast.type.Type result;
@@ -3939,26 +3301,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		181,
-		141,
-		135,
-		105,
-		135,
-		103,
-		105,
-		byte.MaxValue,
-		26,
-		70,
-		226,
-		59,
-		98,
-		107,
-		126,
-		109,
-		138
-	})]
+	
 	public BlockStmt Block()
 	{
 		//Discarded unreachable code: IL_004a
@@ -4001,31 +3344,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		170,
-		100,
-		103,
-		byte.MaxValue,
-		161,
-		13,
-		74,
-		168,
-		108,
-		126,
-		242,
-		86,
-		168,
-		205,
-		108,
-		byte.MaxValue,
-		1,
-		69,
-		111,
-		104,
-		139,
-		125
-	})]
+	
 	public ReferenceType ReferenceType(NodeList annotations)
 	{
 		object obj = new ArrayList(0);
@@ -4088,11 +3407,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 213, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_19(int xla)
 	{
 		jj_la = xla;
@@ -4152,11 +3467,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		168, 200, 130, 103, 103, 109, 191, 11, 103, 105,
-		98, 162, 175, 104, 111, 127, 48
-	})]
+	
 	public Parameter Parameter()
 	{
 		int isVarArgs = 0;
@@ -4212,11 +3523,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 223, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_20(int xla)
 	{
 		jj_la = xla;
@@ -4256,11 +3563,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 233, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_21(int xla)
 	{
 		jj_la = xla;
@@ -4300,11 +3603,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 253, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_23(int xla)
 	{
 		jj_la = xla;
@@ -4344,33 +3643,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		171,
-		30,
-		139,
-		105,
-		108,
-		byte.MaxValue,
-		161,
-		89,
-		90,
-		103,
-		167,
-		159,
-		3,
-		162,
-		111,
-		130,
-		105,
-		103,
-		233,
-		69,
-		175,
-		108,
-		108,
-		105
-	})]
+		
 	public RangedList TypeArguments()
 	{
 		RangedList rangedList = new RangedList(new NodeList());
@@ -4431,11 +3704,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 32, 243, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_22(int xla)
 	{
 		jj_la = xla;
@@ -4493,11 +3762,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 7, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_24(int xla)
 	{
 		jj_la = xla;
@@ -4537,40 +3802,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		181,
-		196,
-		141,
-		103,
-		104,
-		126,
-		109,
-		103,
-		104,
-		126,
-		109,
-		104,
-		105,
-		159,
-		1,
-		byte.MaxValue,
-		161,
-		130,
-		119,
-		103,
-		162,
-		114,
-		104,
-		171,
-		223,
-		8,
-		226,
-		61,
-		98,
-		112,
-		143
-	})]
+	
 	public Statement BlockStatement()
 	{
 		//Discarded unreachable code: IL_02cd
@@ -4692,11 +3924,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 17, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_25(int xla)
 	{
 		jj_la = xla;
@@ -4737,13 +3965,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		171, 209, 159, 80, 105, 119, 165, 105, 119, 165,
-		105, 119, 165, 105, 119, 165, 105, 119, 165, 105,
-		119, 162, 105, 119, 162, 105, 119, 162, 111, 104,
-		139, 105
-	})]
+	
 	public PrimitiveType PrimitiveType(NodeList annotations)
 	{
 		PrimitiveType result;
@@ -4805,11 +4027,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 27, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_26(int xla)
 	{
 		jj_la = xla;
@@ -4850,12 +4068,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		170, 241, 135, 102, 103, 103, 105, 199, 127, 2,
-		167, 201, 105, 104, 103, 105, 199, 127, 3, 137,
-		105
-	})]
+	
 	public ClassOrInterfaceType ClassOrInterfaceType(NodeList firstAnnotations)
 	{
 		RangedList rangedList = new RangedList(null);
@@ -4892,11 +4105,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 37, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_27(int xla)
 	{
 		jj_la = xla;
@@ -4936,11 +4145,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 47, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_28(int xla)
 	{
 		jj_la = xla;
@@ -4980,11 +4185,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 57, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_29(int xla)
 	{
 		jj_la = xla;
@@ -5024,11 +4225,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 67, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_30(int xla)
 	{
 		jj_la = xla;
@@ -5068,24 +4265,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		171,
-		102,
-		103,
-		byte.MaxValue,
-		161,
-		86,
-		88,
-		104,
-		162,
-		104,
-		162,
-		111,
-		104,
-		139,
-		105
-	})]
+	
 	public com.github.javaparser.ast.type.Type TypeArgument()
 	{
 		NodeList nodeList = Annotations();
@@ -5137,12 +4317,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		171, 153, 98, 130, 102, 105, 103, 191, 14, 159,
-		11, 105, 103, 104, 162, 105, 103, 104, 162, 111,
-		104, 235, 69, 175, 127, 5
-	})]
+	
 	public WildcardType Wildcard(NodeList firstAnnotations)
 	{
 		ReferenceType extendedType = null;
@@ -5193,13 +4368,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		172, 120, 159, 160, 96, 105, 165, 105, 165, 105,
-		165, 105, 165, 105, 165, 105, 165, 105, 165, 105,
-		165, 105, 162, 105, 162, 105, 162, 105, 162, 105,
-		162, 105, 162, 105, 162, 111, 104, 139, 116, 105
-	})]
+	
 	public string Identifier()
 	{
 		switch ((jj_ntk != -1) ? jj_ntk : jj_ntk_f())
@@ -5267,11 +4436,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 77, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_31(int xla)
 	{
 		jj_la = xla;
@@ -5311,11 +4476,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		173, 132, 103, 159, 3, 105, 103, 105, 103, 123,
-		162, 175, 105
-	})]
+	
 	public Expression ConditionalExpression()
 	{
 		Expression expression = ConditionalOrExpression();
@@ -5342,11 +4503,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 87, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_32(int xla)
 	{
 		jj_la = xla;
@@ -5386,14 +4543,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		173, 49, 159, 160, 81, 105, 102, 165, 108, 102,
-		165, 108, 102, 165, 108, 102, 165, 108, 102, 165,
-		108, 102, 165, 108, 102, 165, 108, 102, 165, 108,
-		102, 162, 108, 102, 162, 108, 102, 162, 108, 102,
-		162, 111, 104, 139, 105
-	})]
+	
 	public AssignExpr.Operator AssignmentOperator()
 	{
 		AssignExpr.Operator result;
@@ -5463,25 +4613,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		182,
-		75,
-		98,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		121,
-		162,
-		103,
-		162,
-		114,
-		104,
-		139,
-		105
-	})]
+	
 	public Statement LambdaBody()
 	{
 		
@@ -5558,11 +4690,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		173, 164, 167, 159, 3, 162, 111, 130, 105, 103,
-		159, 5, 105
-	})]
+	
 	public Expression ConditionalOrExpression()
 	{
 		Expression expression = ConditionalAndExpression();
@@ -5584,11 +4712,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		173, 209, 167, 159, 3, 162, 111, 130, 105, 103,
-		159, 5, 105
-	})]
+	
 	public Expression ConditionalAndExpression()
 	{
 		Expression expression = InclusiveOrExpression();
@@ -5610,11 +4734,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		173, 249, 167, 159, 6, 162, 111, 130, 108, 103,
-		159, 5, 105
-	})]
+	
 	public Expression InclusiveOrExpression()
 	{
 		Expression expression = ExclusiveOrExpression();
@@ -5636,11 +4756,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		174, 33, 167, 159, 6, 162, 111, 130, 108, 103,
-		159, 5, 105
-	})]
+	
 	public Expression ExclusiveOrExpression()
 	{
 		Expression expression = AndExpression();
@@ -5662,11 +4778,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		174, 73, 167, 159, 6, 162, 111, 130, 108, 103,
-		159, 5, 105
-	})]
+	
 	public Expression AndExpression()
 	{
 		Expression expression = EqualityExpression();
@@ -5688,12 +4800,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		174, 118, 167, 191, 11, 162, 111, 133, 159, 11,
-		105, 102, 162, 105, 102, 162, 111, 104, 139, 103,
-		159, 1, 105
-	})]
+	
 	public Expression EqualityExpression()
 	{
 		Expression expression = InstanceOfExpression();
@@ -5736,32 +4843,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		174,
-		186,
-		103,
-		159,
-		6,
-		105,
-		109,
-		103,
-		159,
-		6,
-		byte.MaxValue,
-		161,
-		62,
-		89,
-		103,
-		123,
-		162,
-		111,
-		104,
-		235,
-		70,
-		175,
-		105
-	})]
+	
 	public Expression InstanceOfExpression()
 	{
 		Expression expression = RelationalExpression();
@@ -5828,39 +4910,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		175,
-		11,
-		167,
-		byte.MaxValue,
-		30,
-		69,
-		162,
-		111,
-		133,
-		159,
-		30,
-		105,
-		102,
-		162,
-		108,
-		102,
-		162,
-		105,
-		102,
-		162,
-		105,
-		102,
-		162,
-		111,
-		104,
-		139,
-		103,
-		159,
-		1,
-		105
-	})]
+	
 	public Expression RelationalExpression()
 	{
 		Expression expression = ShiftExpression();
@@ -5911,11 +4961,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 97, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_33(int xla)
 	{
 		jj_la = xla;
@@ -5973,12 +5019,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		175, 71, 167, 204, 159, 6, 108, 102, 162, 111,
-		105, 102, 104, 105, 102, 136, 104, 171, 103, 159,
-		1, 105
-	})]
+	
 	public Expression ShiftExpression()
 	{
 		Expression expression = AdditiveExpression();
@@ -6024,12 +5065,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		175, 116, 167, 191, 11, 162, 111, 133, 159, 11,
-		105, 102, 162, 105, 102, 162, 111, 104, 139, 103,
-		159, 1, 105
-	})]
+	
 	public Expression AdditiveExpression()
 	{
 		Expression expression = MultiplicativeExpression();
@@ -6072,11 +5108,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 107, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_34(int xla)
 	{
 		jj_la = xla;
@@ -6116,11 +5148,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 117, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_35(int xla)
 	{
 		jj_la = xla;
@@ -6175,11 +5203,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 127, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_36(int xla)
 	{
 		jj_la = xla;
@@ -6235,12 +5259,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		175, 164, 167, 223, 22, 162, 111, 133, 159, 22,
-		105, 102, 162, 105, 102, 162, 108, 102, 162, 111,
-		104, 139, 103, 159, 1, 105
-	})]
+	
 	public Expression MultiplicativeExpression()
 	{
 		Expression expression = UnaryExpression();
@@ -6287,13 +5306,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		175, 228, 102, 159, 161, 137, 103, 165, 103, 197,
-		159, 11, 105, 109, 162, 105, 109, 162, 111, 104,
-		139, 103, 122, 226, 107, 103, 162, 111, 104, 139,
-		105
-	})]
+	
 	public Expression UnaryExpression()
 	{
 		_ = JavaToken.___003C_003EINVALID;
@@ -6430,43 +5443,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		176,
-		104,
-		102,
-		191,
-		14,
-		159,
-		11,
-		105,
-		109,
-		162,
-		105,
-		109,
-		162,
-		111,
-		104,
-		139,
-		103,
-		122,
-		165,
-		111,
-		109,
-		140,
-		byte.MaxValue,
-		161,
-		62,
-		103,
-		103,
-		162,
-		103,
-		162,
-		111,
-		104,
-		203,
-		105
-	})]
+	
 	public Expression UnaryExpressionNotPlusMinus()
 	{
 		_ = JavaToken.___003C_003EINVALID;
@@ -6570,11 +5547,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 137, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_37(int xla)
 	{
 		jj_la = xla;
@@ -6614,47 +5587,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		176,
-		245,
-		134,
-		103,
-		105,
-		103,
-		103,
-		105,
-		104,
-		105,
-		104,
-		159,
-		2,
-		byte.MaxValue,
-		161,
-		13,
-		90,
-		105,
-		170,
-		159,
-		6,
-		162,
-		111,
-		130,
-		108,
-		104,
-		140,
-		105,
-		104,
-		105,
-		159,
-		36,
-		157,
-		162,
-		111,
-		104,
-		171,
-		106
-	})]
+	
 	public Expression CastExpression()
 	{
 		_ = JavaToken.___003C_003EINVALID;
@@ -6739,11 +5672,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		176, 202, 103, 108, 159, 11, 105, 102, 162, 105,
-		102, 162, 111, 104, 139, 218, 105
-	})]
+	
 	public Expression PostfixExpression()
 	{
 		Expression expression = PrimaryExpression();
@@ -6779,11 +5708,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		183, 85, 135, 105, 103, 105, 103, 105, 169, 191,
-		11, 162, 114, 130, 103, 139, 105, 127, 4
-	})]
+	
 	public SwitchExpr SwitchExpression()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -6836,11 +5761,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 147, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_38(int xla)
 	{
 		jj_la = xla;
@@ -6917,157 +5838,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		177,
-		115,
-		130,
-		103,
-		103,
-		103,
-		98,
-		162,
-		98,
-		98,
-		byte.MaxValue,
-		120,
-		74,
-		104,
-		165,
-		105,
-		115,
-		165,
-		105,
-		115,
-		159,
-		17,
-		105,
-		159,
-		3,
-		103,
-		162,
-		175,
-		104,
-		159,
-		3,
-		103,
-		98,
-		162,
-		175,
-		99,
-		159,
-		11,
-		159,
-		5,
-		165,
-		105,
-		159,
-		3,
-		103,
-		162,
-		175,
-		byte.MaxValue,
-		160,
-		214,
-		80,
-		103,
-		162,
-		105,
-		162,
-		111,
-		104,
-		139,
-		127,
-		14,
-		165,
-		111,
-		104,
-		235,
-		69,
-		105,
-		104,
-		159,
-		3,
-		105,
-		127,
-		2,
-		165,
-		111,
-		109,
-		103,
-		105,
-		127,
-		7,
-		109,
-		103,
-		105,
-		159,
-		7,
-		byte.MaxValue,
-		161,
-		134,
-		111,
-		104,
-		105,
-		124,
-		165,
-		111,
-		104,
-		235,
-		71,
-		105,
-		165,
-		111,
-		109,
-		110,
-		105,
-		105,
-		127,
-		2,
-		112,
-		104,
-		105,
-		159,
-		3,
-		103,
-		162,
-		175,
-		byte.MaxValue,
-		160,
-		214,
-		80,
-		103,
-		162,
-		105,
-		162,
-		111,
-		104,
-		139,
-		120,
-		159,
-		19,
-		byte.MaxValue,
-		160,
-		72,
-		80,
-		104,
-		104,
-		159,
-		3,
-		103,
-		98,
-		162,
-		175,
-		99,
-		159,
-		2,
-		137,
-		162,
-		111,
-		104,
-		203,
-		106
-	})]
+	
 	public Expression PrimaryPrefix()
 	{
 		
@@ -7375,11 +6146,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 167, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_40(int xla)
 	{
 		jj_la = xla;
@@ -7420,11 +6187,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		178, 155, 105, 141, 159, 3, 105, 105, 127, 0,
-		162, 111, 104, 171, 105
-	})]
+	
 	public Expression PrimarySuffix(Expression scope)
 	{
 		Expression result;
@@ -7456,11 +6219,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 177, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_41(int xla)
 	{
 		jj_la = xla;
@@ -7501,14 +6260,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		178, 179, 103, 103, 130, 159, 17, 105, 159, 11,
-		105, 127, 0, 165, 104, 165, 111, 112, 159, 3,
-		103, 162, 175, 104, 159, 3, 103, 98, 162, 175,
-		99, 159, 8, 191, 4, 104, 235, 70, 105, 103,
-		105, 122, 162, 111, 104, 139, 105
-	})]
+	
 	public Expression PrimarySuffixWithoutSuper(Expression scope)
 	{
 		RangedList rangedList = new RangedList(null);
@@ -7591,13 +6343,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		179, 6, 159, 91, 105, 124, 165, 105, 124, 165,
-		105, 124, 165, 105, 127, 3, 165, 105, 127, 3,
-		162, 105, 127, 3, 194, 103, 162, 103, 162, 111,
-		104, 139, 105
-	})]
+	
 	public Expression Literal()
 	{
 		Expression result;
@@ -7656,11 +6402,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 187, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_42(int xla)
 	{
 		jj_la = xla;
@@ -7700,11 +6442,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		168, 110, 130, 103, 169, 159, 3, 162, 111, 130,
-		105, 103, 139, 105
-	})]
+		
 	public NodeList LambdaParameters()
 	{
 		
@@ -7727,11 +6465,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 197, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_43(int xla)
 	{
 		jj_la = xla;
@@ -7771,11 +6505,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		168, 163, 130, 103, 191, 49, 159, 3, 162, 111,
-		130, 105, 103, 159, 54, 105
-	})]
+		
 	public NodeList InferredLambdaParameters()
 	{
 		
@@ -7802,50 +6532,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		179,
-		240,
-		103,
-		130,
-		102,
-		102,
-		105,
-		117,
-		159,
-		3,
-		103,
-		162,
-		175,
-		103,
-		byte.MaxValue,
-		161,
-		13,
-		74,
-		105,
-		107,
-		229,
-		82,
-		105,
-		223,
-		19,
-		107,
-		197,
-		104,
-		105,
-		199,
-		127,
-		11,
-		162,
-		111,
-		104,
-		235,
-		69,
-		114,
-		104,
-		139,
-		106
-	})]
+	
 	public Expression AllocationExpression(Expression scope)
 	{
 		RangedList rangedList = new RangedList(null);
@@ -7937,11 +6624,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 207, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_44(int xla)
 	{
 		jj_la = xla;
@@ -7981,11 +6664,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 217, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_45(int xla)
 	{
 		jj_la = xla;
@@ -8040,11 +6719,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 227, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_46(int xla)
 	{
 		jj_la = xla;
@@ -8084,11 +6759,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 237, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_47(int xla)
 	{
 		jj_la = xla;
@@ -8128,11 +6799,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		179, 64, 159, 11, 105, 114, 162, 105, 114, 162,
-		111, 104, 139, 105
-	})]
+	
 	public Expression BooleanLiteral()
 	{
 		BooleanLiteralExpr result;
@@ -8140,12 +6807,12 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		{
 		case 60:
 			jj_consume_token(60);
-			BooleanLiteralExpr.___003Cclinit_003E();
+			
 			result = new BooleanLiteralExpr(base.tokenRange(), value: true);
 			break;
 		case 28:
 			jj_consume_token(28);
-			BooleanLiteralExpr.___003Cclinit_003E();
+			
 			result = new BooleanLiteralExpr(base.tokenRange(), value: false);
 			break;
 		default:
@@ -8181,11 +6848,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		179, 178, 135, 103, 168, 159, 3, 162, 111, 130,
-		105, 103, 138, 105
-	})]
+		
 	public NodeList ArgumentList()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -8208,47 +6871,8 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		180,
-		85,
-		98,
-		98,
-		103,
-		102,
-		102,
-		103,
-		167,
-		104,
-		105,
-		127,
-		4,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		178,
-		127,
-		15,
-		105,
-		118,
-		238,
-		69,
-		159,
-		3,
-		103,
-		162,
-		178,
-		127,
-		9
-	})]
+	
+	
 	public ArrayCreationExpr ArrayCreation(JavaToken begin, com.github.javaparser.ast.type.Type type)
 	{
 		Expression obj = null;
@@ -8345,11 +6969,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 33, 247, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_48(int xla)
 	{
 		jj_la = xla;
@@ -8389,11 +7009,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 1, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_49(int xla)
 	{
 		jj_la = xla;
@@ -8433,11 +7049,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 11, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_50(int xla)
 	{
 		jj_la = xla;
@@ -8497,11 +7109,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		181, 87, 130, 105, 103, 103, 159, 3, 105, 103,
-		162, 178, 105, 127, 4
-	})]
+	
 	public AssertStmt AssertStatement()
 	{
 		Expression message = null;
@@ -8531,11 +7139,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 21, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_51(int xla)
 	{
 		jj_la = xla;
@@ -8612,51 +7216,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		182,
-		142,
-		135,
-		105,
-		140,
-		159,
-		161,
-		129,
-		103,
-		229,
-		104,
-		103,
-		byte.MaxValue,
-		160,
-		81,
-		79,
-		159,
-		160,
-		81,
-		105,
-		126,
-		165,
-		105,
-		126,
-		229,
-		78,
-		103,
-		103,
-		123,
-		162,
-		114,
-		104,
-		235,
-		69,
-		178,
-		162,
-		114,
-		104,
-		171,
-		105,
-		127,
-		3
-	})]
+	
 	public ExpressionStmt StatementExpression()
 	{
 		new RangedList(null);
@@ -8791,11 +7351,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		183, 30, 135, 105, 103, 105, 103, 105, 169, 191,
-		11, 162, 114, 130, 103, 139, 105, 127, 4
-	})]
+	
 	public SwitchStmt SwitchStatement()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -8830,11 +7386,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		184, 21, 130, 105, 103, 105, 103, 105, 103, 159,
-		3, 105, 103, 162, 178, 127, 5
-	})]
+	
 	public IfStmt IfStatement()
 	{
 		Statement elseStmt = null;
@@ -8888,11 +7440,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		184, 75, 105, 103, 103, 105, 105, 103, 105, 105,
-		127, 4
-	})]
+	
 	public DoStmt DoStatement()
 	{
 		jj_consume_token(23);
@@ -8916,60 +7464,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		184,
-		98,
-		98,
-		98,
-		103,
-		167,
-		105,
-		104,
-		105,
-		109,
-		103,
-		105,
-		140,
-		byte.MaxValue,
-		161,
-		145,
-		122,
-		byte.MaxValue,
-		161,
-		142,
-		121,
-		103,
-		162,
-		178,
-		105,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		178,
-		105,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		178,
-		162,
-		114,
-		104,
-		171,
-		105,
-		104,
-		99,
-		159,
-		7,
-		127,
-		8
-	})]
+	
 	public Statement ForStatement()
 	{
 		VariableDeclarationExpr variableDeclarationExpr = null;
@@ -9248,24 +7743,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		185,
-		251,
-		130,
-		105,
-		103,
-		byte.MaxValue,
-		160,
-		69,
-		80,
-		103,
-		162,
-		178,
-		105,
-		127,
-		3
-	})]
+	
 	public BreakStmt BreakStatement()
 	{
 		SimpleName label = null;
@@ -9294,24 +7772,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		186,
-		51,
-		130,
-		105,
-		103,
-		byte.MaxValue,
-		160,
-		69,
-		80,
-		103,
-		162,
-		178,
-		105,
-		127,
-		3
-	})]
+	
 	public ContinueStmt ContinueStatement()
 	{
 		SimpleName label = null;
@@ -9340,24 +7801,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		186,
-		90,
-		130,
-		105,
-		103,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		178,
-		105,
-		127,
-		3
-	})]
+	
 	public ReturnStmt ReturnStatement()
 	{
 		Expression expression = null;
@@ -9472,15 +7916,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		186, 219, 135, 98, 199, 231, 71, 105, 104, 159,
-		3, 103, 162, 178, 168, 159, 3, 162, 114, 133,
-		105, 104, 105, 104, 105, 110, 185, 159, 6, 162,
-		114, 130, 108, 104, 139, 104, 104, 105, 104, 105,
-		159, 11, 142, 127, 26, 127, 5, 103, 101, 159,
-		3, 105, 103, 162, 178, 127, 8
-	})]
+	
 	public TryStmt TryStatement()
 	{
 		NodeList resources = base.emptyNodeList();
@@ -9559,15 +7995,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		180, 209, 105, 140, 159, 3, 103, 165, 114, 105,
-		140, 159, 161, 129, 103, 165, 103, 229, 106, 103,
-		165, 103, 165, 103, 165, 103, 165, 103, 165, 103,
-		165, 103, 162, 103, 162, 103, 162, 103, 162, 103,
-		162, 103, 162, 114, 104, 235, 69, 223, 3, 226,
-		61, 97, 111, 143
-	})]
+	
 	public Statement Statement()
 	{
 		//Discarded unreachable code: IL_0311
@@ -9709,11 +8137,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 31, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_52(int xla)
 	{
 		jj_la = xla;
@@ -9753,11 +8177,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 41, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_53(int xla)
 	{
 		jj_la = xla;
@@ -9797,11 +8217,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 51, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_54(int xla)
 	{
 		jj_la = xla;
@@ -9841,11 +8257,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		182, 28, 134, 103, 109, 104, 168, 159, 3, 162,
-		114, 130, 105, 104, 138, 111, 127, 16
-	})]
+	
 	public VariableDeclarationExpr VariableDeclarationExpression()
 	{
 		NodeList nodeList = new NodeList();
@@ -9874,11 +8286,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 61, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_55(int xla)
 	{
 		jj_la = xla;
@@ -9918,74 +8326,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		183,
-		133,
-		98,
-		103,
-		167,
-		98,
-		98,
-		159,
-		17,
-		105,
-		103,
-		103,
-		169,
-		159,
-		3,
-		162,
-		114,
-		130,
-		105,
-		103,
-		235,
-		69,
-		105,
-		103,
-		162,
-		114,
-		104,
-		139,
-		159,
-		14,
-		105,
-		103,
-		127,
-		1,
-		165,
-		105,
-		byte.MaxValue,
-		161,
-		137,
-		110,
-		104,
-		105,
-		111,
-		127,
-		5,
-		117,
-		165,
-		104,
-		111,
-		105,
-		117,
-		165,
-		104,
-		111,
-		105,
-		117,
-		162,
-		114,
-		104,
-		235,
-		69,
-		114,
-		104,
-		139,
-		106
-	})]
+	
 	public SwitchEntry SwitchEntry()
 	{
 		
@@ -10131,11 +8472,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 71, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_56(int xla)
 	{
 		jj_la = xla;
@@ -10175,24 +8512,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		185,
-		121,
-		109,
-		103,
-		147,
-		byte.MaxValue,
-		161,
-		134,
-		110,
-		103,
-		162,
-		114,
-		104,
-		171,
-		105
-	})]
+		
 	public NodeList ForInit()
 	{
 		NodeList nodeList;
@@ -10284,11 +8604,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 81, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_57(int xla)
 	{
 		jj_la = xla;
@@ -10328,11 +8644,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		185, 200, 134, 103, 168, 159, 3, 162, 114, 130,
-		105, 103, 138, 105
-	})]
+		
 	public NodeList ExpressionList()
 	{
 		NodeList nodeList = new NodeList();
@@ -10397,11 +8709,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 91, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_58(int xla)
 	{
 		jj_la = xla;
@@ -10441,23 +8749,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		187,
-		148,
-		141,
-		140,
-		byte.MaxValue,
-		161,
-		62,
-		103,
-		103,
-		162,
-		114,
-		104,
-		171,
-		105
-	})]
+	
 	public Expression Resource()
 	{
 		Expression result;
@@ -10526,11 +8818,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 101, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_59(int xla)
 	{
 		jj_la = xla;
@@ -10570,11 +8858,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 111, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_60(int xla)
 	{
 		jj_la = xla;
@@ -10614,11 +8898,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 173, 119, 102, 104, 113, 231, 61, 230,
-		69
-	})]
+	
 	public sealed override Token getToken(int index)
 	{
 		Token token = ((!jj_lookingAhead) ? this.token : jj_scanpos);
@@ -10635,11 +8915,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 121, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_61(int xla)
 	{
 		jj_la = xla;
@@ -10679,11 +8955,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 131, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_62(int xla)
 	{
 		jj_la = xla;
@@ -10723,11 +8995,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		188, 107, 134, 103, 168, 159, 3, 162, 114, 130,
-		105, 103, 138, 105
-	})]
+		
 	public NodeList MemberValuePairs()
 	{
 		NodeList nodeList = new NodeList();
@@ -10750,11 +9018,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 141, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_63(int xla)
 	{
 		jj_la = xla;
@@ -10794,11 +9058,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		188, 172, 109, 140, 159, 161, 134, 103, 226, 111,
-		103, 162, 114, 104, 171, 105
-	})]
+	
 	public Expression MemberValue()
 	{
 		Expression result;
@@ -10897,11 +9157,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 151, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_64(int xla)
 	{
 		jj_la = xla;
@@ -10941,34 +9197,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		188,
-		248,
-		167,
-		105,
-		103,
-		byte.MaxValue,
-		161,
-		134,
-		111,
-		103,
-		168,
-		201,
-		105,
-		103,
-		234,
-		69,
-		178,
-		159,
-		3,
-		105,
-		162,
-		178,
-		105,
-		127,
-		3
-	})]
+	
 	public Expression MemberValueArrayInitializer()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -11059,11 +9288,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 161, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_65(int xla)
 	{
 		jj_la = xla;
@@ -11103,34 +9328,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		189,
-		114,
-		135,
-		169,
-		byte.MaxValue,
-		161,
-		70,
-		103,
-		162,
-		114,
-		133,
-		byte.MaxValue,
-		161,
-		70,
-		102,
-		103,
-		105,
-		165,
-		105,
-		165,
-		114,
-		104,
-		171,
-		105,
-		105
-	})]
+		
 	public NodeList AnnotationTypeBody()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -11246,12 +9444,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		189, 248, 103, 109, 141, 191, 11, 104, 165, 114,
-		109, 141, 159, 161, 62, 104, 226, 89, 104, 162,
-		114, 104, 235, 69, 105
-	})]
+		
 	public BodyDeclaration AnnotationBodyDeclaration()
 	{
 		ModifierHolder modifier = Modifiers();
@@ -11325,11 +9518,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 171, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_66(int xla)
 	{
 		jj_la = xla;
@@ -11370,11 +9559,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		190, 71, 162, 109, 103, 105, 105, 159, 3, 103,
-		162, 178, 105, 110, 127, 17
-	})]
+	
 	public AnnotationMemberDeclaration AnnotationTypeMemberDeclaration(ModifierHolder modifier)
 	{
 		Expression defaultValue = null;
@@ -11405,11 +9590,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 181, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_67(int xla)
 	{
 		jj_la = xla;
@@ -11464,11 +9645,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 191, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_68(int xla)
 	{
 		jj_la = xla;
@@ -11508,18 +9685,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		190, 139, 199, 112, 105, 103, 105, 111, 105, 159,
-		28, 159, 41, 105, 103, 104, 104, 105, 127, 2,
-		165, 105, 103, 104, 159, 6, 105, 104, 169, 159,
-		3, 162, 114, 130, 105, 104, 235, 69, 178, 105,
-		123, 165, 105, 103, 104, 159, 6, 105, 104, 169,
-		159, 3, 162, 114, 130, 105, 104, 235, 69, 178,
-		105, 123, 165, 105, 103, 104, 105, 122, 165, 105,
-		103, 104, 105, 104, 169, 159, 3, 162, 114, 130,
-		105, 104, 139, 105, 123, 162, 114, 104, 171, 105
-	})]
+	
 	public ModuleDirective ModuleDirective()
 	{
 		NodeList nodeList = base.emptyNodeList();
@@ -11654,11 +9820,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 34, 201, 103, 108, 108, 147, 79, 9, 100,
-		103, 76, 34
-	})]
+	
 	private bool jj_2_69(int xla)
 	{
 		jj_la = xla;
@@ -11708,16 +9870,8 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		208, 53, 133, 105, 110, 104, 107, 103, 130, 137,
-		117, 108, 103
-	})]
+	
+	
 	private void jj_save(int index, int xla)
 	{
 		JJCalls jJCalls = jj_2_rtns[index];
@@ -11748,13 +9902,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 38, 8, 103, 107, 103, 107, 103, 107, 103,
-		107, 103, 107, 103, 107, 103, 107, 103, 107, 103,
-		104, 103, 104, 103, 104, 103, 104, 103, 104, 103,
-		234, 78
-	})]
+	
 	private bool jj_3_3()
 	{
 		Token token = jj_scanpos;
@@ -11899,11 +10047,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 48, 43, 106, 170, 103, 145, 103, 106, 103,
-		106, 103, 172
-	})]
+	
 	private bool jj_3_9()
 	{
 		if (jj_3R_80())
@@ -12030,11 +10174,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 50, 71, 106, 170, 103, 145, 103, 106, 103,
-		106, 103, 172
-	})]
+	
 	private bool jj_3_16()
 	{
 		if (jj_3R_80())
@@ -13036,11 +11176,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 134, 113, 110, 109, 159, 15, 190, 145,
-		104, 105, 121, 139, 112, 127, 3
-	})]
+	
 	private bool jj_scan_token(int kind)
 	{
 		if (jj_scanpos == jj_lastpos)
@@ -13090,7 +11226,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 		}
 		if (jj_la == 0 && jj_scanpos == jj_lastpos)
 		{
-			throw Throwable.___003Cunmap_003E(jj_ls);
+			throw (jj_ls);
 		}
 		return false;
 	}
@@ -13213,11 +11349,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 36, 190, 108, 138, 103, 104, 103, 104, 103,
-		170
-	})]
+	
 	private bool jj_3R_128()
 	{
 		if (jj_scan_token(107))
@@ -13707,11 +11839,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 40, 188, 108, 108, 106, 108, 172, 103, 145,
-		108
-	})]
+	
 	private bool jj_3R_311()
 	{
 		if (jj_scan_token(54))
@@ -13876,11 +12004,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 44, 139, 108, 140, 103, 104, 103, 138, 108,
-		106
-	})]
+	
 	private bool jj_3R_315()
 	{
 		if (jj_scan_token(32))
@@ -14018,11 +12142,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 49, 128, 140, 103, 111, 106, 103, 104, 103,
-		138
-	})]
+	
 	private bool jj_3R_321()
 	{
 		if (jj_scan_token(61))
@@ -14211,13 +12331,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 35, 150, 103, 107, 103, 107, 103, 107, 103,
-		107, 103, 107, 103, 107, 103, 107, 103, 107, 103,
-		107, 103, 107, 103, 107, 103, 104, 103, 104, 103,
-		104, 103, 104, 103, 104, 103, 234, 81
-	})]
+	
 	private bool jj_3R_215()
 	{
 		Token token = jj_scanpos;
@@ -14346,13 +12460,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 49, 144, 103, 109, 103, 109, 103, 109, 103,
-		109, 103, 109, 103, 109, 103, 109, 103, 109, 103,
-		109, 103, 106, 103, 106, 103, 106, 103, 106, 103,
-		106, 103, 236, 79
-	})]
+	
 	private bool jj_3R_78()
 	{
 		Token token = jj_scanpos;
@@ -14765,11 +12873,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 39, 150, 103, 104, 103, 138, 106, 103, 111,
-		103, 111, 103, 111, 106
-	})]
+	
 	private bool jj_3R_213()
 	{
 		Token token = jj_scanpos;
@@ -14833,11 +12937,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 40, 216, 108, 138, 103, 111, 106, 103, 111,
-		106
-	})]
+	
 	private bool jj_3R_214()
 	{
 		if (jj_scan_token(48))
@@ -15269,11 +13369,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 39, 112, 103, 104, 103, 104, 103, 104, 103,
-		202, 106
-	})]
+	
 	private bool jj_3R_418()
 	{
 		Token token = jj_scanpos;
@@ -15492,11 +13588,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 40, 118, 138, 103, 104, 103, 104, 103, 104,
-		103, 104, 103, 234, 69
-	})]
+	
 	private bool jj_3R_466()
 	{
 		if (jj_3R_120())
@@ -15692,12 +13784,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 50, 252, 103, 107, 103, 107, 103, 107, 103,
-		107, 103, 107, 103, 107, 103, 104, 103, 104, 103,
-		104, 103, 104, 103, 104, 103, 234, 76
-	})]
+	
 	private bool jj_3R_99()
 	{
 		Token token = jj_scanpos;
@@ -15786,11 +13873,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 35, 52, 103, 127, 17, 103, 114, 111, 111,
-		111
-	})]
+	
 	private bool jj_3R_104()
 	{
 		jj_lookingAhead = true;
@@ -15941,11 +14024,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 42, 129, 108, 138, 103, 111, 108, 103, 111,
-		103, 113, 103, 111, 108
-	})]
+	
 	private bool jj_3R_379()
 	{
 		if (jj_scan_token(26))
@@ -16158,11 +14237,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 42, 75, 103, 104, 103, 138, 103, 104, 103,
-		138
-	})]
+	
 	private bool jj_3R_376()
 	{
 		Token token = jj_scanpos;
@@ -16218,11 +14293,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 41, 204, 103, 104, 103, 104, 103, 104, 103,
-		202
-	})]
+	
 	private bool jj_3R_185()
 	{
 		Token token = jj_scanpos;
@@ -16619,11 +14690,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 43, 18, 103, 104, 103, 104, 103, 104, 103,
-		202
-	})]
+	
 	private bool jj_3R_219()
 	{
 		Token token = jj_scanpos;
@@ -16818,11 +14885,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 37, 184, 103, 104, 103, 104, 103, 104, 103,
-		202
-	})]
+	
 	private bool jj_3R_94()
 	{
 		Token token = jj_scanpos;
@@ -17043,11 +15106,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 41, 146, 108, 108, 106, 108, 172, 103, 145,
-		108
-	})]
+	
 	private bool jj_3R_328()
 	{
 		if (jj_scan_token(54))
@@ -17155,11 +15214,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 47, 73, 103, 107, 103, 107, 103, 104, 103,
-		104, 103, 104, 103, 104, 103, 104, 103, 234, 72
-	})]
+	
 	private bool jj_3R_108()
 	{
 		Token token = jj_scanpos;
@@ -17463,11 +15518,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 44, 163, 103, 111, 108, 103, 111, 108, 103,
-		111
-	})]
+	
 	private bool jj_3R_366()
 	{
 		Token token = jj_scanpos;
@@ -17557,11 +15608,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 45, 71, 103, 107, 103, 107, 103, 104, 103,
-		104, 103, 104, 103, 104, 103, 104, 103, 234, 72
-	})]
+	
 	private bool jj_3R_142()
 	{
 		Token token = jj_scanpos;
@@ -17632,13 +15679,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208,
-		44,
-		byte.MaxValue,
-		106
-	})]
+	
 	private bool jj_3R_143()
 	{
 		if (jj_3R_110())
@@ -17747,11 +15788,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 46, 0, 140, 103, 104, 103, 104, 103, 104,
-		103, 202
-	})]
+	
 	private bool jj_3R_208()
 	{
 		if (jj_scan_token(97))
@@ -17809,11 +15846,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 46, 131, 106, 140, 103, 111, 103, 104, 103,
-		140
-	})]
+	
 	private bool jj_3R_211()
 	{
 		if (jj_3R_114())
@@ -17858,11 +15891,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 48, 189, 103, 107, 103, 107, 103, 104, 103,
-		104, 103, 104, 103, 104, 103, 104, 103, 234, 72
-	})]
+	
 	private bool jj_3R_235()
 	{
 		Token token = jj_scanpos;
@@ -18264,11 +16293,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 51, 60, 140, 103, 111, 106, 103, 104, 103,
-		138
-	})]
+	
 	private bool jj_3R_242()
 	{
 		if (jj_scan_token(42))
@@ -18410,11 +16435,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 47, 26, 138, 103, 107, 103, 104, 103, 104,
-		103, 104, 103, 104, 103, 104, 103, 234, 71
-	})]
+	
 	private bool jj_3R_467()
 	{
 		if (jj_3R_120())
@@ -18661,11 +16682,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 48, 116, 103, 111, 106, 103, 111, 108, 103,
-		111, 106, 108
-	})]
+	
 	private bool jj_3R_483()
 	{
 		Token token = jj_scanpos;
@@ -18746,11 +16763,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 40, 237, 103, 111, 106, 106, 103, 111, 108,
-		103, 111, 106, 108
-	})]
+	
 	private bool jj_3R_381()
 	{
 		Token token = jj_scanpos;
@@ -18835,11 +16848,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 35, 206, 103, 111, 106, 106, 106, 138, 103,
-		145, 103, 111, 103, 104, 103, 140
-	})]
+	
 	private bool jj_3R_383()
 	{
 		Token token = jj_scanpos;
@@ -19182,11 +17191,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 49, 95, 138, 103, 107, 103, 104, 103, 104,
-		103, 104, 103, 104, 103, 104, 103, 234, 71
-	})]
+	
 	private bool jj_3R_329()
 	{
 		if (jj_3R_120())
@@ -19372,11 +17377,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 50, 12, 108, 108, 106, 170, 103, 145, 106,
-		108, 106
-	})]
+	
 	private bool jj_3R_464()
 	{
 		if (jj_scan_token(17))
@@ -19990,13 +17991,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 25, 232, 25, 167, 240, 92, 109, 103,
-		231, 160, 113, 236, 126, 139, 103, 237, 159, 85,
-		110, 118, 107, 103, 103, 106, 41, 134, 108, 45,
-		134
-	})]
+	
 	public GeneratedJavaParser(Provider stream)
 	{
 		jj_lookingAhead = false;
@@ -20026,11 +18021,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 57, 104, 144, 142, 104, 182, 113, 107,
-		103, 103, 106, 41, 134, 108, 45, 134
-	})]
+	
 	public override void ReInit(Provider stream)
 	{
 		if (jj_input_stream == null)
@@ -20061,13 +18052,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 242, 107, 107, 105, 105, 135, 109, 115,
-		106, 112, 132, 112, 135, 112, 135, 112, 135, 112,
-		234, 50, 9, 233, 85, 106, 101, 108, 105, 242,
-		60, 230, 71, 103, 102, 104, 113, 112, 52, 166
-	})]
+	
 	public virtual ParseException generateParseException()
 	{
 		jj_expentries.clear();
@@ -20130,18 +18115,8 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 201, 101, 161, 107, 127, 1, 107, 145,
-		107, 48, 198, 127, 5, 108, 99, 110, 112, 99,
-		226, 61, 232, 70, 100, 114, 162, 133, 99, 103,
-		176
-	})]
+	
+	
 	private void jj_add_error_token(int kind, int pos)
 	{
 		if (pos >= 100)
@@ -20198,19 +18173,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 53, 44, 103, 138, 137, 113, 108, 108, 108,
-		127, 160, 192, 108, 108, 108, 108, 108, 108, 108,
-		108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-		108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-		108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-		108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-		108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-		108, 105, 105, 105, 105, 105, 105, 105, 105, 105,
-		105, 167, 103, 113, 227, 159, 174, 233, 160, 84,
-		103
-	})]
+	
 	private void jj_rescan_token()
 	{
 		jj_rescan = true;
@@ -20608,81 +18571,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		19,
-		98,
-		103,
-		98,
-		135,
-		98,
-		194,
-		201,
-		139,
-		109,
-		231,
-		70,
-		byte.MaxValue,
-		161,
-		70,
-		87,
-		162,
-		110,
-		133,
-		159,
-		161,
-		73,
-		104,
-		106,
-		229,
-		87,
-		104,
-		191,
-		74,
-		106,
-		106,
-		165,
-		106,
-		106,
-		165,
-		106,
-		106,
-		165,
-		106,
-		106,
-		197,
-		105,
-		165,
-		105,
-		165,
-		110,
-		104,
-		235,
-		69,
-		110,
-		104,
-		171,
-		159,
-		13,
-		104,
-		162,
-		108,
-		162,
-		110,
-		104,
-		139,
-		byte.MaxValue,
-		44,
-		70,
-		226,
-		59,
-		98,
-		106,
-		127,
-		16,
-		109,
-		138
-	})]
+	
 	public CompilationUnit CompilationUnit()
 	{
 		//Discarded unreachable code: IL_057f
@@ -20862,27 +18751,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 	
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		170,
-		183,
-		134,
-		103,
-		104,
-		114,
-		172,
-		103,
-		105,
-		byte.MaxValue,
-		161,
-		62,
-		89,
-		165,
-		111,
-		162,
-		127,
-		3
-	})]
+	
 	public IntersectionType IntersectionType(NodeList annotations)
 	{
 		JavaToken __003C_003EINVALID = JavaToken.___003C_003EINVALID;
@@ -20953,24 +18822,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		191,
-		77,
-		105,
-		140,
-		byte.MaxValue,
-		161,
-		74,
-		104,
-		103,
-		162,
-		114,
-		104,
-		171,
-		104,
-		105
-	})]
+	
 	public Statement BlockStatementParseStart()
 	{
 		Statement result;
@@ -21237,11 +19089,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		191, 228, 103, 191, 27, 104, 162, 104, 162, 104,
-		162, 114, 104, 139, 104, 105
-	})]
+		
 	public TypeDeclaration TypeDeclarationParseStart()
 	{
 		ModifierHolder modifier = Modifiers();
@@ -21275,15 +19123,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		191,
-		byte.MaxValue,
-		103,
-		104,
-		104,
-		105
-	})]
+	
 	public ModuleDeclaration ModuleDeclarationParseStart()
 	{
 		ModifierHolder modifier = Modifiers();
@@ -21362,12 +19202,7 @@ internal class GeneratedJavaParser : GeneratedJavaParserBase, GeneratedJavaParse
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		208, 52, 80, 232, 159, 162, 167, 240, 92, 109,
-		103, 231, 160, 113, 236, 126, 139, 103, 237, 159,
-		140, 103, 107, 103, 103, 121, 127, 0
-	})]
+	
 	public GeneratedJavaParser(GeneratedJavaParserTokenManager tm)
 	{
 		jj_lookingAhead = false;

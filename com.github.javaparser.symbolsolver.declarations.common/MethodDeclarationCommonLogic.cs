@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
@@ -6,7 +6,7 @@ using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.reflectionmodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -188,12 +188,7 @@ public class MethodDeclarationCommonLogic
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		3, 115, 102, 112, 121, 8, 230, 72, 108, 117,
-		111, 169, 124, 162, 143, 114, 174, 236, 49, 235,
-		82, 144
-	})]
+		
 	public virtual MethodUsage resolveTypeVariables(Context context, List parameterTypes)
 	{
 		ResolvedType actual = replaceTypeParams(methodDeclaration.getReturnType(), context);

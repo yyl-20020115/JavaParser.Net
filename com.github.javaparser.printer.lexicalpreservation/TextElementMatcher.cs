@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 
 namespace com.github.javaparser.printer.lexicalpreservation;
 
@@ -11,11 +11,7 @@ public interface TextElementMatcher
 		
 		[NameSig("lambda$and$0", "(Lcom.github.javaparser.printer.lexicalpreservation.TextElementMatcher;Lcom.github.javaparser.printer.lexicalpreservation.TextElement;)Z")]
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal unsafe static bool _003Cpiim_003Elambda_0024and_00240(TextElementMatcher textElementMatcher, TextElementMatcher textElement, TextElement P_2)
 		{

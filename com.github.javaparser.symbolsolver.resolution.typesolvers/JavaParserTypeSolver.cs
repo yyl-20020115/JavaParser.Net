@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using System.Threading;
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
@@ -10,7 +10,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.utils;
 using com.google.common.cache;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.io;
@@ -184,34 +184,7 @@ public class JavaParserTypeSolver :  TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		88,
-		130,
-		114,
-		104,
-		209,
-		102,
-		113,
-		107,
-		111,
-		byte.MaxValue,
-		0,
-		71,
-		byte.MaxValue,
-		160,
-		66,
-		55,
-		byte.MaxValue,
-		18,
-		73,
-		159,
-		123,
-		114,
-		124,
-		98
-	})]
+		
 	private List parseDirectory(Path P_0, bool P_1)
 	{
 		//Discarded unreachable code: IL_01fe
@@ -345,7 +318,7 @@ public class JavaParserTypeSolver :  TypeSolver
 			{
 				System.Exception exception = ex8;
 				ex = exception;
-				throw Throwable.___003Cunmap_003E(exception);
+				throw (exception);
 			}
 			catch (System.Exception x8)
 			{
@@ -367,7 +340,7 @@ public class JavaParserTypeSolver :  TypeSolver
 		IOException ex15;
 		try
 		{
-			throw Throwable.___003Cunmap_003E(ex14);
+			throw (ex14);
 		}
 		catch (IOException x10)
 		{
@@ -438,14 +411,7 @@ public class JavaParserTypeSolver :  TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 145, 140, 106, 118, 102, 110, 6, 198, 140,
-		103, 107, 103, 141, 236, 60, 232, 71, 130, 112,
-		115, 106, 105, 98, 120, 105, 97, 61, 193, 115,
-		98, 237, 69, 108, 117, 127, 1, 100, 108, 105,
-		97, 61, 161, 226, 19, 233, 113
-	})]
+		
 	private SymbolReference tryToSolveTypeUncached(string P_0)
 	{
 		string[] array = java.lang.String.instancehelper_split(P_0, "\\.");
@@ -512,11 +478,7 @@ public class JavaParserTypeSolver :  TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 65, 146, 104, 209, 124, 118, 203, 109, 127,
-		7, 112, 102, 114, 127, 28, 126, 98
-	})]
+		
 	private Optional parse(Path P_0)
 	{
 		//Discarded unreachable code: IL_00cc
@@ -559,7 +521,7 @@ public class JavaParserTypeSolver :  TypeSolver
 		{
 			System.Exception ex4 = ex3;
 			Monitor.Exit(obj);
-			throw Throwable.___003Cunmap_003E(ex4);
+			throw (ex4);
 		}
 		catch (IOException x3)
 		{
@@ -637,11 +599,7 @@ public class JavaParserTypeSolver :  TypeSolver
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		84, 104, 108, 108, 108, 109, 141, 124, 191, 6,
-		103, 103, 103, 104, 104
-	})]
+		
 	public JavaParserTypeSolver(Path srcDir, JavaParser javaParser, com.github.javaparser.symbolsolver.cache.Cache parsedFilesCache, com.github.javaparser.symbolsolver.cache.Cache parsedDirectoriesCache, com.github.javaparser.symbolsolver.cache.Cache foundTypesCache)
 	{
 		Objects.requireNonNull(srcDir, "The srcDir can't be null.");

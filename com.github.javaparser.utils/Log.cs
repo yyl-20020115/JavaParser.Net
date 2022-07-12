@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -18,11 +18,6 @@ public class Log
 				
 		virtual void trace(Supplier message);
 
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
 		virtual void error(Supplier throwableSupplier, Supplier messageSupplier);
 	}
 
@@ -44,11 +39,6 @@ public class Log
 		{
 		}
 
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
 		public virtual void error(Supplier throwableSupplier, Supplier messageSupplier)
 		{
 		}
@@ -82,31 +72,6 @@ public class Log
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			17,
-			113,
-			103,
-			127,
-			22,
-			byte.MaxValue,
-			160,
-			155,
-			61,
-			191,
-			50,
-			byte.MaxValue,
-			161,
-			30,
-			61,
-			191,
-			8,
-			159,
-			73,
-			2,
-			97,
-			144
-		})]
 		private unsafe void printStackTrace(System.Exception throwable)
 		{
 			StringWriter stringWriter;
@@ -198,7 +163,7 @@ public class Log
 						{
 							System.Exception ex10 = ex9;
 							ex2 = ex10;
-							throw Throwable.___003Cunmap_003E(ex10);
+							throw ex10;
 						}
 						catch (System.Exception x6)
 						{
@@ -548,7 +513,7 @@ public class Log
 				{
 					try
 					{
-						throw Throwable.___003Cunmap_003E(ex33);
+						throw (ex33);
 					}
 					catch (System.Exception x21)
 					{
@@ -577,7 +542,7 @@ public class Log
 			System.Exception ex46;
 			try
 			{
-				throw Throwable.___003Cunmap_003E(ex46);
+				throw ex46;
 			}
 			catch (IOException)
 			{
@@ -593,7 +558,7 @@ public class Log
 				{
 					System.Exception exception2 = ex29;
 					ex = exception2;
-					throw Throwable.___003Cunmap_003E(exception2);
+					throw exception2;
 				}
 				catch (System.Exception x23)
 				{
@@ -646,7 +611,7 @@ public class Log
 		
 		public virtual void trace(Supplier messageSupplier)
 		{
-			java.lang.System.@out.println((string)messageSupplier.get());
+			System.Console.WriteLine((string)messageSupplier.get());
 		}
 
 		
@@ -654,20 +619,8 @@ public class Log
 		
 		public virtual void info(Supplier messageSupplier)
 		{
-			java.lang.System.@out.println((string)messageSupplier.get());
+			System.Console.WriteLine((string)messageSupplier.get());
 		}
-
-		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			3, 108, 108, 99, 112, 105, 99, 141, 127, 16,
-			137
-		})]
 		public virtual void error(Supplier throwableSupplier, Supplier messageSupplier)
 		{
 			System.Exception ex = (System.Exception)throwableSupplier.get();
@@ -792,11 +745,7 @@ public class Log
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[SafeVarargs(new object[]
 	{
@@ -809,11 +758,7 @@ public class Log
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private static Supplier makeFormattingSupplier(string format, Supplier[] args)
 	{
@@ -822,11 +767,7 @@ public class Log
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	private static string lambda_0024makeFormattingSupplier_00240(Supplier[] args, string format)
 	{
@@ -873,11 +814,7 @@ public class Log
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[SafeVarargs(new object[]
 	{
@@ -898,12 +835,7 @@ public class Log
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[SafeVarargs(new object[]
 	{
@@ -916,11 +848,7 @@ public class Log
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[SafeVarargs(new object[]
 	{

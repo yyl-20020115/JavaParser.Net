@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -18,11 +18,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getMethodsByName_00240(string name, MethodDeclaration m)
 		{
@@ -49,11 +45,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getMethodsByParameterTypes_00243(string[] paramTypes, MethodDeclaration m)
 		{
@@ -64,11 +56,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getMethodsBySignature_00244(string[] paramTypes, MethodDeclaration m)
 		{
@@ -79,11 +67,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getMethodsByParameterTypes_00245(Class[] paramTypes, MethodDeclaration m)
 		{
@@ -137,11 +121,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getConstructorByParameterTypes_002411(string[] paramTypes, ConstructorDeclaration m)
 		{
@@ -152,11 +132,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getConstructorByParameterTypes_002412(Class[] paramTypes, ConstructorDeclaration m)
 		{
@@ -183,11 +159,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getFieldByName_002416(string name, FieldDeclaration f)
 		{
@@ -214,11 +186,7 @@ public class NodeWithMembers : NodeWithSimpleName
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024null_002415(string name, VariableDeclarator var)
 		{
@@ -1073,11 +1041,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual MethodDeclaration addMethod(string methodName, params Modifier.Keyword[] modifiers);
 
 	
@@ -1099,12 +1063,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	virtual void tryAddImportToParentCompilationUnit(Class clazz);
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addField(string type, string name, params Modifier.Keyword[] modifiers);
 
 	
@@ -1118,12 +1077,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addField(Type type, string name, params Modifier.Keyword[] modifiers);
 
 	
@@ -1140,13 +1094,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addFieldWithInitializer(string type, string name, Expression initializer, params Modifier.Keyword[] modifiers);
 
 	
@@ -1160,13 +1108,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addFieldWithInitializer(Type type, string name, Expression initializer, params Modifier.Keyword[] modifiers);
 
 	
@@ -1180,12 +1122,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual FieldDeclaration addField(Class typeClass, string name, params Modifier.Keyword[] modifiers);
 
 	
@@ -1242,11 +1179,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setMember(int i, BodyDeclaration member);
 
 	
@@ -1275,13 +1208,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	virtual Node setMembers(NodeList members);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual FieldDeclaration addFieldWithInitializer(Class typeClass, string name, Expression initializer, params Modifier.Keyword[] modifiers);
 
 	
@@ -1296,11 +1223,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual FieldDeclaration addPrivateField(Class typeClass, string name);
 
 	
@@ -1314,11 +1237,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addPrivateField(string type, string name);
 
 	
@@ -1332,11 +1251,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addPrivateField(Type type, string name);
 
 	
@@ -1350,11 +1265,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual FieldDeclaration addPublicField(Class typeClass, string name);
 
 	
@@ -1368,11 +1279,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addPublicField(string type, string name);
 
 	
@@ -1386,11 +1293,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addPublicField(Type type, string name);
 
 	
@@ -1404,11 +1307,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual FieldDeclaration addProtectedField(Class typeClass, string name);
 
 	
@@ -1422,11 +1321,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addProtectedField(string type, string name);
 
 	
@@ -1440,11 +1335,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	virtual FieldDeclaration addProtectedField(Type type, string name);
 
 	
@@ -1517,11 +1408,7 @@ public class NodeWithMembers : NodeWithSimpleName
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual List getMethodsBySignature(string name, params string[] paramTypes);
 
 	

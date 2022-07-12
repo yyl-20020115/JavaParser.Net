@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 
 namespace com.github.javaparser.ast.observer;
@@ -23,13 +23,7 @@ public abstract class PropagatingAstObserver: AstObserver
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public override void concretePropertyChange(Node observedNode, ObservableProperty property, object oldValue, object newValue)
 		{
@@ -37,13 +31,7 @@ public abstract class PropagatingAstObserver: AstObserver
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public override void concreteListChange(NodeList observedNode, AstObserver.ListChangeType type, int index, Node nodeAddedOrRemoved)
 		{
@@ -51,12 +39,7 @@ public abstract class PropagatingAstObserver: AstObserver
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public override void parentChange(Node observedNode, Node previousParent, Node newParent)
 		{
@@ -104,35 +87,17 @@ public abstract class PropagatingAstObserver: AstObserver
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	public virtual void concretePropertyChange(Node observedNode, ObservableProperty property, object oldValue, object newValue)
 	{
 	}
 
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	public virtual void concreteListChange(NodeList observedNode, AstObserver.ListChangeType type, int index, Node nodeAddedOrRemoved)
 	{
 	}
 
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	public virtual void concreteListReplacement(NodeList observedNode, int index, Node oldValue, Node newValue)
 	{
 	}
@@ -144,13 +109,7 @@ public abstract class PropagatingAstObserver: AstObserver
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public void propertyChange(Node observedNode, ObservableProperty property, object oldValue, object newValue)
 	{
@@ -160,13 +119,7 @@ public abstract class PropagatingAstObserver: AstObserver
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public void listChange(NodeList observedNode, AstObserver.ListChangeType type, int index, Node nodeAddedOrRemoved)
 	{
@@ -182,13 +135,7 @@ public abstract class PropagatingAstObserver: AstObserver
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual void listReplacement(NodeList observedNode, int index, Node oldNode, Node newNode)
 	{
@@ -200,12 +147,7 @@ public abstract class PropagatingAstObserver: AstObserver
 		}
 	}
 
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	public virtual void parentChange(Node observedNode, Node previousParent, Node newParent)
 	{
 	}

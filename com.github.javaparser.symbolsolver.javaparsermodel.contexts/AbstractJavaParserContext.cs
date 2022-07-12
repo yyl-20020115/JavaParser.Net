@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -12,7 +12,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -286,12 +286,7 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		66, 183, 107, 135, 98, 127, 2, 106, 98, 130,
-		98, 99, 99, 105, 139, 181, 131, 120, 124, 150,
-		100, 136, 111
-	})]
+		
 	public Optional getParent()
 	{
 		Node node = (Node)wrappedNode.getParentNode().orElse(null);
@@ -494,11 +489,7 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		108, 103, 104, 205, 108, 115, 141, 97, 112, 101,
-		134, 104, 105, 120, 106, 105, 240, 70
-	})]
+		
 	public virtual SymbolReference solveSymbolInParentContext(string name)
 	{
 		Optional parent = getParent();
@@ -546,93 +537,11 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160,
-		85,
-		107,
-		172,
-		104,
-		103,
-		114,
-		122,
-		246,
-		70,
-		byte.MaxValue,
-		12,
-		74,
-		226,
-		55,
-		130,
-		104,
-		104,
-		116,
-		166,
-		158,
-		104,
-		154,
-		97,
-		101,
-		101,
-		101,
-		111,
-		229,
-		59,
-		230,
-		72,
-		155,
-		136,
-		123,
-		104,
-		103,
-		159,
-		10,
-		100,
-		101,
-		101,
-		111,
-		229,
-		60,
-		230,
-		70,
-		98,
-		99,
-		136,
-		97,
-		101,
-		101,
-		101,
-		111,
-		229,
-		59,
-		230,
-		71,
-		104,
-		117,
-		111,
-		112,
-		234,
-		61,
-		225,
-		71,
-		97,
-		101,
-		111,
-		229,
-		61,
-		230,
-		71,
-		184,
-		98,
-		101,
-		111,
-		229,
-		61
-	})]
+		
 	protected internal virtual Collection findTypeDeclarations(Optional optScope)
 	{
 		Expression expression;
-		java.lang.Exception ex2;
+		System.Exception ex2;
 		if (optScope.isPresent())
 		{
 			expression = (Expression)optScope.get();
@@ -652,7 +561,7 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 			}
 			catch (System.Exception x)
 			{
-				java.lang.Exception ex = ByteCodeHelper.MapException<java.lang.Exception>(x, ByteCodeHelper.MapFlags.None);
+				System.Exception ex = ByteCodeHelper.MapException<System.Exception>(x, ByteCodeHelper.MapFlags.None);
 				if (ex == null)
 				{
 					throw;
@@ -703,7 +612,7 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 		ResolvedType typeOfThisIn = JavaParserFacade.get(typeSolver).getTypeOfThisIn(wrappedNode);
 		return Collections.singletonList(typeOfThisIn.asReferenceType().getTypeDeclaration().orElseThrow(new ___003C_003EAnon10()));
 		IL_008f:
-		java.lang.Exception cause = ex2;
+		System.Exception cause = ex2;
 		if (expression is FieldAccessExpr)
 		{
 			FieldAccessExpr fieldAccessExpr = (FieldAccessExpr)expression;

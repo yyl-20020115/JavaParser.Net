@@ -1,8 +1,8 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.visitor;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -22,11 +22,7 @@ public class VisitorMap: Map
 		internal VisitorMap this_00240;
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			(Modifiers)0
-		})]
+				
 		
 		internal EqualsHashcodeOverridingFacade(VisitorMap this_00240, Node overridden)
 		{
@@ -36,11 +32,7 @@ public class VisitorMap: Map
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual object accept(GenericVisitor v, object arg)
 		{
@@ -49,11 +41,7 @@ public class VisitorMap: Map
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		public virtual void accept(VoidVisitor v, object arg)
 		{
@@ -193,11 +181,7 @@ public class VisitorMap: Map
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual object put(Node key, object value)
 	{
@@ -229,11 +213,7 @@ public class VisitorMap: Map
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public VisitorMap(GenericVisitor hashcodeVisitor, GenericVisitor equalsVisitor)
 	{
@@ -343,11 +323,7 @@ public class VisitorMap: Map
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object put(object key, object value)
 	{

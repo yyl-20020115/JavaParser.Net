@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -21,12 +21,7 @@ public class MainConstructorGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 188, 109, 129, 102, 107, 121, 111, 139, 135,
-		117, 127, 7, 127, 8, 117, 111, 159, 14, 159,
-		9, 133, 151, 140, 104, 108
-	})]
+	
 	protected internal override void generateNode(BaseNodeMetaModel nodeMetaModel, CompilationUnit nodeCu, ClassOrInterfaceDeclaration nodeCoid)
 	{
 		if (nodeMetaModel.@is(ClassLiteral<Node>.Value))

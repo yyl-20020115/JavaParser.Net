@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -13,11 +13,7 @@ public interface ResolvedEnumDeclaration : ResolvedReferenceTypeDeclaration, Res
 	{
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024hasEnumConstant_00240(string name, ResolvedEnumConstantDeclaration c)
 		{
@@ -28,11 +24,7 @@ public interface ResolvedEnumDeclaration : ResolvedReferenceTypeDeclaration, Res
 
 		
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+		
 		
 		internal static bool lambda_0024getEnumConstant_00241(string name, ResolvedEnumConstantDeclaration c)
 		{

@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser;
@@ -450,12 +450,7 @@ public interface ParseStart
 		
 	virtual object parse(GeneratedJavaParser parser);
 
-	[LineNumberTable(new byte[]
-	{
-		2, 111, 111, 111, 111, 111, 111, 111, 111, 111,
-		111, 111, 111, 111, 111, 111, 111, 111, 111, 111,
-		111
-	})]
+	
 	static ParseStart()
 	{
 		COMPILATION_UNIT = new ___003C_003EAnon0();

@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.core.resolution;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.annotation;
@@ -317,12 +317,7 @@ public class ReflectionAnnotationDeclaration : AbstractTypeDeclaration, Resolved
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 103, 152, 139, 107, 108, 98, 103, 127, 0,
-		169, 114, 100, 130, 110, 110, 61, 168, 111, 120,
-		97, 166
-	})]
+		
 	public virtual Optional solveMethodAsUsage(string name, List parameterTypes, Context invokationContext, List typeParameterValues)
 	{
 		//Discarded unreachable code: IL_00db

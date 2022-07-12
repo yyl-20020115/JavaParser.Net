@@ -1,12 +1,12 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -175,11 +175,7 @@ public class FieldAccessContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		39, 113, 127, 1, 114, 117, 151, 104, 112, 104,
-		154, 168
-	})]
+		
 	public override Optional solveSymbolAsValue(string name)
 	{
 		Expression scope = ((FieldAccessExpr)wrappedNode).getScope();
@@ -214,11 +210,7 @@ public class FieldAccessContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		76, 124, 126, 104, 127, 7, 104, 209, 127, 25,
-		129, 101
-	})]
+		
 	public virtual SymbolReference solveField(string name)
 	{
 		//Discarded unreachable code: IL_00a3

@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.javadoc;
-using IKVM.Attributes;
+
 using java.io;
 using java.lang;
 using java.nio.charset;
@@ -188,11 +188,7 @@ public class StaticJavaParser
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+	
 	
 	[Deprecated(new object[]
 	{
@@ -215,11 +211,7 @@ public class StaticJavaParser
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	[Deprecated(new object[]
 	{
@@ -243,11 +235,7 @@ public class StaticJavaParser
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	[Deprecated(new object[]
 	{
@@ -280,11 +268,7 @@ public class StaticJavaParser
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+	
 	
 	[Deprecated(new object[]
 	{
@@ -299,12 +283,7 @@ public class StaticJavaParser
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+	
 	
 	[Deprecated(new object[]
 	{

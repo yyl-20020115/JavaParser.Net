@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -20,12 +20,7 @@ public class ListReplacementChange: Change
 	private Node newValue;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ListReplacementChange(ObservableProperty observableProperty, int index, Node newValue)
 	{
@@ -35,16 +30,8 @@ public class ListReplacementChange: Change
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 189, 108, 109, 104, 103, 136, 104, 159, 16,
-		167, 102, 109, 167, 147, 130
-	})]
+	
+	
 	public virtual object getValue(ObservableProperty property, Node node)
 	{
 		if (property == observableProperty)

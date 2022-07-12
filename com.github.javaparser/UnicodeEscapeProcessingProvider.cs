@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.io;
 using java.lang;
@@ -56,11 +56,7 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 
 		
 		
-		[LineNumberTable(new byte[]
-		{
-			161, 197, 155, 162, 102, 103, 194, 104, 137, 134,
-			162, 103, 174
-		})]
+		
 		public virtual int process(int ch)
 		{
 			switch (ch)
@@ -109,13 +105,7 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 			}
 
 			
-			[MethodParameters(new Modifiers[]
-			{
-				(Modifiers)0,
-				(Modifiers)0,
-				(Modifiers)0,
-				(Modifiers)0
-			})]
+			
 			
 			public DeltaInfo(int line, int column, int lineDelta, int columnDelta)
 				: base(line, column)
@@ -320,13 +310,7 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		internal virtual void add(int line, int column, int lineDelta, int columnDelta)
 		{
@@ -349,16 +333,8 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 		private int _columnDelta;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			161, 121, 232, 53, 139, 103, 231, 73, 103, 103,
-			104
-		})]
+		
+		
 		public PositionMappingBuilder(LineCounter left, LineCounter right)
 		{
 			_mapping = new PositionMapping();
@@ -434,16 +410,8 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		23, 232, 37, 231, 69, 199, 139, 139, 247, 79,
-		103, 108
-	})]
+	
+	
 	public UnicodeEscapeProcessingProvider(int bufferSize, Provider input)
 	{
 		_len = 0;
@@ -556,11 +524,7 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 171, 100, 161, 104, 109, 114, 107, 143, 115,
-		104, 112, 122, 103, 130, 110, 116, 109, 185, 124
-	})]
+	
 	private void pushBack(int ch)
 	{
 		if (ch < 0)
@@ -609,18 +573,8 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 72, 103, 100, 103, 103, 163, 103, 103, 100,
-		103, 103, 103, 163, 103, 104, 101, 103, 103, 103,
-		103, 163, 104, 105, 101, 104, 103, 103, 103, 103,
-		163, 114
-	})]
+	
+	
 	private int readDigits(int uCnt, int next3)
 	{
 		int num = digit(next3);
@@ -734,17 +688,8 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		44, 98, 100, 100, 114, 100, 132, 226, 69, 107,
-		137, 98
-	})]
+	
+	
 	public virtual int read(char[] buffer, int offset, int len)
 	{
 		int num = offset;

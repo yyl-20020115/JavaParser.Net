@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.lang.reflect;
@@ -66,11 +66,7 @@ public class JavassistFactory
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 183, 104, 119, 104, 114, 139, 177, 104, 149,
-		104, 181, 223, 19, 97
-	})]
+	
 	public static ResolvedType typeUsageFor(CtClass ctClazz, TypeSolver typeSolver)
 	{
 		//Discarded unreachable code: IL_00a3

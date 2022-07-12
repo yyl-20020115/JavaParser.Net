@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using IKVM.Runtime;
 using java.lang;
 using java.nio.file;
@@ -19,11 +19,7 @@ public class SourceZip
 	})]
 	public interface Callback
 	{
-				[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		virtual void process(Path relativeZipEntryPath, ParseResult result);
 	}
 
@@ -122,11 +118,7 @@ public class SourceZip
 	private ParserConfiguration parserConfiguration;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public SourceZip(Path zipPath, ParserConfiguration configuration)
 	{
@@ -140,32 +132,7 @@ public class SourceZip
 	
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		51,
-		126,
-		108,
-		120,
-		127,
-		10,
-		124,
-		127,
-		0,
-		105,
-		42,
-		135,
-		154,
-		113,
-		95,
-		28,
-		byte.MaxValue,
-		39,
-		55,
-		237,
-		73,
-		127,
-		22
-	})]
+	
 	public virtual SourceZip parse(Callback callback)
 	{
 		Log.info("Parsing zip at \"%s\"", new ___003C_003EAnon3(this));
@@ -255,7 +222,7 @@ public class SourceZip
 		{
 			System.Exception exception2 = ex5;
 			ex = exception2;
-			throw Throwable.___003Cunmap_003E(exception2);
+			throw (exception2);
 		}
 		catch
 		{
@@ -302,12 +269,7 @@ public class SourceZip
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024parse_00242(List results, Path path, ParseResult result)
 	{

@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.type;
@@ -10,7 +10,7 @@ using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution.typeinference.bounds;
 using com.github.javaparser.symbolsolver.resolution.typeinference.constraintformulas;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -110,13 +110,7 @@ public class TypeInference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		48, 103, 103, 102, 107, 63, 0, 230, 70, 234,
-		69, 100, 109, 111, 107, 251, 61, 232, 76, 105,
-		131, 199, 105, 237, 69, 105, 237, 69, 105, 173,
-		105, 232, 69, 121, 241, 69, 105, 168, 112
-	})]
+		
 	public virtual Optional instantiationInference(List argumentExpressions, ResolvedMethodDeclaration methodDeclaration)
 	{
 		List typeParameters = methodDeclaration.getTypeParameters();
@@ -168,12 +162,7 @@ public class TypeInference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 160, 110, 235, 71, 134, 110, 109, 205, 109,
-		248, 71, 127, 8, 105, 103, 109, 63, 4, 168,
-		139, 143, 110, 147, 229, 37, 233, 95
-	})]
+		
 	private BoundSet boundSetup(List P_0, List P_1)
 	{
 		if (P_0.size() != P_1.size())
@@ -240,12 +229,7 @@ public class TypeInference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 41, 103, 231, 70, 100, 136, 105, 109, 110,
-		108, 127, 3, 103, 136, 127, 10, 232, 55, 233,
-		81
-	})]
+		
 	private Optional testForApplicabilityByStrictInvocation(List P_0, List P_1, Substitution P_2)
 	{
 		int num = P_0.size();
@@ -299,11 +283,7 @@ public class TypeInference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 104, 231, 69, 102, 102, 127, 12, 8, 230,
-		69
-	})]
+		
 	private Optional testForApplicabilityByVariableArityInvocation(List P_0, List P_1, Substitution P_2)
 	{
 		int num = P_1.size();
@@ -336,13 +316,7 @@ public class TypeInference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 236, 104, 103, 105, 226, 70, 104, 103, 105,
-		226, 72, 104, 171, 104, 235, 69, 104, 235, 70,
-		104, 235, 69, 104, 103, 239, 69, 104, 103, 112,
-		48, 193
-	})]
+	
 	private bool isPertinentToApplicability(Expression P_0)
 	{
 		if (P_0 is LambdaExpr)
@@ -397,11 +371,7 @@ public class TypeInference
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		162, 91, 102, 103, 109, 109, 106, 245, 60, 230,
-		71
-	})]
+		
 	private ConstraintFormulaSet constraintSetFromArgumentsSubstitution(List P_0, List P_1, Substitution P_2, int P_3)
 	{
 		ConstraintFormulaSet constraintFormulaSet = ConstraintFormulaSet.empty();
@@ -449,11 +419,7 @@ public class TypeInference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		123, 115, 139, 105, 104, 130, 108, 103, 100, 104,
-		102, 162, 226, 76
-	})]
+	
 	public virtual bool invocationApplicabilityInference(MethodCallExpr methodCallExpr, ResolvedMethodDeclaration methodDeclaration)
 	{
 		if (!String.instancehelper_equals(methodCallExpr.getNameAsString(), methodDeclaration.getName()))
@@ -492,28 +458,7 @@ public class TypeInference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160,
-		247,
-		140,
-		109,
-		240,
-		70,
-		108,
-		140,
-		205,
-		100,
-		byte.MaxValue,
-		6,
-		70,
-		102,
-		104,
-		235,
-		69,
-		237,
-		75
-	})]
+	
 	public virtual void functionalInterfaceParameterizationInference(LambdaExpr lambdaExpr, ResolvedInterfaceDeclaration interfaceDeclaration)
 	{
 		int num = lambdaExpr.getParameters().size();
@@ -544,16 +489,7 @@ public class TypeInference
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161,
-		46,
-		104,
-		byte.MaxValue,
-		16,
-		160,
-		80
-	})]
+	
 	public virtual bool moreSpecificMethodInference(MethodCallExpr methodCall, ResolvedMethodDeclaration m1, ResolvedMethodDeclaration m2)
 	{
 		if (!m2.isGeneric())

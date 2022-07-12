@@ -1,15 +1,15 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
+
+
 using System.Security;
-using System.Security.Permissions;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.io;
 
 namespace com.github.javaparser;
 
-[Serializable]
+
 
 public class Token : TokenBase, /*Serializable.*/__Interface, ISerializable
 {
@@ -48,11 +48,7 @@ public class Token : TokenBase, /*Serializable.*/__Interface, ISerializable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public Token(int nKind, string sImage)
 	{
@@ -61,11 +57,7 @@ public class Token : TokenBase, /*Serializable.*/__Interface, ISerializable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static Token newToken(int ofKind, string image)
 	{

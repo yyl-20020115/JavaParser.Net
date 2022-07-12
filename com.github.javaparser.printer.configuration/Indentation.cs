@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using ikvm.@internal;
 using java.lang;
 
@@ -8,12 +8,12 @@ namespace com.github.javaparser.printer.configuration;
 
 public class Indentation
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class IndentType : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -75,13 +75,7 @@ public class Indentation
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+				
 		
 		private IndentType(string _0024enum_0024name, int _0024enum_0024ordinal, Character c, int width)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -142,11 +136,7 @@ public class Indentation
 	private string formattedIndentation;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public Indentation(IndentType type, int size)
 	{

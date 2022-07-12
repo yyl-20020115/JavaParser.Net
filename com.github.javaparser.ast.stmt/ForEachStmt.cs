@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.util;
 using java.util.function;
 
@@ -29,13 +29,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ForEachStmt(TokenRange tokenRange, VariableDeclarationExpr variable, Expression iterable, Statement body)
 		: base(tokenRange)
@@ -112,11 +106,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -147,12 +137,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -165,12 +150,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public ForEachStmt(VariableDeclarationExpr variable, string iterable, BlockStmt body)
 		: this(null, variable, new NameExpr(iterable), body)
@@ -178,11 +158,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -216,16 +192,8 @@ public class ForEachStmt : Statement, NodeWithBody
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 76, 99, 130, 105, 109, 130, 105, 109, 130,
-		105, 109, 130
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

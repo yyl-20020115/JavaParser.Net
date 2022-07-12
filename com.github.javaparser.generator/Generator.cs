@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -112,11 +112,7 @@ public abstract class Generator
 	public abstract void generate();
 
 	
-		[LineNumberTable(new byte[]
-	{
-		14, 108, 117, 101, 239, 61, 230, 69, 99, 149,
-		146, 105
-	})]
+		
 	private void annotate(Node P_0, Class P_1, Expression P_2)
 	{
 		((NodeWithAnnotations)P_0).setAnnotations((NodeList)((NodeWithAnnotations)P_0).getAnnotations().stream().filter(new ___003C_003EAnon0(P_1))
@@ -133,11 +129,7 @@ public abstract class Generator
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		51, 109, 104, 104, 129, 105, 159, 14, 109, 127,
-		4, 103, 110
-	})]
+		
 	private void addMethod(ClassOrInterfaceDeclaration P_0, CallableDeclaration P_1, Runnable P_2)
 	{
 		List callablesWithSignature = P_0.getCallablesWithSignature(P_1.getSignature());

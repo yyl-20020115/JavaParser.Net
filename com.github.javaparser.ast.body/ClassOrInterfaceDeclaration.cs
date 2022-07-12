@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.nodeTypes.modifiers;
@@ -11,7 +11,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -65,12 +65,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		126, 99, 130, 112, 111, 109, 226, 61, 230, 70,
-		112, 111, 109, 226, 61, 230, 70, 112, 111, 109,
-		226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -118,18 +113,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public ClassOrInterfaceDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, bool isInterface, SimpleName name, NodeList typeParameters, NodeList extendedTypes, NodeList implementedTypes, NodeList members)
 		: base(tokenRange, modifiers, annotations, name, members)
@@ -225,11 +209,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -278,12 +258,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public ClassOrInterfaceDeclaration(NodeList modifiers, bool isInterface, string name)
 		: this(null, modifiers, new NodeList(), isInterface, new SimpleName(name), new NodeList(), new NodeList(), new NodeList(), new NodeList())
@@ -291,17 +266,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -314,11 +279,7 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -363,17 +324,8 @@ public class ClassOrInterfaceDeclaration : TypeDeclaration, NodeWithImplements, 
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 124, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 112, 111,
-		115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

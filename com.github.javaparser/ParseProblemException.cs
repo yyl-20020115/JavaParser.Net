@@ -1,15 +1,15 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
+
+
+
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
 namespace com.github.javaparser;
 
-[Serializable]
+
 public class ParseProblemException : RuntimeException
 {
 	

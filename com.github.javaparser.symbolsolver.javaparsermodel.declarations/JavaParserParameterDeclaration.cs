@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparsermodel.contexts;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -47,11 +47,7 @@ public class JavaParserParameterDeclaration: ResolvedParameterDeclaration, Resol
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		13, 127, 11, 127, 3, 104, 179, 127, 3, 104,
-		140
-	})]
+	
 	public virtual ResolvedType getType()
 	{
 		if (wrappedNode.getType() is UnknownType && JavaParserFactory.getContext(wrappedNode, typeSolver) is LambdaExprContext)

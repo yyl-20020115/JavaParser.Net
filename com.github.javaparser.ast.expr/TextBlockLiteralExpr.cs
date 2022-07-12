@@ -1,9 +1,9 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -230,11 +230,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public TextBlockLiteralExpr(TokenRange tokenRange, string value)
 		: base(tokenRange, value)
@@ -243,11 +239,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -331,11 +323,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private bool isLastLine(string[] rawLines, Integer lineNr)
 	{
@@ -344,11 +332,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static Pair lambda_0024stripIndentOfLines_00240(string[] rawLines, int nr)
 	{
@@ -359,11 +343,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private bool lambda_0024stripIndentOfLines_00241(string[] rawLines, Pair l)
 	{
@@ -383,11 +363,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static string lambda_0024stripIndentOfLines_00243(int commonWhiteSpacePrefixSize, string l)
 	{
@@ -430,11 +406,7 @@ public class TextBlockLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{

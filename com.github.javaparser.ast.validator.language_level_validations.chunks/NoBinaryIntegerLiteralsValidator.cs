@@ -1,7 +1,7 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.ast.validator.language_level_validations.chunks;
@@ -9,11 +9,7 @@ namespace com.github.javaparser.ast.validator.language_level_validations.chunks;
 public class NoBinaryIntegerLiteralsValidator : VisitorValidator
 {
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private static void validate(LiteralStringValueExpr n, ProblemReporter arg)
 	{
@@ -24,11 +20,7 @@ public class NoBinaryIntegerLiteralsValidator : VisitorValidator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(LongLiteralExpr n, ProblemReporter arg)
 	{
@@ -37,11 +29,7 @@ public class NoBinaryIntegerLiteralsValidator : VisitorValidator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void visit(IntegerLiteralExpr n, ProblemReporter arg)
 	{
@@ -58,11 +46,7 @@ public class NoBinaryIntegerLiteralsValidator : VisitorValidator
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public override void visit(LongLiteralExpr n, object arg)
 	{
@@ -72,11 +56,7 @@ public class NoBinaryIntegerLiteralsValidator : VisitorValidator
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public override void visit(IntegerLiteralExpr n, object arg)
 	{

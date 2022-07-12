@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.type;
@@ -11,7 +11,7 @@ using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -21,11 +21,7 @@ namespace com.github.javaparser.symbolsolver.javaparsermodel.contexts;
 public class MethodCallExprContext : AbstractJavaParserContext
 {
 	
-	[LineNumberTable(new byte[]
-	{
-		92, 122, 102, 127, 21, 115, 130, 108, 110, 109,
-		63, 3, 232, 70
-	})]
+	
 	private MethodUsage resolveMethodTypeParametersFromExplicitList(TypeSolver P_0, MethodUsage P_1)
 	{
 		if (((MethodCallExpr)wrappedNode).getTypeArguments().isPresent())
@@ -50,13 +46,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 235, 134, 112, 150, 97, 154, 98, 122, 127,
-		0, 114, 105, 127, 7, 111, 130, 137, 214, 234,
-		61, 240, 71, 105, 98, 194, 110, 106, 135, 105,
-		106, 111, 235, 61, 232, 69, 127, 5, 119, 98
-	})]
+		
 	private MethodUsage resolveMethodTypeParameters(MethodUsage P_0, List P_1)
 	{
 		HashMap hashMap = new HashMap();
@@ -104,11 +94,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 128, 107, 127, 9, 127, 29, 159, 26, 101,
-		130
-	})]
+		
 	private ResolvedType usingParameterTypesFromScope(ResolvedType P_0, ResolvedType P_1, Map P_2)
 	{
 		if (P_1.isReferenceType())
@@ -141,12 +127,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 96, 104, 115, 104, 115, 107, 103, 104, 115,
-		104, 147, 159, 14, 104, 103, 115, 136, 127, 14,
-		104, 108, 104, 152, 191, 11
-	})]
+		
 	private Optional solveMethodAsUsage(ResolvedType P_0, string P_1, List P_2, Context P_3)
 	{
 		if (P_0 is ResolvedReferenceType)
@@ -214,16 +195,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 141, 105, 129, 118, 103, 103, 115, 112, 112,
-		63, 10, 230, 69, 129, 112, 109, 117, 129, 129,
-		112, 122, 159, 0, 129, 112, 110, 129, 112, 110,
-		129, 112, 108, 109, 108, 129, 112, 109, 117, 129,
-		129, 112, 110, 161, 112, 109, 149, 129, 112, 117,
-		161, 112, 117, 129, 112, 110, 129, 104, 107, 129,
-		112, 129, 104, 161, 104, 103, 104, 161
-	})]
+		
 	private void inferTypes(ResolvedType P_0, ResolvedType P_1, Map P_2)
 	{
 		if (Object.instancehelper_equals(P_0, P_1))
@@ -326,13 +298,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 28, 107, 130, 109, 251, 70, 123, 139, 127,
-		23, 150, 110, 141, 112, 150, 98, 107, 22, 202,
-		139, 127, 2, 98, 127, 6, 126, 100, 98, 98,
-		138, 170, 150
-	})]
+		
 	private void matchTypeParameters(ResolvedType P_0, ResolvedType P_1, Map P_2)
 	{
 		if (P_0.isTypeVariable())
@@ -393,13 +359,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 79, 109, 168, 127, 1, 107, 140, 238, 84,
-		102, 115, 110, 137, 119, 130, 124, 142, 245, 54,
-		233, 77, 127, 5, 127, 0, 130, 142, 115, 137,
-		114, 122, 11, 200, 137
-	})]
+		
 	private Optional solveMethodAsUsage(ResolvedReferenceType P_0, string P_1, List P_2, Context P_3)
 	{
 		if (!P_0.getTypeDeclaration().isPresent())
@@ -452,11 +412,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		161, 73, 140, 232, 69, 134, 47, 37, 230, 69,
-		123, 113, 104, 130, 130
-	})]
+		
 	private Optional solveMethodAsUsage(ResolvedTypeVariable P_0, string P_1, List P_2, Context P_3)
 	{
 		List list = P_0.asTypeParameter().getBounds();
@@ -512,41 +468,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		47,
-		117,
-		155,
-		107,
-		113,
-		104,
-		107,
-		115,
-		104,
-		114,
-		112,
-		107,
-		138,
-		byte.MaxValue,
-		38,
-		71,
-		115,
-		130,
-		216,
-		103,
-		173,
-		111,
-		110,
-		235,
-		59,
-		232,
-		71,
-		109,
-		119,
-		11,
-		232,
-		69
-	})]
+		
 	public override Optional solveMethodAsUsage(string name, List argumentsTypes)
 	{
 		ResolvedType resolvedType;
@@ -610,11 +532,7 @@ public class MethodCallExprContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		116, 151, 237, 69, 177, 127, 15, 106, 104, 130,
-		130
-	})]
+		
 	public override SymbolReference solveMethod(string name, List argumentsTypes, bool staticOnly)
 	{
 		object obj = findTypeDeclarations(((MethodCallExpr)wrappedNode).getScope());

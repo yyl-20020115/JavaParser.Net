@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -127,11 +127,7 @@ public class ResolvedIntersectionType: ResolvedType
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static bool lambda_0024isAssignableBy_00240(ResolvedType other, ResolvedType e)
 	{
@@ -142,13 +138,7 @@ public class ResolvedIntersectionType: ResolvedType
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static ResolvedType lambda_0024replaceTypeVariables_00241(ResolvedTypeParameterDeclaration tp, ResolvedType replaced, Map inferredTypes, ResolvedType e)
 	{
@@ -212,12 +202,7 @@ public class ResolvedIntersectionType: ResolvedType
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public virtual ResolvedType replaceTypeVariables(ResolvedTypeParameterDeclaration tp, ResolvedType replaced, Map inferredTypes)
 	{

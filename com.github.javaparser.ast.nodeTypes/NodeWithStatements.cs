@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
-using IKVM.Attributes;
+
 using java.util;
 
 namespace com.github.javaparser.ast.nodeTypes;
@@ -153,11 +153,7 @@ public interface NodeWithStatements
 		virtual NodeList getStatements();
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final
-	})]
+		
 	virtual Node addStatement(int index, Statement statement);
 
 	
@@ -226,11 +222,7 @@ public interface NodeWithStatements
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	virtual Node setStatement(int i, Statement statement);
 
 	
@@ -246,11 +238,7 @@ public interface NodeWithStatements
 	virtual Node setStatements(NodeList statements);
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final
-	})]
+		
 	virtual Node addStatement(int index, Expression expr);
 
 	
@@ -265,11 +253,7 @@ public interface NodeWithStatements
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		Modifiers.Final
-	})]
+	
 	virtual Statement addAndGetStatement(int index, Statement statement);
 
 	

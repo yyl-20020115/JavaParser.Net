@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.nodeTypes;
@@ -10,7 +10,7 @@ using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.reflectionmodel;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -223,15 +223,7 @@ public class JavaParserTypeDeclarationAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		25, 120, 222, 127, 9, 107, 103, 115, 121, 127,
-		34, 127, 18, 127, 13, 191, 13, 133, 112, 108,
-		127, 5, 100, 116, 149, 162, 112, 109, 127, 6,
-		116, 117, 108, 12, 193, 162, 112, 109, 127, 6,
-		116, 117, 108, 12, 193, 194, 111, 100, 202, 117,
-		107, 7
-	})]
+		
 	public virtual SymbolReference solveType(string name)
 	{
 		if (String.instancehelper_equals(wrappedNode.getName().getId(), name))
@@ -327,13 +319,7 @@ public class JavaParserTypeDeclarationAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159, 97, 162, 123, 112, 101, 208, 112, 127, 10,
-		168, 159, 0, 103, 112, 101, 239, 61, 230, 72,
-		118, 105, 174, 229, 70, 104, 117, 109, 103, 105,
-		238, 69, 117, 122, 105, 206
-	})]
+		
 	public virtual SymbolReference solveMethod(string name, List argumentsTypes, bool staticOnly)
 	{
 		List list = (List)typeDeclaration.getDeclaredMethods().stream().filter(new ___003C_003EAnon4(name))
@@ -395,12 +381,7 @@ public class JavaParserTypeDeclarationAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		94, 191, 5, 97, 111, 139, 127, 5, 99, 105,
-		105, 105, 184, 111, 100, 134, 165, 165, 106, 100,
-		222, 2, 161, 101
-	})]
+	
 	private ResolvedTypeDeclaration checkAncestorsForType(string P_0, ResolvedReferenceTypeDeclaration P_1)
 	{
 		//Discarded unreachable code: IL_00d0

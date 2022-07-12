@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.javadoc.description;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -12,12 +12,12 @@ namespace com.github.javaparser.javadoc;
 
 public class JavadocBlockTag
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Type : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -224,11 +224,7 @@ public class JavadocBlockTag
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Type(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -275,11 +271,7 @@ public class JavadocBlockTag
 			return P_0.keyword;
 		}
 
-		[LineNumberTable(new byte[]
-		{
-			159, 190, 112, 112, 112, 112, 112, 112, 112, 112,
-			112, 113, 113, 113, 241, 51
-		})]
+		
 		static Type()
 		{
 			___003C_003EAUTHOR = new Type("AUTHOR", 0);
@@ -335,11 +327,7 @@ public class JavadocBlockTag
 	private string tagName;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public JavadocBlockTag(string tagName, string content)
 		: this(Type.fromName(tagName), content)
@@ -366,16 +354,8 @@ public class JavadocBlockTag
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		38, 232, 61, 203, 103, 108, 104, 113, 159, 3,
-		108
-	})]
+	
+	
 	public JavadocBlockTag(Type type, string content)
 	{
 		name = Optional.empty();
@@ -391,11 +371,7 @@ public class JavadocBlockTag
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024toText_00240(StringBuilder sb, string s)
 	{
@@ -403,11 +379,7 @@ public class JavadocBlockTag
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public static JavadocBlockTag createParamBlockTag(string paramName, string content)
 	{

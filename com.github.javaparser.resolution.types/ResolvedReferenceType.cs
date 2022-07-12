@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types.parametrization;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -661,16 +661,8 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		23, 104, 99, 144, 104, 144, 124, 142, 30, 208,
-		102, 107, 63, 5, 166, 108, 103
-	})]
+		
+	
 	public ResolvedReferenceType(ResolvedReferenceTypeDeclaration typeDeclaration, List typeArguments)
 	{
 		if (typeDeclaration == null)
@@ -720,19 +712,11 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 			.collect(Collectors.toList())) : Collections.emptyList();
 	}
 
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	protected internal abstract ResolvedReferenceType create(ResolvedReferenceTypeDeclaration typeDeclaration, List typeParameters);
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 246, 117, 109, 130, 127, 6, 109, 127, 24,
-		130, 101, 130
-	})]
+	
 	public virtual bool isRawType()
 	{
 		if (!typeDeclaration.getTypeParameters().isEmpty())
@@ -814,16 +798,8 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		161, 148, 113, 105, 114, 105, 118, 101, 110, 7,
-		193
-	})]
+	
+	
 	private bool compareConsideringVariableTypeParameters(ResolvedType referenceType, ResolvedTypeVariable typeVariable)
 	{
 		List bounds = typeVariable.asTypeVariable().asTypeParameter().getBounds();
@@ -839,13 +815,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 91, 105, 130, 118, 112, 130, 103, 115, 139,
-		110, 109, 114, 108, 104, 104, 154, 154, 171, 130,
-		101, 118, 112, 116, 113, 112, 116, 113, 127, 1,
-		112, 112, 112, 144, 226, 35, 233, 97, 130
-	})]
+	
 	protected internal virtual bool compareConsideringTypeParameters(ResolvedReferenceType other)
 	{
 		if (other.equals(this))
@@ -918,11 +888,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		98, 102, 104, 148, 140, 112, 108, 127, 2, 101,
-		15, 189, 140
-	})]
+	
 	public virtual string describe()
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -951,11 +917,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		161, 238, 102, 136, 98, 116, 111, 112, 101, 239,
-		59, 230, 71
-	})]
+	
 	private List erasureOfParamaters(ResolvedTypeParametersMap typeParametersMap)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -1061,11 +1023,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024getAllMethods_00246(List allMethods, ResolvedReferenceType a)
 	{
@@ -1083,11 +1041,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024getAllFieldsVisibleToInheritors_00248(List res, ResolvedReferenceType a)
 	{
@@ -1183,18 +1137,8 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		126, 99, 171, 98, 98, 127, 4, 139, 127, 1,
-		206, 109, 107, 143, 100, 133, 136, 106, 106, 107,
-		109, 219
-	})]
+		
+	
 	public virtual ResolvedType replaceTypeVariables(ResolvedTypeParameterDeclaration tpToReplace, ResolvedType replaced, Map inferredTypes)
 	{
 		if (replaced == null)
@@ -1302,11 +1246,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 
 	
 		
-	[LineNumberTable(new byte[]
-	{
-		161, 6, 104, 139, 109, 168, 118, 110, 148, 127,
-		1, 115, 148, 98
-	})]
+	
 	public virtual Optional typeParamValue(ResolvedTypeParameterDeclaration typeParameterDeclaration)
 	{
 		if (typeParameterDeclaration.declaredOnMethod())
@@ -1353,11 +1293,7 @@ public abstract class ResolvedReferenceType: ResolvedType, ResolvedTypeParametri
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	protected internal unsafe virtual ResolvedReferenceType create(ResolvedReferenceTypeDeclaration typeDeclaration, ResolvedTypeParametersMap typeParametersMap)
 	{

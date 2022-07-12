@@ -1,12 +1,12 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.modules;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -34,11 +34,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(PatternExpr n, Void arg)
 	{
@@ -48,11 +44,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(TextBlockLiteralExpr n, Void arg)
 	{
@@ -62,11 +54,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(YieldStmt n, Void arg)
 	{
@@ -76,11 +64,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SwitchExpr n, Void arg)
 	{
@@ -90,11 +74,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(Modifier n, Void arg)
 	{
@@ -104,11 +84,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(VarType n, Void arg)
 	{
@@ -118,11 +94,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ReceiverParameter n, Void arg)
 	{
@@ -132,11 +104,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(UnparsableStmt n, Void arg)
 	{
@@ -146,11 +114,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleOpensDirective n, Void arg)
 	{
@@ -160,11 +124,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleUsesDirective n, Void arg)
 	{
@@ -174,11 +134,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleProvidesDirective n, Void arg)
 	{
@@ -188,11 +144,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleExportsDirective n, Void arg)
 	{
@@ -202,11 +154,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleRequiresDirective n, Void arg)
 	{
@@ -216,11 +164,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ModuleDeclaration n, Void arg)
 	{
@@ -230,11 +174,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ImportDeclaration n, Void arg)
 	{
@@ -244,11 +184,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SimpleName n, Void arg)
 	{
@@ -258,11 +194,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(Name n, Void arg)
 	{
@@ -272,11 +204,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual Integer visit(NodeList n, Void arg)
 	{
@@ -293,11 +221,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(TypeExpr n, Void arg)
 	{
@@ -307,11 +231,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(MethodReferenceExpr n, Void arg)
 	{
@@ -321,11 +241,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LambdaExpr n, Void arg)
 	{
@@ -335,11 +251,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(CatchClause n, Void arg)
 	{
@@ -349,11 +261,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(TryStmt n, Void arg)
 	{
@@ -363,11 +271,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SynchronizedStmt n, Void arg)
 	{
@@ -377,11 +281,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ThrowStmt n, Void arg)
 	{
@@ -391,11 +291,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ForStmt n, Void arg)
 	{
@@ -405,11 +301,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ForEachStmt n, Void arg)
 	{
@@ -419,11 +311,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(DoStmt n, Void arg)
 	{
@@ -433,11 +321,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ContinueStmt n, Void arg)
 	{
@@ -447,11 +331,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(WhileStmt n, Void arg)
 	{
@@ -461,11 +341,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(IfStmt n, Void arg)
 	{
@@ -475,11 +351,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ReturnStmt n, Void arg)
 	{
@@ -489,11 +361,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(BreakStmt n, Void arg)
 	{
@@ -503,11 +371,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SwitchEntry n, Void arg)
 	{
@@ -517,11 +381,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SwitchStmt n, Void arg)
 	{
@@ -531,11 +391,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ExpressionStmt n, Void arg)
 	{
@@ -545,11 +401,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(EmptyStmt n, Void arg)
 	{
@@ -559,11 +411,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LabeledStmt n, Void arg)
 	{
@@ -573,11 +421,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(BlockStmt n, Void arg)
 	{
@@ -587,11 +431,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(AssertStmt n, Void arg)
 	{
@@ -601,11 +441,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LocalRecordDeclarationStmt n, Void arg)
 	{
@@ -615,11 +451,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LocalClassDeclarationStmt n, Void arg)
 	{
@@ -629,11 +461,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ExplicitConstructorInvocationStmt n, Void arg)
 	{
@@ -643,11 +471,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(MemberValuePair n, Void arg)
 	{
@@ -657,11 +481,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(NormalAnnotationExpr n, Void arg)
 	{
@@ -671,11 +491,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SingleMemberAnnotationExpr n, Void arg)
 	{
@@ -685,11 +501,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(MarkerAnnotationExpr n, Void arg)
 	{
@@ -699,11 +511,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(VariableDeclarationExpr n, Void arg)
 	{
@@ -713,11 +521,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(UnaryExpr n, Void arg)
 	{
@@ -727,11 +531,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(SuperExpr n, Void arg)
 	{
@@ -741,11 +541,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ThisExpr n, Void arg)
 	{
@@ -755,11 +551,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ObjectCreationExpr n, Void arg)
 	{
@@ -769,11 +561,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(NameExpr n, Void arg)
 	{
@@ -783,11 +571,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(MethodCallExpr n, Void arg)
 	{
@@ -797,11 +581,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(NullLiteralExpr n, Void arg)
 	{
@@ -811,11 +591,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(BooleanLiteralExpr n, Void arg)
 	{
@@ -825,11 +601,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(DoubleLiteralExpr n, Void arg)
 	{
@@ -839,11 +611,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(CharLiteralExpr n, Void arg)
 	{
@@ -853,11 +621,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LongLiteralExpr n, Void arg)
 	{
@@ -867,11 +631,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(IntegerLiteralExpr n, Void arg)
 	{
@@ -881,11 +641,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(StringLiteralExpr n, Void arg)
 	{
@@ -895,11 +651,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(InstanceOfExpr n, Void arg)
 	{
@@ -909,11 +661,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(FieldAccessExpr n, Void arg)
 	{
@@ -923,11 +671,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(EnclosedExpr n, Void arg)
 	{
@@ -937,11 +681,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ConditionalExpr n, Void arg)
 	{
@@ -951,11 +691,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ClassExpr n, Void arg)
 	{
@@ -965,11 +701,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(CastExpr n, Void arg)
 	{
@@ -979,11 +711,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(BinaryExpr n, Void arg)
 	{
@@ -993,11 +721,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(AssignExpr n, Void arg)
 	{
@@ -1007,11 +731,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ArrayInitializerExpr n, Void arg)
 	{
@@ -1021,11 +741,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ArrayCreationExpr n, Void arg)
 	{
@@ -1035,11 +751,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ArrayAccessExpr n, Void arg)
 	{
@@ -1049,11 +761,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(UnknownType n, Void arg)
 	{
@@ -1063,11 +771,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(WildcardType n, Void arg)
 	{
@@ -1077,11 +781,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(VoidType n, Void arg)
 	{
@@ -1091,11 +791,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(UnionType n, Void arg)
 	{
@@ -1105,11 +801,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(IntersectionType n, Void arg)
 	{
@@ -1119,11 +811,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ArrayCreationLevel n, Void arg)
 	{
@@ -1133,11 +821,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ArrayType n, Void arg)
 	{
@@ -1147,11 +831,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(PrimitiveType n, Void arg)
 	{
@@ -1161,11 +841,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ClassOrInterfaceType n, Void arg)
 	{
@@ -1175,11 +851,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(JavadocComment n, Void arg)
 	{
@@ -1189,11 +861,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(InitializerDeclaration n, Void arg)
 	{
@@ -1203,11 +871,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(Parameter n, Void arg)
 	{
@@ -1217,11 +881,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(MethodDeclaration n, Void arg)
 	{
@@ -1231,11 +891,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ConstructorDeclaration n, Void arg)
 	{
@@ -1245,11 +901,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(VariableDeclarator n, Void arg)
 	{
@@ -1259,11 +911,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(FieldDeclaration n, Void arg)
 	{
@@ -1273,11 +921,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(AnnotationMemberDeclaration n, Void arg)
 	{
@@ -1287,11 +931,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(AnnotationDeclaration n, Void arg)
 	{
@@ -1301,11 +941,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(EnumConstantDeclaration n, Void arg)
 	{
@@ -1315,11 +951,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(EnumDeclaration n, Void arg)
 	{
@@ -1329,11 +961,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(CompactConstructorDeclaration n, Void arg)
 	{
@@ -1343,11 +971,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(RecordDeclaration n, Void arg)
 	{
@@ -1357,11 +981,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(ClassOrInterfaceDeclaration n, Void arg)
 	{
@@ -1371,11 +991,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(BlockComment n, Void arg)
 	{
@@ -1385,11 +1001,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(LineComment n, Void arg)
 	{
@@ -1399,11 +1011,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(TypeParameter n, Void arg)
 	{
@@ -1413,11 +1021,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(PackageDeclaration n, Void arg)
 	{
@@ -1427,11 +1031,7 @@ public class HashCodeVisitor : GenericVisitor
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual Integer visit(CompilationUnit n, Void arg)
 	{
@@ -1449,11 +1049,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PatternExpr n, object arg)
 	{
@@ -1465,11 +1061,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TextBlockLiteralExpr n, object arg)
 	{
@@ -1481,11 +1073,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(YieldStmt n, object arg)
 	{
@@ -1497,11 +1085,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SwitchExpr n, object arg)
 	{
@@ -1513,11 +1097,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Modifier n, object arg)
 	{
@@ -1529,11 +1109,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VarType n, object arg)
 	{
@@ -1545,11 +1121,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ReceiverParameter n, object arg)
 	{
@@ -1561,11 +1133,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnparsableStmt n, object arg)
 	{
@@ -1577,11 +1145,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleOpensDirective n, object arg)
 	{
@@ -1593,11 +1157,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleUsesDirective n, object arg)
 	{
@@ -1609,11 +1169,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleProvidesDirective n, object arg)
 	{
@@ -1625,11 +1181,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleExportsDirective n, object arg)
 	{
@@ -1641,11 +1193,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleRequiresDirective n, object arg)
 	{
@@ -1657,11 +1205,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ModuleDeclaration n, object arg)
 	{
@@ -1673,11 +1217,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ImportDeclaration n, object arg)
 	{
@@ -1689,11 +1229,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SimpleName n, object arg)
 	{
@@ -1705,11 +1241,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Name n, object arg)
 	{
@@ -1721,11 +1253,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NodeList n, object arg)
 	{
@@ -1737,11 +1265,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TypeExpr n, object arg)
 	{
@@ -1753,11 +1277,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodReferenceExpr n, object arg)
 	{
@@ -1769,11 +1289,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LambdaExpr n, object arg)
 	{
@@ -1785,11 +1301,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CatchClause n, object arg)
 	{
@@ -1801,11 +1313,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TryStmt n, object arg)
 	{
@@ -1817,11 +1325,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SynchronizedStmt n, object arg)
 	{
@@ -1833,11 +1337,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ThrowStmt n, object arg)
 	{
@@ -1849,11 +1349,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(ForStmt n, object arg)
 	{
@@ -1865,11 +1361,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(ForEachStmt n, object arg)
 	{
@@ -1881,11 +1373,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(DoStmt n, object arg)
 	{
@@ -1897,11 +1385,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(ContinueStmt n, object arg)
 	{
@@ -1913,11 +1397,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(WhileStmt n, object arg)
 	{
@@ -1929,11 +1409,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(IfStmt n, object arg)
 	{
@@ -1945,11 +1421,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(ReturnStmt n, object arg)
 	{
@@ -1961,11 +1433,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(BreakStmt n, object arg)
 	{
@@ -1977,11 +1445,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(SwitchEntry n, object arg)
 	{
@@ -1993,11 +1457,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(SwitchStmt n, object arg)
 	{
@@ -2009,11 +1469,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public override object visit(ExpressionStmt n, object arg)
 	{
@@ -2025,11 +1481,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EmptyStmt n, object arg)
 	{
@@ -2041,11 +1493,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LabeledStmt n, object arg)
 	{
@@ -2057,11 +1505,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BlockStmt n, object arg)
 	{
@@ -2073,11 +1517,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AssertStmt n, object arg)
 	{
@@ -2089,11 +1529,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LocalRecordDeclarationStmt n, object arg)
 	{
@@ -2105,11 +1541,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LocalClassDeclarationStmt n, object arg)
 	{
@@ -2121,11 +1553,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ExplicitConstructorInvocationStmt n, object arg)
 	{
@@ -2137,11 +1565,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MemberValuePair n, object arg)
 	{
@@ -2153,11 +1577,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NormalAnnotationExpr n, object arg)
 	{
@@ -2169,11 +1589,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SingleMemberAnnotationExpr n, object arg)
 	{
@@ -2185,11 +1601,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MarkerAnnotationExpr n, object arg)
 	{
@@ -2201,11 +1613,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VariableDeclarationExpr n, object arg)
 	{
@@ -2217,11 +1625,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnaryExpr n, object arg)
 	{
@@ -2233,11 +1637,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(SuperExpr n, object arg)
 	{
@@ -2249,11 +1649,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ThisExpr n, object arg)
 	{
@@ -2265,11 +1661,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ObjectCreationExpr n, object arg)
 	{
@@ -2281,11 +1673,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NameExpr n, object arg)
 	{
@@ -2297,11 +1685,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodCallExpr n, object arg)
 	{
@@ -2313,11 +1697,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(NullLiteralExpr n, object arg)
 	{
@@ -2329,11 +1709,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BooleanLiteralExpr n, object arg)
 	{
@@ -2345,11 +1721,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(DoubleLiteralExpr n, object arg)
 	{
@@ -2361,11 +1733,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CharLiteralExpr n, object arg)
 	{
@@ -2377,11 +1745,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LongLiteralExpr n, object arg)
 	{
@@ -2393,11 +1757,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(IntegerLiteralExpr n, object arg)
 	{
@@ -2409,11 +1769,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(StringLiteralExpr n, object arg)
 	{
@@ -2425,11 +1781,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(InstanceOfExpr n, object arg)
 	{
@@ -2441,11 +1793,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(FieldAccessExpr n, object arg)
 	{
@@ -2457,11 +1805,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnclosedExpr n, object arg)
 	{
@@ -2473,11 +1817,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ConditionalExpr n, object arg)
 	{
@@ -2489,11 +1829,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassExpr n, object arg)
 	{
@@ -2505,11 +1841,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CastExpr n, object arg)
 	{
@@ -2521,11 +1853,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BinaryExpr n, object arg)
 	{
@@ -2537,11 +1865,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AssignExpr n, object arg)
 	{
@@ -2553,11 +1877,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayInitializerExpr n, object arg)
 	{
@@ -2569,11 +1889,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayCreationExpr n, object arg)
 	{
@@ -2585,11 +1901,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayAccessExpr n, object arg)
 	{
@@ -2601,11 +1913,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnknownType n, object arg)
 	{
@@ -2617,11 +1925,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(WildcardType n, object arg)
 	{
@@ -2633,11 +1937,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VoidType n, object arg)
 	{
@@ -2649,11 +1949,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(UnionType n, object arg)
 	{
@@ -2665,11 +1961,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(IntersectionType n, object arg)
 	{
@@ -2681,11 +1973,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayCreationLevel n, object arg)
 	{
@@ -2697,11 +1985,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ArrayType n, object arg)
 	{
@@ -2713,11 +1997,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PrimitiveType n, object arg)
 	{
@@ -2729,11 +2009,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassOrInterfaceType n, object arg)
 	{
@@ -2745,11 +2021,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(JavadocComment n, object arg)
 	{
@@ -2761,11 +2033,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(InitializerDeclaration n, object arg)
 	{
@@ -2777,11 +2045,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(Parameter n, object arg)
 	{
@@ -2793,11 +2057,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(MethodDeclaration n, object arg)
 	{
@@ -2809,11 +2069,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ConstructorDeclaration n, object arg)
 	{
@@ -2825,11 +2081,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(VariableDeclarator n, object arg)
 	{
@@ -2841,11 +2093,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(FieldDeclaration n, object arg)
 	{
@@ -2857,11 +2105,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AnnotationMemberDeclaration n, object arg)
 	{
@@ -2873,11 +2117,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(AnnotationDeclaration n, object arg)
 	{
@@ -2889,11 +2129,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnumConstantDeclaration n, object arg)
 	{
@@ -2905,11 +2141,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(EnumDeclaration n, object arg)
 	{
@@ -2921,11 +2153,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CompactConstructorDeclaration n, object arg)
 	{
@@ -2937,11 +2165,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(RecordDeclaration n, object arg)
 	{
@@ -2953,11 +2177,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(ClassOrInterfaceDeclaration n, object arg)
 	{
@@ -2969,11 +2189,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(BlockComment n, object arg)
 	{
@@ -2985,11 +2201,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(LineComment n, object arg)
 	{
@@ -3001,11 +2213,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(TypeParameter n, object arg)
 	{
@@ -3017,11 +2225,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(PackageDeclaration n, object arg)
 	{
@@ -3033,11 +2237,7 @@ public class HashCodeVisitor : GenericVisitor
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic
-	})]
+	
 	
 	public virtual object visit(CompilationUnit n, object arg)
 	{

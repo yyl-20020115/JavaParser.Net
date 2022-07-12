@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -17,16 +17,8 @@ public class CsmOrphanCommentsEnding: CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 179, 102, 109, 102, 104, 161, 98, 98, 108,
-		118, 106, 99, 132, 98, 104, 120, 8, 200
-	})]
+	
+	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{
 		LinkedList linkedList = new LinkedList();

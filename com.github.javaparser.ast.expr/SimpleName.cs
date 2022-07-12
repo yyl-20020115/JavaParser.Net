@@ -1,11 +1,11 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 
 namespace com.github.javaparser.ast.expr;
 
@@ -51,11 +51,7 @@ public class SimpleName : Node, NodeWithIdentifier
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public SimpleName(TokenRange tokenRange, string identifier)
 		: base(tokenRange)
@@ -80,11 +76,7 @@ public class SimpleName : Node, NodeWithIdentifier
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -108,11 +100,7 @@ public class SimpleName : Node, NodeWithIdentifier
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{

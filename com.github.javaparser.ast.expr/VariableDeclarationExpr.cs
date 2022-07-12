@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.nodeTypes.modifiers;
@@ -8,7 +8,7 @@ using com.github.javaparser.ast.type;
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -67,13 +67,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public VariableDeclarationExpr(TokenRange tokenRange, NodeList modifiers, NodeList annotations, NodeList variables)
 		: base(tokenRange)
@@ -145,11 +139,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -200,11 +190,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarationExpr(Type type, string variableName)
 		: this(null, new NodeList(), new NodeList(), NodeList.nodeList(new VariableDeclarator(type, variableName)))
@@ -220,12 +206,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarationExpr(Type type, string variableName, params Modifier[] modifiers)
 		: this(null, (NodeList)Arrays.stream(modifiers).collect(Collectors.toCollection(new ___003C_003EAnon0())), new NodeList(), NodeList.nodeList(new VariableDeclarator(type, variableName)))
@@ -233,11 +214,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public VariableDeclarationExpr(VariableDeclarator var, params Modifier[] modifiers)
 		: this(null, (NodeList)Arrays.stream(modifiers).collect(Collectors.toCollection(new ___003C_003EAnon1())), new NodeList(), NodeList.nodeList(var))
@@ -253,11 +230,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public VariableDeclarationExpr(NodeList modifiers, NodeList variables)
 		: this(null, modifiers, new NodeList(), variables)
@@ -265,12 +238,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -283,11 +251,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -311,12 +275,7 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 73, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70, 112, 111,
-		109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -353,17 +312,8 @@ public class VariableDeclarationExpr : Expression, NodeWithFinalModifier, NodeWi
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 112, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 112, 111,
-		115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

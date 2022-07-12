@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.nodeTypes.modifiers;
@@ -10,7 +10,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -56,11 +56,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public Parameter(Type type, string name)
 		: this(null, new NodeList(), new NodeList(), type, isVarArgs: false, new NodeList(), new SimpleName(name))
@@ -79,21 +75,8 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 117, 67, 105, 104, 104, 105, 104, 105, 105,
-		104
-	})]
+		
+	
 	public Parameter(TokenRange tokenRange, NodeList modifiers, NodeList annotations, Type type, bool isVarArgs, NodeList varArgsAnnotations, SimpleName name)
 		: base(tokenRange)
 	{
@@ -221,11 +204,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -263,11 +242,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public Parameter(Type type, SimpleName name)
 		: this(null, new NodeList(), new NodeList(), type, isVarArgs: false, new NodeList(), name)
@@ -275,12 +250,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public Parameter(NodeList modifiers, Type type, SimpleName name)
 		: this(null, modifiers, new NodeList(), type, isVarArgs: false, new NodeList(), name)
@@ -288,15 +258,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -309,11 +271,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -337,12 +295,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 115, 99, 130, 112, 111, 109, 226, 61, 230,
-		70, 112, 111, 109, 226, 61, 230, 70, 112, 111,
-		109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -384,18 +337,8 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 173, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70, 105, 109,
-		130, 105, 109, 130, 112, 111, 115, 226, 61, 230,
-		70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

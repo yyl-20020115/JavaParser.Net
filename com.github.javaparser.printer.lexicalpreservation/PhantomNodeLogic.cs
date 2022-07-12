@@ -1,9 +1,9 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -28,12 +28,7 @@ public class PhantomNodeLogic
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public override void parentChange(Node observedNode, Node previousParent, Node newParent)
 		{
@@ -62,11 +57,7 @@ public class PhantomNodeLogic
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	private static bool inPhantomNode(Node node, int levels)
 	{
@@ -75,11 +66,7 @@ public class PhantomNodeLogic
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		3, 109, 152, 104, 130, 110, 119, 104, 127, 24,
-		108, 114, 107
-	})]
+	
 	internal static bool isPhantomNode(Node node)
 	{
 		if (isPhantomNodeCache.containsKey(node))

@@ -1,13 +1,13 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
-using IKVM.Attributes;
+
+
+
+
 using java.lang;
 
 namespace com.github.javaparser.resolution;
 
-[Serializable]
+
 public class UnsolvedSymbolException : RuntimeException
 {
 	private string name;
@@ -25,12 +25,7 @@ public class UnsolvedSymbolException : RuntimeException
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public UnsolvedSymbolException(string name, string context, System.Exception cause)
 		: base(new StringBuilder().append("Unsolved symbol").append((context == null) ? "" : new StringBuilder().append(" in ").append(context).ToString()).append(" : ")
@@ -43,11 +38,7 @@ public class UnsolvedSymbolException : RuntimeException
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public UnsolvedSymbolException(string name, string context)
 		: this(name, context, null)
@@ -55,11 +46,7 @@ public class UnsolvedSymbolException : RuntimeException
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public UnsolvedSymbolException(string name, System.Exception cause)
 		: this(name, null, cause)

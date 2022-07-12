@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -51,12 +51,7 @@ public class RemoveMethodGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 188, 112, 108, 136, 145, 108, 98, 127, 5,
-		105, 162, 105, 140, 105, 130, 108, 140, 105, 159,
-		2, 105, 100, 101, 109, 142, 172, 107, 138, 138
-	})]
+	
 	protected internal override void generateNode(BaseNodeMetaModel nodeMetaModel, CompilationUnit nodeCu, ClassOrInterfaceDeclaration nodeCoid)
 	{
 		MethodDeclaration methodDeclaration = (MethodDeclaration)StaticJavaParser.parseBodyDeclaration("public boolean remove(Node node) {}");

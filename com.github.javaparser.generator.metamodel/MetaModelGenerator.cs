@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
+
+
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.comments;
@@ -12,7 +12,7 @@ using com.github.javaparser.ast.type;
 using com.github.javaparser.printer;
 using com.github.javaparser.printer.configuration;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.lang.reflect;
@@ -24,7 +24,7 @@ namespace com.github.javaparser.generator.metamodel;
 
 public class MetaModelGenerator : AbstractGenerator
 {
-	[Serializable]
+	
 	
 		
 	internal sealed class _1 : ArrayList
@@ -36,21 +36,7 @@ public class MetaModelGenerator : AbstractGenerator
 		}
 
 		
-		[LineNumberTable(new byte[]
-		{
-			9, 232, 72, 140, 108, 108, 108, 108, 140, 108,
-			108, 140, 108, 108, 140, 108, 172, 108, 108, 108,
-			108, 172, 108, 108, 108, 108, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 140, 108, 108, 108, 140,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 140, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 108,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 140,
-			108, 108, 108, 108, 108, 108, 108, 108, 108, 140,
-			108, 108, 108, 108, 108
-		})]
+		
 		internal _1()
 		{
 			add(ClassLiteral<Node>.Value);
@@ -359,12 +345,7 @@ public class MetaModelGenerator : AbstractGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 111, 182, 119, 119, 183, 103, 103, 167, 119,
-		119, 119, 103, 103, 167, 117, 111, 165, 104, 127,
-		4, 241, 72, 162, 120
-	})]
+	
 	private void generateNodeMetaModels(CompilationUnit P_0, SourceRoot P_1)
 	{
 		ClassOrInterfaceDeclaration classOrInterfaceDeclaration = (ClassOrInterfaceDeclaration)P_0.getClassByName("JavaParserMetaModel").get();
@@ -404,11 +385,7 @@ public class MetaModelGenerator : AbstractGenerator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 85, 101, 144, 127, 24, 106, 102, 102, 104,
-		122, 104, 125, 134, 139, 103
-	})]
+	
 	public unsafe static void main(string[] args)
 	{
 		if ((nint)args.LongLength != 1)

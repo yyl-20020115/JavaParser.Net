@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -10,7 +10,7 @@ using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparsermodel;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util.function;
@@ -306,24 +306,7 @@ public class JavaSymbolSolver: SymbolResolver
 	private TypeSolver typeSolver;
 
 	
-		[LineNumberTable(new byte[]
-	{
-		39, 104, 154, 104, 109, 105, 170, 104, 109, 105,
-		170, 104, 127, 10, 127, 12, 105, 170, 107, 103,
-		114, 116, 118, 112, 101, 111, 108, 106, 171, 104,
-		109, 105, 170, 104, 127, 6, 127, 14, 106, 171,
-		104, 104, 111, 144, 117, 106, 171, 139, 127, 0,
-		117, 127, 0, 149, 159, 11, 106, 171, 104, 120,
-		105, 111, 176, 191, 6, 104, 120, 105, 111, 176,
-		191, 6, 104, 120, 105, 111, 176, 191, 6, 104,
-		120, 105, 111, 176, 191, 6, 107, 120, 105, 114,
-		176, 124, 114, 105, 109, 206, 191, 6, 104, 120,
-		105, 111, 176, 191, 6, 104, 120, 105, 111, 176,
-		191, 6, 107, 112, 104, 159, 1, 105, 144, 142,
-		127, 5, 127, 20, 31, 10, 235, 71, 104, 120,
-		105, 111, 176, 191, 6, 104, 120, 105, 111, 176,
-		191, 6, 127, 6
-	})]
+		
 	public virtual object resolveDeclaration(Node node, Class resultClass)
 	{
 		if (node is MethodDeclaration)

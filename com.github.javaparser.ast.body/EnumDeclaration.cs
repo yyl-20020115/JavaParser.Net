@@ -1,5 +1,5 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.nodeTypes;
 using com.github.javaparser.ast.observer;
@@ -9,7 +9,7 @@ using com.github.javaparser.metamodel;
 using com.github.javaparser.resolution;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -56,16 +56,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public EnumDeclaration(TokenRange tokenRange, NodeList modifiers, NodeList annotations, SimpleName name, NodeList implementedTypes, NodeList entries, NodeList members)
 		: base(tokenRange, modifiers, annotations, name, members)
@@ -116,11 +107,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -158,11 +145,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public EnumDeclaration(NodeList modifiers, string name)
 		: this(null, modifiers, new NodeList(), new SimpleName(name), new NodeList(), new NodeList(), new NodeList())
@@ -170,15 +153,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	[AllFieldsConstructor(new object[]
 	{
@@ -191,11 +166,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{
@@ -211,11 +182,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual EnumDeclaration setEntry(int i, EnumConstantDeclaration element)
 	{
@@ -230,11 +197,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		101, 99, 130, 112, 111, 109, 226, 61, 230, 70,
-		112, 111, 109, 226, 61, 230, 70
-	})]
+	
 	public override bool remove(Node node)
 	{
 		if (node == null)
@@ -263,16 +226,8 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 70, 99, 130, 112, 111, 115, 226, 61, 230,
-		70, 112, 111, 115, 226, 61, 230, 70
-	})]
+	
+	
 	public override bool replace(Node node, Node replacementNode)
 	{
 		if (node == null)

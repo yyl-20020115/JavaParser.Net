@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -287,21 +287,7 @@ public class JavassistAnnotationMemberDeclaration: ResolvedAnnotationMemberDecla
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		39,
-		113,
-		103,
-		119,
-		104,
-		byte.MaxValue,
-		24,
-		69,
-		226,
-		61,
-		130,
-		146
-	})]
+	
 	public virtual ResolvedType getType()
 	{
 		//Discarded unreachable code: IL_0056

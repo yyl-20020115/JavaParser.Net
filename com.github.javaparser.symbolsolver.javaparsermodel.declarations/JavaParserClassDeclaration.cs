@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
@@ -11,7 +11,7 @@ using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -399,11 +399,7 @@ public class JavaParserClassDeclaration : AbstractClassDeclaration, MethodUsageR
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 195, 120, 137, 109, 104, 162, 127, 6, 119,
-		191, 6, 117, 107, 7
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,
@@ -435,43 +431,7 @@ public class JavaParserClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		159,
-		59,
-		162,
-		166,
-		104,
-		162,
-		108,
-		104,
-		226,
-		69,
-		103,
-		104,
-		126,
-		byte.MaxValue,
-		2,
-		75,
-		226,
-		56,
-		194,
-		131,
-		200,
-		191,
-		13,
-		106,
-		117,
-		253,
-		75,
-		226,
-		55,
-		226,
-		69,
-		131,
-		168,
-		133
-	})]
+		
 	public override List getAncestors(bool acceptIncompleteList)
 	{
 		ArrayList arrayList = new ArrayList();
@@ -530,7 +490,7 @@ public class JavaParserClassDeclaration : AbstractClassDeclaration, MethodUsageR
 			UnsolvedSymbolException ex4 = ex3;
 			if (!acceptIncompleteList)
 			{
-				throw Throwable.___003Cunmap_003E(ex4);
+				throw (ex4);
 			}
 		}
 		return arrayList;
@@ -563,12 +523,7 @@ public class JavaParserClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		161, 89, 108, 141, 159, 22, 168, 104, 103, 104,
-		127, 32, 232, 69, 104, 182, 109, 191, 4, 112,
-		112, 101, 145
-	})]
+	
 	private ResolvedReferenceType toReferenceType(ClassOrInterfaceType P_0)
 	{
 		string text = P_0.getName().getId();
@@ -894,11 +849,7 @@ public class JavaParserClassDeclaration : AbstractClassDeclaration, MethodUsageR
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 153, 115, 162, 103, 104, 113, 104, 108, 108,
-		110, 226, 71, 109, 127, 7, 121, 106, 130, 162
-	})]
+	
 	public override bool canBeAssignedTo(ResolvedReferenceTypeDeclaration other)
 	{
 		if (java.lang.String.instancehelper_equals(getQualifiedName(), other.getQualifiedName()))

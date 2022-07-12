@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.type;
@@ -9,7 +9,7 @@ using com.github.javaparser.symbolsolver.javaparser;
 using com.github.javaparser.symbolsolver.logic;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -80,11 +80,7 @@ public class JavaParserTypeParameter : AbstractTypeDeclaration, ResolvedTypePara
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		78, 108, 104, 103, 116, 107, 103, 117, 104, 125,
-		105, 182, 98, 104, 144
-	})]
+	
 	public virtual ResolvedTypeParametrizable getContainer()
 	{
 		Node node = Navigator.demandParentNode(wrappedNode);

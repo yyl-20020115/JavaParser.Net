@@ -1,10 +1,10 @@
 using System;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using java.lang;
 using java.math;
 using java.util;
@@ -35,11 +35,7 @@ public class LongLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public LongLiteralExpr(TokenRange tokenRange, string value)
 		: base(tokenRange, value)
@@ -49,11 +45,7 @@ public class LongLiteralExpr : LiteralStringValueExpr
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		54, 118, 111, 106, 144, 122, 145, 122, 144, 118,
-		144
-	})]
+	
 	[Deprecated(new object[]
 	{
 		(byte)64,
@@ -91,11 +83,7 @@ public class LongLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -153,11 +141,7 @@ public class LongLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{

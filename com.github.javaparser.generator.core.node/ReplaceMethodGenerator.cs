@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 
@@ -20,15 +20,7 @@ public class ReplaceMethodGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		40,
-		238,
-		69,
-		byte.MaxValue,
-		2,
-		59
-	})]
+	
 	private string nodeListCheck(PropertyMetaModel P_0)
 	{
 		string result = CodeGenerationUtils.f("for (int i = 0; i < %s.size(); i++) {  if (%s.get(i) == node) {    %s.set(i, (%s) replacementNode);    return true;  }}", P_0.getName(), P_0.getName(), P_0.getName(), P_0.getTypeName());
@@ -46,12 +38,7 @@ public class ReplaceMethodGenerator : NodeGenerator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 186, 112, 108, 136, 145, 140, 98, 127, 5,
-		105, 162, 105, 140, 145, 105, 159, 2, 105, 100,
-		101, 109, 142, 172, 107, 138, 138
-	})]
+	
 	protected internal override void generateNode(BaseNodeMetaModel nodeMetaModel, CompilationUnit nodeCu, ClassOrInterfaceDeclaration nodeCoid)
 	{
 		MethodDeclaration methodDeclaration = (MethodDeclaration)StaticJavaParser.parseBodyDeclaration("public boolean replace(Node node, Node replacementNode) {}");

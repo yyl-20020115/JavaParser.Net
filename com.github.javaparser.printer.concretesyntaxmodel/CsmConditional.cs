@@ -1,8 +1,8 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.observer;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -11,12 +11,12 @@ namespace com.github.javaparser.printer.concretesyntaxmodel;
 
 public class CsmConditional :  CsmElement
 {
-	[Serializable]
-	[InnerClass(null, Modifiers.Public | Modifiers.Static | Modifiers.Final | Modifiers.Enum)]
+	
+	
 		
 	public class Condition : java.lang.Enum
 	{
-		[Serializable]
+		
 		
 		public enum __Enum
 		{
@@ -88,11 +88,7 @@ public class CsmConditional :  CsmElement
 		}
 
 		
-				[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Synthetic,
-			Modifiers.Synthetic
-		})]
+				
 		
 		private Condition(string _0024enum_0024name, int _0024enum_0024ordinal)
 			: base(_0024enum_0024name, _0024enum_0024ordinal)
@@ -116,16 +112,8 @@ public class CsmConditional :  CsmElement
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
-		[LineNumberTable(new byte[]
-		{
-			18, 104, 142, 104, 143, 104, 104, 144, 104, 104,
-			144
-		})]
+		
+		
 		internal virtual bool evaluate(Node node, ObservableProperty property)
 		{
 			if (this == ___003C_003EIS_PRESENT)
@@ -177,12 +165,7 @@ public class CsmConditional :  CsmElement
 	private CsmElement elseElement;
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmConditional(ObservableProperty property, Condition condition, CsmElement thenElement)
 		: this(property, condition, thenElement, new CsmNone())
@@ -190,13 +173,7 @@ public class CsmConditional :  CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public CsmConditional(ObservableProperty property, Condition condition, CsmElement thenElement, CsmElement elseElement)
 	{
@@ -207,13 +184,7 @@ public class CsmConditional :  CsmElement
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public CsmConditional(List properties, Condition condition, CsmElement thenElement, CsmElement elseElement)
 	{
@@ -261,11 +232,7 @@ public class CsmConditional :  CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{

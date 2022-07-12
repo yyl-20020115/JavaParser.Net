@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution.typesolvers;
-using IKVM.Attributes;
+
 using java.lang;
 
 namespace com.github.javaparser.symbolsolver.resolution.typeinference.constraintformulas;
@@ -27,12 +27,7 @@ public class TypeCompatibleWithType : ConstraintFormula
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		6, 122, 115, 136, 232, 70, 109, 102, 127, 3,
-		245, 69, 109, 102, 127, 3, 244, 75, 223, 49,
-		178, 113, 142, 103, 232, 74, 109, 235, 69
-	})]
+	
 	public override ReductionResult reduce(BoundSet currentBoundSet)
 	{
 		if (TypeHelper.isProperType(s) && TypeHelper.isProperType(t))

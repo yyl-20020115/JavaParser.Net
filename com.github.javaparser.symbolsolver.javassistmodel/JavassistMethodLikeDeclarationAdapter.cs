@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -55,11 +55,7 @@ public class JavassistMethodLikeDeclarationAdapter
 	private javassist.bytecode.SignatureAttribute.MethodSignature methodSignature;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		159, 189, 104, 103, 103, 167, 103, 99, 135, 190,
-		2, 97, 140
-	})]
+	
 	public JavassistMethodLikeDeclarationAdapter(CtBehavior ctBehavior, TypeSolver typeSolver, ResolvedMethodLikeDeclaration declaration)
 	{
 		this.ctBehavior = ctBehavior;
@@ -136,11 +132,7 @@ public class JavassistMethodLikeDeclarationAdapter
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		48, 100, 191, 5, 113, 99, 191, 5, 103, 104,
-		110, 52, 208, 111
-	})]
+	
 	public virtual ResolvedType getSpecifiedException(int index)
 	{
 		if (index < 0)

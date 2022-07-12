@@ -1,8 +1,8 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.visitor;
 using com.github.javaparser.metamodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -18,11 +18,7 @@ public class DoubleLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public DoubleLiteralExpr(TokenRange tokenRange, string value)
 		: base(tokenRange, value)
@@ -31,11 +27,7 @@ public class DoubleLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override object accept(GenericVisitor v, object arg)
 	{
@@ -87,11 +79,7 @@ public class DoubleLiteralExpr : LiteralStringValueExpr
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+		
 	
 	public override void accept(VoidVisitor v, object arg)
 	{

@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.stmt;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util.function;
 
@@ -72,11 +72,7 @@ public class Java1_1Validator : Java1_0Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00241(ClassOrInterfaceDeclaration n, ProblemReporter reporter)
 	{
@@ -85,12 +81,7 @@ public class Java1_1Validator : Java1_0Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024null_00240(ClassOrInterfaceDeclaration n, ProblemReporter reporter, Node p)
 	{

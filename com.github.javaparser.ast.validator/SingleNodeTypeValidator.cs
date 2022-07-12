@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util.function;
 
@@ -42,11 +42,7 @@ public class SingleNodeTypeValidator: Validator, TypedValidator, BiConsumer
 		private TypedValidator validator;
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	public SingleNodeTypeValidator(Class type, TypedValidator validator)
 	{
@@ -55,11 +51,7 @@ public class SingleNodeTypeValidator: Validator, TypedValidator, BiConsumer
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void accept(Node node, ProblemReporter problemReporter)
 	{
@@ -72,11 +64,7 @@ public class SingleNodeTypeValidator: Validator, TypedValidator, BiConsumer
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024accept_00240(ProblemReporter problemReporter, Node n)
 	{
@@ -86,11 +74,7 @@ public class SingleNodeTypeValidator: Validator, TypedValidator, BiConsumer
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	public virtual void accept(object node, object problemReporter)
 	{

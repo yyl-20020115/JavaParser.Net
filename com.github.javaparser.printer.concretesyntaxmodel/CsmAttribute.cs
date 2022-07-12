@@ -1,10 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.observer;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 
@@ -154,11 +154,7 @@ public class CsmAttribute :  CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	public virtual void prettyPrint(Node node, SourcePrinter printer)
 	{
@@ -167,18 +163,8 @@ public class CsmAttribute :  CsmElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		6, 159, 22, 131, 127, 11, 107, 111, 2, 230,
-		69, 223, 14, 127, 11, 107, 111, 2, 230, 69,
-		191, 14, 104, 163, 131
-	})]
+	
+	
 	public virtual int getTokenType(Node node, string text, string tokenText)
 	{
 		switch (_1._0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024observer_0024ObservableProperty[property.ordinal()])

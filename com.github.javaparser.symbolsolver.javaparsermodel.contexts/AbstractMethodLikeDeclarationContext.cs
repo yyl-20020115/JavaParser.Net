@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.nodeTypes;
@@ -7,7 +7,7 @@ using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -84,11 +84,7 @@ public abstract class AbstractMethodLikeDeclarationContext : AbstractJavaParserC
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		52, 114, 127, 11, 115, 148, 194, 113, 127, 0,
-		116, 109, 37, 136, 127, 3, 112, 61, 161, 133
-	})]
+		
 	public sealed override SymbolReference solveType(string name)
 	{
 		if (((NodeWithTypeParameters)wrappedNode).getTypeParameters() != null)

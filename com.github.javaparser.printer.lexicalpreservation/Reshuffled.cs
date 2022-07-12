@@ -1,7 +1,7 @@
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.printer.concretesyntaxmodel;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 using java.util.function;
@@ -61,11 +61,7 @@ public class Reshuffled: DifferenceElement
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal Reshuffled(CsmMix previousOrder, CsmMix nextOrder)
 	{
@@ -74,11 +70,7 @@ public class Reshuffled: DifferenceElement
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private List replaceTokens(List elements, CsmElement lineSeparator)
 	{
@@ -107,11 +99,7 @@ public class Reshuffled: DifferenceElement
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private CsmElement lambda_0024replaceTokens_00240(CsmElement lineSeparator, CsmElement element)
 	{

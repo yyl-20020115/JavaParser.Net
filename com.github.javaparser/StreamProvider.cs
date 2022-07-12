@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.io;
 using java.lang;
 using java.nio.charset;
@@ -23,11 +23,7 @@ public class StreamProvider :  Provider, Closeable, AutoCloseable
 	
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	[Deprecated(new object[]
 	{
@@ -40,11 +36,7 @@ public class StreamProvider :  Provider, Closeable, AutoCloseable
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public StreamProvider(InputStream stream, Charset charset)
 		: this(new BufferedReader(new InputStreamReader(stream, charset)))
@@ -53,12 +45,7 @@ public class StreamProvider :  Provider, Closeable, AutoCloseable
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		Modifiers.Final,
-		Modifiers.Final
-	})]
+	
 	
 	public virtual int read(char[] aDest, int nOfs, int nLen)
 	{

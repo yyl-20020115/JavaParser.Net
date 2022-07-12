@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.types;
-using IKVM.Attributes;
+
 using java.lang;
 using java.util;
 
@@ -24,12 +24,7 @@ public interface ResolvedTypeParameterDeclaration : ResolvedTypeDeclaration, Res
 		internal List val_0024bounds;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic,
-			Modifiers.Final | Modifiers.Synthetic
-		})]
+		
 		
 		internal _1(string val_0024bounds, string val_0024classQName, List val_0024name)
 		{
@@ -363,11 +358,7 @@ public interface ResolvedTypeParameterDeclaration : ResolvedTypeDeclaration, Res
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		private Bound(bool extendsBound, ResolvedType type)
 		{
@@ -544,12 +535,7 @@ public interface ResolvedTypeParameterDeclaration : ResolvedTypeDeclaration, Res
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	static ResolvedTypeParameterDeclaration onType(string name, string classQName, List bounds)
 	{

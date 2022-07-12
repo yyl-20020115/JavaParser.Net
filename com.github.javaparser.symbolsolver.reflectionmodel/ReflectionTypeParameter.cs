@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
-using IKVM.Attributes;
+
 using java.lang;
 using java.lang.reflect;
 using java.util;
@@ -52,11 +52,7 @@ public class ReflectionTypeParameter: ResolvedTypeParameterDeclaration, Resolved
 	private ResolvedTypeParametrizable container;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		0, 104, 103, 104, 116, 104, 116, 104, 146, 103,
-		103
-	})]
+	
 	public ReflectionTypeParameter(TypeVariable typeVariable, bool declaredOnClass, TypeSolver typeSolver)
 	{
 		GenericDeclaration genericDeclaration = typeVariable.getGenericDeclaration();

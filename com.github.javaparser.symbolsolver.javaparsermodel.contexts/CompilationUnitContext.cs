@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.expr;
@@ -7,7 +7,7 @@ using com.github.javaparser.resolution.declarations;
 using com.github.javaparser.symbolsolver.javaparsermodel.declarations;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -183,17 +183,7 @@ public class CompilationUnitContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		81, 181, 127, 14, 116, 127, 16, 104, 126, 104,
-		121, 104, 158, 182, 229, 71, 110, 98, 105, 112,
-		108, 108, 114, 116, 108, 108, 114, 146, 107, 226,
-		70, 106, 99, 101, 171, 127, 18, 108, 105, 121,
-		126, 104, 127, 5, 100, 191, 1, 100, 111, 109,
-		207, 165, 122, 127, 38, 111, 109, 143, 130, 99,
-		111, 109, 239, 69, 127, 18, 105, 127, 9, 111,
-		109, 175, 165, 127, 8, 109, 207, 104, 153
-	})]
+		
 	public override SymbolReference solveType(string name)
 	{
 		if (((CompilationUnit)wrappedNode).getTypes() != null)
@@ -465,12 +455,7 @@ public class CompilationUnitContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		34, 98, 125, 104, 105, 105, 105, 159, 2, 130,
-		165, 127, 18, 108, 105, 105, 175, 106, 117, 105,
-		163, 98, 169, 106, 138, 106, 111, 215, 133
-	})]
+		
 	public override SymbolReference solveSymbol(string name)
 	{
 		string text = name;
@@ -535,12 +520,7 @@ public class CompilationUnitContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 159, 127, 14, 107, 107, 135, 127, 3, 127,
-		19, 189, 173, 141, 105, 107, 105, 163, 101, 135,
-		127, 12, 105, 111, 108, 105, 131, 237, 69, 101
-	})]
+		
 	public override SymbolReference solveMethod(string name, List argumentsTypes, bool staticOnly)
 	{
 		Iterator iterator = ((CompilationUnit)wrappedNode).getImports().iterator();
@@ -594,11 +574,7 @@ public class CompilationUnitContext : AbstractJavaParserContext
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		160, 201, 134, 127, 14, 107, 127, 7, 104, 111,
-		119, 112, 101, 239, 61, 230, 69, 101
-	})]
+		
 	public override List fieldsExposedToChild(Node child)
 	{
 		LinkedList linkedList = new LinkedList();

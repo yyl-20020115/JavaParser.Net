@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.body;
 using com.github.javaparser.ast.nodeTypes;
@@ -9,7 +9,7 @@ using com.github.javaparser.resolution.types;
 using com.github.javaparser.symbolsolver.model.resolution;
 using com.github.javaparser.symbolsolver.model.typesystem;
 using com.github.javaparser.symbolsolver.resolution;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.lang;
 using java.util;
@@ -79,11 +79,7 @@ public class JavaParserTypeAdapter
 	}
 
 	
-		[LineNumberTable(new byte[]
-	{
-		123, 102, 117, 127, 14, 104, 103, 127, 5, 116,
-		130, 133
-	})]
+		
 	public virtual List getFieldsForDeclaredVariables()
 	{
 		ArrayList arrayList = new ArrayList();
@@ -183,13 +179,7 @@ public class JavaParserTypeAdapter
 
 	
 	
-		[LineNumberTable(new byte[]
-	{
-		68, 109, 113, 123, 115, 148, 194, 127, 15, 108,
-		105, 127, 3, 119, 105, 110, 154, 154, 105, 127,
-		0, 105, 154, 139, 127, 0, 105, 110, 159, 8,
-		159, 8, 105, 127, 24, 105, 154, 203, 101
-	})]
+		
 	[Deprecated(new object[]
 	{
 		(byte)64,

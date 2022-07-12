@@ -1,8 +1,8 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.stmt;
 using com.github.javaparser.ast.type;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using java.util;
 using java.util.function;
@@ -83,16 +83,8 @@ public class Java7Validator : Java6Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
-	[LineNumberTable(new byte[]
-	{
-		159, 176, 110, 109, 108, 146, 127, 1, 104, 146,
-		98
-	})]
+	
+	
 	private static void lambda_0024new_00240(TryStmt n, ProblemReporter reporter)
 	{
 		if (n.getCatchClauses().isEmpty() && n.getResources().isEmpty() && !n.getFinallyBlock().isPresent())
@@ -112,11 +104,7 @@ public class Java7Validator : Java6Validator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private static void lambda_0024new_00241(UnionType n, ProblemReporter reporter)
 	{
@@ -127,11 +115,7 @@ public class Java7Validator : Java6Validator
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		3, 232, 44, 250, 76, 250, 73, 109, 115, 109,
-		109, 115
-	})]
+	
 	public Java7Validator()
 	{
 		tryWithLimitedResources = new SingleNodeTypeValidator(ClassLiteral<TryStmt>.Value, new ___003C_003EAnon0());

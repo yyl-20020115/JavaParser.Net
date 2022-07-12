@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.expr;
 using com.github.javaparser.ast.observer;
@@ -7,7 +7,7 @@ using com.github.javaparser.ast.stmt;
 using com.github.javaparser.printer.concretesyntaxmodel;
 using com.github.javaparser.printer.lexicalpreservation.changes;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using IKVM.Runtime;
 using java.lang;
 using java.util;
@@ -283,11 +283,7 @@ internal class LexicalDifferenceCalculator
 				internal List elements;
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		internal virtual CalculatedSyntaxModel sub(int start, int end)
 		{
@@ -360,11 +356,7 @@ internal class LexicalDifferenceCalculator
 		}
 
 		
-		[MethodParameters(new Modifiers[]
-		{
-			(Modifiers)0,
-			(Modifiers)0
-		})]
+		
 		
 		public virtual void prettyPrint(Node node, SourcePrinter printer)
 		{
@@ -476,11 +468,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelForNode(CsmElement csm, Node node)
 	{
@@ -492,13 +480,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterListRemoval(CsmElement csm, ObservableProperty observableProperty, NodeList nodeList, int index)
 	{
@@ -511,14 +493,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterListAddition(CsmElement csm, ObservableProperty observableProperty, NodeList nodeList, int index, Node nodeAdded)
 	{
@@ -531,11 +506,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private void replaceEolTokens(List differenceElements, LineSeparator lineSeparator)
 	{
@@ -558,14 +529,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	private CalculatedSyntaxModel calculatedSyntaxModelAfterListReplacement(CsmElement csm, ObservableProperty observableProperty, NodeList nodeList, int index, Node newValue)
 	{
@@ -578,14 +542,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterPropertyChange(CsmElement csm, Node node, ObservableProperty property, object oldValue, object newValue)
 	{
@@ -597,29 +554,8 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	[LineNumberTable(new byte[]
-	{
-		160, 83, 104, 103, 122, 146, 107, 135, 125, 148,
-		141, 227, 74, 117, 108, 124, 152, 141, 146, 104,
-		109, 141, 107, 104, 113, 145, 108, 105, 105, 110,
-		159, 22, 144, 135, 98, 105, 159, 17, 137, 108,
-		113, 110, 100, 145, 117, 109, 241, 58, 232, 74,
-		145, 101, 118, 108, 145, 99, 117, 100, 145, 105,
-		105, 105, 115, 98, 156, 105, 145, 99, 101, 177,
-		109, 104, 108, 100, 147, 145, 109, 109, 104, 109,
-		104, 104, 113, 105, 105, 142, 127, 0, 251, 69,
-		105, 121, 62, 171, 120, 62, 171, 150, 105, 121,
-		62, 171, 120, 62, 171, 118, 105, 121, 62, 171,
-		120, 62, 171, 104, 104, 103, 124, 110, 106, 138,
-		159, 22
-	})]
+		
+	
 	private void calculatedSyntaxModelForNode(CsmElement csm, Node node, List elements, Change change)
 	{
 		if (csm is CsmSequence)
@@ -846,11 +782,7 @@ internal class LexicalDifferenceCalculator
 
 	
 	
-	[LineNumberTable(new byte[]
-	{
-		160, 241, 159, 43, 131, 131, 131, 131, 131, 131,
-		131, 131, 131, 131, 131, 131
-	})]
+	
 	public static int toToken(Modifier modifier)
 	{
 		switch (_1._0024SwitchMap_0024com_0024github_0024javaparser_0024ast_0024Modifier_0024Keyword[modifier.getKeyword().ordinal()])
@@ -890,13 +822,7 @@ internal class LexicalDifferenceCalculator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024calculatedSyntaxModelForNode_00240(Node node, List elements, Change change, CsmElement e)
 	{
@@ -905,13 +831,7 @@ internal class LexicalDifferenceCalculator
 
 	
 	
-	[MethodParameters(new Modifiers[]
-	{
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Final | Modifiers.Synthetic,
-		Modifiers.Synthetic
-	})]
+	
 	
 	private void lambda_0024calculatedSyntaxModelForNode_00241(Node node, List mixElements, Change change, CsmElement e)
 	{
@@ -925,12 +845,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual List calculateListRemovalDifference(ObservableProperty observableProperty, NodeList nodeList, int index)
 	{
@@ -944,13 +859,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual List calculateListAdditionDifference(ObservableProperty observableProperty, NodeList nodeList, int index, Node nodeAdded)
 	{
@@ -965,13 +874,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+		
 	
 	internal virtual List calculateListReplacementDifference(ObservableProperty observableProperty, NodeList nodeList, int index, Node newValue)
 	{
@@ -985,14 +888,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual void calculatePropertyChange(NodeText nodeText, Node observedNode, ObservableProperty property, object oldValue, object newValue)
 	{
@@ -1020,13 +916,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterPropertyChange(Node node, ObservableProperty property, object oldValue, object newValue)
 	{
@@ -1036,13 +926,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterListAddition(Node container, ObservableProperty observableProperty, int index, Node nodeAdded)
 	{
@@ -1061,12 +945,7 @@ internal class LexicalDifferenceCalculator
 	}
 
 	
-	[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0,
-		(Modifiers)0
-	})]
+	
 	
 	internal virtual CalculatedSyntaxModel calculatedSyntaxModelAfterListRemoval(Node container, ObservableProperty observableProperty, int index)
 	{

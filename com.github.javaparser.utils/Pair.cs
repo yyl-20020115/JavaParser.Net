@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
-using IKVM.Attributes;
+
+
 using java.lang;
 using java.util;
 
@@ -41,13 +41,7 @@ public class Pair
 		}
 	}
 
-	
-		[MethodParameters(new Modifiers[]
-	{
-		(Modifiers)0,
-		(Modifiers)0
-	})]
-	
+		
 	public Pair(object a, object b)
 	{
 		___003C_003Ea = a;

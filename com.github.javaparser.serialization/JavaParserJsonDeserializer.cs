@@ -1,9 +1,9 @@
-using System.Runtime.CompilerServices;
+
 using com.github.javaparser.ast;
 using com.github.javaparser.ast.comments;
 using com.github.javaparser.metamodel;
 using com.github.javaparser.utils;
-using IKVM.Attributes;
+
 using ikvm.@internal;
 using IKVM.Runtime;
 using java.lang;
@@ -110,14 +110,7 @@ public class JavaParserJsonDeserializer
 	private static CallerID ___003CcallerID_003E;
 
 	
-	[LineNumberTable(new byte[]
-	{
-		19, 113, 123, 107, 102, 134, 127, 8, 115, 162,
-		119, 101, 103, 105, 113, 165, 110, 105, 106, 113,
-		110, 156, 105, 105, 118, 105, 125, 110, 154, 191,
-		7, 133, 169, 114, 189, 127, 5, 121, 159, 28,
-		101, 136, 125, 98
-	})]
+	
 	private Node deserializeObject(JsonObject P_0)
 	{
 		//Discarded unreachable code: IL_027f
@@ -231,11 +224,7 @@ public class JavaParserJsonDeserializer
 	}
 
 	
-	[LineNumberTable(new byte[]
-	{
-		96, 117, 103, 112, 112, 139, 112, 112, 139, 110,
-		130
-	})]
+	
 	protected internal virtual bool readRange(string name, JsonValue jsonValue, Node node)
 	{
 		if (String.instancehelper_equals(name, JavaParserJsonSerializer.JsonNode.___003C_003ERANGE.propertyKey))
