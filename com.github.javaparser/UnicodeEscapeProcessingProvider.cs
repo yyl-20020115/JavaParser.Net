@@ -142,7 +142,7 @@ public class UnicodeEscapeProcessingProvider :  Provider, Closeable, AutoCloseab
 				return result;
 			}
 
-			[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+		
 			public virtual Position transform(Position P_0)
 			{
 				return PositionUpdate._003Cdefault_003Etransform(this, P_0);

@@ -49,11 +49,7 @@ public abstract class ReferenceType : Type
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ReferenceType(NodeList annotations)
 		: this(null, annotations)
 	{

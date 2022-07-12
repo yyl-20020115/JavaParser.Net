@@ -41,11 +41,7 @@ public abstract class LiteralExpr : Expression
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LiteralExpr()
 		: this(null)
 	{

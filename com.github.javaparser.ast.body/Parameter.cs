@@ -38,7 +38,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	{
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EaddModifier(this, P_0);
@@ -49,7 +49,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 		return type;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setFinal(bool P_0)
 	{
 		return NodeWithFinalModifier._003Cdefault_003EsetFinal(this, P_0);
@@ -63,7 +63,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	{
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsString(this);
@@ -260,11 +260,7 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Parameter(NodeList modifiers, NodeList annotations, Type type, bool isVarArgs, NodeList varArgsAnnotations, SimpleName name)
 		: this(null, modifiers, annotations, type, isVarArgs, varArgsAnnotations, name)
 	{
@@ -494,163 +490,163 @@ public class Parameter : Node, NodeWithType, NodeWithAnnotations, NodeWithSimple
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(Class P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(string P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getTypeAsString()
 	{
 		return NodeWithType._003Cdefault_003EgetTypeAsString(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual AnnotationExpr getAnnotation(int P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EgetAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setAnnotation(int P_0, AnnotationExpr P_1)
 	{
 		return NodeWithAnnotations._003Cdefault_003EsetAnnotation(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addAnnotation(AnnotationExpr P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addAnnotation(string P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual NormalAnnotationExpr addAndGetAnnotation(string P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddAndGetAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addAnnotation(Class P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual NormalAnnotationExpr addAndGetAnnotation(Class P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddAndGetAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addMarkerAnnotation(string P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddMarkerAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addMarkerAnnotation(Class P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddMarkerAnnotation(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addSingleMemberAnnotation(string P_0, Expression P_1)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddSingleMemberAnnotation(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addSingleMemberAnnotation(Class P_0, Expression P_1)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddSingleMemberAnnotation(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addSingleMemberAnnotation(string P_0, string P_1)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddSingleMemberAnnotation(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addSingleMemberAnnotation(Class P_0, string P_1)
 	{
 		return NodeWithAnnotations._003Cdefault_003EaddSingleMemberAnnotation(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isAnnotationPresent(string P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EisAnnotationPresent(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isAnnotationPresent(Class P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EisAnnotationPresent(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getAnnotationByName(string P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EgetAnnotationByName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getAnnotationByClass(Class P_0)
 	{
 		return NodeWithAnnotations._003Cdefault_003EgetAnnotationByClass(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithSimpleName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual NameExpr getNameAsExpression()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsExpression(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EremoveModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifier(Modifier.Keyword P_0, bool P_1)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifier(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasModifier(Modifier.Keyword P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EhasModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifiers(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifiers(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual AccessSpecifier getAccessSpecifier()
 	{
 		return NodeWithModifiers._003Cdefault_003EgetAccessSpecifier(this);

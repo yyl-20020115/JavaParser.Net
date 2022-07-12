@@ -88,11 +88,7 @@ public class TypeExpr : Expression, NodeWithType
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public TypeExpr(Type type)
 		: this(null, type)
 	{
@@ -225,19 +221,19 @@ public class TypeExpr : Expression, NodeWithType
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(Class P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(string P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getTypeAsString()
 	{
 		return NodeWithType._003Cdefault_003EgetTypeAsString(this);

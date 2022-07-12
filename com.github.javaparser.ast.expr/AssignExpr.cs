@@ -568,11 +568,7 @@ public class AssignExpr : Expression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public AssignExpr(Expression target, Expression value, Operator @operator)
 		: this(null, target, value, @operator)
 	{

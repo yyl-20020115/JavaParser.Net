@@ -182,7 +182,7 @@ public class Reshuffled: DifferenceElement
 		return element;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isChild()
 	{
 		return DifferenceElement._003Cdefault_003EisChild(this);

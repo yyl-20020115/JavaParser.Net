@@ -132,11 +132,7 @@ public class ConditionalExpr : Expression, NodeWithCondition
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ConditionalExpr(Expression condition, Expression thenExpr, Expression elseExpr)
 		: this(null, condition, thenExpr, elseExpr)
 	{

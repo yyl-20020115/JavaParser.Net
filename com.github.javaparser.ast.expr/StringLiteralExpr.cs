@@ -20,11 +20,7 @@ public class StringLiteralExpr : LiteralStringValueExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public StringLiteralExpr(string value)
 		: this(null, Utils.escapeEndOfLines(value))
 	{

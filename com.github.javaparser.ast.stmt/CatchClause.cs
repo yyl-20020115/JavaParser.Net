@@ -119,11 +119,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public CatchClause(Parameter parameter, BlockStmt body)
 		: this(null, parameter, body)
 	{
@@ -217,7 +213,7 @@ public class CatchClause : Node, NodeWithBlockStmt
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBody()
 	{
 		return NodeWithBlockStmt._003Cdefault_003EcreateBody(this);

@@ -54,13 +54,13 @@ public class WrappingRangeIterator: Iterator
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void remove()
 	{
 		Iterator._003Cdefault_003Eremove(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void forEachRemaining(Consumer P_0)
 	{
 		Iterator._003Cdefault_003EforEachRemaining(this, P_0);

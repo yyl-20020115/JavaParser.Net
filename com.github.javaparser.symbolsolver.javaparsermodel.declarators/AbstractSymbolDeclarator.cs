@@ -22,6 +22,6 @@ public abstract class AbstractSymbolDeclarator : SymbolDeclarator
 		this.typeSolver = typeSolver;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public abstract List getSymbolDeclarations();
 }

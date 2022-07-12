@@ -18,11 +18,7 @@ public class InstanceOfExpr : Expression, NodeWithType, NodeWithExpression
 {
 	private Expression expression;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private PatternExpr pattern;
 
 	private ReferenceType type;
@@ -160,11 +156,7 @@ public class InstanceOfExpr : Expression, NodeWithType, NodeWithExpression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public InstanceOfExpr(Expression expression, ReferenceType type, PatternExpr pattern)
 		: this(null, expression, type, pattern)
 	{
@@ -373,25 +365,25 @@ public class InstanceOfExpr : Expression, NodeWithType, NodeWithExpression
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(Class P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(string P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getTypeAsString()
 	{
 		return NodeWithType._003Cdefault_003EgetTypeAsString(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setExpression(string P_0)
 	{
 		return NodeWithExpression._003Cdefault_003EsetExpression(this, P_0);

@@ -60,13 +60,13 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -520,13 +520,13 @@ internal sealed class RemovedGroup: Iterable, IEnumerable
 		return previousToken;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void forEach(Consumer P_0)
 	{
 		Iterable._003Cdefault_003EforEach(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Spliterator spliterator()
 	{
 		return Iterable._003Cdefault_003Espliterator(this);

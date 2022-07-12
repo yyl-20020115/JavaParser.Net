@@ -26,11 +26,7 @@ public class IntegerLiteralExpr : LiteralStringValueExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public IntegerLiteralExpr(string value)
 		: this(null, value)
 	{

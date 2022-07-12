@@ -5,9 +5,6 @@ using ikvm.@internal;
 
 namespace com.github.javaparser.ast;
 
-
-[InnerClass("com.github.javaparser.ast.$ProxyAllFieldsConstructor", Modifiers.Final)]
-
 [AttributeUsage(AttributeTargets.Constructor)]
 public class AllFieldsConstructorAttribute : AnnotationAttributeBase, AllFieldsConstructor
 {

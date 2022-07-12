@@ -125,7 +125,7 @@ public class Added : DifferenceElement
 		return (!isNewLineToken()) ? this : new Added(lineSeparator);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isChild()
 	{
 		return DifferenceElement._003Cdefault_003EisChild(this);

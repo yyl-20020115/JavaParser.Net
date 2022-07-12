@@ -17,11 +17,7 @@ public class ForStmt : Statement, NodeWithBody
 {
 		private NodeList initialization;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Expression compare;
 
 		private NodeList update;
@@ -169,11 +165,7 @@ public class ForStmt : Statement, NodeWithBody
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ForStmt(NodeList initialization, Expression compare, NodeList update, Statement body)
 		: this(null, initialization, compare, update, body)
 	{
@@ -381,13 +373,13 @@ public class ForStmt : Statement, NodeWithBody
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBlockStatementAsBody()
 	{
 		return NodeWithBody._003Cdefault_003EcreateBlockStatementAsBody(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasEmptyBody()
 	{
 		return NodeWithBody._003Cdefault_003EhasEmptyBody(this);

@@ -77,13 +77,13 @@ public class ModuleRequiresDirective : ModuleDirective, NodeWithStaticModifier, 
 		return this;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasModifier(Modifier.Keyword P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EhasModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifier(Modifier.Keyword P_0, bool P_1)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifier(this, P_0, P_1);
@@ -123,11 +123,7 @@ public class ModuleRequiresDirective : ModuleDirective, NodeWithStaticModifier, 
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ModuleRequiresDirective(NodeList modifiers, Name name)
 		: this(null, modifiers, name)
 	{
@@ -351,49 +347,49 @@ public class ModuleRequiresDirective : ModuleDirective, NodeWithStaticModifier, 
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EaddModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EremoveModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifiers(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifiers(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual AccessSpecifier getAccessSpecifier()
 	{
 		return NodeWithModifiers._003Cdefault_003EgetAccessSpecifier(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isStatic()
 	{
 		return NodeWithStaticModifier._003Cdefault_003EisStatic(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setStatic(bool P_0)
 	{
 		return NodeWithStaticModifier._003Cdefault_003EsetStatic(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithName._003Cdefault_003EgetNameAsString(this);

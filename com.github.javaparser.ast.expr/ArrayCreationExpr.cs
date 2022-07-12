@@ -23,11 +23,7 @@ public class ArrayCreationExpr : Expression
 
 	private Type elementType;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private ArrayInitializerExpr initializer;
 
 	
@@ -154,11 +150,7 @@ public class ArrayCreationExpr : Expression
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ArrayCreationExpr(Type elementType, NodeList levels, ArrayInitializerExpr initializer)
 		: this(null, elementType, levels, initializer)
 	{

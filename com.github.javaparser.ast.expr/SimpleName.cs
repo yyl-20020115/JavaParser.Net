@@ -28,11 +28,7 @@ public class SimpleName : Node, NodeWithIdentifier
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public SimpleName(string identifier)
 		: this(null, identifier)
 	{
@@ -158,13 +154,13 @@ public class SimpleName : Node, NodeWithIdentifier
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getId()
 	{
 		return NodeWithIdentifier._003Cdefault_003EgetId(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setId(string P_0)
 	{
 		return NodeWithIdentifier._003Cdefault_003EsetId(this, P_0);

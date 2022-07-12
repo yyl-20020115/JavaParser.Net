@@ -154,7 +154,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 		return this;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual AccessSpecifier getAccessSpecifier()
 	{
 		return NodeWithModifiers._003Cdefault_003EgetAccessSpecifier(this);
@@ -257,11 +257,7 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public CompactConstructorDeclaration(NodeList modifiers, NodeList annotations, NodeList typeParameters, SimpleName name, NodeList thrownExceptions, BlockStmt body)
 		: this(null, modifiers, annotations, typeParameters, name, thrownExceptions, body)
 	{
@@ -561,199 +557,199 @@ public class CompactConstructorDeclaration : BodyDeclaration, NodeWithBlockStmt,
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBody()
 	{
 		return NodeWithBlockStmt._003Cdefault_003EcreateBody(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EaddModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeModifier(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EremoveModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifier(Modifier.Keyword P_0, bool P_1)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifier(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasModifier(Modifier.Keyword P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EhasModifier(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setModifiers(Modifier.Keyword[] P_0)
 	{
 		return NodeWithModifiers._003Cdefault_003EsetModifiers(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isPublic()
 	{
 		return NodeWithPublicModifier._003Cdefault_003EisPublic(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setPublic(bool P_0)
 	{
 		return NodeWithPublicModifier._003Cdefault_003EsetPublic(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isPrivate()
 	{
 		return NodeWithPrivateModifier._003Cdefault_003EisPrivate(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setPrivate(bool P_0)
 	{
 		return NodeWithPrivateModifier._003Cdefault_003EsetPrivate(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isProtected()
 	{
 		return NodeWithProtectedModifier._003Cdefault_003EisProtected(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setProtected(bool P_0)
 	{
 		return NodeWithProtectedModifier._003Cdefault_003EsetProtected(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getJavadocComment()
 	{
 		return NodeWithJavadoc._003Cdefault_003EgetJavadocComment(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getJavadoc()
 	{
 		return NodeWithJavadoc._003Cdefault_003EgetJavadoc(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setJavadocComment(string P_0)
 	{
 		return NodeWithJavadoc._003Cdefault_003EsetJavadocComment(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setJavadocComment(JavadocComment P_0)
 	{
 		return NodeWithJavadoc._003Cdefault_003EsetJavadocComment(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setJavadocComment(string P_0, Javadoc P_1)
 	{
 		return NodeWithJavadoc._003Cdefault_003EsetJavadocComment(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setJavadocComment(Javadoc P_0)
 	{
 		return NodeWithJavadoc._003Cdefault_003EsetJavadocComment(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool removeJavaDocComment()
 	{
 		return NodeWithJavadoc._003Cdefault_003EremoveJavaDocComment(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasJavaDocComment()
 	{
 		return NodeWithJavadoc._003Cdefault_003EhasJavaDocComment(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithSimpleName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsString(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual NameExpr getNameAsExpression()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsExpression(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ReferenceType getThrownException(int P_0)
 	{
 		return NodeWithThrownExceptions._003Cdefault_003EgetThrownException(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addThrownException(ReferenceType P_0)
 	{
 		return NodeWithThrownExceptions._003Cdefault_003EaddThrownException(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addThrownException(Class P_0)
 	{
 		return NodeWithThrownExceptions._003Cdefault_003EaddThrownException(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isThrown(Class P_0)
 	{
 		return NodeWithThrownExceptions._003Cdefault_003EisThrown(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isThrown(string P_0)
 	{
 		return NodeWithThrownExceptions._003Cdefault_003EisThrown(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual TypeParameter getTypeParameter(int P_0)
 	{
 		return NodeWithTypeParameters._003Cdefault_003EgetTypeParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setTypeParameter(int P_0, TypeParameter P_1)
 	{
 		return NodeWithTypeParameters._003Cdefault_003EsetTypeParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addTypeParameter(TypeParameter P_0)
 	{
 		return NodeWithTypeParameters._003Cdefault_003EaddTypeParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addTypeParameter(string P_0)
 	{
 		return NodeWithTypeParameters._003Cdefault_003EaddTypeParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isGeneric()
 	{
 		return NodeWithTypeParameters._003Cdefault_003EisGeneric(this);

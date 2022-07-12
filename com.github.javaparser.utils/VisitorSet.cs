@@ -70,7 +70,7 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -442,31 +442,31 @@ public class VisitorSet: Set, Collection, Iterable, IEnumerable
 		return P_0.equalsVisitor;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void forEach(Consumer P_0)
 	{
 		Iterable._003Cdefault_003EforEach(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Spliterator spliterator()
 	{
 		return Set._003Cdefault_003Espliterator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool removeIf(Predicate P_0)
 	{
 		return Collection._003Cdefault_003EremoveIf(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Stream stream()
 	{
 		return Collection._003Cdefault_003Estream(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Stream parallelStream()
 	{
 		return Collection._003Cdefault_003EparallelStream(this);

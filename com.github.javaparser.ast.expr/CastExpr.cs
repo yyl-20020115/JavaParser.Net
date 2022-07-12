@@ -111,11 +111,7 @@ public class CastExpr : Expression, NodeWithType, NodeWithExpression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public CastExpr(Type type, Expression expression)
 		: this(null, type, expression)
 	{
@@ -270,25 +266,25 @@ public class CastExpr : Expression, NodeWithType, NodeWithExpression
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(Class P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setType(string P_0)
 	{
 		return NodeWithType._003Cdefault_003EsetType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getTypeAsString()
 	{
 		return NodeWithType._003Cdefault_003EgetTypeAsString(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setExpression(string P_0)
 	{
 		return NodeWithExpression._003Cdefault_003EsetExpression(this, P_0);

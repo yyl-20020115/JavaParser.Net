@@ -271,13 +271,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -329,13 +329,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -483,13 +483,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -677,13 +677,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -740,13 +740,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 			return result;
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -1432,67 +1432,31 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 
 	internal static PrinterConfiguration ___003C_003EprettyPrinterNoCommentsConfiguration;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private Range range;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private TokenRange tokenRange;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private Node parentNode;
 
-		[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+		
 	private ArrayList childNodes;
 
-		[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+		
 	private ArrayList orphanComments;
 
-		[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+		
 	private IdentityHashMap data;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Comment comment;
 
-		[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+		
 	private ArrayList observers;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private Parsedness parsed;
 
 	
@@ -1680,13 +1644,13 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		return result2;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Predicate P_0, Class[] P_1)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasRange()
 	{
 		return NodeWithRange._003Cdefault_003EhasRange(this);
@@ -1889,7 +1853,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		return this;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Class[] P_0)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0);
@@ -1991,7 +1955,7 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public abstract object accept(GenericVisitor P_0, object P_1);
 
 	
@@ -2782,46 +2746,46 @@ public abstract class Node :  Cloneable.__Interface, HasParentNode, com.github.j
 		___003C_003EPHANTOM_KEY = new _4();
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasParentNode()
 	{
 		return HasParentNode._003Cdefault_003EhasParentNode(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Class P_0, Predicate P_1)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isDescendantOf(Node P_0)
 	{
 		return HasParentNode._003Cdefault_003EisDescendantOf(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public abstract void accept(VoidVisitor P_0, object P_1);
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getBegin()
 	{
 		return NodeWithRange._003Cdefault_003EgetBegin(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getEnd()
 	{
 		return NodeWithRange._003Cdefault_003EgetEnd(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool containsWithin(Node P_0)
 	{
 		return NodeWithRange._003Cdefault_003EcontainsWithin(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool containsWithinRange(Node P_0)
 	{
 		return NodeWithRange._003Cdefault_003EcontainsWithinRange(this, P_0);

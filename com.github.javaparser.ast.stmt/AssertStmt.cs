@@ -15,11 +15,7 @@ public class AssertStmt : Statement
 {
 	private Expression check;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Expression message;
 
 	
@@ -129,11 +125,7 @@ public class AssertStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public AssertStmt(Expression check, Expression message)
 		: this(null, check, message)
 	{

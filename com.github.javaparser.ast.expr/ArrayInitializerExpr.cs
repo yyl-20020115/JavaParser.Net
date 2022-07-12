@@ -84,11 +84,7 @@ public class ArrayInitializerExpr : Expression
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ArrayInitializerExpr(NodeList values)
 		: this(null, values)
 	{

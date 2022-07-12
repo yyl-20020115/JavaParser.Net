@@ -747,11 +747,7 @@ public class Log
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static void info(string format, params Supplier[] args)
 	{
 		CURRENT_ADAPTER.info(makeFormattingSupplier(format, args));
@@ -816,11 +812,7 @@ public class Log
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static void trace(string format, params Supplier[] args)
 	{
 		CURRENT_ADAPTER.trace(makeFormattingSupplier(format, args));
@@ -837,11 +829,7 @@ public class Log
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static void error(System.Exception throwable, string format, params Supplier[] args)
 	{
 		CURRENT_ADAPTER.error(new ___003C_003EAnon3(throwable), makeFormattingSupplier(format, args));
@@ -850,11 +838,7 @@ public class Log
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static void error(string format, params Supplier[] args)
 	{
 		CURRENT_ADAPTER.error(new ___003C_003EAnon4(), makeFormattingSupplier(format, args));

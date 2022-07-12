@@ -89,11 +89,7 @@ public class EnclosedExpr : Expression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public EnclosedExpr(Expression inner)
 		: this(null, inner)
 	{

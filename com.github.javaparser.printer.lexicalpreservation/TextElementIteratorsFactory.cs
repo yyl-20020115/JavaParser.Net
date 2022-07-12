@@ -123,7 +123,7 @@ internal class TextElementIteratorsFactory
 			throw new IllegalArgumentException();
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -185,7 +185,7 @@ internal class TextElementIteratorsFactory
 			((Iterator)elements.get(currIndex)).remove();
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -213,13 +213,13 @@ internal class TextElementIteratorsFactory
 			throw new IllegalArgumentException();
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void remove()
 		{
 			Iterator._003Cdefault_003Eremove(this);
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);
@@ -257,7 +257,7 @@ internal class TextElementIteratorsFactory
 		{
 		}
 
-		[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+	
 		public virtual void forEachRemaining(Consumer P_0)
 		{
 			Iterator._003Cdefault_003EforEachRemaining(this, P_0);

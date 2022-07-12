@@ -56,11 +56,7 @@ public abstract class LiteralStringValueExpr : LiteralExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LiteralStringValueExpr(string value)
 		: this(null, value)
 	{

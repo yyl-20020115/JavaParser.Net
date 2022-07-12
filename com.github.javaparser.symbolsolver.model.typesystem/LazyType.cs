@@ -203,49 +203,49 @@ public class LazyType: ResolvedType
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isUnionType()
 	{
 		return ResolvedType._003Cdefault_003EisUnionType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isConstraint()
 	{
 		return ResolvedType._003Cdefault_003EisConstraint(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isInferenceVariable()
 	{
 		return ResolvedType._003Cdefault_003EisInferenceVariable(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedLambdaConstraintType asConstraintType()
 	{
 		return ResolvedType._003Cdefault_003EasConstraintType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedUnionType asUnionType()
 	{
 		return ResolvedType._003Cdefault_003EasUnionType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool mention(List P_0)
 	{
 		return ResolvedType._003Cdefault_003Emention(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isNumericType()
 	{
 		return ResolvedType._003Cdefault_003EisNumericType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedType erasure()
 	{
 		return ResolvedType._003Cdefault_003Eerasure(this);

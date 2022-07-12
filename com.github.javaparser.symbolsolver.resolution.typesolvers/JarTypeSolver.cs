@@ -473,7 +473,7 @@ public class JarTypeSolver :  TypeSolver
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual TypeSolver getRoot()
 	{
 		return TypeSolver._003Cdefault_003EgetRoot(this);
@@ -526,13 +526,13 @@ public class JarTypeSolver :  TypeSolver
 		throw new UnsolvedSymbolException(name);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedReferenceTypeDeclaration getSolvedJavaLangObject()
 	{
 		return TypeSolver._003Cdefault_003EgetSolvedJavaLangObject(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasType(string P_0)
 	{
 		return TypeSolver._003Cdefault_003EhasType(this, P_0);

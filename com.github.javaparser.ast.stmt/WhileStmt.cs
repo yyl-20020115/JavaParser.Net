@@ -110,11 +110,7 @@ public class WhileStmt : Statement, NodeWithBody, NodeWithCondition
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public WhileStmt(Expression condition, Statement body)
 		: this(null, condition, body)
 	{
@@ -269,13 +265,13 @@ public class WhileStmt : Statement, NodeWithBody, NodeWithCondition
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBlockStatementAsBody()
 	{
 		return NodeWithBody._003Cdefault_003EcreateBlockStatementAsBody(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasEmptyBody()
 	{
 		return NodeWithBody._003Cdefault_003EhasEmptyBody(this);

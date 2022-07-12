@@ -116,11 +116,7 @@ public class LabeledStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LabeledStmt(SimpleName label, Statement statement)
 		: this(null, label, statement)
 	{

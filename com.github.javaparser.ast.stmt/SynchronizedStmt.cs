@@ -110,11 +110,7 @@ public class SynchronizedStmt : Statement, NodeWithBlockStmt, NodeWithExpression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public SynchronizedStmt(Expression expression, BlockStmt body)
 		: this(null, expression, body)
 	{
@@ -269,13 +265,13 @@ public class SynchronizedStmt : Statement, NodeWithBlockStmt, NodeWithExpression
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBody()
 	{
 		return NodeWithBlockStmt._003Cdefault_003EcreateBody(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setExpression(string P_0)
 	{
 		return NodeWithExpression._003Cdefault_003EsetExpression(this, P_0);

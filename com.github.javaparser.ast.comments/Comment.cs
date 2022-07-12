@@ -15,11 +15,7 @@ public abstract class Comment : Node
 {
 	private string content;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private Node commentedNode;
 
 	
@@ -127,11 +123,7 @@ public abstract class Comment : Node
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Comment(string content)
 		: this(null, content)
 	{

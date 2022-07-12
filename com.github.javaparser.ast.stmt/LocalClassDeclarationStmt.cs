@@ -85,11 +85,7 @@ public class LocalClassDeclarationStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LocalClassDeclarationStmt(ClassOrInterfaceDeclaration classDeclaration)
 		: this(null, classDeclaration)
 	{

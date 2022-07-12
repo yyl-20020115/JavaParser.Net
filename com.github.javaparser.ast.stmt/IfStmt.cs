@@ -19,11 +19,7 @@ public class IfStmt : Statement, NodeWithCondition
 
 	private Statement thenStmt;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Statement elseStmt;
 
 	
@@ -146,11 +142,7 @@ public class IfStmt : Statement, NodeWithCondition
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public IfStmt(Expression condition, Statement thenStmt, Statement elseStmt)
 		: this(null, condition, thenStmt, elseStmt)
 	{

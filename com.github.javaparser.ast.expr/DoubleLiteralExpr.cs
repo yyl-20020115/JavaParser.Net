@@ -60,11 +60,7 @@ public class DoubleLiteralExpr : LiteralStringValueExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public DoubleLiteralExpr(string value)
 		: this(null, value)
 	{

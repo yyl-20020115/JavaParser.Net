@@ -162,11 +162,7 @@ public class LambdaExpr : Expression, NodeWithParameters
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LambdaExpr(NodeList parameters, Statement body, bool isEnclosingParameters)
 		: this(null, parameters, body, isEnclosingParameters)
 	{
@@ -364,91 +360,91 @@ public class LambdaExpr : Expression, NodeWithParameters
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Parameter getParameter(int P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EgetParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setParameter(int P_0, Parameter P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EsetParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addParameter(Type P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addParameter(Class P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addParameter(string P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addParameter(Parameter P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EaddParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Parameter addAndGetParameter(Type P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddAndGetParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Parameter addAndGetParameter(Class P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddAndGetParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Parameter addAndGetParameter(string P_0, string P_1)
 	{
 		return NodeWithParameters._003Cdefault_003EaddAndGetParameter(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Parameter addAndGetParameter(Parameter P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EaddAndGetParameter(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getParameterByName(string P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EgetParameterByName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getParameterByType(string P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EgetParameterByType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getParameterByType(Class P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EgetParameterByType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasParametersOfType(string[] P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EhasParametersOfType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasParametersOfType(Class[] P_0)
 	{
 		return NodeWithParameters._003Cdefault_003EhasParametersOfType(this, P_0);

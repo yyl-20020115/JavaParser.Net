@@ -23,11 +23,7 @@ public class SingleMemberAnnotationExpr : AnnotationExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public SingleMemberAnnotationExpr(Name name, Expression memberValue)
 		: this(null, name, memberValue)
 	{

@@ -55,11 +55,7 @@ public class Name : Node, NodeWithIdentifier
 	})]
 	private string identifier;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Name qualifier;
 
 	
@@ -105,11 +101,7 @@ public class Name : Node, NodeWithIdentifier
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Name(Name qualifier, string identifier)
 		: this(null, qualifier, identifier)
 	{
@@ -318,13 +310,13 @@ public class Name : Node, NodeWithIdentifier
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getId()
 	{
 		return NodeWithIdentifier._003Cdefault_003EgetId(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setId(string P_0)
 	{
 		return NodeWithIdentifier._003Cdefault_003EsetId(this, P_0);

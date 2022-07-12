@@ -30,11 +30,7 @@ public class CharLiteralExpr : LiteralStringValueExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public CharLiteralExpr(string value)
 		: this(null, value)
 	{

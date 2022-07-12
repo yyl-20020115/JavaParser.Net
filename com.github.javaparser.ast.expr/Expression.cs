@@ -82,11 +82,7 @@ public abstract class Expression : Node
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Expression()
 		: this(null)
 	{

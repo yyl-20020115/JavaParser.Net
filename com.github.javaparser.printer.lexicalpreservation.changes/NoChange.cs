@@ -25,7 +25,7 @@ public class NoChange: Change
 		return rawValue;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool evaluate(CsmConditional P_0, Node P_1)
 	{
 		return Change._003Cdefault_003Eevaluate(this, P_0, P_1);

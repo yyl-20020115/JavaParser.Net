@@ -51,11 +51,7 @@ public class UnparsableStmt : Statement
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public UnparsableStmt()
 		: this(null)
 	{

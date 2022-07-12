@@ -12,11 +12,7 @@ namespace com.github.javaparser.ast.stmt;
 
 public class ReturnStmt : Statement
 {
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Expression expression;
 
 	
@@ -105,11 +101,7 @@ public class ReturnStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ReturnStmt(Expression expression)
 		: this(null, expression)
 	{

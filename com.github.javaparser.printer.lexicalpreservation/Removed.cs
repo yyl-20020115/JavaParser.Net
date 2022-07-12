@@ -21,7 +21,7 @@ public class Removed: DifferenceElement
 		this.element = element;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isChild()
 	{
 		return DifferenceElement._003Cdefault_003EisChild(this);
@@ -158,7 +158,7 @@ public class Removed: DifferenceElement
 		return true;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual DifferenceElement replaceEolTokens(CsmElement P_0)
 	{
 		return DifferenceElement._003Cdefault_003EreplaceEolTokens(this, P_0);

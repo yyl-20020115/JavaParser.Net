@@ -211,7 +211,7 @@ public abstract class TextElement: TextElementMatcher
 		return new ___003C_003EAnon0(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual TextElementMatcher and(TextElementMatcher P_0)
 	{
 		return TextElementMatcher._003Cdefault_003Eand(this, P_0);

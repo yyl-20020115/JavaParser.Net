@@ -20,20 +20,12 @@ namespace com.github.javaparser.ast.stmt;
 
 public class ExplicitConstructorInvocationStmt : Statement, NodeWithTypeArguments, NodeWithArguments, Resolvable
 {
-		[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+		
 	private NodeList typeArguments;
 
 	private bool m_isThis;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Expression expression;
 
 		private NodeList arguments;
@@ -187,11 +179,7 @@ public class ExplicitConstructorInvocationStmt : Statement, NodeWithTypeArgument
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ExplicitConstructorInvocationStmt(NodeList typeArguments, bool isThis, Expression expression, NodeList arguments)
 		: this(null, typeArguments, isThis, expression, arguments)
 	{
@@ -427,49 +415,49 @@ public class ExplicitConstructorInvocationStmt : Statement, NodeWithTypeArgument
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isUsingDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EisUsingDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeTypeArguments()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EremoveTypeArguments(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setTypeArguments(Type[] P_0)
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetTypeArguments(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Expression getArgument(int P_0)
 	{
 		return NodeWithArguments._003Cdefault_003EgetArgument(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addArgument(string P_0)
 	{
 		return NodeWithArguments._003Cdefault_003EaddArgument(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addArgument(Expression P_0)
 	{
 		return NodeWithArguments._003Cdefault_003EaddArgument(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setArgument(int P_0, Expression P_1)
 	{
 		return NodeWithArguments._003Cdefault_003EsetArgument(this, P_0, P_1);

@@ -116,11 +116,7 @@ public class LongLiteralExpr : LiteralStringValueExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LongLiteralExpr(string value)
 		: this(null, value)
 	{

@@ -20,11 +20,7 @@ public class FieldAccessExpr : Expression, NodeWithSimpleName, NodeWithTypeArgum
 {
 	private Expression scope;
 
-		[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+		
 	private NodeList typeArguments;
 
 	private SimpleName name;
@@ -162,11 +158,7 @@ public class FieldAccessExpr : Expression, NodeWithSimpleName, NodeWithTypeArgum
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public FieldAccessExpr(Expression scope, NodeList typeArguments, SimpleName name)
 		: this(null, scope, typeArguments, name)
 	{
@@ -396,49 +388,49 @@ public class FieldAccessExpr : Expression, NodeWithSimpleName, NodeWithTypeArgum
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithSimpleName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsString(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual NameExpr getNameAsExpression()
 	{
 		return NodeWithSimpleName._003Cdefault_003EgetNameAsExpression(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isUsingDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EisUsingDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeTypeArguments()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EremoveTypeArguments(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setTypeArguments(Type[] P_0)
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetTypeArguments(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional traverseScope()
 	{
 		return NodeWithScope._003Cdefault_003EtraverseScope(this);

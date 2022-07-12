@@ -138,11 +138,7 @@ public class ImportDeclaration : Node, NodeWithName
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ImportDeclaration(Name name, bool isStatic, bool isAsterisk)
 		: this(null, name, isStatic, isAsterisk)
 	{
@@ -226,13 +222,13 @@ public class ImportDeclaration : Node, NodeWithName
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithName._003Cdefault_003EgetNameAsString(this);

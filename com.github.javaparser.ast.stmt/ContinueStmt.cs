@@ -14,11 +14,7 @@ namespace com.github.javaparser.ast.stmt;
 
 public class ContinueStmt : Statement, NodeWithOptionalLabel
 {
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private SimpleName label;
 
 	
@@ -107,11 +103,7 @@ public class ContinueStmt : Statement, NodeWithOptionalLabel
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ContinueStmt(SimpleName label)
 		: this(null, label)
 	{
@@ -278,13 +270,13 @@ public class ContinueStmt : Statement, NodeWithOptionalLabel
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setLabel(string P_0)
 	{
 		return NodeWithOptionalLabel._003Cdefault_003EsetLabel(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getLabelAsString()
 	{
 		return NodeWithOptionalLabel._003Cdefault_003EgetLabelAsString(this);

@@ -20,11 +20,7 @@ public class JavadocComment : Comment
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public JavadocComment(string content)
 		: this(null, content)
 	{

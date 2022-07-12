@@ -107,11 +107,7 @@ public class ArrayAccessExpr : Expression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ArrayAccessExpr(Expression name, Expression index)
 		: this(null, name, index)
 	{

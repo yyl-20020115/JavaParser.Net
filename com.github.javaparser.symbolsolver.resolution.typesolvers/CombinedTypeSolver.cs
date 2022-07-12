@@ -460,19 +460,19 @@ public class CombinedTypeSolver : java.lang.TypeSolver
 		throw new UnsolvedSymbolException(name);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual TypeSolver getRoot()
 	{
 		return TypeSolver._003Cdefault_003EgetRoot(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedReferenceTypeDeclaration getSolvedJavaLangObject()
 	{
 		return TypeSolver._003Cdefault_003EgetSolvedJavaLangObject(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasType(string P_0)
 	{
 		return TypeSolver._003Cdefault_003EhasType(this, P_0);

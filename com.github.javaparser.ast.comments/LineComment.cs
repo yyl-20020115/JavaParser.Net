@@ -19,11 +19,7 @@ public class LineComment : Comment
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LineComment(string content)
 		: this(null, content)
 	{

@@ -771,11 +771,7 @@ public class BinaryExpr : Expression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public BinaryExpr(Expression left, Expression right, Operator @operator)
 		: this(null, left, right, @operator)
 	{

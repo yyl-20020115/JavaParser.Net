@@ -155,11 +155,7 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public EnumDeclaration(NodeList modifiers, NodeList annotations, SimpleName name, NodeList implementedTypes, NodeList entries, NodeList members)
 		: this(null, modifiers, annotations, name, implementedTypes, entries, members)
 	{
@@ -394,43 +390,43 @@ public class EnumDeclaration : TypeDeclaration, NodeWithImplements, Resolvable
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ClassOrInterfaceType getImplementedTypes(int P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EgetImplementedTypes(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setImplementedType(int P_0, ClassOrInterfaceType P_1)
 	{
 		return NodeWithImplements._003Cdefault_003EsetImplementedType(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addImplementedType(ClassOrInterfaceType P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EaddImplementedType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addImplements(string P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EaddImplements(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addImplements(Class P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EaddImplements(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addImplementedType(string P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EaddImplementedType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node addImplementedType(Class P_0)
 	{
 		return NodeWithImplements._003Cdefault_003EaddImplementedType(this, P_0);

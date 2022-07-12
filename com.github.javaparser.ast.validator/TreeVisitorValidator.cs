@@ -45,13 +45,13 @@ public class TreeVisitorValidator: Validator, TypedValidator, BiConsumer
 		accept((Node)node, (ProblemReporter)reporter);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BiConsumer andThen(BiConsumer P_0)
 	{
 		return BiConsumer._003Cdefault_003EandThen(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Processor processor()
 	{
 		return TypedValidator._003Cdefault_003Eprocessor(this);

@@ -44,43 +44,43 @@ public class ParameterComparator: Comparator
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparing(Comparator P_0)
 	{
 		return Comparator._003Cdefault_003EthenComparing(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator reversed()
 	{
 		return Comparator._003Cdefault_003Ereversed(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparing(Function P_0, Comparator P_1)
 	{
 		return Comparator._003Cdefault_003EthenComparing(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparing(Function P_0)
 	{
 		return Comparator._003Cdefault_003EthenComparing(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparingInt(ToIntFunction P_0)
 	{
 		return Comparator._003Cdefault_003EthenComparingInt(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparingLong(ToLongFunction P_0)
 	{
 		return Comparator._003Cdefault_003EthenComparingLong(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Comparator thenComparingDouble(ToDoubleFunction P_0)
 	{
 		return Comparator._003Cdefault_003EthenComparingDouble(this, P_0);

@@ -20,11 +20,7 @@ public class MethodReferenceExpr : Expression, NodeWithTypeArguments, NodeWithId
 {
 	private Expression scope;
 
-		[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+		
 	private NodeList typeArguments;
 
 	[NonEmptyProperty(new object[]
@@ -147,11 +143,7 @@ public class MethodReferenceExpr : Expression, NodeWithTypeArguments, NodeWithId
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public MethodReferenceExpr(Expression scope, NodeList typeArguments, string identifier)
 		: this(null, scope, typeArguments, identifier)
 	{
@@ -362,37 +354,37 @@ public class MethodReferenceExpr : Expression, NodeWithTypeArguments, NodeWithId
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isUsingDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EisUsingDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setDiamondOperator()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetDiamondOperator(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node removeTypeArguments()
 	{
 		return NodeWithTypeArguments._003Cdefault_003EremoveTypeArguments(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setTypeArguments(Type[] P_0)
 	{
 		return NodeWithTypeArguments._003Cdefault_003EsetTypeArguments(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getId()
 	{
 		return NodeWithIdentifier._003Cdefault_003EgetId(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setId(string P_0)
 	{
 		return NodeWithIdentifier._003Cdefault_003EsetId(this, P_0);

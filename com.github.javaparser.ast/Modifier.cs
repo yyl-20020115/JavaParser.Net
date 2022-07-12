@@ -320,11 +320,7 @@ public class Modifier : Node
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Modifier(Keyword keyword)
 		: this(null, keyword)
 	{

@@ -234,11 +234,7 @@ public class Utils
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static Set set(params object[] items)
 	{
 		HashSet.___003Cclinit_003E();

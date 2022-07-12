@@ -332,67 +332,67 @@ public class VisitorMap: Map
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object putIfAbsent(object P_0, object P_1)
 	{
 		return Map._003Cdefault_003EputIfAbsent(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object getOrDefault(object P_0, object P_1)
 	{
 		return Map._003Cdefault_003EgetOrDefault(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void forEach(BiConsumer P_0)
 	{
 		Map._003Cdefault_003EforEach(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual void replaceAll(BiFunction P_0)
 	{
 		Map._003Cdefault_003EreplaceAll(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool remove(object P_0, object P_1)
 	{
 		return Map._003Cdefault_003Eremove(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool replace(object P_0, object P_1, object P_2)
 	{
 		return Map._003Cdefault_003Ereplace(this, P_0, P_1, P_2);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object replace(object P_0, object P_1)
 	{
 		return Map._003Cdefault_003Ereplace(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object computeIfAbsent(object P_0, Function P_1)
 	{
 		return Map._003Cdefault_003EcomputeIfAbsent(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object computeIfPresent(object P_0, BiFunction P_1)
 	{
 		return Map._003Cdefault_003EcomputeIfPresent(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object compute(object P_0, BiFunction P_1)
 	{
 		return Map._003Cdefault_003Ecompute(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual object merge(object P_0, object P_1, BiFunction P_2)
 	{
 		return Map._003Cdefault_003Emerge(this, P_0, P_1, P_2);

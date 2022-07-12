@@ -143,13 +143,13 @@ public class ParserCollectionStrategy: CollectionStrategy
 	
 	private ParserConfiguration parserConfiguration;
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual PathMatcher getPathMatcher(string P_0)
 	{
 		return CollectionStrategy._003Cdefault_003EgetPathMatcher(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional getRoot(Path P_0)
 	{
 		return CollectionStrategy._003Cdefault_003EgetRoot(this, P_0);

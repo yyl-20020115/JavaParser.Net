@@ -12,11 +12,7 @@ namespace com.github.javaparser.ast.stmt;
 
 public class BreakStmt : Statement
 {
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private SimpleName label;
 
 	
@@ -105,11 +101,7 @@ public class BreakStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public BreakStmt(SimpleName label)
 		: this(null, label)
 	{

@@ -68,11 +68,7 @@ public class VarType : Type
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public VarType()
 		: this(null)
 	{

@@ -113,11 +113,7 @@ public abstract class Type : Node, Resolvable
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public Type(NodeList annotations)
 		: this(null, annotations)
 	{

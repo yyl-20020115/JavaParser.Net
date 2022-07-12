@@ -11,11 +11,7 @@ namespace com.github.javaparser.ast.expr;
 
 public class SuperExpr : Expression
 {
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Name typeName;
 
 	
@@ -96,11 +92,7 @@ public class SuperExpr : Expression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public SuperExpr(Name typeName)
 		: this(null, typeName)
 	{

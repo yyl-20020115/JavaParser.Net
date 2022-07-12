@@ -16,7 +16,7 @@ namespace com.github.javaparser.ast;
 
 public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, com.github.javaparser.ast.observer.Observable, Visitable
 {
-	[InnerClass(null, Modifiers.Protected)]
+	
 		
 	public class NodeListIterator: ListIterator, Iterator
 	{
@@ -443,11 +443,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	}
 
 	
-		[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+		
 	private List innerList;
 
 	private Node parentNode;
@@ -455,7 +451,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	
 		private List observers;
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Stream stream()
 	{
 		return Collection._003Cdefault_003Estream(this);
@@ -524,11 +520,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public NodeList(params Node[] n)
 	{
 		innerList = new java.util.ArrayList(0);
@@ -672,11 +664,7 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 	
 		
 	
-	[SafeVarargs(new object[]
-	{
-		(byte)64,
-		"Ljava/lang/SafeVarargs;"
-	})]
+	
 	public static NodeList nodeList(params Node[] nodes)
 	{
 		NodeList nodeList = new NodeList();
@@ -1357,31 +1345,31 @@ public class NodeList: List, Collection, Iterable, IEnumerable, HasParentNode, c
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasParentNode()
 	{
 		return HasParentNode._003Cdefault_003EhasParentNode(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Class[] P_0)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Class P_0, Predicate P_1)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional findAncestor(Predicate P_0, Class[] P_1)
 	{
 		return HasParentNode._003Cdefault_003EfindAncestor(this, P_0, P_1);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isDescendantOf(Node P_0)
 	{
 		return HasParentNode._003Cdefault_003EisDescendantOf(this, P_0);

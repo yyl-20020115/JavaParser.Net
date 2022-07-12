@@ -835,29 +835,17 @@ public class CompilationUnit : Node
 
 	private const string JAVA_LANG = "java.lang";
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private PackageDeclaration packageDeclaration;
 
 		private NodeList imports;
 
 		private NodeList types;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private ModuleDeclaration module;
 
-	[InternalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/InternalProperty;"
-	})]
+	
 	private Storage storage;
 
 	
@@ -1405,11 +1393,7 @@ public class CompilationUnit : Node
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public CompilationUnit(PackageDeclaration packageDeclaration, NodeList imports, NodeList types, ModuleDeclaration module)
 		: this(null, packageDeclaration, imports, types, module)
 	{

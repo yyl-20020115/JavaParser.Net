@@ -19,11 +19,7 @@ public class TryStmt : Statement
 
 		private NodeList catchClauses;
 
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private BlockStmt finallyBlock;
 
 	
@@ -175,11 +171,7 @@ public class TryStmt : Statement
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public TryStmt(NodeList resources, BlockStmt tryBlock, NodeList catchClauses, BlockStmt finallyBlock)
 		: this(null, resources, tryBlock, catchClauses, finallyBlock)
 	{

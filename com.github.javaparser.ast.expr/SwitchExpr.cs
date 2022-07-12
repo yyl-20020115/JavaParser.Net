@@ -115,11 +115,7 @@ public class SwitchExpr : Expression, SwitchNode
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public SwitchExpr(Expression selector, NodeList entries)
 		: this(null, selector, entries)
 	{
@@ -313,7 +309,7 @@ public class SwitchExpr : Expression, SwitchNode
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isEmpty()
 	{
 		return SwitchNode._003Cdefault_003EisEmpty(this);

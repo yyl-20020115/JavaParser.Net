@@ -43,11 +43,7 @@ public abstract class ModuleDirective : Node
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ModuleDirective()
 		: this(null)
 	{

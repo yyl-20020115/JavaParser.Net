@@ -110,11 +110,7 @@ public class ModuleOpensDirective : ModuleDirective, NodeWithName
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ModuleOpensDirective(Name name, NodeList moduleNames)
 		: this(null, name, moduleNames)
 	{
@@ -309,13 +305,13 @@ public class ModuleOpensDirective : ModuleDirective, NodeWithName
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithName._003Cdefault_003EsetName(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithName._003Cdefault_003EgetNameAsString(this);

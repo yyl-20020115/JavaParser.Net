@@ -23,11 +23,7 @@ public class NormalAnnotationExpr : AnnotationExpr
 	
 		
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public NormalAnnotationExpr(Name name, NodeList pairs)
 		: this(null, name, pairs)
 	{

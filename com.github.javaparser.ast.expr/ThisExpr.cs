@@ -15,11 +15,7 @@ namespace com.github.javaparser.ast.expr;
 
 public class ThisExpr : Expression, Resolvable
 {
-	[OptionalProperty(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/metamodel/OptionalProperty;"
-	})]
+	
 	private Name typeName;
 
 	
@@ -107,11 +103,7 @@ public class ThisExpr : Expression, Resolvable
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ThisExpr(Name typeName)
 		: this(null, typeName)
 	{

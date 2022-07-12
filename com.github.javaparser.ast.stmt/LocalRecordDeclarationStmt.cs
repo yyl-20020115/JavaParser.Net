@@ -85,11 +85,7 @@ public class LocalRecordDeclarationStmt : Statement
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public LocalRecordDeclarationStmt(RecordDeclaration recordDeclaration)
 		: this(null, recordDeclaration)
 	{

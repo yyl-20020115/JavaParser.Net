@@ -319,11 +319,7 @@ public class UnaryExpr : Expression, NodeWithExpression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public UnaryExpr(Expression expression, Operator @operator)
 		: this(null, expression, @operator)
 	{
@@ -473,7 +469,7 @@ public class UnaryExpr : Expression, NodeWithExpression
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setExpression(string P_0)
 	{
 		return NodeWithExpression._003Cdefault_003EsetExpression(this, P_0);

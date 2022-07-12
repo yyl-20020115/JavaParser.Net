@@ -139,11 +139,7 @@ public class ForEachStmt : Statement, NodeWithBody
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public ForEachStmt(VariableDeclarationExpr variable, Expression iterable, Statement body)
 		: this(null, variable, iterable, body)
 	{
@@ -315,13 +311,13 @@ public class ForEachStmt : Statement, NodeWithBody
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual BlockStmt createBlockStatementAsBody()
 	{
 		return NodeWithBody._003Cdefault_003EcreateBlockStatementAsBody(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasEmptyBody()
 	{
 		return NodeWithBody._003Cdefault_003EhasEmptyBody(this);

@@ -333,7 +333,7 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 		return result3;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveType(string P_0)
 	{
 		return Context._003Cdefault_003EsolveType(this, P_0);
@@ -627,121 +627,121 @@ public abstract class AbstractJavaParserContext : java.lang.Context
 		throw new UnsolvedSymbolException(name, context, cause);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional solveGenericType(string P_0)
 	{
 		return Context._003Cdefault_003EsolveGenericType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional solveGenericTypeInParentContext(string P_0)
 	{
 		return Context._003Cdefault_003EsolveGenericTypeInParentContext(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveTypeInParentContext(string P_0)
 	{
 		return Context._003Cdefault_003EsolveTypeInParentContext(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveSymbol(string P_0)
 	{
 		return Context._003Cdefault_003EsolveSymbol(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional solveSymbolAsValue(string P_0)
 	{
 		return Context._003Cdefault_003EsolveSymbolAsValue(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional solveSymbolAsValueInParentContext(string P_0)
 	{
 		return Context._003Cdefault_003EsolveSymbolAsValueInParentContext(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List fieldsExposedToChild(Node P_0)
 	{
 		return Context._003Cdefault_003EfieldsExposedToChild(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List localVariablesExposedToChild(Node P_0)
 	{
 		return Context._003Cdefault_003ElocalVariablesExposedToChild(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List parametersExposedToChild(Node P_0)
 	{
 		return Context._003Cdefault_003EparametersExposedToChild(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List patternExprsExposedToChild(Node P_0)
 	{
 		return Context._003Cdefault_003EpatternExprsExposedToChild(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List patternExprsExposedFromChildren()
 	{
 		return Context._003Cdefault_003EpatternExprsExposedFromChildren(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual List negatedPatternExprsExposedFromChildren()
 	{
 		return Context._003Cdefault_003EnegatedPatternExprsExposedFromChildren(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional localVariableDeclarationInScope(string P_0)
 	{
 		return Context._003Cdefault_003ElocalVariableDeclarationInScope(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional parameterDeclarationInScope(string P_0)
 	{
 		return Context._003Cdefault_003EparameterDeclarationInScope(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional patternExprInScope(string P_0)
 	{
 		return Context._003Cdefault_003EpatternExprInScope(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional fieldDeclarationInScope(string P_0)
 	{
 		return Context._003Cdefault_003EfieldDeclarationInScope(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveConstructor(List P_0)
 	{
 		return Context._003Cdefault_003EsolveConstructor(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveMethod(string P_0, List P_1, bool P_2)
 	{
 		return Context._003Cdefault_003EsolveMethod(this, P_0, P_1, P_2);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual SymbolReference solveMethodInParentContext(string P_0, List P_1, bool P_2)
 	{
 		return Context._003Cdefault_003EsolveMethodInParentContext(this, P_0, P_1, P_2);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Optional solveMethodAsUsage(string P_0, List P_1)
 	{
 		return Context._003Cdefault_003EsolveMethodAsUsage(this, P_0, P_1);

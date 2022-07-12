@@ -80,11 +80,7 @@ public class YieldStmt : Statement, NodeWithExpression
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public YieldStmt(Expression expression)
 		: this(null, expression)
 	{
@@ -217,7 +213,7 @@ public class YieldStmt : Statement, NodeWithExpression
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setExpression(string P_0)
 	{
 		return NodeWithExpression._003Cdefault_003EsetExpression(this, P_0);

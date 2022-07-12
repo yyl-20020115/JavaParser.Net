@@ -19,11 +19,7 @@ public class MarkerAnnotationExpr : AnnotationExpr
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public MarkerAnnotationExpr(Name name)
 		: this(null, name)
 	{

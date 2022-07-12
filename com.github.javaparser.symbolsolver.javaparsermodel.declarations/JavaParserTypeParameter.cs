@@ -386,235 +386,235 @@ public class JavaParserTypeParameter : AbstractTypeDeclaration, ResolvedTypePara
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool hasName()
 	{
 		return ResolvedDeclaration._003Cdefault_003EhasName(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isField()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisField(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isVariable()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisVariable(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isEnumConstant()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisEnumConstant(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isPattern()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisPattern(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isParameter()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisParameter(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isType()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isMethod()
 	{
 		return ResolvedDeclaration._003Cdefault_003EisMethod(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedFieldDeclaration asField()
 	{
 		return ResolvedDeclaration._003Cdefault_003EasField(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedParameterDeclaration asParameter()
 	{
 		return ResolvedDeclaration._003Cdefault_003EasParameter(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedTypeDeclaration asType()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedMethodDeclaration asMethod()
 	{
 		return ResolvedDeclaration._003Cdefault_003EasMethod(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedEnumConstantDeclaration asEnumConstant()
 	{
 		return ResolvedDeclaration._003Cdefault_003EasEnumConstant(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedPatternDeclaration asPattern()
 	{
 		return ResolvedDeclaration._003Cdefault_003EasPattern(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override Set internalTypes()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EinternalTypes(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedReferenceTypeDeclaration getInternalType(string P_0)
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EgetInternalType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool hasInternalType(string P_0)
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EhasInternalType(this, P_0);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isClass()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisClass(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isInterface()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisInterface(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isEnum()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisEnum(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isAnnotation()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisAnnotation(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override bool isAnonymousClass()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EisAnonymousClass(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedClassDeclaration asClass()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasClass(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedInterfaceDeclaration asInterface()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasInterface(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedEnumDeclaration asEnum()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasEnum(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedAnnotationDeclaration asAnnotation()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasAnnotation(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override ResolvedReferenceTypeDeclaration asReferenceType()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EasReferenceType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override string getPackageName()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EgetPackageName(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override string getClassName()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EgetClassName(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public override string getId()
 	{
 		return ResolvedTypeDeclaration._003Cdefault_003EgetId(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool declaredOnType()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EdeclaredOnType(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool declaredOnMethod()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EdeclaredOnMethod(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool declaredOnConstructor()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EdeclaredOnConstructor(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasLowerBound()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EhasLowerBound(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasUpperBound()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EhasUpperBound(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedType getLowerBound()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EgetLowerBound(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedType getUpperBound()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EgetUpperBound(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isBounded()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EisBounded(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool isUnbounded()
 	{
 		return ResolvedTypeParameterDeclaration._003Cdefault_003EisUnbounded(this);

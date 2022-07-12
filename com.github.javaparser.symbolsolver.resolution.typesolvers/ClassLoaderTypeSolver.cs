@@ -96,7 +96,7 @@ public class ClassLoaderTypeSolver : java.lang.TypeSolver
 
 	private ClassLoader classLoader;
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedReferenceTypeDeclaration solveType(string P_0)
 	{
 		return TypeSolver._003Cdefault_003EsolveType(this, P_0);
@@ -107,7 +107,7 @@ public class ClassLoaderTypeSolver : java.lang.TypeSolver
 		return true;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual TypeSolver getRoot()
 	{
 		return TypeSolver._003Cdefault_003EgetRoot(this);
@@ -217,13 +217,13 @@ public class ClassLoaderTypeSolver : java.lang.TypeSolver
 		this.parent = parent;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual ResolvedReferenceTypeDeclaration getSolvedJavaLangObject()
 	{
 		return TypeSolver._003Cdefault_003EgetSolvedJavaLangObject(this);
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual bool hasType(string P_0)
 	{
 		return TypeSolver._003Cdefault_003EhasType(this, P_0);

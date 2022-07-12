@@ -25,7 +25,7 @@ public abstract class AnnotationExpr : Expression, NodeWithName, Resolvable
 	{
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual string getNameAsString()
 	{
 		return NodeWithName._003Cdefault_003EgetNameAsString(this);
@@ -97,11 +97,7 @@ public abstract class AnnotationExpr : Expression, NodeWithName, Resolvable
 	
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public AnnotationExpr(Name name)
 		: this(null, name)
 	{
@@ -232,7 +228,7 @@ public abstract class AnnotationExpr : Expression, NodeWithName, Resolvable
 		return result;
 	}
 
-	[HideFromJava(HideFromJavaFlags.Reflection | HideFromJavaFlags.StackWalk | HideFromJavaFlags.StackTrace)]
+
 	public virtual Node setName(string P_0)
 	{
 		return NodeWithName._003Cdefault_003EsetName(this, P_0);

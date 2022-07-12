@@ -51,11 +51,7 @@ public class NullLiteralExpr : LiteralExpr
 
 	
 	
-	[AllFieldsConstructor(new object[]
-	{
-		(byte)64,
-		"Lcom/github/javaparser/ast/AllFieldsConstructor;"
-	})]
+	
 	public NullLiteralExpr()
 		: this(null)
 	{
